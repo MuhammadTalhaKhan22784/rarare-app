@@ -22,7 +22,7 @@ const Footer = () => {
               <span className="text_lightgray mb-2">Rarare</span>
               <span onClick={() => { history.push("/product") }}>Issues</span>
               <span onClick={() => { history.push("/product") }}>Surveys</span>
-              <span onClick={() => { history.push("/consensus") }}>Proposals</span>
+              <span onClick={() => { history.push("/consensus") }}>Post Proposals</span>
               <span onClick={() => { history.push("/profile") }}>Profile</span>
             </div>
             <div className="text_darkblue">
