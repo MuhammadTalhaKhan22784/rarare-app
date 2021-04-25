@@ -119,6 +119,10 @@
   justify-content: space-between;
 }
 
+.footer_container span {
+  cursor: pointer;
+}
+
 .fc_1 {
   width: 50%;
   display: flex;
