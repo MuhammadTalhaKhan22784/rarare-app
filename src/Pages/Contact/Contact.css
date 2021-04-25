@@ -1,0 +1,36 @@
+.c_form {
+    width: 430px;
+}
+
+.con_btn {
+    width: 100%;
+}
+
+.c_textarea {
+    width: 100%;
+}
+
+.c_textarea textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 0.5rem;
+    resize: none;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.c_textarea textarea::placeholder {
+    padding-left: 10px;
+    padding-top: 8px;
+  color: #8792af;
+}
+
+.c_textarea textarea:focus {
+    outline: none !important;
+}
+
+.con_btn button{
+    width: 200px !important;
+    font-size: 0.9rem;
+}
+

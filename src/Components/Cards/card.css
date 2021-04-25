@@ -1,0 +1,246 @@
+.do_card_container>div>img{
+    text-align: center !important;
+   margin: 0px auto !important; 
+   margin-top: 10px !important;  
+}
+.do_card_container{
+    /* border: 2px saddlebrown solid; */
+    width: fit-content;
+    box-shadow:  0px 0px  5px gainsboro;
+    /* margin-top: 30px; */
+    margin: 25px 15px ;
+    margin-bottom: 0px;
+}
+.myCcard{
+    border: none !important;
+    padding: 0px 20px;
+    width: 300px  !important;
+}
+.do_card_para{
+    color: #bdc3d3 !important;
+    font-size: .9em !important;   
+}
+
+/* recent issue card css  */
+
+.recent_issue_card_container{
+    width: fit-content;
+    margin: 10px 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.user_card_detail_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .9em;
+   color: #8994b0;
+}
+.user_card_detail_div>div{
+    display: flex;
+}
+.user_card_detail_div>div>img{
+    width: 25px;
+    height: 25px;
+}
+.user_card_detail_div>div>p{
+    margin-left: 5px;
+    /* margin-top: 5px; */
+}
+.card_title_div{
+    text-align: center;
+    padding-top: 15px;
+    /* margin-bottom: 0px !important; */
+}
+.issue_card_body,.issue_card_body>p{
+    /* border: 2px solid rgb(141, 74, 74); */
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: .9em;
+   color: #8994b0;
+
+}
+
+/* proposal card  */
+
+.proposal_card_container{
+    text-align: center;
+    width: fit-content;
+    /* padding: 20px; */
+    font-size: .9em;
+    
+}
+
+.duration_div{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    
+}
+.proposal_card{
+    /* border: 2px solid red; */
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    margin: 15px 30px;
+    border: none !important;
+    box-shadow: 0px 0px 5px gainsboro;
+}
+.ongoin{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px !important;
+}
+.location_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.location_div>img{
+    height: 20px;
+}
+.location_div>p{
+    /* margin-top: 5px; */
+    margin-left: 10px;
+}
+.proposal_card_head{
+    margin-top: 10px;
+}
+.duration_date{
+    font-size: .7em;
+}
+.duration_grn{
+    color: #1cc1a0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.main_line{
+    margin-top: -10px !important;
+    margin-bottom: 20px;
+}
+.back_clr{
+    border: 2px solid gainsboro;
+    background-color: rgb(160, 160, 160);
+    margin-left: -8px !important;
+}
+.progres_line{
+    border: 2px solid #1cc1a0;
+}
+.progress_div{
+    display: flex;
+    justify-content: space-between;
+}
+.percnt{
+    color: #1cc1a0;
+}
+.proposal_btn{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-top: 20px;
+}
+
+/* survey card css  */
+
+.survey_card{
+    width: 400px !important;
+    font-size: .9em ;
+    padding: 10px 25px;
+    box-shadow: 0px 0px 5px gainsboro;
+    border: none !important;
+}
+.survey_main_time_div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+}
+.survey_llocation{
+    /* border-bottom: 1px solid #bdc3d3; */
+    /* padding: 5px 30px; */
+    margin-bottom: 0px !important;
+    /* padding-bottom: 0px; */
+    color: #8994b0;
+    /* width: 150px; */
+}
+hr{
+    width: 300px;
+    display: inline;
+    margin: 5px auto !important;
+    /* margin-left: 30px !important; */
+    /* left: 200px; */
+}
+.survey_time{
+    font-size: .8em;
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+}
+.survey_grn{
+    color: #1cc1a0;
+    font-size: .8;
+    margin-top: 0px !important;
+}
+
+
+/* blog card css  */
+
+.blog_card_div{
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    flex-wrap: wrap;
+}
+.blog_user_card_detail_div{
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+}
+.blog_user_card_detail_div>div{
+    /* display: flex; */
+    margin-left: 10px;
+}
+.blog_user_card_detail_div>img{
+    width: 30px ;
+    height: 30px;
+    object-fit: contain;
+}
+.bloger_name{
+    margin: 0px;
+    font-weight: 600;
+}
+.bloger_email{
+    font-size: .7em;
+    margin: 0px;
+    color: #babfdc;
+}
+.blog_data_div{
+    text-align: center;
+    color: #babfdc;
+    font-size: .7em;
+   
+
+}
+.blog_card_body{
+    font-size: .75em;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    color: #9196a5 !important;
+    padding-bottom: 5px !important;
+}
+.read_more_div{
+    text-align: right;
+    padding: 0px 10px;
+}
+.read_more_div{
+    /* margin: 0px; */
+    margin-bottom: 10px;
+}
+.read_link{
+    /* margin-left: -10px; */
+    font-size: .9em;
+    text-decoration: none;
+    font-weight: 600;
+}

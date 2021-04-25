@@ -1,0 +1,222 @@
+.post_home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post_home > div {
+  width: 400px;
+}
+
+.post_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post_header img {
+  width: 110px;
+  object-fit: contain;
+}
+
+.post_header h2 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.post_header p {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.category_select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cs_text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cs_tabs_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs_tab {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs_tab_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 73% !important;
+  border-radius: 5px;
+  height: 160px;
+box-shadow: 0px 1px 10px -3px #00000038;
+}
+
+.cs_tab_box .c_dot {
+  right: -32px !important;
+}
+
+.cs_tab_box img {
+  width: 60%;
+  top: 10px;
+}
+
+.cs_tab_text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cs_tab_text h2 {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.cs_tab_text p {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.pcontinue_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pcontinue_btn button {
+  width: 140px;
+  /* width: 120px;
+  height: 35px; */
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+/* post report */
+
+.pr_frorm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr_frorm input {
+  height: 40px;
+  border: 1px solid #20c0a0 !important;
+  border-radius: 3px;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  outline: none;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.pr_frorm input::placeholder {
+  color: #8792af;
+}
+
+.pr_frorm .c_textarea textarea {
+  height: 90px;
+  font-size: 0.9rem;
+}
+
+.pr_frorm span {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pmap {
+    width: 100%;
+    object-fit: cover;
+    height: 140px;
+    margin: 0.2rem 0 2rem 0;
+}
+
+/*  */
+
+.post_receive {
+  width: 100%;
+  height: max-content;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_receive_main {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.p_receive_main img {
+  width: 80px;
+}
+
+.p_receive_main h2 {
+  font-size: 1.1rem;
+  width: 300px;
+  font-weight: bold !important;
+}
+
+.p_receive_main p {
+  font-size: 0.8rem;
+}
+
+.post_receive .pcontinue_btn button {
+  width: 190px;
+}
+
+/* proposal consensus */
+
+.postconsensus_home {
+    width: 100%;
+    height: max-content;
+    margin: 4rem 0;
+}
+
+.pp_tabs_main {
+  width: 750px;
+box-shadow: 0px 1px 10px -3px #00000038;
+  padding: 50px 20px;
+}
+
+.postconsensus_home .pcontinue_btn button {
+  margin-top: 2rem;
+}
+/*  */
+
+.post_consensus > div {
+    width: 420px;
+}
+
+.post_consensus .pcontinue_btn {
+    width: 75% !important;
+    /* display: flex; */
+    justify-content: space-around;
+} 

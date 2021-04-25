@@ -1,0 +1,48 @@
+.pbd_form {
+  width: 100%;
+}
+
+.pbd_form h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.pp_budget {
+  width: 500px !important;
+}
+
+.pp_budget .c_textarea textarea {
+  height: 213px;
+}
+
+.cus_num_field {
+  border: 1px solid #20c0a0 !important;
+  padding-left: 20px;
+  height: 40px;
+}
+
+.cus_num_field strong {
+  color: #001758 !important;
+  padding-left: 5px;
+  font-size: 1.5rem;
+  margin-top: -4px;
+  font-weight: 300;
+}
+
+.pp_budget .pcontinue_btn {
+  width: 65% !important;
+  margin: 3rem auto;
+}
+
+.cus_num_field span {
+  font-weight: bold;
+}
+
+.MuiInput-underline::before {
+  border-bottom: none !important;
+}
+
+.MuiInput-underline::after {
+  border-bottom: none !important;
+}
+

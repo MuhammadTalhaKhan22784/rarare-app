@@ -1,0 +1,401 @@
+.pricing_page {
+  width: 100%;
+  height: max-content;
+}
+
+.price_main_1 {
+  background-color: #f2f3f8;
+  width: 100%;
+  height: max-content;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_main_1_content {
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+.price_main_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.price_main_card > img {
+  width: 35%;
+}
+
+.price_main_card h2 {
+  font-size: 1.5rem;
+}
+
+.price_main_card_content img {
+  width: 20px;
+  height: 20px;
+}
+
+.price_main_card_content ul li {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.price_main_card_content ul li p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  color: #8792af;
+}
+
+.get_started {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.get_started button {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/*  */
+
+.op_box {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  box-shadow: 0px 10px 7px -9px #0000007d;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.op_box > div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.op_box > div span {
+  font-size: 1.2rem;
+  margin-right: 3rem;
+  text-transform: uppercase;
+}
+
+/*  */
+
+.price_wms {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: max-content;
+  margin: 8rem auto;
+}
+
+.pbox {
+  width: 350px;
+  margin-left: 8rem;
+}
+
+.pbox1 {
+  width: 228px;
+  z-index: 1;
+  top: 1rem;
+  position: absolute;
+}
+
+.pbox_item_1eft {
+  width: 50%;
+  display: flex;
+}
+
+.pbox_item_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.pbox_item_right h2 {
+  font-size: 1.5rem;
+}
+
+.pbox_item_right p {
+  text-align: right;
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+.app_store_icons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app_store_icons img {
+  width: 50%;
+}
+
+/*  */
+
+.mdm_section {
+  width: 100%;
+  background-color: #f2f3f8;
+  height: max-content;
+  padding: 5rem 0;
+}
+
+.mdm_container {
+  display: flex;
+  justify-content: center;
+}
+
+.mdm_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+
+.mdm_card h2 {
+  font-size: 1rem;
+}
+
+.mdm_card p {
+  width: 85%;
+  font-size: 0.8rem;
+}
+
+/*  */
+
+.encovision_section {
+  width: 100%;
+  display: flex;
+}
+
+.en_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.en_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.en_left > div {
+  padding-left: 3rem;
+}
+
+.en_left h2 {
+  font-size: 1rem;
+}
+
+.en_left p {
+  font-size: 0.8rem;
+}
+
+.en_button {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.en_button button {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.en_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.en_right .enbox1 {
+  width: 350px;
+}
+
+.en_right .enbox2 {
+  width: 220px;
+  height: 160px;
+  right: 50px;
+  bottom: 78px;
+  position: absolute;
+}
+
+/*  */
+
+.watch_demo {
+  width: 100%;
+  height: max-content;
+  margin: 5rem auto;
+}
+
+.wd_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wd_text h2 {
+  font-size: 1.5rem;
+}
+
+.wd_text p {
+  width: 46%;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.wd_video {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.wd_video img {
+  width: 60%;
+}
+
+/*  */
+
+.pricing_section {
+  width: 100%;
+}
+
+.price_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.price_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.price_text h2 {
+  font-size: 1.5rem;
+}
+
+.price_text p {
+  width: 60%;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.price_card_section {
+  width: 100%;
+  height: max-content;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_card {
+  width: 28%;
+  height: max-content;
+  padding: 2rem 0;
+  background-color: white;
+box-shadow: 0px 1px 10px -3px #00000038;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.price_card h2 {
+  font-size: 1rem;
+}
+
+.price_card .prbox {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+.price_card > span {
+}
+
+.price_card > p {
+  font-size: 0.8rem;
+  padding: 0 20px;
+}
+
+.prcard_content {
+  width: 100%;
+}
+
+.prcard_content ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.prcard_content ul li {
+  font-size: 0.8rem;
+  padding: 0 20px;
+}
+
+.prcard_content img{
+  margin-bottom: 0.7rem;
+}
+
+.pcard_btn button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.custom_quote {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.custom_quote > div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.custom_quote h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.custom_quote p {
+  font-size: 0.9rem;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.custom_quote .s_form_fields {
+  width: 500px;
+  margin: 0 auto;
+}

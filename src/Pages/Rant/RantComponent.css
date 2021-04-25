@@ -1,0 +1,103 @@
+.proposalComponent_card_content {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+}
+.proposalComponent_card {
+  background-color: lightgray;
+  padding-top: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 10px -3px #00000038;
+  /* background-color:#F5F5F9; */
+}
+.proposal_component_card {
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 1px 10px -3px #00000038;
+}
+
+.input_comment {
+  padding: 10px 0 0 10px;
+  width: 85%;
+  height: 100px;
+  text-align: left;
+  border: none;
+}
+
+.input_comment::placeholder {
+  padding: 10px 0 0 10px;
+  text-align: left;
+}
+
+.input_comment:hover {
+  border: none;
+}
+.card_review_component {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.card_content_component {
+  padding-top: 22px;
+  padding: 13px;
+  justify-content: center;
+  /* font-size: 14px; */
+}
+
+.card_review_component_text {
+  margin-top: -12px;
+}
+
+.btn1:focus {
+  background-color: #45c1a1 !important;
+}
+.btn_same2:focus {
+  background-color: #45c1a1 !important;
+}
+.btn_same:focus {
+  background-color: #45c1a1 !important;
+}
+.btn_same,
+.btn1 {
+  width: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+  .proposal_component_card {
+    width: 350px;
+    font-size: 14px;
+    height: 370px;
+    padding-bottom: 10px;
+  }
+  .btn_same,
+  .btn1 {
+    width: 80px !important;
+    font-size: 11px !important;
+  }
+  .btn_same2 {
+    width: 97px !important;
+    font-size: 11px !important;
+  }
+  .icon_responsive {
+    font-size: 17px !important;
+    width: 16px !important;
+  }
+
+  .input_comment {
+    padding: 20px !important;
+    width: 78%;
+  }
+
+  /* .responsive_send_icon{
+       font-size: 12px!important;
+   } */
+
+  .card_content_component {
+    overflow-y: scroll;
+  }
+}

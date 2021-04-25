@@ -1,0 +1,322 @@
+.co_box {
+  width: 100%;
+}
+
+.co_option_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-select::after {
+  content: "";
+  color: red !important;
+}
+
+.postconsensus_opt > div {
+  width: 650px !important;
+}
+
+.co_option_box .form-select {
+  width: 28%;
+}
+
+.co_option_box input {
+  width: 70%;
+}
+
+.co_option_box input::placeholder {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: #bdc3d3;
+}
+
+.postconsensus_opt .pcontinue_btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  */
+
+.d_audience {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.d_audience > div {
+  width: 100%;
+}
+
+.d_aud_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d_audience > .d_aud_box > .dnum_box {
+  width: 15%;
+  height: 40px;
+  position: relative;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8792af;
+  border-radius: 5px;
+  /* margin-right: 20px; */
+  /* border: 1px solid #9ba3cc; */
+}
+
+.d_audience > .d_aud_box > .dnum_box1 {
+  width: 30%;
+  height: 40px;
+  position: relative;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8792af;
+  border-radius: 5px;
+  /* margin-right: 20px; */
+  /* border: 1px solid #9ba3cc; */
+}
+
+.d_aud_box .c_dot {
+  width: 7px;
+  height: 7px;
+}
+
+.d_audience h2 {
+  font-size: 0.9rem;
+}
+
+.d_audience > .d_aud_box > input::placeholder {
+  text-align: center;
+  color: #8792af;
+  font-size: 0.9rem;
+}
+
+.d_audience > .d_aud_box > input {
+  border: 1px solid #9ba3cc !important;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.d_audience > .d_aud_box > input:focus {
+  outline: none;
+}
+
+.d_date_time {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.d_date_time h2 {
+  font-size: 0.9rem;
+}
+
+.dt_box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.dt_box > .dt_box_input {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input_img {
+  position: relative;
+}
+
+.dt_box > .dt_box_input .input_img > input {
+  height: 40px;
+  width: 310px;
+  border: 1px solid #20c0a0 !important;
+  border-radius: 3px;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.dt_box > .dt_box_input input::placeholder {
+  color: #8792af;
+  padding-left: 3px;
+  font-size: 0.9rem;
+}
+
+.dt_box > .dt_box_input .input_img > img {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+/*  */
+
+.dt_box_input .co_option_box .form-select {
+  height: 40px;
+  width: 310px;
+  border: 1px solid #20c0a0 !important;
+  border-radius: 3px;
+}
+
+/*  */
+.other_setting {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.other_setting h2 {
+  font-size: 1rem;
+}
+
+.other_setting .s_checkbox {
+  position: relative;
+}
+
+.other_setting .sc_label > input[type="checkbox"] + *::before {
+  position: absolute;
+  border-color: #20c0a0;
+  left: 0;
+}
+
+.other_setting .sc_label {
+  margin-left: 30px;
+}
+
+.other_setting p {
+  font-size: 0.8rem;
+  margin-left: 30px;
+}
+
+.pct_btn {
+  margin-top: 1rem;
+}
+/*  */
+
+.post_consensus_receive {
+  width: 800px !important;
+}
+
+.post_consensus_receive h2 {
+  width: 100% !important;
+}
+
+.post_consensus_receive .kp_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f5f9;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px -3px #00000038;
+}
+
+.kp_h {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kp_h h2 {
+  width: max-content;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
+
+.kp_h button {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.kp_h button img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.kp_h button span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.kp_text {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.kp_text > div {
+  display: flex;
+  background-color: #d5d9ea;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.kp_text > div img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.kp_text span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.kp_para {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.kp_para p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.c_loc {
+  width: 15px !important;
+  height: 15px;
+  object-fit: contain;
+}
+
+.post_consensus_receive .pcontinue_btn {
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.post_consensus_receive .pcontinue_btn button {
+  width: 200px;
+  height: 40px;
+  
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.pcon_btn button {
+  width: max-content;
+}

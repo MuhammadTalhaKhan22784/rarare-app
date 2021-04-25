@@ -1,0 +1,243 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* position */
+
+.position_relative {
+  position: relative;
+}
+
+/* background colors */
+
+.bg_lightgreen {
+  background-color: #20c0a0 !important;
+}
+
+.bg_blue {
+  background-color: #014c9d;
+}
+
+.bg_red {
+  background-color: #dc4b3b;
+}
+
+.bg_white {
+  background-color: white;
+}
+
+/* text colors */
+
+.text_darkblue {
+  color: #001758 !important;
+}
+
+.text_bluegreen {
+  color: #19c2a0 !important;
+}
+
+.text_lightblack {
+  color: #353535;
+}
+
+.text_green {
+  color: #0ac718;
+}
+
+.text_darkgray {
+  color: #5f677c;
+}
+
+.text_lightgray {
+  color: #8792af !important;
+}
+
+.text_lightpurple {
+  color: #9ba3cc !important;
+}
+
+.text_black {
+  color: black;
+}
+
+/* border color */
+
+.border_solid {
+  border: 1px solid !important;
+}
+
+.bluegreen_border {
+  border-color: #20c0a0 !important;
+}
+
+.green_border {
+  border-color: #0ac718 !important;
+}
+
+.gray_border {
+  border-color: #80808066 !important;
+}
+
+.light_purple_border {
+  color: #9ba3cc;
+}
+
+.border_none {
+  border: none !important;
+}
+
+/*  */
+
+.cus_num_field p {
+  color: #20c0a0 !important;
+}
+
+.cus_num_field {
+  width: 100% !important;
+}
+
+.num_form {
+  width: 100% !important;
+
+}
+
+/* width */
+
+.cus_width100 {
+  width: 150px;
+}
+
+/*  */
+
+.logco_modal_dialog {
+  /* max-width:70% !important; */
+  box-shadow: 0px 1px 10px -3px #00000038;
+}
+
+.logco_modal_dialog .postconsensus_home {
+  margin: 0rem 0 2rem 0;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-content {
+  border: none !important;
+}
+
+.modal-backdrop {
+  background: none;
+}
+
+.logco_modal_dialog .cs_tab_box {
+  width: 76% !important;
+  height: 146px;
+}
+
+.logco_modal_dialog .cs_tab_box .c_dot{
+  right: -22px !important;
+
+}
+
+.logco_modal_dialog .cs_tab {
+  width: 25%;
+}
+
+.logco_modal_dialog .pp_tabs_main {
+  width: 679px;
+  box-shadow: none;
+}
+
+.logco_modal_dialog .cs_tab_box .mdl_icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.logco_modal_dialog .cs_tab_box > div {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.logco_modal_dialog .cs_tab_box > div h2 {
+  transform: rotate(-45deg);
+  margin: 0;
+  position: absolute;
+  top: 18px;
+  font-size: 0.8rem;
+  left: -6px;
+}
+
+.logco_modal_dialog .cs_tab_box {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+  position: relative;
+}
+
+.logco_modal_dialog .cs_tab_box h2 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin: 10px 0 0 0;
+}
+
+.logco_modal_dialog .cs_tab_box p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.logco_modal_dialog .pcontinue_btn {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logco_modal_dialog .pcontinue_btn button {
+  height: 42px;
+  width: 205px;
+  margin-top: 1rem !important;
+}
+
+/* second modal */
+
+
+.lmd2_dialog .cs_tab {
+  width: 99%;
+}
+.lmd2_dialog .pp_tabs_main {
+  width: 390px;
+}
+.paypal_icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.payment_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment_form span {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
