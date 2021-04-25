@@ -11,7 +11,7 @@ const Authority = () => {
         <div className='bussines_container'>
             <div className='bussines_main_div'>
                 <div className="bussine_top_img_div">
-                    <img src='https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-master/main/src/Assets/lg_logo.png' alt="lgLogo" />
+                    <img src='https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-app/main/src/Assets/lg_logo.png' alt="lgLogo" />
                 </div>
                 <h5 className='bussines_head'><strong>Authority/Business <strong style={{ color: '#19c2a0' }}> Registration!</strong></strong></h5>
                 <div className="bussines_para">
