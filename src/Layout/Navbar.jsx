@@ -8,6 +8,7 @@ import "./style.css";
 // assets
 import rarareLogo from "../Assets/logo_rarare.png";
 import LanguageDropdown from "../Components/Dropdown/LanguageDropdown.jsx";
+import NotificationDropdown from "../Components/Dropdown/NotificationDropdown";
 
 const Navbar = () => {
   return (
@@ -45,6 +46,7 @@ const Navbar = () => {
                   Proposals
                 </Link>
               </li>
+              
               <li className="nav-item position_relative">
                 <Link to="#" className="nav-link">
                   <span className="menu-title">Business</span>
@@ -53,6 +55,7 @@ const Navbar = () => {
                     icon={baselineKeyboardArrowDown}
                   />
                 </Link>
+               
                 <div className="submenu">
                   <ul className="submenu-item text_lightgray">
                     <li className="nav-item">                     
@@ -75,7 +78,9 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
+              
               </li>
+              
               <li className="nav-item">
                 <Link className="nav-link" to="blog">
                   Blog
@@ -92,6 +97,10 @@ const Navbar = () => {
                 <LanguageDropdown />
               </li>
               <li className="nav-item">
+                <NotificationDropdown />
+              </li>
+              
+              {/* <li className="nav-item">
                 <Link to='/signup'>
                 <button className="btn s_btn" >Sign up</button>
                 </Link>
@@ -100,7 +109,7 @@ const Navbar = () => {
                 <Link to='/login'>
                 <button className="bg_lightgreen text-white c_btn">Login</button>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
