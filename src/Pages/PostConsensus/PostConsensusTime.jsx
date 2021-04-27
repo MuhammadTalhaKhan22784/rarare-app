@@ -12,7 +12,7 @@ const PostConsensusTime = () => {
   const history = useHistory();
   return (
     <React.Fragment>
-      <div className="post_home postconsensus_opt">
+      <div className="post_home postconsensus_opt pc_time">
         <div>
           <div className="post_header">
             <img src={postIcon} alt="posticon" />
@@ -27,6 +27,7 @@ const PostConsensusTime = () => {
           <div className="d_audience">
             <h2 className="text_darkblue fw-bold">Define Audience!</h2>
             <div className="d_aud_box">
+             <div className="da_1">
               <div
                 className={
                   show === "1"
@@ -99,7 +100,10 @@ const PostConsensusTime = () => {
                 />
                 10
               </div>
-              <input type="text" placeholder="Enter custom number" />
+              </div>
+              <div className="da_2">
+                <input type="text" placeholder="Enter custom number" />
+              </div>
             </div>
           </div>
           <div className="d_date_time">
@@ -115,7 +119,7 @@ const PostConsensusTime = () => {
                   <img src={IconCalendar} alt="" />
                 </div>
               </div>
-              <div className="dt_box_input mt-3">
+              <div className="dt_box_input m_dt_box_input mt-3">
                 <div className="co_option_box">
                   <select
                     className="form-select border_solid bluegreen_border text_lightgray"

@@ -16,7 +16,7 @@
   width: 450px;
   height: 100%;
   display: flex;
-  align-items: center ;
+  align-items: center;
   flex-direction: column;
   /* border: 2px solid red; */
 }
@@ -42,6 +42,15 @@
   border-radius: 3px;
   font-weight: 500;
   position: relative;
+}
+
+.s_box img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
 }
 
 .c_dot {
@@ -116,8 +125,8 @@
 }
 
 .form_btn button {
-  width: 100px;
-  height: 40px;
+  width: 112px;
+  height: 35px;
   color: white;
   font-weight: 500;
   border: none;
@@ -192,10 +201,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .sc_label {
   font-size: 0.8rem;
+  margin-left: 25px;
 }
 
 .sc_label > input[type="checkbox"] {
@@ -211,15 +222,18 @@
   background-color: white;
   border-radius: 10%;
   border: 1px solid #8792af;
+  position: absolute;
+  left: 0;
+  top: 1px;
 
   /* margin-right: 10px; */
 }
-.text_bluegreen{
-    color: #19c2a0 ;
+.text_bluegreen {
+  color: #19c2a0;
 }
-.text_lightgray{
-    color: #9fa8bf;
-    /* text-align: center; */
+.text_lightgray {
+  color: #9fa8bf;
+  /* text-align: center; */
 }
 .sc_label > input[type="checkbox"]:checked + *::before {
   content: "";
@@ -259,7 +273,6 @@
 .lgic_2 {
   top: 200px;
   left: 30px;
-
 }
 
 .lgic_3 {
@@ -270,4 +283,69 @@
 .lgic_4 {
   top: 20px;
   left: 120px;
+}
+
+/* media queries */
+
+@media (max-width: 991px) {
+  .login_img_content {
+    display: none;
+  }
+  .signup_form {
+    width: 100%;
+  }
+  .signup_img_content {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .s_form {
+    width: 330px;
+  }
+  .s_box {
+    width: 158px;
+    height: 34px;
+    font-size: 0.6rem;
+  }
+  .s_para p {
+    font-size: 0.7rem;
+  }
+  .s_box img {
+    width: 7px;
+    height: 7px;
+  }
+  .s_social_btn button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  .s_social_btn button span {
+    font-size: 0.8rem !important;
+  }
+  .s_form_fields input {
+    font-size: 0.8rem;
+  }
+  .form_btn button {
+    font-size: 0.8rem;
+  }
+  .s_text h2 {
+    font-size: 1.2rem;
+  }
+  .form_btn button {
+    width: 142px;
+  }
+  .s_label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .s_form {
+    width: 278px;
+  }
+  .s_box {
+    width: 134px;
+    height: 30px;
+  }
 }

@@ -25,7 +25,8 @@ const PostConsensusReceive = () => {
           <div className="kp_box">
             <div className="kp_h">
               <h2 className="text_darkblue lh-base">
-                Kent Park: Renovation work vs Kent School: Furniture Update
+                Kent Park: Renovation work 
+                {/* vs Kent School: Furniture Update */}
               </h2>
               <button className="border_solid bluegreen_border">
                 <img src={greenDot} alt="" />

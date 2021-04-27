@@ -8,7 +8,7 @@
 }
 
 .post_home > div {
-  width: 400px;
+  width: 645px;
 }
 
 .post_header {
@@ -63,14 +63,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 73% !important;
+  width: 65% !important;
   border-radius: 5px;
-  height: 160px;
-box-shadow: 0px 1px 10px -3px #00000038;
+  height: 133px;
+  overflow-x: hidden;
+  box-shadow: 0px 1px 10px -3px #00000038;
 }
 
 .cs_tab_box .c_dot {
-  right: -32px !important;
+  right: -26px !important;
 }
 
 .cs_tab_box img {
@@ -149,17 +150,17 @@ box-shadow: 0px 1px 10px -3px #00000038;
 }
 
 .pmap {
-    width: 100%;
-    object-fit: cover;
-    height: 140px;
-    margin: 0.2rem 0 2rem 0;
+  width: 100%;
+  object-fit: cover;
+  height: 140px;
+  margin: 0.2rem 0 2rem 0;
 }
 
 /*  */
 
 .post_receive {
   width: 100%;
-  height: max-content;
+  height: 100%;
   margin: 3rem 0;
   display: flex;
   justify-content: center;
@@ -195,14 +196,14 @@ box-shadow: 0px 1px 10px -3px #00000038;
 /* proposal consensus */
 
 .postconsensus_home {
-    width: 100%;
-    height: max-content;
-    margin: 4rem 0;
+  width: 100%;
+  height: max-content;
+  margin: 4rem 0;
 }
 
 .pp_tabs_main {
-  width: 750px;
-box-shadow: 0px 1px 10px -3px #00000038;
+  width: 100%;
+  box-shadow: 0px 1px 10px -3px #00000038;
   padding: 50px 20px;
 }
 
@@ -212,11 +213,51 @@ box-shadow: 0px 1px 10px -3px #00000038;
 /*  */
 
 .post_consensus > div {
-    width: 420px;
+  width: 420px;
 }
 
 .post_consensus .pcontinue_btn {
-    width: 75% !important;
-    /* display: flex; */
-    justify-content: space-around;
-} 
+  width: 75% !important;
+  /* display: flex; */
+  justify-content: space-around;
+}
+
+/* media queries */
+@media (max-width: 1326px) {
+  .post_home {
+    margin: 3rem 0;
+  }
+  .post_report {
+    margin: 6rem 0;
+  }
+}
+@media (max-width: 425px) {
+  .post_home > div {
+    width: 325px !important;
+  }
+  .post_header p {
+    text-align: center;
+  }
+  .post_home .cs_tab_box {
+    width: 70% !important;
+    height: 119px;
+  }
+  .post_home .cs_tab_box {
+    width: 80%;
+  }
+  .cs_tab_box .c_dot {
+    right: -22px !important;
+  }
+  .post_home .pcontinue_btn {
+    margin-top: 2rem;
+  }
+  .pr_frorm input {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .post_home > div {
+    width: 300px !important;
+  }
+}

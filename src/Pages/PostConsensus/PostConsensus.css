@@ -1,3 +1,7 @@
+.postconsensus_home > div {
+  width: 645px !important;
+}
+
 .co_box {
   width: 100%;
 }
@@ -53,10 +57,19 @@
 .d_aud_box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.da_1 {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+}
+.da_2 {
+  width: 31%;
 }
 
-.d_audience > .d_aud_box > .dnum_box {
-  width: 15%;
+.d_audience .da_1 > .dnum_box {
+  width: 20%;
   height: 40px;
   position: relative;
   font-size: 1.2rem;
@@ -92,19 +105,20 @@
   font-size: 0.9rem;
 }
 
-.d_audience > .d_aud_box > input::placeholder {
+.d_audience .da_2 input::placeholder {
   text-align: center;
   color: #8792af;
   font-size: 0.9rem;
 }
 
-.d_audience > .d_aud_box > input {
+.d_audience .da_2 input {
   border: 1px solid #9ba3cc !important;
   text-align: center;
   border-radius: 5px;
+  height: 40px;
 }
 
-.d_audience > .d_aud_box > input:focus {
+.d_audience .da_2 input:focus {
   outline: none;
 }
 
@@ -312,11 +326,198 @@
 .post_consensus_receive .pcontinue_btn button {
   width: 200px;
   height: 40px;
-  
+
   font-size: 0.8rem;
   margin: 0.5rem 0;
 }
 
 .pcon_btn button {
   width: max-content;
+}
+
+@media (max-width: 825px) {
+  .post_consensus_receive {
+    width: 95% !important;
+  }
+}
+@media (max-width: 700px) {
+  .postconsensus_home > div {
+    width: 490px !important;
+  }
+  .pp_tabs_main {
+    flex-wrap: wrap;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  .pp_tabs_main .cs_tab {
+    width: 46%;
+  }
+  .postconsensus_opt {
+    margin: 8rem 0;
+  }
+  .postconsensus_opt > div {
+    width: 508px !important;
+  }
+  .co_option_box .form-select {
+    height: 36px;
+    width: 141px;
+  }
+  .co_option_box > .full_input {
+    height: 100px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0.4em;
+    padding-right: 0.4em;
+  }
+  .d_audience {
+    width: 100%;
+  }
+  .d_aud_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .da_1 {
+    width: 100%;
+  }
+  .da_2 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .d_audience .da_2 input {
+    width: 100%;
+  }
+  .d_date_time {
+    width: 100%;
+  }
+  .dt_box {
+    width: 100%;
+  }
+  .dt_box_input {
+    flex-direction: column;
+  }
+  .input_img {
+    width: 100%;
+  }
+  .dt_box > .dt_box_input .input_img > input {
+    width: 100%;
+  }
+  .m_dt_box_input {
+    flex-direction: row;
+    width: 100%;
+  }
+  .m_dt_box_input .co_option_box {
+    width: 48%;
+  }
+  .other_setting {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .postconsensus_home > div {
+    width: 400px !important;
+  }
+  .pp_tabs_main .cs_tab_box {
+    height: 115px;
+  }
+  .pp_tabs_main .cs_tab_box .c_dot {
+    right: -19px !important;
+  }
+  .postconsensus_opt > div {
+    width: 396px !important;
+  }
+  .co_option_box > .full_input {
+    width: 58%;
+  }
+}
+
+@media (max-width: 425px) {
+  .post_consensus {
+    margin: 8rem 0;
+  }
+  .postconsensus_home > div {
+    width: 360px !important;
+  }
+  .post_consensus .pcontinue_btn {
+    flex-direction: column-reverse;
+  }
+  .post_consensus .pcontinue_btn button {
+    margin: 0.5rem 0;
+  }
+  .postconsensus_opt .cs_text h2 {
+    font-size: 1rem;
+  }
+  .postconsensus_opt > div {
+    width: 340px !important;
+  }
+  .co_option_box .form-select {
+    width: 134px;
+    font-size: 0.8rem;
+  }
+  .postconsensus_opt .pcontinue_btn {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .postconsensus_opt .pcontinue_btn .me-3 {
+    margin-right: 0 !important;
+  }
+  .postconsensus_opt .pcontinue_btn button {
+    margin: 0.5rem 0 !important;
+  }
+  .pc_time {
+    margin: 12rem 0;
+  }
+  .kp_h h2 {
+    font-size: 0.9rem !important;
+  }
+  .kp_h button img {
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 395px) {
+  .pp_tabs_main {
+    padding: 50px 5px;
+  }
+  .postconsensus_home > div {
+    width: 320px !important;
+  }
+  .pp_tabs_main .cs_tab_box {
+    height: 102px;
+  }
+  .pp_tabs_main .cs_tab_text h2 {
+    font-size: 0.7rem;
+  }
+  .pp_tabs_main .cs_tab_text p {
+    font-size: 0.7rem;
+  }
+  .postconsensus_opt > div {
+    width: 294px !important;
+  }
+  .co_option_box > .full_input {
+    width: 50%;
+  }
+  .p_receive_main p {
+    font-size: 0.6rem !important;
+}
+.post_consensus_receive {
+  width: 92% !important;
+}
+}
+
+@media (max-width: 350px) {
+  .postconsensus_home > div {
+    width: 291px !important;
+  }
+  .postconsensus_home .cs_tab_box {
+    width: 77% !important;
+  }
+  .kp_h h2 {
+    font-size: 0.7rem !important;
+  }
+  .post_consensus_receive {
+    width: 91% !important;
+}
 }

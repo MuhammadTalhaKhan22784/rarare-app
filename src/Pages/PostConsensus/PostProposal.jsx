@@ -19,7 +19,7 @@ const PostProposal = () => {
           <div className="post_header">
             <img src={undrawVoting} alt="posticon" />
             <h2 className="text_darkblue">
-              Post a <strong className="text_lightpurple">Report!</strong>
+              Post a <strong className="text_lightpurple">Proposal!</strong>
             </h2>
             <p className="text_lightgray">
               Get your ideas to other people. Post something that matters!

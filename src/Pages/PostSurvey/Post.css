@@ -61,12 +61,12 @@
   justify-content: space-between;
 }
 
-.cs_tab {
+/* .cs_tab {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .cs_tab_box {
   display: flex;
@@ -88,11 +88,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.cs_tab_text h2 {
-  font-size: 1.3rem;
-  margin-top: 1rem;
 }
 
 .cs_tab_text p {
@@ -162,7 +157,7 @@
 
 .post_receive {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,9 +194,9 @@
 }
 
 .pp_tabs_main {
-  width: 800px;
+  /* width: 800px; */
   box-shadow: 1px -1px 10px -3px #ccc;
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
 }
 
 .postconsensus_home .pcontinue_btn button {
@@ -210,7 +205,7 @@
 /*  */
 
 .post_consensus > div {
-  width: 420px;
+  /* width: 420px; */
 }
 
 .post_consensus .pcontinue_btn {
