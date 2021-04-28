@@ -1,66 +1,142 @@
-.proposal_component_right {
-  /* border:2px solid green; */
-  padding-top: 70px;
+.ProposalComponent_card_content{
+    display:flex;
+    justify-content: space-around;
+    padding:4px
+    ; 
+    padding-top: 20px;
+}
+.ProposalComponent_card{
+    background-color:lightgray;
+    padding-top: 8px;
+    /* padding:10px; */
+    box-shadow: 1px -1px 10px -3px #ccc;
+    /* background-color:#F5F5F9; */
+    padding-left: 2px;
+  
+  
+}
+.Proposal_component_card{
+    
+   
 }
 
-.slider {
-  width: 86%;
-  height: 360px;
+.comments{
+    border:2px solid lightgray;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
 }
 
-.slider_down_border,
-.slider_down_image1 {
-  /* border:2px solid blue; */
-  width: 200px;
-  height: 140px;
-  padding: 10px;
-}
-.slider_down_images {
-  padding: 25px;
+
+.input_comment{
+    padding: 21px;width:85%;border:none
 }
 
-.proposalComponent_card_content button {
-  width: 143px;
-  height: 30px;
+.input_comment:hover{
+    border:none
 }
+.card_review_component{
+   display:flex;
+   justify-content: space-between;
+   font-size: 0.8rem;
+}
+
+.card_content_component{
+    padding-top: 22px;
+    padding: 13px;
+    justify-content: center;
+    font-size:14px;
+}
+
+.card_review_component_text{
+   margin-top: -12px;
+}
+
+.btn1:focus{
+background-color: #45C1A1!important;color:white !important;
+}
+.btn_same2:focus{background-color: #45C1A1!important;color:white !important;}
+.btn_same:focus{
+    background-color: #45C1A1!important;color:white !important;
+}
+
+.btn_same,.btn1{
+    width:130px
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
-  .carouse {
-    width: fit-content;
-    margin-left: 12px !important;
-  }
-  .slider_down_images {
-    margin-bottom: 50px !important;
-  }
-  .slider_down_border {
-    width: 350px;
-  }
-  .slider_down_image1 {
-    width: 110px !important;
-    /*
-         border:2px solid green */
+    .Proposal_component_card{
+    width:100%;
+    font-size: 14px;height:370px;
+    padding-bottom: 10px;
+    }
+  .btn1{
+          width:20px!important;font-size: 11px!important;margin-left: 12px;
+   }
+   .btn_same{ width:80px!important;font-size: 9px!important}
+
+.btn_same2{ width:97px!important;font-size: 11px!important;}
+   .icon_responsive{
+       font-size: 17px!important;
+       width:16px!important
+   }
+
+
+   .input_comment{padding:20px!important;width:78%}
+
+   /* .responsive_send_icon{
+       font-size: 12px!important;
+   } */
+
+   .card_content_component{
+    overflow-y: scroll;
+   }
+   .ProposalComponent_card_content{
+       display: flex;justify-content: space-evenly;
+   }
+
+
+   
   }
 
-  .proposal_component_right {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
 
-@media only screen and (max-width: 480px) {
-  .carousel-inner,
-  #carouselExampleIndicators {
-    width: 350px !important;
-    text-align: center !important;
-    margin-left: 12px;
-    margin-right: 5px;
-  }
-  .proposal_component_right {
-    border: 1px solid blue;
-  }
-  .carousel-control-prev-icon {
-    margin-left: 22px !important;
-  }
+
+@media only screen and (max-width: 390px) {
+    .card_review_component_text{
+        font-size: 0.7rem!important;
+    }
+    .Proposal_component_card{
+    width:100%;
+    font-size: 12px;height:370px;
+    padding-bottom: 10px;
+    }
+   .btn_same{
+          width:74px!important;
+          font-size: 9px!important;
+   }
+
+   .btn1{
+       widows: 10px !important;font-size: 9px!important;padding: 0!important;}
+.btn_same2{ width:10px!important;font-size: 8px!important;}
+   .icon_responsive{
+       font-size: 12px!important;
+       width:10px!important
+   }
+
+   .responsive_send_icon{
+       font-size: 14px!important;
+   }
+
+   .responsive_smie_icon{
+       font-size: 14px!important;
+   }
+
+   .input_comment{
+       font-size: 13px!important;
+   }
+
+
 }

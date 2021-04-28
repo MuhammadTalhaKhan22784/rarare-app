@@ -24,17 +24,54 @@ const NotificationDropdown = () => {
           className="dropdown-menu notification_menu"
           aria-labelledby="dropdownMenuButton1"
         >
-          <h2>Select a Language</h2>
+          <h2>Unread Notification</h2>
           <li>
             <div className="notif_title">
               <div className="nt_head">
-                <h6>Notification Title</h6>
-                <span>April,2021</span>
+                <h6 className="text_darkblue">Notification Title</h6>
+                <span className="text_lightgray">April,2021</span>
               </div>
-              <p>
+              <p className="text_darkgray">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit Beatae.
               </p>
             </div>
+          </li>
+          <li>
+            <div className="notif_title">
+              <div className="nt_head">
+                <h6 className="text_darkblue">Notification Title</h6>
+                <span className="text_lightgray">April,2021</span>
+              </div>
+              <p className="text_darkgray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Beatae.
+              </p>
+            </div>
+          </li>
+          <h2>Unread Notification</h2>
+          <li>
+            <div className="notif_title">
+              <div className="nt_head">
+                <h6 className="text_darkblue">Notification Title</h6>
+                <span className="text_lightgray">April,2021</span>
+              </div>
+              <p className="text_darkgray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="notif_title light_purple">
+              <div className="nt_head">
+                <h6 className="text_darkblue">Notification Title</h6>
+                <span className="text_lightgray">April,2021</span>
+              </div>
+              <p className="text_darkgray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Beatae.
+              </p>
+            </div>
+          </li>
+          <li>
+              <h6 className="va_text text-center text_bluegreen">view all</h6>
           </li>
         </ul>
       </div>

@@ -7,12 +7,13 @@ import image3 from "../../../Assets/Rectangle 109.png";
 function ProposalComponentRight() {
   return (
     <>
-      <div className="proposal_component_right">
-        <div>
+      <div className="Rant_component_right">
+        <div className="slider_div">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
             data-bs-ride="carousel"
+            data-bs-interval="false"
           >
             <div class="carousel-indicators">
               <button
@@ -55,18 +56,13 @@ function ProposalComponentRight() {
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src={image}
-                  class="d-block img-fluid"
-                  style={{ width: "100%", height: "70vh" }}
-                  alt="..."
-                />
+                <img src={image} class="d-block img-fluid" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src={image} class="d-block w-100" alt="..." />
+                <img src={image} class="d-block w-100 img-fluid" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src={image} class="d-block w-100" alt="..." />
+                <img src={image} class="d-block w-100 img-fluid" alt="..." />
               </div>
             </div>
             <button
@@ -103,12 +99,22 @@ function ProposalComponentRight() {
             <img className="slider_down_image1" src={image1}></img>
             <img className="slider_down_image1" src={image2}></img>
             <img className="slider_down_image1" src={image3}></img>
-          </div>
-          <div className="slider_down_border" style={{ display: "flex" }}>
             <img className="slider_down_image1" src={image1}></img>
             <img className="slider_down_image1" src={image2}></img>
+            <img className="slider_down_image1" src={image2}></img>
           </div>
+          {/* <div className="slider_down_border" style={{ display: "flex" }}>
+          
+          </div> */}
         </div>
+{/* 
+        <div className="image_gallery d-flex">
+          <div className="slider_down_border">
+              <img className="slider_down_image1" src={image1}></img>
+              <img className="slider_down_image1" src={image1}></img>
+              <img className="slider_down_image1" src={image1}></img>
+          </div>
+        </div> */}
       </div>
     </>
   );

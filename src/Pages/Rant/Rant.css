@@ -1,55 +1,66 @@
-.Proposal {
+.Rant {
   display: flex;
   justify-content: center;
   /* border:2px solid blue; */
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
+  width: 100%;
 }
 
-.Proposal_content_left {
+.Rant_content_left {
   /* border:2px solid red; */
-  flex: 0.5;
+  flex: 0.4;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   /* align-items: center; */
   padding: 30px;
   flex-wrap: wrap;
+  width: 100%;
 }
-.Proposal_title {
-  text-align: start;
-  margin-left: 120px;
+.Rant_title {
+  align-items: flex-end !important;
+  margin-left: 79px !important;
+  /* border:2px solid blue; */
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
-.Proposal_left_title {
-  font-size: 1rem;
-  /* font-weight: bold; */
+.Rant_title > p {
+  margin-top: 0px;
 }
 
-.Proposal_card {
+.Rant_left_title {
+  color: rgb(144, 155, 209);
+  font-size: 18px;
+}
+
+.Rant_card {
   padding: 20px;
   width: 500px;
-  height: 257px;
-  box-shadow: 0px 1px 10px -3px #00000038 !important;
-
+  box-shadow: 0px 0px 5px gainsboro !important;
 }
 
-.proposal_card_div {
+.Rant_card_div {
   /* text-align: end; */
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 
-.card_content {
+.Rcard_content {
   display: flex;
+  align-items: center;
+  margin: 10px 0;
   justify-content: space-between;
 }
 
-.Proposal_left_titleSpan {
-  font-size: 1rem;
-  font-weight: bold;
+.Rant_left_titleSpan {
+  font-size: 18px;
+  color: #45c1a1;
 }
 
-.Proposal_content_right {
+.Rant_content_right {
   /* border:2px solid red; */
   flex: 0.5;
 }
@@ -59,60 +70,146 @@
   display: flex;
 }
 
-.card_contentLast_row {
+.Rcard_contentLast_row {
   display: flex;
   justify-content: space-around;
-  align-items: flex;
+  align-items: center;
   padding-top: 10px;
 }
 
-.card_icon_space {
+.Rcard_icon_space {
   padding-left: 4px;
 }
 
-.proposal_component_card {
+.Rant_component_card {
   /* border:2px solid green; */
   width: 500px;
-  margin-top: 10px;
-  /* padding: 20px; */
+  padding: 20px 0;
 }
 
-.card_content_component {
+.Rcard_content_component {
   display: flex;
   flex-direction: column;
 }
 
-.proposal_component_main {
+.Rant_component_main {
   display: flex;
   /* border:2px solid green; */
   justify-content: flex-end;
   margin-top: 15px;
+  width: 100%;
+}
+
+@media (max-width: 930px) {
+  .Rant {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Rant_card_div {
+    justify-content: center;
+  }
+  .Rant_component_main {
+    justify-content: center;
+  }
+  .img-fluid {
+    width: 100% !important;
+  }
+  .carousel-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .slider_down_images {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .Rant_content_right {
+    flex: unset !important;
+
+    text-align: center !important;
+    /* margin-left: 12px; */
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .Proposal_card {
-    width: 340px;
+  .Rant_card {
+    width: 100%;
     font-size: 14px;
-    height: 370px;
+    height: max-content !important;
     padding-bottom: 10px;
   }
-  .Proposal_title {
+  .Rant_title {
     margin-left: 0;
   }
-  .text_size_responsive {
-    font-size: 11px !important;
+  .Rtext_size_responsive {
+    font-size: 0.7rem !important;
+    margin: 0;
   }
-  .title_responsive {
+  .Rtitle_responsive {
     font-size: 18px;
   }
-
-  .icon_size_responsive {
+  .Rant_content_left {
+    padding: 30px 17px;
+  }
+  .Ricon_size_responsive {
     font-size: 10px;
     color: red;
     width: 13px;
   }
 
-  .icon_size_responsiveuser {
+  .Ricon_size_responsiveuser {
     width: 20px;
   }
+}
+
+@media only screen and (max-width: 390px) {
+  .Rant_card {
+    font-size: 14px;
+    height: 370px;
+    padding: 10px 8px !important;
+  }
+  .Rant_title {
+    margin-left: 0;
+  }
+  .Rtext_size_responsive {
+    font-size: 11px !important;
+  }
+  .Rtitle_responsive {
+    font-size: 18px;
+  }
+
+  .Ricon_size_responsive {
+    font-size: 0.6rem !important;
+    color: red;
+    width: 14px !important;
+  }
+  .Rtitle_responsive {
+    font-size: 0.7rem !important;
+  }
+
+  .Ricon_size_responsiveuser {
+    width: 20px;
+  }
+
+  .card_icon_space svg {
+      height: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+    .Rtext_size_responsive {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+  /* .Ricon_size_responsive {
+    font-size: 12px !important;
+    color: red;
+    width: 12px !important;
+  } */
 }

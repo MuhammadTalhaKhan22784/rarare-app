@@ -9,94 +9,121 @@ import shareIcon from "../../../Assets/Icon awesome-share.png";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import FavoriteOutlinedIcon from "@material-ui/icons/FavoriteOutlined";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-
+import {FaShare} from "react-icons/fa";
 function proposal_component() {
+  function defaultColor1() {
+    document.getElementById("Rbtn-change-color1").style.color = "#D3D3D3";
+  }
+  function changeColor1() {
+    document.getElementById("Rbtn-change-color1").style.color = "white";
+  }
+
+  function defaultColor2() {
+    document.getElementById("Rbtn-change-color2").style.color = "#D3D3D3";
+  }
+  function changeColor2() {
+    document.getElementById("Rbtn-change-color2").style.color = "white";
+  }
+
+  function defaultColor() {
+    document.getElementById("Rbtn-change-color3").style.color = "#D3D3D3";
+  }
+  function changeColor() {
+    document.getElementById("Rbtn-change-color3").style.color = "white";
+  }
+
   return (
-    <div className="proposal_component_card">
+    <div className="Rant_component_card">
       <Card
-        className="proposalComponent_card"
+        className="RantComponent_card"
         style={{
           backgroundColor: "#F5F5F9",
           boxShadow: "1px -1px 10px -3px #ccc",
         }}
       >
-        <div className="proposalComponent_card_content">
+        <div className="RantComponent_card_content">
           <Button
-            variant="contained"
-            style={{
-              backgroundColor: "white",
-              fontSize: "0.9rem",
-              textTransform: "initial",
+            onMouseOut={() => {
+              defaultColor2();
             }}
-            className="btn1 fw-bold"
+            onFocus={() => {
+              changeColor2();
+            }}
+            variant="contained"
+            style={{ backgroundColor: "white" }}
+            className="Rbtn1"
           >
             <FavoriteOutlinedIcon
-              className="icon_responsive"
+              id="Rbtn-change-color2"
+              className="Ricon_responsive"
               style={{ color: "#D3D3D3", fontSize: "19px" }}
             />
-            &nbsp;<span className="text_darkgray">Like</span>
+            &nbsp;Like
           </Button>
           <Button
-            variant="contained"
-            style={{
-              backgroundColor: "white",
-              fontSize: "0.9rem",
-              textTransform: "initial",
+            onMouseOut={() => {
+              defaultColor1();
             }}
-            className="btn_same2 fw-bold"
+            onFocus={() => {
+              changeColor1();
+            }}
+            variant="contained"
+            style={{ backgroundColor: "white" }}
+            className="Rbtn_same2"
           >
             <ChatBubbleIcon
-              className="icon_responsive"
+              id="Rbtn-change-color1"
+              className="Ricon_responsive"
               style={{ color: "#D3D3D3", fontSize: "19px" }}
             />
-            &nbsp;<span className="text_darkgray">Comments</span>
+            &nbsp;Comments
           </Button>
+
           <Button
-            variant="contained"
-            style={{
-              backgroundColor: "white",
-              fontSize: "0.9rem",
-              textTransform: "initial",
+            onMouseOut={() => {
+              defaultColor();
             }}
-            className="btn_same fw-bold"
+            onFocus={() => {
+              changeColor();
+            }}
+            variant="contained"
+            style={{ backgroundColor: "white" }}
+            className="Rbtn_same"
           >
-            <img
-              className="icon_responsive"
-              style={{ width: "14px" }}
-              src={shareIcon}
-            ></img>
-            &nbsp;<span className="text_darkgray">Share</span>
+            <FaShare
+              id="Rbtn-change-color3"
+              className="Ricon_responsive"
+              style={{ width: "14px", color: "#D3D3D3" }}
+            ></FaShare>
+            &nbsp;Share
           </Button>
         </div>
-        <div className="card_content_component">
+        <div className="Rcard_content_component">
           {[1, 2, 3].map((val) => {
             return (
               <>
-                <div className="card_review_component">
+                <div className="Rcard_review_component align-items-center ">
                   <p style={{ display: "flex", alignItems: "center" }}>
                     <span>
                       <img src={userImage}></img>
                     </span>
                     <span
-                      className="text_darkgray fw-bold"
-                      style={{ padding: "3px", fontSize: "0.8rem" }}
+                      className="Rcard_review_component_text"
+                      style={{ padding: "3px" }}
                     >
                       &nbsp;Username
                     </span>
                   </p>
-                  <p className="text_lightgray" style={{ fontSize: "0.8rem" }}>
+                  <p
+                    className="Rcard_review_component_text"
+                    style={{ fontSize: "13px", color: "gray" }}
+                  >
                     05:00 PM / May , 1 , 2021
                   </p>
                 </div>
-                <div
-                  className="card_review_component_text text_lightgray"
-                  style={{ fontSize: "0.8rem", marginTop: "2px" }}
-                >
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam
+                <div className="Rcard_review_component_text">
+                  we need this beautiful desigwe need this beautiful design
                 </div>
-
                 <br></br>
               </>
             );
@@ -104,24 +131,21 @@ function proposal_component() {
         </div>
       </Card>
 
-      <div className="comments">
-        <input
-          className="input_comment"
-          placeholder="Post a Comment here"
-        ></input>
-        <div className="hr_space" style={{ paddingLeft: "1px" }}>
+      <div className="Rcomments">
+        <input className="Rinput_comment" placeholder="Post a Comment "></input>
+        <div className="Rhr_space" style={{ paddingLeft: "1px" }}>
           <span
-            className="hr_space"
+            className="Rhr_space"
             style={{ paddingLeft: "2px", paddingRight: "2px" }}
           >
-            <InsertEmoticonIcon />
+            <InsertEmoticonIcon className="Rresponsive_smie_icon" />
           </span>
           &nbsp;
           <span style={{ border: "1px solid gray", height: "42px" }}></span>
           &nbsp;
           <span>
             <SendIcon
-              className="responsive_send_icon"
+              className="Rresponsive_send_icon"
               style={{ color: "#45C1A1" }}
             />
           </span>

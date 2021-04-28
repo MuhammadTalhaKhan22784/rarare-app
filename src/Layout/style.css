@@ -59,7 +59,7 @@
   border-top: none;
   border-radius: 4px;
   transition: 0.2s all ease-out;
-  box-shadow: 1px 0 20px rgb(0 0 0 / 8%);
+  box-shadow: 0px 0px 10px gainsboro;
 }
 .nav-item:hover .submenu {
   display: block;
@@ -139,35 +139,104 @@
 }
 
 .notification_menu {
+  left: -240px !important;
   height: max-content;
-  padding-top: 15px;
+  padding: 15px 10px;
   width: 300px;
   border-radius: 5px;
+  background-color: white;
   border: none;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-shadow: 1px 0 20px rgb(0 0 0 / 8%);
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.notification_menu li {
+  margin: 1rem 0;
 }
 
 .notification_menu h2 {
   font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
 }
 
 .notif_title {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #e8f9f5;
+  padding: 10px 5px;
 }
 
 .nt_head {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nt_head h6,
+.va_text {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.nt_head span {
+  font-size: 0.8rem;
 }
 
 .notif_title p {
   font-size: 0.8rem;
+  margin: 0;
 }
+
+/*  */
+
+.cart_menu {
+  width: 200px;
+  height: max-content;
+  padding: 1rem 0;
+  border: none;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.cart_content {
+  width: 95%;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart_content h6 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.cart_content h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cart_content span {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.cart_content hr{
+  width: 100%;
+}
+
+.cart_content button {
+  width: 100%;
+  height: 35px;
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
 /* .submenu .nav-link {
   position: relative;
 }
@@ -290,4 +359,50 @@
 
 .backtop {
   font-size: 0.8rem;
+}
+
+.mob_nav_collapse {
+  display: none;
+}
+
+.mob_nav {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-left: 2rem;
+  }
+  .c_navbar {
+    height: 64px;
+    box-shadow: 0px 0px 10px gainsboro;
+  }
+  .c_navbar .container {
+    max-width: 100% !important;
+    padding: 0;
+  }
+  .desk_nav_collapse {
+    display: none;
+  }
+  .mob_nav_collapse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mob_nav {
+    box-shadow: 0px 0px 10px gainsboro;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: max-content;
+    background: white;
+    padding: 2rem 0;
+    line-height: 2rem;
+    z-index: 1;
+  }
+  .mob_nav .c_btn {
+    height: 33px;
+  }
 }

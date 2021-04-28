@@ -1,14 +1,14 @@
 import React from 'react'
-import "./ProposalRightBottom.css"
+import "./Participate.css"
 import Card from '@material-ui/core/Card';
-import "../../../App.css"
+// import "../../../App.css"
 import Button from '@material-ui/core/Button'
 
-function ProposalRightBottom() {
+function Participate() {
     return (
-        <div className="proposalRightBottom">
-             <Card className="card"> 
-                <h3 >  Your Participation</h3>
+        <div className="ParticipateRightBottom">
+             <Card className="Participate_card"> 
+                <h3 className="text_participate">  Your Participation</h3>
                 <hr style={{width:"100%"}}></hr>
            
                 <p className="text_lightgray" style={{fontSize:"0.9rem",marginTop:"9px"}} >Hey , I want this design in my website but change the color theme</p>
@@ -35,4 +35,4 @@ function ProposalRightBottom() {
     )
 }
 
-export default ProposalRightBottom
+export default Participate
