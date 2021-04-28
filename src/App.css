@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul{
+ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -45,7 +45,7 @@ body {
 }
 
 .light_purple {
-  background-color: #F5F6FA !important;
+  background-color: #f5f6fa !important;
 }
 
 /* text colors */
@@ -120,7 +120,6 @@ body {
 
 .num_form {
   width: 100% !important;
-
 }
 
 /* width */
@@ -157,9 +156,8 @@ body {
   height: 146px;
 }
 
-.logco_modal_dialog .cs_tab_box .c_dot{
+.logco_modal_dialog .cs_tab_box .c_dot {
   right: -22px !important;
-
 }
 
 .logco_modal_dialog .cs_tab {
@@ -179,7 +177,7 @@ body {
 
 .logco_modal_dialog .cs_tab_box > div {
   top: 0;
-  left: 0;
+  left: -22px;
   position: absolute;
 }
 
@@ -187,9 +185,9 @@ body {
   transform: rotate(-45deg);
   margin: 0;
   position: absolute;
-  top: 18px;
+  top: 16px;
   font-size: 0.8rem;
-  left: -6px;
+  left: 18px;
 }
 
 .logco_modal_dialog .cs_tab_box {
@@ -221,8 +219,13 @@ body {
   margin-top: 1rem !important;
 }
 
-/* second modal */
+.logco_modal_dialog .cs_tab_box img {
+  width: 60%;
+  left: 0px;
+  top: 10px;
+}
 
+/* second modal */
 
 .lmd2_dialog .cs_tab {
   width: 99%;

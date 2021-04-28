@@ -1,5 +1,14 @@
 import React from "react";
 import "./Pricing.css";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+
+// import 'swiper/swiper.scss';
+import "swiper/swiper-bundle.css";
+// import 'swiper/swiper-bundle.min.css'
+import "swiper/swiper-bundle.css";
 // assets
 import priceMain1 from "../../Assets/price_1.png";
 import tickImage from "../../Assets/tick.png";
@@ -11,6 +20,11 @@ import appStoreIcon from "../../Assets/App store Icons.png";
 import mdmBox from "../../Assets/mdm_box.png";
 import watchVideo from "../../Assets/watch_vid.png";
 import priceTick from "../../Assets/price_tick.png";
+import price_2 from "../../Assets/price_2.png";
+import price_3 from "../../Assets/price_3.png";
+import price_4 from "../../Assets/price_4.png";
+import pback0 from "../../Assets/pback0.png";
+SwiperCore.use([Pagination]);
 
 const Pricing = () => {
   return (
@@ -19,9 +33,11 @@ const Pricing = () => {
         <div className="price_main_1">
           <div className="price_main_1_content container">
             <div className="row">
-              <div className="col-lg-3">
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 gy-4">
                 <div className="price_main_card">
-                  <img src={priceMain1} alt="price" />
+                  <div className="pback_img pback_img_1">
+                    <img className="pfront_img" src={priceMain1} alt="price" />
+                  </div>
                   <h2>Simple</h2>
                   <div className="price_main_card_content">
                     <ul>
@@ -57,10 +73,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 gy-4">
                 <div className="price_main_card">
-                  <img src={priceMain1} alt="price" />
-                  <h2>Simple</h2>
+                  <div className="pback_img pback_img_2">
+                    <img className="pfront_img" src={price_2} alt="price" />
+                  </div>
+                  <h2>Secure</h2>
                   <div className="price_main_card_content">
                     <ul>
                       <li>
@@ -95,10 +113,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 gy-4">
                 <div className="price_main_card">
-                  <img src={priceMain1} alt="price" />
-                  <h2>Simple</h2>
+                  <div className="pback_img pback_img_3">
+                    <img className="pfront_img" src={price_3} alt="price" />
+                  </div>{" "}
+                  <h2>Auditable</h2>
                   <div className="price_main_card_content">
                     <ul>
                       <li>
@@ -133,10 +153,23 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 gy-4">
                 <div className="price_main_card">
-                  <img src={priceMain1} alt="price" />
-                  <h2>Simple</h2>
+                  <div className="pback_img pback_img_4">
+                    <img
+                      className="pfront_img position-relative"
+                      style={{ marginLeft: "-10px" }}
+                      src={pback0}
+                      alt="price"
+                    />
+                    <img
+                      className="pfront_img1 position-absolute"
+                      style={{ marginLeft: "-5px", width: "60px" }}
+                      src={price_4}
+                      alt="price"
+                    />
+                  </div>{" "}
+                  <h2>Governance</h2>
                   <div className="price_main_card_content">
                     <ul>
                       <li>
@@ -208,7 +241,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="mdm_section">
-          <div className="mdm_container container">
+          <div className="mdm_container">
             <div className="mdm_card">
               <img src={mdmBox} alt="" />
               <h2 className="text_darkblue fw-bold">MDM Feature</h2>
@@ -292,146 +325,152 @@ const Pricing = () => {
               </p>
             </div>
             <div className="price_card_section">
-              <div className="price_card">
-                <h2 className="text_bluegreen fw-bold">Basic</h2>
-                <img className="prbox" src={enBox1} alt="enbox2" />
-                <span className="fw-bold text_darkblue">$1.50/Device</span>
-                <p className="text_lightgray">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy
-                </p>
-                <div className="prcard_content">
-                  <ul className="text_lightgray">
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pcard_btn">
-                  <button type="button" className="bg_lightgreen">
-                    Button here
-                  </button>
-                </div>
-              </div>
-
-              <div className="price_card">
-                <h2 className="text_bluegreen fw-bold">Basic</h2>
-                <img className="prbox" src={enBox1} alt="enbox2" />
-                <span className="fw-bold text_darkblue">$1.50/Device</span>
-                <p className="text_lightgray">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy
-                </p>
-                <div className="prcard_content">
-                  <ul className="text_lightgray">
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pcard_btn">
-                  <button type="button" className="bg_lightgreen">
-                    Button here
-                  </button>
-                </div>
-              </div>
-
-              <div className="price_card">
-                <h2 className="text_bluegreen fw-bold">Basic</h2>
-                <img className="prbox" src={enBox1} alt="enbox2" />
-                <span className="fw-bold text_darkblue">$1.50/Device</span>
-                <p className="text_lightgray">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy
-                </p>
-                <div className="prcard_content">
-                  <ul className="text_lightgray">
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                    <li>
-                      <img src={priceTick} alt="tick" />
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonum
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pcard_btn">
-                  <button type="button" className="bg_lightgreen">
-                    Button here
-                  </button>
-                </div>
-              </div>
+              <Swiper>
+                <SwiperSlide>
+                  <div className="price_card">
+                    <h2 className="text_bluegreen fw-bold">Basic</h2>
+                    <img className="prbox" src={enBox1} alt="enbox2" />
+                    <span className="fw-bold text_darkblue">$1.50/Device</span>
+                    <p className="text_lightgray">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy
+                    </p>
+                    <div className="prcard_content">
+                      <ul className="text_lightgray">
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="pcard_btn">
+                      <button type="button" className="bg_lightgreen">
+                        Button here
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="price_card">
+                    <h2 className="text_bluegreen fw-bold">Basic</h2>
+                    <img className="prbox" src={enBox1} alt="enbox2" />
+                    <span className="fw-bold text_darkblue">$1.50/Device</span>
+                    <p className="text_lightgray">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy
+                    </p>
+                    <div className="prcard_content">
+                      <ul className="text_lightgray">
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="pcard_btn">
+                      <button type="button" className="bg_lightgreen">
+                        Button here
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="price_card">
+                    <h2 className="text_bluegreen fw-bold">Basic</h2>
+                    <img className="prbox" src={enBox1} alt="enbox2" />
+                    <span className="fw-bold text_darkblue">$1.50/Device</span>
+                    <p className="text_lightgray">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy
+                    </p>
+                    <div className="prcard_content">
+                      <ul className="text_lightgray">
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                        <li>
+                          <img src={priceTick} alt="tick" />
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonum
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="pcard_btn">
+                      <button type="button" className="bg_lightgreen">
+                        Button here
+                      </button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>

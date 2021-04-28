@@ -10,6 +10,7 @@ import rarareLogo from "../Assets/logo_rarare.png";
 import LanguageDropdown from "../Components/Dropdown/LanguageDropdown.jsx";
 import NotificationDropdown from "../Components/Dropdown/NotificationDropdown";
 import CartDropdown from "../Components/Dropdown/CartDropdown";
+import SearchDropdown from "../Components/Dropdown/SearchDropdown";
 
 const Navbar = () => {
   return (
@@ -80,9 +81,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Search
-                </Link>
+               
+                <SearchDropdown />
+
               </li>
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
