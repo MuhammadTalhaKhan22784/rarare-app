@@ -65,66 +65,62 @@ const SearchDropdown = () => {
 
               <div className="af_submenu">
                 <ul className="af_submenu-item text_lightgray">
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          All{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          Rants{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          Raves{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          Surveys{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          Polls{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="s_checkbox">
-                      <label className="sc_label text_lightgray">
-                        <input type="checkbox" name="key" value="value" />
-                        <span className="text_black fw-bold">
-                          Delibrations{" "}
-                        </span>
-                      </label>
-                    </div>
-                  </li>
+                  <div className="af_smi_1">
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">All </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">Rants </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">Raves </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">Surveys </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">Polls </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="s_checkbox">
+                        <label className="sc_label text_lightgray">
+                          <input type="checkbox" name="key" value="value" />
+                          <span className="text_black fw-bold">
+                            Delibrations{" "}
+                          </span>
+                        </label>
+                      </div>
+                    </li>
+                  </div>
+                  <div className="af_smi_2">
+                    <button className="bg_lightgreen border_none text-white">Apply Filters</button>
+                    <span className="text_bluegreen">Reset Filters</span>
+                  </div>
                 </ul>
               </div>
             </li>
