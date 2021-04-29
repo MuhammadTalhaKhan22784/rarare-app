@@ -332,12 +332,13 @@
 }
 .af_submenu {
   width: 100%;
+  height: 100px;
   position: absolute;
   top: 88px;
   left: 0;
   display: none;
   z-index: 999;
-  background: white;
+  background: #F3F4F7;
   border-top: none;
   border-radius: 4px;
   transition: 0.2s all ease-out;
@@ -349,19 +350,20 @@
 }
 
 .af_submenu .af_submenu-item {
-  width: 300px;
+  width: 60%;
+  margin: 0 auto;
   padding-left: 0px !important;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
-
+/* 
 .advance-filter .af_submenu .af_submenu-item .nav-item {
   margin: 0.5rem auto;
   font-size: 0.9rem;
-}
+} */
 
 
 /* .submenu .nav-link {

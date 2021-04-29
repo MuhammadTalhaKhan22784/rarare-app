@@ -65,12 +65,66 @@ const SearchDropdown = () => {
 
               <div className="af_submenu">
                 <ul className="af_submenu-item text_lightgray">
-                  <li className="nav-item">Mobile Device Management</li>
-                  <li className="nav-item">Connectivity Enabled Healthcare</li>
-                  <li className="nav-item">Citizen Engagment</li>
-                  <li className="nav-item">Online Consensus Forming</li>
-                  <li className="nav-item">Particularly Budgeting</li>
-                  <li className="nav-item">Democratic Technology</li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          All{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          Rants{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          Raves{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          Surveys{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          Polls{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="s_checkbox">
+                      <label className="sc_label text_lightgray">
+                        <input type="checkbox" name="key" value="value" />
+                        <span className="text_black fw-bold">
+                          Delibrations{" "}
+                        </span>
+                      </label>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </li>
