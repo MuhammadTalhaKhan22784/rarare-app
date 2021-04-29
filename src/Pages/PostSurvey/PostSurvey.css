@@ -1,0 +1,513 @@
+/* .post_home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .post_home > div {
+  width: 400px;
+} */
+
+.post_surveyh > div {
+  width: 500px !important;
+}
+
+/* .post_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post_header img {
+  width: 110px;
+  object-fit: contain;
+}
+
+.post_header h2 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.post_header p {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.category_select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cs_text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+} */
+
+.slect_survey_post {
+  box-shadow: 0px 0px 5px gainsboro;
+  border-radius: 9px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* .cs_tabs_main {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .cs_tab {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .cs_tab_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  border-radius: 5px;
+  height: 130px;
+  box-shadow: 1px -1px 10px -3px #ccc;
+} */
+
+/* .cs_tab_box img {
+  width: 60%;
+}
+
+.cs_tab_text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cs_tab_text h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.cs_tab_text p {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.pcontinue_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .pcontinue_btn button {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+} */
+
+/* post report */
+
+/* .pr_frorm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr_frorm input {
+  height: 40px;
+  border: 1px solid #20c0a0 !important;
+  border-radius: 3px;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  outline: none;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.pr_frorm input::placeholder {
+  color: #8792af;
+}
+
+.pr_frorm .c_textarea textarea {
+  height: 90px;
+  font-size: 0.9rem;
+}
+
+.pr_frorm span {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pmap {
+  width: 100%;
+  object-fit: cover;
+  height: 140px;
+  margin: 0.2rem 0 2rem 0;
+} */
+
+/*  */
+
+/* .post_receive {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_receive_main {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.p_receive_main img {
+  width: 80px;
+}
+
+.p_receive_main h2 {
+  font-size: 1.1rem;
+  width: 300px;
+  font-weight: bold !important;
+}
+
+.p_receive_main p {
+  font-size: 0.8rem;
+} */
+
+/* proposal consensus */
+
+/* .postconsensus_home {
+  width: 100%;
+  height: max-content;
+  margin: 4rem 0;
+}
+
+.pp_tabs_main {
+  width: 800px;
+  box-shadow: 1px -1px 10px -3px #ccc;
+  padding: 50px 20px;
+}
+
+.postconsensus_home .pcontinue_btn button {
+  margin-top: 2rem;
+} */
+/*  */
+
+/* .post_consensus > div {
+  width: 420px;
+}
+
+.post_consensus .pcontinue_btn {
+  width: 90%;
+  justify-content: space-around;
+} */
+
+/* post survey comp css  */
+
+.slect_survey_post .cs_tab_box {
+  width: 54%;
+}
+
+.post_survey_health > div {
+  width: 550px;
+}
+.health_analysis_div {
+  padding: 20px;
+  background-color: #f4f5f9;
+  margin-bottom: 20px;
+}
+.analysis_head {
+  /* display: flex; */
+  color: #979cab;
+  font-weight: bold;
+  position: relative;
+  /* justify-content: center; */
+}
+.analysis_head > h6 {
+  text-align: center !important;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.analysis_head > p {
+  position: absolute;
+  text-align: start !important;
+  font-size: 1.3em;
+  top: -5px;
+}
+
+.analysis_head > p:hover {
+  cursor: pointer;
+}
+.health_analysis_ul {
+  padding: 10px 20px;
+  font-size: 0.9em;
+  padding-right: 2px;
+}
+.health_analysis_ul > li {
+  margin-top: 8px;
+}
+.health_analysis_ul > li > div > span {
+  margin-left: 10px;
+  color: #979cab;
+}
+.health_analysis_ul {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+.health_analysis_ul::-webkit-scrollbar {
+  width: 5px;
+}
+.health_analysis_ul > li > p {
+  margin-bottom: 5px;
+}
+.health_analysis_ul > li > div > input {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #20c0a0;
+  border: 2px solid #20c0a0;
+  outline: #20c0a0;
+}
+
+.region_slct {
+  width: 100% !important;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #8792af;
+  outline: none;
+  border: 1px solid #20c0a0;
+  margin-top: 10px;
+}
+.survet_textArea > textarea {
+  text-align: start !important;
+  padding: 4px 8px;
+  width: 100%;
+  border-radius: 3px;
+  color: #8792af;
+}
+
+/* survey reward comp  */
+
+.head_reward {
+  text-align: center;
+}
+.head_reward > p {
+  color: #8792af;
+  margin-top: 15px;
+  font-size: 0.85em;
+}
+
+.input_div_reward {
+  width: 370px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #20c0a0;
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  /* display: flex; */
+}
+.hover_img {
+  display: none;
+  /* right: -10px; */
+}
+.input_div_reward > input {
+  border: none !important;
+  height: fit-content;
+  width: 340px;
+  text-align: center;
+}
+.input_div_reward > span {
+  position: relative;
+  /* margin-top: 10px; */
+}
+.input_div_reward > span:hover > .hover_img {
+  position: absolute;
+  left: 7px;
+  top: -20px;
+  display: block;
+}
+.survey_submit {
+  margin-top: 20px;
+}
+
+.survey_submit button {
+  width: 157px;
+}
+
+.mob_hover {
+  display: none;
+}
+
+.rewrd_back {
+  padding: 6px 45px !important;
+  margin-left: -15px;
+}
+
+.post_surveyh {
+  margin: 5rem 0;
+}
+
+@media screen and (max-width: 1125px) {
+  .input_div_reward > span:hover > .mob_hover {
+    position: absolute;
+    /* left: 7px; */
+    right: -27px;
+    top: 12px;
+    display: block !important;
+    z-index: 99;
+  }
+  .hover_img {
+    left: -200px !important;
+    top: 20px !important;
+    z-index: 999;
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .post_survey_health > div {
+    width: 450px;
+  }
+  .post_survey_health .post_header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .post_survey > div {
+    width: 93%;
+    padding: 10px;
+    text-align: center;
+  }
+  .post_surveyh > div {
+    width: 460px !important;
+  }
+  .post_survey {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .post_survey .cs_tab_text h2 {
+    font-size: 1rem;
+  }
+  .post_survey .cs_tab_text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .post_survey_health > div {
+    width: 380px;
+  }
+  .health_analysis_div {
+    padding: 20px 10px;
+  }
+  .health_analysis_ul {
+    padding: 10px;
+  }
+  .health_analysis_ul li p {
+    font-size: 0.9rem;
+  }
+  .post_surveyh > div {
+    width: 350px !important;
+  }
+  .post_surveyh .post_header {
+    text-align: center;
+  }
+  .survet_textArea > textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .mob_hover {
+    right: -22px !important;
+  }
+  .post_survey .cs_tab_text h2 {
+    font-size: 0.8rem;
+  }
+  .slect_survey_post .cs_tab_text p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .post_survey > div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .post_survey {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .post_survey .slect_survey_post,
+  .post_survey .slect_survey_post .cs_tab {
+    padding: 20px 10px !important;
+  }
+  .post_survey .c_dot {
+    width: fit-content;
+    right: 2px !important;
+  }
+
+  .post_survey .cs_tab_box {
+    width: 95% !important;
+  }
+  .post_survey_health > div {
+    width: 320px;
+  }
+  .health_analysis_ul li p {
+    font-size: 0.8rem;
+  }
+  .health_analysis_ul li div span {
+    font-size: 0.8rem;
+  }
+  .input_div_reward {
+    width: 300px;
+  }
+  .input_div_reward > input {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .post_surveyh > div {
+    width: 300px !important;
+  }
+  .rewrd_back {
+    padding: 5px 15px !important;
+  }
+  .survey_submit .rewrd_back {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .post_survey_health > div {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .post_surveyh > div {
+    width: 280px !important;
+  }
+  .input_div_reward {
+    width: 280px;
+  }
+  .input_div_reward > input {
+    width: 240px;
+  }
+}

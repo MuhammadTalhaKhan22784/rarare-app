@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router';
-import "./Post.css"
+import "./PostSurvey.css";
+// import "./Post.css"
 
 // assets
 import postIcon from "../../Assets/cn_logo.png";

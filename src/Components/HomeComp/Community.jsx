@@ -14,8 +14,10 @@ const Community = () => {
     return (
         <div className='community_container'>
             <div className='community_main_div'>
-                <div className='what_we_do_sub_div'>
 
+                <div className='what_we_do_sub_div'>
+            <img className='eye_img2' src={eye} alt=""/>
+  
                     <div>
                         <h3 className='what_we_do_head'><strong> We are on a mission to end <strong style={{ color: '#1cc1a0 ' }}> blindness </strong> </strong></h3>
                         <h3 style={{marginTop:'-15px'}} className='what_we_do_head'><strong>our community!</strong></h3>

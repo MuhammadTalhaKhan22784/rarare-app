@@ -7,7 +7,7 @@ const Report = () => {
     return (
         <div>
             <div className='getinspired_main_div'>
-                <div className='get_inspire_div'>
+                <div className='get_inspire_di report_main_div'>
                     <div className='get_inspire_img_div report_mob_img_div'>
                         <img className='mob1' src={mob} alt="" />
                         <img className='mob2' src={mob} alt="" />

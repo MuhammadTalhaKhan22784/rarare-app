@@ -12,7 +12,7 @@ import edit from "../../Assets/Group 3655.png";
 import delt from "../../Assets/Group 3654.png";
 import DeleteProbModal from "../Modal/DeleteProbModal";
 
-const ProSurveyCard = ({ list, className, left, data, togleImg }) => {
+const ProSurveyCard = ({ list, className, left, data, togleImg ,Cuser}) => {
   let [togle, setTogle] = useState("");
   let [bool, setBool] = useState(false);
   // let [list, Setlist] = useState(true)
@@ -61,11 +61,14 @@ const ProSurveyCard = ({ list, className, left, data, togleImg }) => {
                   <p className="survey_hr" />
                   <div className="user_card_detail_div proposal_card_user pro_survey_user">
                     <div>
-                      <img src={val.proImg} alt="" />
+                      {val.proImg?
+                      <img src={val.proImg?val.img:null} alt="" />
+                      :null
+                    }
                       <p>{val.name}</p>
                     </div>
                     <div>
-                      <p>{val.date}</p>
+                      <p className='issue_dat_p'>{val.date}</p>
                     </div>
                   </div>
                 </div>
@@ -78,7 +81,7 @@ const ProSurveyCard = ({ list, className, left, data, togleImg }) => {
           {data &&
             data.map((val, i) => (
               // <Link className='card_link' to={`/survey/${val.id}`} key={i}>
-              <div className="proposal_list_body">
+              <div className="proposal_list_body survey_list_style">
                 <div className="card_title_div proposal_Card_title">
                   <h5>
                     <strong> {val.title} </strong>

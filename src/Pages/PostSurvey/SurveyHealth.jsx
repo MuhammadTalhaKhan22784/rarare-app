@@ -1,5 +1,8 @@
 import React from 'react'
-import "./Post.css"
+import "./PostSurvey.css";
+import back from '../../Assets/Icon-arrow-right.png'
+
+// import "./Post.css"
 
 // assets
 // import postIcon from "../../Assets/post_icon.png";
@@ -20,7 +23,10 @@ const SurveyHealth = () => {
                     </div>
                     <div className="health_analysis_div">
                         <div className="analysis_head">
-                            <p onClick={()=>history.push('/post-survey-tamplate')}>{'<-'}</p>
+                            <p>
+                                <img onClick={() => history.push('/post-survey-tamplate')} src={back} alt="" />
+                            </p>
+                            {/* <p onClick={()=>history.push('/post-survey-tamplate')}>{'<-'}</p> */}
                             <h6>Health Analysis</h6>
                         </div>
                         <ul className="health_analysis_ul">

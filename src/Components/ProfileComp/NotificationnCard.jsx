@@ -21,7 +21,7 @@ const NotificationSettingCard = () => {
     return (
         <div className='profile_setting_card_container'>
             <div className="profile_seting_card_div">
-                <div className="proSetting_head_div">
+                <div className="proSetting_head_div noti_card_head_div">
                     <div onClick={() => history.push('/account-setting')}>
                         <img src={back} alt=""/>
                         {/* <p>{'<-'}</p> */}
@@ -29,7 +29,7 @@ const NotificationSettingCard = () => {
                     </div>
                     <Button className='upcoming_btn' value='Save Changes' />
                 </div>
-                <div className='profile_setting_inps_div'>
+                <div className='profile_setting_inps_div notification_card_div'>
                     <div className='profile_setting_inp_img notifications_card'>
                         <h6>Notification Settings</h6>
                         <ul className="notification_ul">
@@ -95,6 +95,8 @@ const NotificationSettingCard = () => {
                                 </p>
                             </li>
                         </ul>
+                    <Button className='upcoming_btn' value='Save Changes' />
+
                     </div>
                 </div>
 

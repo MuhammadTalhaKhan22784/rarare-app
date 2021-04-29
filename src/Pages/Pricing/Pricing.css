@@ -1,3 +1,11 @@
+/*  */
+.pricing_slick {
+  width: 100% !important ;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+/*  */
 .pricing_page {
   width: 100%;
   height: max-content;
@@ -318,16 +326,23 @@
   justify-content: space-between;
 }
 
+.slick-slide img {
+  display: unset !important;
+}
+
 .price_card {
-  width: 28%;
+  /* width: 85% !important; */
+  width: 85% !important;
   height: max-content;
   padding: 2rem 0;
   background-color: white;
   box-shadow: 0px 1px 10px -3px #00000038;
-  display: flex;
+  display: flex !important;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin: 16px auto;
+  /* margin-left: 20px; */
 }
 
 .price_card h2 {
@@ -336,7 +351,7 @@
 
 .price_card .prbox {
   width: 50%;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .price_card > span {
@@ -431,6 +446,8 @@
   width: 70%;
   object-fit: contain;
 }
+
+
 
 @media (max-width: 991px) {
   .price_wms {

@@ -7,7 +7,10 @@ const Product = () => {
     return (
         <div>
             <div className='product_container'>
+                <div className="search_desktop_view">
+
                 <Search />
+                </div>
                 <SearchResultHead />
             </div>
         </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import Button from '../Btn/Btn'
+import event1 from '../../Assets/nnaemeka-ugochukwu-XHAC9622m5w-unsplash.png'
+import event2 from '../../Assets/tope-a-asokere-jBpnifE9JUw-unsplash.png'
 
 const UpcomingEvent = () => {
     return (
         <div className='upcomin_event_container'>
             <div className="upcoming_event_div">
-                <img className='upcomint_img' src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVldGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80' alt="" />
+                <img className='upcomint_img' src={event1} alt="" />
                 <div className='upcomin_head_div'>
                     <div>
                         <h5 className='upcoming_head'> Upcoming Event</h5>
@@ -15,7 +17,7 @@ const UpcomingEvent = () => {
                 </div>
             </div>
             <div className="upcoming_event_div second_event">
-                <img className='upcomint_img' src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVldGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80' alt="" />
+                <img className='upcomint_img' src={event2} alt="" />
                 <div className='upcomin_head_div'>
                     <div>
                         <h5 className='upcoming_head'> Upcoming Event</h5>

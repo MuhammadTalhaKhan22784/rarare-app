@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Post.css";
+import "./PostSurvey.css";
 
 // assets
 // import postIcon from "../../Assets/post_icon.png";

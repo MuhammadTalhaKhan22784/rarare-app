@@ -36,6 +36,8 @@ const Reinvite = () => {
                         <img className='cros2_home' src={cros2} alt="" />
                     </div>
                     <img className='girl_img' src={girl} alt="" />
+                    <img className='polygon2_img2' src={polygon2} alt="" />
+
                 </div>
             </div>
         </div>

@@ -55,7 +55,7 @@ const PostUploadImg = () => {
                         <Button className='bussines_white_btn upload_back' value='Back' />
                     </Link>
                     <Link to='/post-receive'>
-                        <Button className='bussines_grn_btn bus_submit' value='Submit Issue' />
+                        <Button className='bussines_grn_btn post_grn_btn bus_submit' value='Submit Issue' />
                     </Link>
                 </div>
             </div>

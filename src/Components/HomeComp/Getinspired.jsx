@@ -29,12 +29,12 @@ const GetInspired = () => {
                         <img src={group1} alt="" />
                     </div>
                 </div>
-                <div className='get_inspire_div'>
+                <div className='get_inspire_div getInspire_div2'>
                         <div className='get_inspire_img_div'>
                             <img src={group2} alt="" />
                         </div>
                     <div className='get_inspire_detail staye_connect'>
-                        <div className='head_magnet_div'>
+                        <div className='head_magnet_div2'>
                             <h5><strong>Stay connected</strong></h5>
                             <img src={magnet} alt="" />
                         </div>

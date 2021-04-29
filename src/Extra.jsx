@@ -10,7 +10,7 @@ import dbicon4 from "./Assets/dbicon4.svg";
 import featurebg from "./Assets/featurebg.png";
 import undrawInvesting from "./Assets/undraw_Investing_re.png";
 import greenDot from "./Assets/greendot.png";
-import Button from './Components/Btn/Btn'
+import Button from "./Components/Btn/Btn";
 
 import "./App.css";
 const Extra = () => {
@@ -20,24 +20,18 @@ const Extra = () => {
   return (
     <React.Fragment>
       <div>
-        {/* Button trigger modal */}
-        {/* <button
-          type="button"
-          className="btn btn-primary"
+      
+        <button
+          className="blnce_btn"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Launch demo modal
-        </button> */}
-        <button className='blnce_btn' data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#exampleModal23"
         >
           Buy Loco Points
         </button>
         {/* Modal */}
         <div
           className="modal fade"
-          id="exampleModal"
+          id="exampleModal23"
           tabIndex={-1}
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
@@ -114,7 +108,7 @@ const Extra = () => {
                           </div>
                         </div>
                       </div>
-                    
+
                       <div className="pcontinue_btn ">
                         <button
                           className="cus_width100 text-white bg_lightgreen border_none"
@@ -133,8 +127,6 @@ const Extra = () => {
                           Back
                         </button>
                       </div>
-                    
-                    
                     </div>
                   </div>
                 </div>

@@ -63,7 +63,7 @@ const ProfileProposalCard = ({ className, list }) => {
                                 }
                             </div>
                         </div>
-                        <div className='ongoing_btn_div'>
+                        <div className='ongoing_btn_div2'>
                             <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
                         </div>
                         <div className='location_div'>

@@ -4,7 +4,7 @@
 .main_profile_com{
     display: flex;
     justify-content: space-between;
-    margin: 100px 150px ;
+    margin: 50px 150px ;
 }
 .posts_btn_div{
     display: flex;
@@ -18,7 +18,9 @@
 .width{
     width: 13rem;
 }
-
+h1 , h2 ,h3 , h4,h5,h6{
+    color: #001758 !important;
+}
 .your_post_btn{
     background-color: white;
     padding: 7px 30px ;
@@ -354,6 +356,9 @@
     cursor: pointer;
 }
 
+.width .user_card_detail_div{
+    justify-content: flex-end !important;
+}
 
 /* profile setting page css  */
 
@@ -513,4 +518,517 @@
 .notifications_card{
     /* border: 2px solid red; */
     width: 640px;
+}
+.profile_setting_inps .upcoming_btn, .change_pas_inp_div .upcoming_btn{
+    display: none !important;
+}
+.security_seting_head_div .upcoming_btn{
+    display: block !important;
+}
+.seting_head_mob_view{
+    display: none;
+}
+
+.notifications_card .upcoming_btn,.mobProposalCard{
+    display: none;
+}
+
+
+@media screen and (max-width:1125px){
+    .main_profile_com,.acount_main_div{
+        margin: 20px 30px;
+    }
+    .posts_ccard_div,.account_seting_card_div{
+        width: 550px;
+    }
+    .width{
+        width: 15rem;
+    }
+    .width_proposal,.profile_proposal_card{
+        width: 260px;
+    }
+    .profile_proposal_card>.head_div_grid>.proposal_card_head{
+        font-size: 1em;
+    }
+    .your_post_btn,.reportProblm_btn{
+        padding: 6px 20px ;
+        font-size: .9em;
+    }
+    .list_profile_proposal{
+        width: auto;
+    }
+    .edit_div{
+        left: -85px;
+    }
+}
+
+@media screen and (max-width:980px){
+    .main_profile_com{
+        margin: 20px 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .acount_main_div{
+        flex-wrap: wrap ;
+        justify-content: center;
+    }
+
+    .account_seting_card_div{
+        width: 100%;
+    }
+    .posts_ccard_div{
+        width: 100%;
+    }
+    .width{
+        width: 15rem;
+    }
+    .width_proposal,.profile_proposal_card{
+        width: 260px;
+    }
+    .profile_proposal_card>.head_div_grid>.proposal_card_head{
+        font-size: 1em;
+    }
+    .your_post_btn,.reportProblm_btn{
+        padding: 6px 20px ;
+        font-size: .9em;
+    }
+    .profile_card_main_div{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .profile_card_main_div{
+        width: 100%;
+        /* margin: 30px auto !important; */
+    }
+    .width_proposal,.profile_proposal_card{
+        width: 330px;
+    }
+    .width{
+        width: 13rem;
+    }
+}
+@media screen and (max-width:710px){
+    
+    .width_proposal,.profile_proposal_card{
+        width: 280px;
+    }
+    .issue_card_container{
+        justify-content: flex-start;
+        
+    }
+    .width{
+        width: 13rem;
+        margin: 10px;
+    }
+    .list_issue_body>div>.issue_list_para{
+        font-size: .8rem;
+    }
+    .profile_setting_inps_div{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .notifications_card{
+        width: 450px !important;
+        text-align: start !important;
+    }
+    .proSetting_head_div{
+        width: 100%;
+    }
+    .profile_setting_inp_img{
+        text-align: center;
+    }
+    .profile_setting_inps{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:520px){
+    .posts_ccard_div{
+        padding: 0px;
+    }
+    .your_post_btn,.reportProblm_btn,.grn_bg{
+        padding: 6px 8px;
+        font-size: .9em;
+    }
+    .textGrey{
+        font-size: .9em;
+        margin-top: 5px;
+    }
+    .width{
+        width: 12rem;
+    }
+    .width>.issue_card_body>.card_title_div>h5{
+        font-size: 1rem;
+    }
+    .width>.issue_card_user>div>p{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .desktop_proposal{
+        display: none;
+    }
+    .mobProposalCard{
+        display: block;
+    }
+    .r_points_div,.r_points_div>div{
+        flex-direction: column;
+    }
+    .acount_main_div .profile_card_container .profile_card_main_div .profile_hr{
+        display: none !important;
+    }
+    .acount_main_div .profile_card_container .profile_card_main_div .balance_card_container{
+        display: none !important;
+    }
+    .acount_main_div .profile_card_container .profile_card_main_div .redeem_head{
+        display: none !important;
+    }
+    .acount_main_div .profile_card_container .profile_card_main_div .redem_cards_scroll{
+        display: none !important;
+    }
+    .acount_main_div .profile_card_main_div {
+        width: 350px !important;
+    }
+    .account_seting_card_div{
+        margin: 0px;
+    }
+    .main_profile_com{
+        /* width: 100%; */
+        margin: 20px 15px;
+    }
+    .userInfo{
+        width: 100%;
+    }
+    .redeem_card_maindiv{
+        text-align: center;
+        width: 180px;
+        margin: 15px 5px;
+    }
+    .profile_card_main_div{
+        margin: 30px auto;
+        width: 100% !important;
+    }
+    .profile_hr{
+        width: 250px;
+    }
+    .redem_cards_scroll{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        width: 350px;
+        /* border: 2px saddlebrown solid; */
+    }
+    .redem_cards_scroll>div{
+        width: 100%;
+    }
+    .redeem_card_maindiv{
+        padding: 10px 8px;
+    }
+    .blnce_btn{
+        padding: 6px 5px !important;
+    }
+    .redeem_card_maindiv>h5{
+        font-size: 1em;
+    }
+    .redeem_card_maindiv>p{
+        font-size: .8em;
+    }
+    .width_proposal, .profile_proposal_card{
+        width: 200px;
+    }
+    .width_proposal h5{
+        font-size: 1em;
+    }
+    .width_proposal  p,.width p{
+        font-size: .8em;
+        margin-bottom: 5px;
+    }
+    .width_proposal .card_title_div{
+        padding-top: 0px;
+    }
+    .width_proposal{
+        padding: 10px;
+    }
+    .width_proposal span{
+        font-size: .8em;
+    }
+    .width_proposal div{
+        margin-top: 5px;
+    }
+    .head_div_grid h5{
+        font-size: .9em;
+    }
+    .tagle_div,.toggle_div{
+        display: none;
+    }
+    .your_issues_card_div>.issue_card_container{
+        margin-left: -10px;
+        /* flex-wrap: inherit; */
+    }
+    .width_proposal .perticipant_div{
+        flex-wrap: wrap;
+    }
+    .width .card_num{
+      top: 90px;
+    }
+    .width{
+        margin: 10px 5px;
+    }
+    .seting_head_mob_view{
+        display: block;
+    }
+    .seting_head_desktop{
+        display: none;
+    }
+    .profile_setting_inps_div .notifications_main_div{
+          display: none !important;
+    }
+    .security_change_pass{
+        width: 350px !important;
+    }
+    .notifications_card{
+        width: 350px !important;
+        text-align: start !important;
+    }
+    .noti_card_head_div .upcoming_btn{
+        display: none;
+    }
+    .notifications_card .upcoming_btn{
+        display: block !important;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width:420px){
+    .profile_card_main_div{
+        margin: 30px 5px;
+        width: 100% !important;
+    }
+    .redem_cards_scroll{
+        width: 310px;
+        /* border: 2px saddlebrown solid; */
+    }
+    .blnce_card_div>h3{
+        font-size: 1.2em;
+    }
+    .userInfo>img{
+        width: 80px;
+    }
+    .userInfo>h5{
+        font-size: 1em;
+    }
+    .userInfo>p{
+        font-size: .9em;
+    }
+    .redeem_card_maindiv{
+        text-align: center;
+        width: 150px;
+        margin: 15px 5px;
+    }
+    .blnce_head>div{
+        display: none;
+    }
+    .width{
+        width: 11rem;
+        margin: 10px ;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .your_issues_card_div .list_style_img {
+        height: 80px !important;
+        /* width: 50px; */
+    }
+    .pro_proposal_card_container .perticipant_div{
+        justify-content: center !important;
+    }
+    .pro_proposal_card_container .perticipant_div div{
+        /* justify-content: center !important; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2px 10px;
+        
+    }
+    .width_proposal{
+        width: 180px;
+    }
+    .pro_proposal_card_container .perticipant_div div img{
+        width: 15px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .pro_proposal_card_container .perticipant_div div span{
+        /* width: 15px; */
+        /* text-align: center; */
+        margin-left: 0px;
+    }
+    .proSetting_head_div .upcoming_btn{
+        display: none;
+    }
+    .profile_setting_inps_div .upcoming_btn{
+        display: block;
+        margin: 20px auto;
+    }
+    /* .profile_seting_card_div{
+        width: 80% !important;
+    } */
+    .profile_setting_inps{
+        width: 100%;
+    }
+    .profile_setting_inps_div{
+        padding: 15px 10px;
+        width: 350px;
+    }
+    .name_inps>input{
+        width: 150px !important;
+    }
+    .change_pas_inp_div .upcoming_btn{
+        display: block !important;
+    }
+    .security_seting_head_div .upcoming_btn{
+        display: none !important;
+    }
+    .security_change_pass{
+        width: 320px !important;
+    }
+    .notifications_card{
+        width: 330px !important;
+        text-align: start !important;
+    }
+    
+}
+@media screen and (max-width:400px){
+    
+    .profile_card_comp_div{
+        width: 300px;
+        margin: 0px auto;
+    }
+    .profile_card_main_div{
+        margin: 30px auto  ;
+        width: 300px ;
+    }
+    .redem_cards_scroll{
+        width: 250px;
+        /* border: 2px saddlebrown solid; */
+    }
+    .posts_btn_div{
+        flex-wrap: wrap;
+    }
+    .your_post_btn,.grn_bg{
+        margin: 10px;
+    }
+    .width{
+        width: 15rem;
+    }
+    .your_issues_card_div>.issue_card_container{
+        justify-content: center;
+    }
+    .width_proposal{
+        width:100%;
+    }
+    .pro_proposal_card_container .perticipant_div div{
+        /* justify-content: center !important; */
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 10px;
+        
+    }
+    .pro_proposal_card_container .perticipant_div div img{
+        width: 15px;
+        height: 15px;
+        text-align: start;
+        margin: 0px ;
+    }
+    .pro_proposal_card_container .perticipant_div div span{
+        /* width: 15px; */
+        /* text-align: center; */
+        margin-left: 5px;
+        font-size: .8rem;
+    }
+    .pro_proposal_card_container .perticipant_div{
+        justify-content: space-between !important;
+    }
+    .proposal_list_body p {
+        font-size: .7rem;
+        margin-bottom: 0px;
+    }
+    .proposal_list_body .pro_list_loc .list_perticipant div span ,.proposal_list_body .proposal_list span{
+        font-size: .7rem;
+    }
+    .proposal_list_body .pro_list_loc .list_perticipant  ,.proposal_list_body .proposal_list{
+        margin-top: 5px;
+
+    }
+    .proposal_list_body .card_title_div {
+        padding-top: 0px !important;
+    }
+    
+    
+}
+
+@media screen and (max-width:400px){
+    
+    .profile_card_comp_div{
+        width: 100%;
+        margin: 0px auto;
+    }
+    .profile_card_main_div{
+        /* border: 2px solid red; */
+        width:auto;
+    }
+    .redem_cards_scroll{
+        width: 100%;
+        /* border: 2px saddlebrown solid; */
+    }
+    .profile_hr{
+       width: 200px;
+    }
+}
+@media screen and (max-width:380px){
+    .main_profile_com, .acount_main_div{
+        margin: 15px;
+    }
+    .acount_main_div .profile_card_main_div{
+        width: 100% !important;
+    }
+    .seting_cards_div p{
+        font-size: .7rem;
+    }
+    .profile_setting_inps_div{
+        padding: 15px 10px;
+        width: 300px;
+    }
+    .name_inps>input{
+        width: 125px !important;
+    }
+    .security_change_pass{
+        width: 280px !important;
+    }
+    .notifications_card{
+        width: 290px !important;
+    }
+    .notification_ul li p{
+        font-size: .8rem ;
+    }
+}
+@media screen and (max-width:330px){
+    .profile_setting_inps_div{
+        padding: 15px 10px;
+        width: 280px;
+    }
+    .name_inps>input{
+        width: 115px !important;
+    }
+    .security_change_pass{
+        width: 250px !important;
+    }
+    .notifications_card{
+        width: 270px !important;
+    }
+    .topic_head_div {
+        /* flex-wrap: wrap; */
+    }
 }

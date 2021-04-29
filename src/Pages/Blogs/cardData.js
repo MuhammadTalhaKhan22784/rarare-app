@@ -1,9 +1,15 @@
 import slider1 from '../../Assets/Rectangle 95@3x.png'
-import user from '../../Assets/user.png'
+import blog1 from '../../Assets/blog_img.png'
+import blog2 from '../../Assets/blog_img2.png'
+import blog3 from '../../Assets/blog_img3.png'
+import blog4 from '../../Assets/blog_img4.png'
+import blog5 from '../../Assets/blog_img5.png'
+import blog6 from '../../Assets/blog_img6.png'
+import user from '../../Assets/Rectangle 845.png'
 
 export const blog_card_data = [
     {
-        img:slider1,
+        img:blog1,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,
@@ -16,7 +22,7 @@ export const blog_card_data = [
         id:'blog-1'
     },
     {
-        img:slider1,
+        img:blog2,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,
@@ -29,7 +35,7 @@ export const blog_card_data = [
         id:'blog-2'
     },
     {
-        img:slider1,
+        img:blog3,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,
@@ -42,7 +48,7 @@ export const blog_card_data = [
         id:'blog-3',
     },
     {
-        img:slider1,
+        img:blog4,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,
@@ -55,7 +61,7 @@ export const blog_card_data = [
         id:'blog-4',
     },
     {
-        img:slider1,
+        img:blog5,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,
@@ -68,7 +74,7 @@ export const blog_card_data = [
         id:'blog-5',
     },
     {
-        img:slider1,
+        img:blog6,
         title:'Title of a blog will go here!',
         date:`june 30 2020 ${' | '} 3:00 PM`,
         bloger_img:user,

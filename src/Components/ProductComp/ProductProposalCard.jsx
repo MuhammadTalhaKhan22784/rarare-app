@@ -2,10 +2,13 @@ import React from 'react'
 import dot from '../../Assets/dot.png'
 import user from '../../Assets/user.png'
 import location from '../../Assets/location.png'
+import path3 from '../../Assets/Rectangle 871.png'
+import farming from '../../Assets/Icon awesome-hand-paper.png'
+
 import { useHistory } from 'react-router'
 
-const ProductProposalCard = ({ list,left ,className}) => {
-  const history = useHistory();
+const ProductProposalCard = ({ list, left, className }) => {
+    const history = useHistory();
 
     return (
         <div>
@@ -14,14 +17,17 @@ const ProductProposalCard = ({ list,left ,className}) => {
                     <div className={`proposal_card_body ${className}`} onClick={() => { history.push("/proposal") }}>
                         <div className='card_title_div proposal_Card_title'>
                             <h5><strong> Title of issues </strong></h5>
-                            <div className='ongoing_btn_div'>
+                            <div className='ongoing_btn_div2'>
                                 <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
                             </div>
                         </div>
                         <div className='user_card_detail_div proposal_card_user'>
                             <div>
-                                <img src={user} alt="" />
-                                <p>username</p>
+                                <div className='search_uimg_div'>
+                                    <img className='path2_img' src={path3} alt="" />
+                                    <img className='search_ul_imgs' src={farming} alt="" />
+                                </div>
+                                <p className='farming_card_p'>Consensus Farming</p>
                             </div>
                         </div>
                         <p className="card-text">
@@ -44,14 +50,17 @@ const ProductProposalCard = ({ list,left ,className}) => {
                     <div className={`proposal_card_body ${className} ${left}`} onClick={() => { history.push("/proposal") }}>
                         <div className='card_title_div proposal_Card_title'>
                             <h5><strong> Title of issues </strong></h5>
-                            <div className='ongoing_btn_div'>
+                            <div className='ongoing_btn_div2'>
                                 <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
                             </div>
                         </div>
                         <div className='user_card_detail_div proposal_card_user'>
                             <div>
-                                <img src={user} alt="" />
-                                <p>username</p>
+                                <div className='search_uimg_div'>
+                                    <img className='path2_img' src={path3} alt="" />
+                                    <img className='search_ul_imgs' src={farming} alt="" />
+                                </div>
+                                <p className='farming_card_p'>Consensus Farming</p>
                             </div>
                         </div>
                         <p className="card-text">
@@ -75,14 +84,17 @@ const ProductProposalCard = ({ list,left ,className}) => {
                 // {/*proposal list style  */}
                 :
                 <div className={`proposal_list_body`}>
-                    <div className='card_title_div proposal_Card_title'>
+                    <div className='card_title_di proposal_Card_title_list'>
                         <h5><strong> Title of issues </strong></h5>
 
                     </div>
                     <div className='proposal_list_farming'>
                         <div>
-                            <img src={user} alt="" />
-                            <p>Consensus Farming</p>
+                            <div className='search_uimg_div'>
+                                <img className='path2_img' src={path3} alt="" />
+                                <img className='search_ul_imgs' src={farming} alt="" />
+                            </div>
+                            <p className='farming_card_p'>Consensus Farming</p>
                         </div>
                     </div>
                     <div>

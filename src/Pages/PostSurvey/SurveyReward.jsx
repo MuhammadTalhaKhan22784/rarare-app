@@ -1,11 +1,13 @@
 import React from 'react'
 import { useHistory } from 'react-router';
-import "./Post.css"
+import "./PostSurvey.css";
+// import "./Post.css"
 
 // assets
 import postIcon from "../../Assets/cn_logo.png";
 import hoverImg from '../../Assets/Group 3531.png'
 import i from '../../Assets/Icon awesome-info-circle.png'
+import mobHover from '../../Assets/Group 5381.png'
 
 
 
@@ -34,6 +36,7 @@ const PostSurveyReward = (props) => {
                         <span>
                             <img src={i} alt="" />
                             <img src={hoverImg} className='hover_img' alt=""/>
+                            <img src={mobHover} className='mob_hover' alt=""/>
                         </span>
                     </div>
                     <div className="input_div_reward">
@@ -41,6 +44,8 @@ const PostSurveyReward = (props) => {
                         <span>
                             <img src={i} alt="" />
                             <img src={hoverImg} className='hover_img' alt=""/>
+                            <img src={mobHover} className='mob_hover' alt=""/>
+
                         </span>
                     </div>
                     <div className="pcontinue_btn survey_submit">

@@ -1,5 +1,13 @@
 import React from 'react'
 import Button from '../Btn/Btn'
+import social1 from '../../Assets/Rarare Social-06.png'
+import social2 from '../../Assets/social2.png'
+import social3 from '../../Assets/social3.png'
+import social4 from '../../Assets/social4.png'
+import social5 from '../../Assets/social5.png'
+import social6 from '../../Assets/social6.png'
+import fb from '../../Assets/Icon awesome-facebook-f.png'
+import insta from '../../Assets/Icon awesome-instagram.png'
 
 const SocialFeed = () => {
     return (
@@ -7,28 +15,28 @@ const SocialFeed = () => {
             <div className="social_feed_div">
                 <div className="feed_div">
                     <h4><strong>Facebook Feed</strong></h4>
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                    <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
+                    <img className='socail_feed_img' src={social1} alt="" />
+                    <img className='socail_feed_img' src={social2} alt="" />
+                    <img className='socail_feed_img' src={social3} alt="" />
+                    <img className='socail_feed_img' src={social4} alt="" />
+                    <img className='socail_feed_img' src={social5} alt="" />
+                    <img className='socail_feed_img' src={social6} alt="" />
                     <button className='socail_button'>
-                        <img src="https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-master/main/src/Assets/fb_icon.png" alt="" />
+                        <img src={fb} alt="" />
                         <p>Follow on Facebook</p>
                     </button>
                 </div>
                 <div className="instagram_div">
                     <div className="feed_div">
                         <h4><strong>Instagram Feed</strong></h4>
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
-                        <img className='socail_feed_img' src="https://images.cloudflareapps.com/uNHha5iLSg28858aqQTL_social%20feed%201%20(1)%20(3).png" alt="" />
+                        <img className='socail_feed_img' src={social1} alt="" />
+                        <img className='socail_feed_img' src={social2} alt="" />
+                        <img className='socail_feed_img' src={social3} alt="" />
+                        <img className='socail_feed_img' src={social4} alt="" />
+                        <img className='socail_feed_img' src={social5} alt="" />
+                        <img className='socail_feed_img' src={social6} alt="" />
                         <button className='socail_button insta'>
-                            <img src="https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-master/main/src/Assets/fb_icon.png" alt="" />
+                            <img src={insta} alt="" />
                             <p>Follow on Instagram</p>
                         </button>
                     </div>

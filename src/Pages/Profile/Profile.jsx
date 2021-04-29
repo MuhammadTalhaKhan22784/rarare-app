@@ -5,6 +5,7 @@ import TopicHead from '../../Components/ProductComp/TopicHead'
 import IssueCard from '../../Components/ProductComp/IssueCard'
 import ProSurveyCard from '../../Components/ProductComp/ProSurveyCard'
 import ProfileProposalCard from '../../Components/ProfileComp/ProfileProposalCard'
+import ProductProposalCard from '../../Components/ProductComp/ProductProposalCard'
 import { SurveyCard } from './CardData'
 import grid from '../../Assets/Group 3602.png'
 import listG from '../../Assets/list.png'
@@ -96,9 +97,12 @@ const Profile = () => {
                                         <img onClick={() => handleGrid(false)} src={!list ? grid : gridG} alt="" />
                                         <img onClick={() => handleGrid(true)} src={list ? listG : liW} alt="" />
                                     </div>
-                                    <div className="your_issues_card_div">
+                                    <div className="your_issues_card_div desktop_proposal">
                                         {/* <ProfileProposalCard /> */}
                                         <ProfileProposalCard list={list} className='width_proposal'  />
+                                    </div>
+                                    <div className="mobProposalCard">
+                                        <ProductProposalCard list={list} />
                                     </div>
                                 </>
                                 :
@@ -108,7 +112,7 @@ const Profile = () => {
                                         <p className='textGrey'>You have posted <strong> "2" </strong> issues in tha last <strong> 30 </strong> days</p>
                                     </div>
                                     <div className="your_issues_card_div">
-                                        <IssueCard className='width' />
+                                        <IssueCard  className='width' />
                                     </div>
                                     <div className="head_div">
                                         <TopicHead head='Your Surveys' button={<Button className='reportProblm_btn' value='Report a problem' />} />
@@ -121,9 +125,12 @@ const Profile = () => {
                                         <TopicHead head='Your Proposals' button={<Button className='reportProblm_btn' value='Report a problem' />} />
                                         <p className='textGrey'>You have posted <strong> "2" </strong> proposals in tha last <strong> 30 </strong> days</p>
                                     </div>
-                                    <div className="your_issues_card_div">
+                                    <div className="your_issues_card_div desktop_proposal">
                                         <ProfileProposalCard className='width_proposal'  />
                                         {/* <ProfileProposalCard /> */}
+                                    </div>
+                                    <div className="mobProposalCard ">
+                                        <ProductProposalCard list={list} />
                                     </div>
                                 </>
                     }

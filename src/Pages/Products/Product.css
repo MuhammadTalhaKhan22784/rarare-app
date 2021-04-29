@@ -13,32 +13,46 @@
     margin-top: 20px;
     height: 80vh;
 }
-.search_hr{
+/* .search_hr{
     border-bottom: 1px solid rgb(189, 187, 187) ;
     
-    /* width: 300px !important; */
-}
+} */
 .search_head{
     margin-left: 5px;
+    margin-bottom: 0px;
 }
 .search_main_ul>li,.search_sub_ul>li{
-   display: flex;
-   padding: 7px 5px;
-   border-radius: 3px;
+    display: flex;
+    padding: 7px 5px;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 .search_main_ul>li:hover,.search_sub_ul>li:hover{
     
     background-color: #d4edec;
 }
-.search_ul_imgs{
-    width: 15px;
-    height: 15px;
-    margin-top: 5px;
+.path_img{
+    width: 250px;
 }
+.search_uimg_div{
+    position: relative;
+    /* z-index: -1; */
+}
+.search_ul_imgs{
+    position: absolute;
+    z-index: 99;
+    /* width: 15px; */
+    /* height: 15px; */
+    /* margin-top: 5px; */
+    left: 8px;
+    top: 10px;
+}
+
 .search_main_ul>li>p,.search_sub_ul>li>p{
     margin-bottom: 0px;
     margin-left: 10px;
     font-weight: 500;
+    margin-top: 5px;
 }
 .search_sub_ul{
     margin-left: 22px;
@@ -265,9 +279,11 @@
     font-size: .9em;
     margin-left: 10px;
 }
-
-.issue_list_style{
+.mob_list_issue_style{
     display: flex;
+}
+.issue_list_style{
+    /* display: flex; */
     padding: 0px;
 }
 .list_style_img{
@@ -351,4 +367,331 @@
 
 .card-text{
     color: #8c9cb5;
+}
+
+.icon_filrt{
+    transform: rotate(270deg) !important;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 7px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #8c9cb5;
+}
+.search_filter_mob>div{
+    display: flex;
+}
+.pro_list_loc_mob{
+    display: none;
+}
+.isseu_list_title{
+    display: flex;
+    justify-content: space-between;
+}
+.farming_card_p{
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+}
+.card-text{
+    margin-top: 8px;
+}
+.search_filter_mob,.mob_search_card_comp{
+    display: none;
+}
+.search_result_div .blog_search_inp_div_mob{
+    display: none;
+}
+@media screen and (max-width:1125px){
+    .product_container{
+        margin: 50px 20px;
+        justify-content: center;
+    }
+    .search_result_div{
+        width:700px ;
+    }
+    .proposal_card_body{
+        width: 330px;
+    }
+    .issue_card{
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .product_container{
+        margin: 50px 20px;
+        justify-content: center;
+    }
+    .search_result_div{
+        width:600px ;
+    }
+    .proposal_card_body{
+        width: 280px;
+    }
+    .issue_card{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width:920px){
+    .product_container{
+        margin: 50px 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .search_desktop_view{
+        display: none;
+    }
+    .search_result_div{
+        width:630px ;
+    }
+    .proposal_card_body{
+        width: 300px;
+    }
+    .issue_card{
+        width: 17rem;
+    }
+    .search_filter_mob{
+        display: block !important;
+        margin: 10px;
+        text-align: end;
+        position: relative;
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+    .search_filter_mob>div{
+        width: fit-content;
+    }
+    .search_filter_mob span{
+        text-align: end;
+        color: #9BA3CC;
+    }
+    .search_filter_mob>div:hover .mob_search_card_comp {
+
+        display: block;
+        text-align: start !important;
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 5px;
+    }
+    .mob_search_card_comp .blog_search_inp_div{
+        display: none !important;
+    }
+    .search_result_div .blog_search_inp_div_mob{
+        display: block;
+        border: 1px solid #1cc1a0;
+        padding: 6px 10px ;
+        border-radius: 3px;
+    }
+    .blog_search_inp_div_mob>input{
+        border: none;outline: none;
+        width: 90%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .search_result_div{
+        width:100% ;
+    }
+    .search_result_div{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .issue_card{
+        width: 13rem;
+        margin-left: 15px;
+    }
+    .proposal_card_body{
+        width: 250px;
+    }
+    .proposal_card_body p,.proposal_loc div p{
+        font-size: .8rem;
+        margin-bottom: 0px;
+    }
+    .proposal_Card_title{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .proposal_loc {
+        /* font-size: 1rem; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+        margin-top: 8px;
+        font-size: .8rem;
+    }
+   .issue_list_style .pro_list_loc{
+        display: none;
+    }
+    .pro_list_loc_mob{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        padding-bottom: 10px;
+    }
+    .isseu_list_title .toggle_div{
+        display: none;
+    }
+   .list_style_img .card-img-top{
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+    }
+    .list_style_img .list_card_num{
+        top: 70px !important;
+    }
+    .list_card_veiw{
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .proposal_list_body .proposal_Card_title{
+        display: flex !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap;
+        flex-direction: row !important;
+    }
+}
+@media screen and (max-width:450px){
+    .pro_list_loc_mob{
+       font-size: .8rem;
+    }
+    .list_style_img .card-img-top{
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+    }
+    .isseu_list_title h5{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .list_style_img .list_card_num{
+        top: 50px !important;
+    }
+    .survey_list_style .proposal_Card_title h5{
+        font-size: 1.1rem !important;
+        margin-top: 5px !important;
+    }
+    .survey_list_style{
+        padding-left: 10px !important;
+        padding-right: 5px !important;
+    }
+    .survey_list_style p{
+        font-size: .9rem;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .issue_card{
+        width: 10.5rem;
+        margin-left: 8px;
+    }
+    .issue_card .card_num{
+        top: 80px;
+    }
+    .issue_card p{
+        margin-bottom: 10px;
+    }
+    .issue_card_user{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 5px !important;
+    }
+    .issue_card_user{
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .issue_card_user p{
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+    .issue_dat_p{
+        text-align: right !important;
+        position: absolute;
+        right: 10px;
+        margin-bottom: 0px;
+    }
+    .proposal_card_body{
+        width: 170px !important;
+        padding: 10px;
+    }
+   .proposal_card_body .ongoin{
+       font-size: .9rem;
+   }
+   .farming_card_p{
+       font-size: .7rem !important;
+   }
+   .proposal_Card_title h5{
+       font-size: 1.1em;
+   }
+   .proposal_card_body .perticipant_div{
+       flex-wrap: wrap;
+   }
+   .proposal_card_body .perticipant_div{
+       justify-content: center;
+   }
+   .survey_hr{
+       display: none;
+   }
+   .pro_survey_user{
+       position: relative;
+       flex-wrap: wrap;
+       flex-direction: column;
+       margin-top: 5px !important;
+       margin-bottom: 15px;
+   }
+}
+@media screen and (max-width:400px){
+    .proposal_card_body{
+        width: 100% !important;
+        padding: 20px;
+    }
+    .issue_card{
+        width: 90%;
+
+    }
+    .issue_card_container{
+        justify-content: center;
+    }
+    .issue_card .card_num{
+        top: 90px !important;
+    }
+    .proposal_card_body .perticipant_div{
+        flex-wrap: wrap;
+    }
+    .proposal_card_body .perticipant_div{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:370px){
+    .isseu_list_title {
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* font-size: .9m !important; */
+    }
+    .list_user{
+        margin-bottom: 0px;
+    }
+    .list_user>div{
+        
+        flex-direction: row-reverse;
+        justify-content: flex-start !important;
+    }
+    .pro_survey_user{
+        flex-direction:row !important;
+    }
+    .list_card_veiw img{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+    }
 }

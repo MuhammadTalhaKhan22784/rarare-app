@@ -9,7 +9,7 @@ export const SurveyCard = {
     current_user:[
         {
             img:slider1,
-            proImg:user,
+            // proImg:user,
             locImg:location,
             cardNum:user,
             gift:gift,
@@ -21,13 +21,13 @@ export const SurveyCard = {
             title:'Rising cataract issues in',
             body:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et',
             location:'Lorem ipsum dolor sit',
-            name:'username',
+            // name:'username',
             date:'May, 1, 2021',
             id:'011'
         },
         {
             img:slider1,
-            proImg:user,
+            // proImg:user,
             locImg:location,
             cardNum:user,
             gift:gift,
@@ -39,13 +39,13 @@ export const SurveyCard = {
             title:'Rising cataract issues in',
             body:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et',
             location:'Lorem ipsum dolor sit',
-            name:'username',
+            // name:'username',
             date:'May, 1, 2021',
             id:'012'
         },
         {
             img:slider1,
-            proImg:user,
+            // proImg:user,
             locImg:location,
             cardNum:user,
             gift:gift,
@@ -57,7 +57,7 @@ export const SurveyCard = {
             title:'Rising cataract issues in',
             body:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et',
             location:'Lorem ipsum dolor sit',
-            name:'username',
+            // name:'username',
             date:'May, 1, 2021',
             id:'013'
         },

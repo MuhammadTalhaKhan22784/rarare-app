@@ -1,7 +1,12 @@
 import React from 'react'
 import cartoon from '../../Assets/cartoon.png'
 import smCarton from '../../Assets/Group 4694@2x.png'
+import lang from '../../Assets/Component 3 – 2.png'
+import mute from '../../Assets/Icon awesome-volume-mute.png'
 import mic from '../../Assets/Icon awesome-microphone@2x.png'
+import refresh from '../../Assets/Icon feather-refresh-ccw.png'
+import frc from '../../Assets/Group 4699.png'
+import eng from '../../Assets/Group 4698.png'
 import Button from '../Btn/Btn'
 
 
@@ -22,13 +27,21 @@ const HelpCartoon = () => {
                         </ul>
                         <ul className='mute_ul'>
                             <li>
-                                <img className='smCartoonImg' src={smCarton} alt="" />
+                                <img className='smCartoonImg' src={mute} alt="" />
                             </li>
                             <li>
-                                <img className='smCartoonImg' src={smCarton} alt="" />
+                                <img className='smCartoonImg' src={refresh} alt="" />
                             </li>
-                            <li>
-                                <img className='smCartoonImg' src={smCarton} alt="" />
+                            <li className='slct_lang_li'>
+                                <img className='smCartoonImg_lang' src={lang} alt="" />
+                                <div className="lang_relt_div">
+                                    <div>
+                                        <img src={eng} alt=""/> <span>English</span>
+                                    </div>
+                                    <div>
+                                        <img src={frc} alt=""/> <span>French</span>
+                                    </div>
+                                </div>
                             </li>
 
                         </ul>

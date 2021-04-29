@@ -4,18 +4,22 @@ import delt from "../../Assets/Group 3654.png";
 import ModalImage from "../../Assets/delmodalimg.png";
 import "../../App.css";
 function DeleteProbModal(props) {
+  console.log(props)
   return (
     <div>
       <img
+      // onClick={()=>props.func}
+
         className="dlt_img"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target="#exampleModaldel"
         src={delt}
       ></img>
 
       <div
+
         class="modal fade"
-        id="exampleModal"
+        id="exampleModaldel"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"

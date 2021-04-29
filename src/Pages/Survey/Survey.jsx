@@ -23,7 +23,7 @@ const Survey = () => {
                     <Button className='participate_btn' value='Participate Now!' />
                 </div>
                 <div className="survey_card_list_">
-                    <div className={`proposal_card_body survey_single_card_body`}>
+                    <div className={`proposal_card_body survey_single_card_body `}>
                         <div className='card_title_div proposal_Card_title survey_single_title'>
                             <h5><strong style={{ color: '#1cc1a0' }}> Rising cataract issues in </strong></h5>
                             <div>
@@ -44,7 +44,7 @@ const Survey = () => {
                                 <img src={location} alt="" />
                                 <span>Lorem ipsum dolor sit</span>
                             </div>
-                            <div>
+                            <div className='survey_list_user_info_div'>
                                 <img src={user} alt="" />
                                 <p>username</p>
                             </div>
@@ -56,13 +56,24 @@ const Survey = () => {
                                 <span>2 Minutes</span>
                             </div>
                             <div>
-                                <img src={users} alt="" />
+                                <img className='users_survey' src={users} alt="" />
                                 <span>1500+</span>
                             </div>
                             <div>
                                 <img src={gift} alt="" />
                                 <span>50 Loco points</span>
                             </div>
+                        </div>
+                        <p className='survey_hr_2' />
+
+                        <div className='user_card_detail_div  survey_user survey_mob_user'>
+                            <div className='survey_list_user_info_div_mob'>
+                                <img src={user} alt="" />
+                                <p>username</p>
+                            </div>
+                                <div>
+                                    <p>May, 1, 2021</p>
+                                </div>
                         </div>
                     </div>
                     <div className='survey_list_div'>

@@ -8,6 +8,9 @@ import grid from '../../Assets/Group 3602.png'
 import listG from '../../Assets/list.png'
 import gridG from '../../Assets/grid.png'
 import liW from '../../Assets/liW.png'
+import search2 from '../../Assets/Icon feather-search.png'
+import Search from './Search'
+
 
 
 const SearchResultHead = () => {
@@ -17,6 +20,20 @@ const SearchResultHead = () => {
     return (
         <div>
             <div className='search_result_div'>
+                
+                <div className="blog_search_inp_div_mob">
+                    <img src={search2} alt="" />
+                    <input type="text" placeholder='Search the community' />
+                </div>
+                <div className="search_filter_mob">
+                    <div>
+                        <span>Filter Results</span>
+                        <p className='icon_filrt'>{'<'}</p>
+                        <div className="mob_search_card_comp">
+                            <Search />
+                        </div>
+                    </div>
+                </div>
                 <div className='search_result_head_div'>
                     <div className='search_reslut'>Showing result for <span> "Potholes" </span> , near <span> " Togo nigeria " </span></div>
                     <div className="list_card_veiw">
@@ -25,11 +42,11 @@ const SearchResultHead = () => {
                     </div>
                 </div>
                 <TopicHead result='2 Result' head='Issues' />
-                <IssueCard className='btn_left' list={list} />
+                <IssueCard Cuser className='btn_lef' list={list} />
                 <TopicHead result='1533 Result' head='Proposal' />
-                <ProductProposalCard left='btn_left' list={list} />
+                <ProductProposalCard left='btn_lef' list={list} />
                 <TopicHead result='1033 Result' head='Surveys' />
-                <ProSurveyCard data={SurveyCard.all_user} left='btn_left' list={list} />
+                <ProSurveyCard data={SurveyCard.all_user} left='btn_lef' list={list} />
 
             </div>
         </div>

@@ -1,10 +1,11 @@
 .post_home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 3rem 0;
 }
 
 .post_home > div {
@@ -57,13 +58,12 @@
   flex-direction: column;
   align-items: center;
 }
-
 .cs_tab_box {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65% !important;
+  width: 45%;
   border-radius: 5px;
   height: 133px;
   overflow-x: hidden;
@@ -114,6 +114,10 @@
 }
 
 /* post report */
+
+.post_report > div {
+  width: 500px;
+}
 
 .pr_frorm {
   width: 100%;
@@ -229,6 +233,12 @@
   }
   .post_report {
     margin: 6rem 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .post_report > div {
+    width: 90%;
   }
 }
 @media (max-width: 425px) {

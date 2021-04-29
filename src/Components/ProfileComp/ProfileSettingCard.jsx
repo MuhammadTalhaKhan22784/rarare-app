@@ -52,6 +52,8 @@ const ProfileSettingCard = () => {
                         <select name="Country" id="Country">
                             <option value="Country">Country</option>
                         </select>
+                    <Button className='upcoming_btn ' value='Save Changes' />
+
                     </div>
                     <div className='profile_setting_inp_img'>
                         <h6>Profile Image</h6>

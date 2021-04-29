@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Btn/Btn'
 import dot from '../../Assets/dot.png'
+import businesslogo from '../../Assets/businesslogo.png'
 
 import './Bussines.css'
 
@@ -11,7 +12,7 @@ const Authority = () => {
         <div className='bussines_container'>
             <div className='bussines_main_div'>
                 <div className="bussine_top_img_div">
-                    <img src='https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-app/main/src/Assets/lg_logo.png' alt="lgLogo" />
+                    <img src={businesslogo} alt="lgLogo" />
                 </div>
                 <h5 className='bussines_head'><strong>Authority/Business <strong style={{ color: '#19c2a0' }}> Registration!</strong></strong></h5>
                 <div className="bussines_para">
