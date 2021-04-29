@@ -52,7 +52,7 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item position_relative">
+              <li className="nav-item position_relative b-navitem">
                 <Link to="#" className="nav-link">
                   <span className="menu-title">Business</span>
                   <Icon

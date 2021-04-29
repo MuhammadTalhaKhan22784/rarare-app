@@ -238,6 +238,132 @@
   border-radius: 5px;
 }
 
+/*  */
+.search-dropdown {
+  position: unset !important;
+}
+
+.search_menu {
+  width: 100%;
+  height: 92px;
+}
+
+.search_main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search_main input {
+  padding-left: 10px;
+}
+
+.search_main input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.sinput1 {
+  width: 46%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+
+}
+
+
+.sinput1 .search_finput {
+  width: 100%;
+  height: 35px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.sinput2 {
+  width: 36%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+
+}
+
+.sinput2 .search_sinput {
+  width: 100%;
+  height: 35px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.search_btn {
+  width: 11%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_btn button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border:none;
+  margin: 0 auto;
+}
+
+.advance-filter {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*  */
+
+.down_arrow {
+  transition: all 0.4s ease-in;
+  color: #19c2a0 !important;
+}
+.advance-filter .nav-item:hover .down_arrow {
+  transform: rotate(180deg) !important;
+  transition: all 0.4s ease-out;
+}
+.af_submenu {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background: white;
+  border-top: none;
+  border-radius: 4px;
+  transition: 0.2s all ease-out;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+.advance-filter .nav-item:hover .af_submenu {
+  display: block;
+  transition: 0.2s all ease-out;
+}
+
+.af_submenu .af_submenu-item {
+  width: 300px;
+  padding-left: 0px !important;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.advance-filter .af_submenu .af_submenu-item .nav-item {
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+}
+
+
 /* .submenu .nav-link {
   position: relative;
 }

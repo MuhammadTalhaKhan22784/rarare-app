@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import search2 from "../../Assets/Icon feather-search.png";
 
 import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
@@ -8,7 +9,7 @@ const SearchDropdown = () => {
   const [val, setVal] = useState("1");
   return (
     <React.Fragment>
-      <div className="dropdown">
+      <div className="dropdown search-dropdown">
         <Link
           className="nav-link dropdown-toggle"
           to="#"
@@ -28,10 +29,52 @@ const SearchDropdown = () => {
           Search
         </button> */}
         <ul
-          className="dropdown-menu langdrpdwn_menu"
+          className="dropdown-menu search_menu"
           aria-labelledby="dropdownMenuButton1"
         >
-          <h2>Select a Language</h2>
+          <div className="search_main">
+            <div className="sinput1 border_solid bluegreen_border">
+              <img src={search2} alt="" />
+              <input
+                className="search_finput text_lightgray"
+                type="text"
+                placeholder="Search the community"
+              />
+            </div>
+            <div className="sinput2 border_solid bluegreen_border">
+              <img src={search2} alt="" />
+              <input
+                className="search_sinput text_lightgray"
+                type="text"
+                placeholder="Search the community"
+              />
+            </div>
+            <div className="search_btn">
+              <button className="bg_lightgreen text-white">Search</button>
+            </div>
+          </div>
+          <div className="advance-filter">
+            <li className="nav-item">
+              <Link to="#" className="nav-link">
+                <span className="menu-title">Advamce Filter</span>
+                <Icon
+                  className="fs-5 down_arrow"
+                  icon={baselineKeyboardArrowDown}
+                />
+              </Link>
+
+              <div className="af_submenu">
+                <ul className="af_submenu-item text_lightgray">
+                  <li className="nav-item">Mobile Device Management</li>
+                  <li className="nav-item">Connectivity Enabled Healthcare</li>
+                  <li className="nav-item">Citizen Engagment</li>
+                  <li className="nav-item">Online Consensus Forming</li>
+                  <li className="nav-item">Particularly Budgeting</li>
+                  <li className="nav-item">Democratic Technology</li>
+                </ul>
+              </div>
+            </li>
+          </div>
         </ul>
       </div>
 
