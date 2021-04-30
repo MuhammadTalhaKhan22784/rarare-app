@@ -51,7 +51,7 @@ const Navbar = () => {
             // aria-controls="navbarSupportedContent"
             // // aria-expanded="false"
             // aria-label="Toggle navigation"
-            onClick={() => open ? handleClose() : handleOpen()}
+            onClick={() => (open ? handleClose() : handleOpen())}
           >
             <img src={togglebtn} alt="" />
             {/* <span className="navbar-toggler-icon" /> */}
@@ -150,92 +150,96 @@ const Navbar = () => {
           </div>
 
           <div
-          className="collapse show mob_nav_collapse navbar-collapse"
-          id="navbarSupportedContent"
+            className="collapse show mob_nav_collapse navbar-collapse"
+            id="navbarSupportedContent"
           >
-          {open ? (
-            <ul className="navbar-nav mob_nav mb-2 mb-lg-0">
-              {!isActive ? (
-                <>
-                  <li
-                    onClick={() => {
-                      handleLogin();
-                    }}
-                    className="nav-item"
-                  >
-                    <Link to="/login">
-                      <button className="bg_lightgreen text-white c_btn">
-                        Login
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="nav-item mb-4">
-                    <Link to="/signup">
-                      <button className="btn s_btn">Sign up</button>
-                    </Link>
-                  </li>
-                </>
-              ) : null}
-              {/* /user ki profile ani/ */}
-              <li onClick={handleClose} className="nav-item">
-                <Link className="nav-link" to="/post">
-                  Report an issue
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/post-survey-tamplate">
-                  Post a survey
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="product">
-                  Proposals
-                </Link>
-              </li>
+            {open ? (
+              <ul className="navbar-nav mob_nav mb-2 mb-lg-0">
+                {!isActive ? (
+                  <>
+                    <li
+                      onClick={() => {
+                        handleLogin();
+                        handleClose();
+                      }}
+                      className="nav-item"
+                    >
+                      <Link to="/login">
+                        <button className="bg_lightgreen text-white c_btn">
+                          Login
+                        </button>
+                      </Link>
+                    </li>
+                    <li onClick={handleClose} className="nav-item mb-4">
+                      <Link to="/signup">
+                        <button className="btn s_btn">Sign up</button>
+                      </Link>
+                    </li>
+                  </>
+                ) : null}
+                {/* /user ki profile ani/ */}
+                <li onClick={handleClose} className="nav-item">
+                  <Link className="nav-link" to="/post">
+                    Report an issue
+                  </Link>
+                </li>
+                <li onClick={handleClose} className="nav-item">
+                  <Link className="nav-link" to="/post-survey-tamplate">
+                    Post a survey
+                  </Link>
+                </li>
+                <li onClick={handleClose} className="nav-item">
+                  <Link className="nav-link" to="product">
+                    Proposals
+                  </Link>
+                </li>
 
-              <li className="nav-item position_relative">
-                <Link to="#" className="nav-link">
-                  <span className="menu-title">Business</span>
-                </Link>
-              </li>
+                <li onClick={handleClose} className="nav-item position_relative">
+                  <Link to="#" className="nav-link">
+                    <span className="menu-title">Business</span>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="blog">
-                  Blog
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Search
-                </Link>
-              </li>
-              <li className="nav-item">
-                <LanguageDropdown />
-              </li>
-              {isActive ? (
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="#">
-                      Profile
-                    </Link>
-                  </li>
-                  <li onClick={()=>{
-                    handleLogout();
-                    handleClose();
-                  }} className="nav-item">
-                    <Link className="nav-link" to="#">
-                      Logout
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="#">
-                      Account setting
-                    </Link>
-                  </li>
-                </>
-              ) : null}
-            </ul>
-          ) : null}
+                <li onClick={handleClose} className="nav-item">
+                  <Link className="nav-link" to="blog">
+                    Blog
+                  </Link>
+                </li>
+                <li onClick={handleClose} className="nav-item">
+                  <Link className="nav-link" to="#">
+                    Search
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <LanguageDropdown />
+                </li>
+                {isActive ? (
+                  <>
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="/profile">
+                        Profile
+                      </Link>
+                    </li>
+                    <li
+                      onClick={() => {
+                        handleLogout();
+                        handleClose();
+                      }}
+                      className="nav-item"
+                    >
+                      <Link onClick={handleClose} className="nav-link" to="#">
+                        Logout
+                      </Link>
+                    </li>
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="/account-setting">
+                        Account setting
+                      </Link>
+                    </li>
+                  </>
+                ) : null}
+              </ul>
+            ) : null}
           </div>
         </div>
       </nav>

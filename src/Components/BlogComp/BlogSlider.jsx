@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Slider from 'react-slick'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 import Button from '../Btn/Btn'
-import blogSliderImg from '../../Assets/tope-a-asokere-aWc0hP9OoVI-unsplash.png'
+import blogSliderImg from '../../Assets/blogbgslider.png'
 
 // Import Swiper styles
 // import 'swiper/swiper.scss';
