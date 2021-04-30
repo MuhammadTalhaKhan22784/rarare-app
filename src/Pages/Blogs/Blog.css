@@ -177,7 +177,8 @@
 .select_blog_more_para {
   margin-top: 10px;
   /* padding: ; */
-  color: #909ab5;
+  color: #9BA3CC;
+  font-size: .9rem;
 }
 
 /* blog slider  */
@@ -353,6 +354,12 @@
   .blog_slick_slidr {
     padding: 10px 20px;
     width: 89% !important;
+  }
+  .get_blog_one_link {
+    font-size: .9rem;
+  }
+  .select_blog_para_data h5{
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 400px) {

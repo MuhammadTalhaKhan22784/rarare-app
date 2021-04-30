@@ -60,7 +60,7 @@ function Proposal() {
               {" "}
               <h4
                 className="title_responsive text_bluegreen"
-                style={{ fontSize: "1.3rem" }}
+                style={{ fontSize: "1rem", margin:"0" }}
               >
                 Title of the proposal
               </h4>
@@ -84,9 +84,8 @@ function Proposal() {
 
             <div className="card_content">
               <p
-                className="title_responsive"
+                className="title_responsive text_black"
                 style={{
-                  color: "black",
                   fontSize: "0.9rem",
                   fontWeight: "bold",
                 }}
@@ -107,7 +106,7 @@ function Proposal() {
               </p>
 
               <p
-                className="text_size_responsive text_darkblue"
+                className="text_size_responsive text_darkgray"
                 style={{ fontSize: "0.8rem" }}
               >
                 May 1 ,2020
@@ -142,8 +141,8 @@ function Proposal() {
                   ></img>
                 </span>
                 <span
-                  className="text_size_responsive"
-                  style={{ padding: "2px", fontSize: "0.9rem" }}
+                  className="text_size_responsive text_lightpurple"
+                  style={{ padding: "2px", fontSize: "0.8rem" }}
                 >
                   &nbsp;Username
                 </span>
@@ -153,7 +152,10 @@ function Proposal() {
 
             <div className="card_contentLast_row">
               <div>
-                <p className="text_size_responsive">
+                <p
+                  className="text_size_responsive text_darkgray fw-bold"
+                  style={{ fontSize: "0.8rem" }}
+                >
                   <span className="card_icon_space">
                     <FavoriteOutlinedIcon
                       className="icon_size_responsive"
@@ -165,7 +167,10 @@ function Proposal() {
                 </p>
               </div>
               <div>
-                <p className="text_size_responsive">
+                <p
+                  className="text_size_responsive text_darkgray fw-bold"
+                  style={{ fontSize: "0.8rem" }}
+                >
                   {" "}
                   <ChatBubbleIcon
                     className="icon_size_responsive"
@@ -175,7 +180,10 @@ function Proposal() {
                 </p>
               </div>
               <div>
-                <p className="text_size_responsive">
+                <p
+                  className="text_size_responsive text_darkgray fw-bold"
+                  style={{ fontSize: "0.8rem" }}
+                >
                   <img
                     className="icon_size_responsive"
                     style={{ width: "20px" }}

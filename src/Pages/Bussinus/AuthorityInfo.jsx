@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Btn/Btn'
+import businesslogo from '../../Assets/businesslogo.png'
+
 // import dot from '../../Assets/dot.png'
 
 import './Bussines.css'
@@ -11,9 +13,9 @@ const AuthorityInfo = () => {
         <div className='bussines_container'>
             <div className='bussines_main_div'>
                 <div className="bussine_top_img_div">
-                    <img src='https://raw.githubusercontent.com/MuhammadTalhaKhan22784/rarare-master/main/src/Assets/lg_logo.png' alt="lgLogo" />
+                    <img src={businesslogo} alt="lgLogo" />
                 </div>
-                <h5 className='bussines_head'><strong>Authority <strong style={{ color: '#19c2a0' }}> Registration!</strong></strong></h5>
+                <h5 className='bussines_head'><strong>Authority <strong style={{ color: '#19C2A0' }}> Registration!</strong></strong></h5>
                 <div className="bussines_para">
                     <p>Please provide the following to complete registration!</p>
                 </div>

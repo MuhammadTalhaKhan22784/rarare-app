@@ -14,7 +14,7 @@ const Authority = () => {
                 <div className="bussine_top_img_div">
                     <img src={businesslogo} alt="lgLogo" />
                 </div>
-                <h5 className='bussines_head'><strong>Authority/Business <strong style={{ color: '#19c2a0' }}> Registration!</strong></strong></h5>
+                <h5 className='bussines_head'><strong>Authority/Business <strong style={{ color: '#19C2A0' }}> Registration!</strong></strong></h5>
                 <div className="bussines_para">
                     <p>Please provide the following to complete registration!</p>
                 </div>

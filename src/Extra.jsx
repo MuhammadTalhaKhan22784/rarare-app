@@ -13,142 +13,151 @@ import greenDot from "./Assets/greendot.png";
 import Button from "./Components/Btn/Btn";
 
 import "./App.css";
+import { Dialog } from "@material-ui/core";
 const Extra = () => {
   const history = useHistory();
-  const [show, setShow] = useState("2");
+  const [show, setShow] = useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleClickOpen2 = () => {
+    setOpen2(true);
+  };
+
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
   return (
     <React.Fragment>
       <div>
-      
-        <button
-          className="blnce_btn"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal23"
-        >
+        <button className="blnce_btn" onClick={handleClickOpen}>
           Buy Loco Points
         </button>
         {/* Modal */}
-        <div
-          className="modal fade"
-          id="exampleModal23"
-          tabIndex={-1}
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
+        <Dialog
+          className="logco_modal_dialog"
+          maxWidth="xl"
+          open={open}
+          onClose={handleClose}
+          scroll="body"
         >
-          <div className="modal-dialog logco_modal_dialog modal-lg">
-            <div className="modal-content">
-              <div className="modal-header">
-                <button
-                  type="button"
-                  className="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                />
-              </div>
+          <div className="modal-content">
+            <div className="modal-header">
+              <button
+                onClick={handleClose}
+                type="button"
+                className="btn-close"
+              />
+            </div>
 
-              <div className="modal-body">
-                <div className="post_home postconsensus_home">
-                  <div>
-                    <div className="post_header">
-                      <img src={undrawEmptyCart} alt="posticon" />
-                      <h2 className="text_darkblue">
-                        Post a
-                        <strong className="text_lightpurple">Report!</strong>
-                      </h2>
+            <div className="modal-body">
+              <div className="post_home postconsensus_home">
+                <div>
+                  <div className="post_header">
+                    <img src={undrawEmptyCart} alt="posticon" />
+                    <h2 className="text_darkblue">
+                      Post a
+                      <strong className="text_lightpurple">Report!</strong>
+                    </h2>
+                  </div>
+                  <div className="category_select">
+                    <div className="cs_tabs_main pp_tabs_main">
+                      <div className="cs_tab">
+                        <div className="cs_tab_box">
+                          <img className="mdl_icon" src={dbicon1} alt="" />
+                          <h2 className="text_bluegreen fw-bold">2,000</h2>
+                          <p className="text_darkgray">LOCO POINTS</p>
+                          <span className="text_bluegreen fw-bold">
+                            ₦ 2,500
+                          </span>
+                        </div>
+                      </div>
+                      <div className="cs_tab">
+                        <div className="cs_tab_box">
+                          <div>
+                            <img
+                              className="featureimg"
+                              src={featurebg}
+                              alt=""
+                            />
+                            <h2 className="text-white">Featured</h2>
+                          </div>
+                          <img className="mdl_icon" src={dbicon2} alt="" />
+                          <h2 className="text_bluegreen fw-bold">2,000</h2>
+                          <p className="text_darkgray">LOCO POINTS</p>
+                          <span className="text_bluegreen fw-bold">
+                            ₦ 2,500
+                          </span>
+                        </div>
+                      </div>
+                      <div className="cs_tab">
+                        <div className="cs_tab_box">
+                          <img className="mdl_icon" src={dbicon3} alt="" />
+                          <h2 className="text_bluegreen fw-bold">2,000</h2>
+                          <p className="text_darkgray">LOCO POINTS</p>
+                          <span className="text_bluegreen fw-bold">
+                            ₦ 2,500
+                          </span>
+                        </div>
+                      </div>
+                      <div className="cs_tab">
+                        <div className="cs_tab_box">
+                          <img className="mdl_icon" src={dbicon4} alt="" />
+                          <h2 className="text_bluegreen fw-bold">2,000</h2>
+                          <p className="text_darkgray">LOCO POINTS</p>
+                          <span className="text_bluegreen fw-bold">
+                            ₦ 2,500
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="category_select">
-                      <div className="cs_tabs_main pp_tabs_main">
-                        <div className="cs_tab">
-                          <div className="cs_tab_box">
-                            <img className="mdl_icon" src={dbicon1} alt="" />
-                            <h2 className="text_bluegreen fw-bold">2,000</h2>
-                            <p className="text_darkgray">LOCO POINTS</p>
-                            <span className="text_bluegreen fw-bold">
-                              ₦ 2,500
-                            </span>
-                          </div>
-                        </div>
-                        <div className="cs_tab">
-                          <div className="cs_tab_box">
-                            <div>
-                              <img
-                                className="featureimg"
-                                src={featurebg}
-                                alt=""
-                              />
-                              <h2 className="text-white">Featured</h2>
-                            </div>
-                            <img className="mdl_icon" src={dbicon2} alt="" />
-                            <h2 className="text_bluegreen fw-bold">2,000</h2>
-                            <p className="text_darkgray">LOCO POINTS</p>
-                            <span className="text_bluegreen fw-bold">
-                              ₦ 2,500
-                            </span>
-                          </div>
-                        </div>
-                        <div className="cs_tab">
-                          <div className="cs_tab_box">
-                            <img className="mdl_icon" src={dbicon3} alt="" />
-                            <h2 className="text_bluegreen fw-bold">2,000</h2>
-                            <p className="text_darkgray">LOCO POINTS</p>
-                            <span className="text_bluegreen fw-bold">
-                              ₦ 2,500
-                            </span>
-                          </div>
-                        </div>
-                        <div className="cs_tab">
-                          <div className="cs_tab_box">
-                            <img className="mdl_icon" src={dbicon4} alt="" />
-                            <h2 className="text_bluegreen fw-bold">2,000</h2>
-                            <p className="text_darkgray">LOCO POINTS</p>
-                            <span className="text_bluegreen fw-bold">
-                              ₦ 2,500
-                            </span>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div className="pcontinue_btn ">
-                        <button
-                          className="cus_width100 text-white bg_lightgreen border_none"
-                          data-bs-target="#modal2"
-                          data-bs-toggle="modal"
-                          data-bs-dismiss="modal"
-                        >
-                          Continue to payment
-                        </button>
-                        <button
-                          className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
-                          onClick={() => {
-                            history.push("/consensus");
-                          }}
-                        >
-                          Back
-                        </button>
-                      </div>
+                    <div className="pcontinue_btn ">
+                      <button
+                        className="cus_width100 text-white bg_lightgreen border_none"
+                        onClick={()=>{
+                          handleClose()
+                          handleClickOpen2()
+                        }}
+                      >
+                        Continue to payment
+                      </button>
+                      <button
+                        className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
+                        onClick={() => {
+                          history.push("#");
+                        }}
+                      >
+                        Back
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="modal fade"
-          id="modal2"
-          aria-hidden="true"
-          aria-labelledby="..."
-          tabIndex={-1}
+        </Dialog>
+        <Dialog
+          maxWidth="xl"
+          open={open2}
+          onClose={handleClose2}
+          scroll="body"
+          className="logco_modal_dialog lmd2_dialog"
         >
-          <div className="modal-dialog logco_modal_dialog lmd2_dialog modal-lg">
+          <div>
             <div className="modal-content">
               <div className="modal-header">
                 <button
                   type="button"
                   className="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
+                  onClick={handleClose2}
                 />
               </div>
               <div className="modal-body">
@@ -221,10 +230,6 @@ const Extra = () => {
                           Login to Paypal to confirm payment!
                         </span>
                         <form className="s_form_fields">
-                          {/* <div className="inline_input">
-                                <input className="half_input" placeholder="First Name" type="text" />
-                                <input className="half_input" placeholder="Last Name" type="text" />
-                            </div> */}
                           <div>
                             <input
                               className="full_input"
@@ -252,7 +257,18 @@ const Extra = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Dialog>
+
+        {/* <div
+          className="modal fade"
+          id="modal2"
+          aria-hidden="true"
+          aria-labelledby="..."
+          tabIndex={-1}
+        >
+      
+      
+        </div> */}
       </div>
     </React.Fragment>
   );

@@ -74,7 +74,6 @@ function ProposalComponentRight() {
               <span
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
-                style={{ backgroundColor: "rgb(59, 198, 161)", color: "white" }}
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
@@ -87,7 +86,6 @@ function ProposalComponentRight() {
               <span
                 class="carousel-control-next-icon"
                 aria-hidden="true"
-                style={{ backgroundColor: "rgb(59, 198, 161)", color: "white" }}
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -107,7 +105,7 @@ function ProposalComponentRight() {
           
           </div> */}
         </div>
-{/* 
+        {/* 
         <div className="image_gallery d-flex">
           <div className="slider_down_border">
               <img className="slider_down_image1" src={image1}></img>

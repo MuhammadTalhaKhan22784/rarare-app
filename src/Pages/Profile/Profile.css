@@ -139,14 +139,16 @@ h1 , h2 ,h3 , h4,h5,h6{
 .profile_proposal_loc_div>p{
     margin-bottom: 10px;
     font-size: .9em;
-    color: #7b8193;
+    color: #9BA3CC;
     font-weight: 600;
 }
 .profile_proposal_loc_div>img{
     margin-top: 2px;
 }
 /* profile card css  */
-
+.textGrey{
+    color: #8792AF !important;
+}
 
 .profile_card_main_div{
     width: 380px;
@@ -156,6 +158,9 @@ h1 , h2 ,h3 , h4,h5,h6{
     padding: 15px;
     /* margin: 40px auto; */
     margin-top: 50px;
+}
+.redeem_card_maindiv>p{
+    color: #2C2C2C !important;
 }
 .user_name_div{
     display: flex;
@@ -191,6 +196,10 @@ h1 , h2 ,h3 , h4,h5,h6{
 .profile_hr{
     display: inherit !important;
     width: 350px;
+}
+.r_points_div>div>h5{
+    color: #19C2A0 !important;
+    margin-top: 4px !important;
 }
 .redeem_head>h5{
     margin-bottom: 0px;
@@ -743,7 +752,7 @@ h1 , h2 ,h3 , h4,h5,h6{
     }
     .width_proposal  p,.width p{
         font-size: .8em;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .width_proposal .card_title_div{
         padding-top: 0px;
@@ -751,8 +760,11 @@ h1 , h2 ,h3 , h4,h5,h6{
     .width_proposal{
         padding: 10px;
     }
-    .width_proposal span{
-        font-size: .8em;
+    .width_proposal .perticipant_div span{
+        font-size: .7em;
+    }
+    .width_proposal h5{
+        font-size: .9rem;
     }
     .width_proposal div{
         margin-top: 5px;
@@ -897,6 +909,22 @@ h1 , h2 ,h3 , h4,h5,h6{
         width: 330px !important;
         text-align: start !important;
     }
+    .reportProblm_btn{
+        font-size: .8rem;
+    }
+    .topic_head_div h5{
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+    .textGrey{
+        font-size: .8rem;
+    }
+    .proposal_list_body .card-text{
+        font-size: .8rem;
+    }
+    .pro_list_loc{
+        font-size: .8rem;
+    }
     
 }
 @media screen and (max-width:400px){
@@ -1028,7 +1056,10 @@ h1 , h2 ,h3 , h4,h5,h6{
     .notifications_card{
         width: 270px !important;
     }
-    .topic_head_div {
-        /* flex-wrap: wrap; */
+    
+}
+@media screen and (max-width:310px){
+    .topic_head_div h5{
+        font-size: 1rem;
     }
 }

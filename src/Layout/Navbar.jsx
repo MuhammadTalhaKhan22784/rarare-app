@@ -1,41 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 //
 import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
 import "./style.css";
-// assets
-import rarareLogo from "../Assets/logo_rarare.png";
 import LanguageDropdown from "../Components/Dropdown/LanguageDropdown.jsx";
 import NotificationDropdown from "../Components/Dropdown/NotificationDropdown";
 import CartDropdown from "../Components/Dropdown/CartDropdown";
 import SearchDropdown from "../Components/Dropdown/SearchDropdown";
+import UserDropdown from "../Components/Dropdown/UserDropdown";
 
+// assets
+import rarareLogo from "../Assets/logo_rarare.png";
+import path from "../Assets/path.png";
+import togglebtn from "../Assets/togglebtn.png";
 const Navbar = () => {
+  let [isActive, setIsActive] = useState(false);
+  let [open, setOpen] = useState(false);
+
+  const handleLogin = () => {
+    setTimeout(() => {
+      setIsActive(true);
+    }, 1000);
+  };
+  const handleLogout = () => {
+    setIsActive(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+    console.log(open);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg c_navbar">
-        <div className="container">
+      <nav className="navbar navbar-expand-lg c_navbar" id="top">
+        <div className="container c_container">
           <Link className="navbar-brand" to="/">
             <img className="nav_rarare_logo" src={rarareLogo} alt="logo" />
           </Link>
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            // data-bs-toggle="collapse"
+            // data-bs-target="#navbarSupportedContent"
+            // aria-controls="navbarSupportedContent"
+            // // aria-expanded="false"
+            // aria-label="Toggle navigation"
+            onClick={() => open ? handleClose() : handleOpen()}
           >
-            <span className="navbar-toggler-icon" />
+            <img src={togglebtn} alt="" />
+            {/* <span className="navbar-toggler-icon" /> */}
           </button>
+
           <div
             className="collapse desk_nav_collapse navbar-collapse"
-            id="navbarSupportedContent"
+            // id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/post">
                   Report an issue
@@ -81,53 +107,77 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-               
                 <SearchDropdown />
-
               </li>
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <LanguageDropdown />
               </li>
-              <li className="nav-item">
-                <NotificationDropdown />
-              </li>
-              <li className="nav-item">
-                <CartDropdown />
-              </li>
-              {/* <li className="nav-item">
-                <Link to="/signup">
-                  <button className="btn s_btn">Sign up</button>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/login">
-                  <button className="bg_lightgreen text-white c_btn">
-                    Login
-                  </button>
-                </Link>
-              </li> */}
+              {isActive ? (
+                <>
+                  <img className="path_line" src={path} alt="" />
+
+                  <li className="nav-item">
+                    <NotificationDropdown />
+                  </li>
+                  <img className="path_line" src={path} alt="" />
+                  <li className="nav-item">
+                    <CartDropdown />
+                  </li>
+                  <img className="path_line" src={path} alt="" />
+                  <li className="nav-item">
+                    <UserDropdown logout={handleLogout} />
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <Link to="/signup">
+                      <button className="btn s_btn">Sign up</button>
+                    </Link>
+                  </li>
+                  <li onClick={handleLogin} className="nav-item">
+                    <Link to="/login">
+                      <button className="bg_lightgreen text-white c_btn">
+                        Login
+                      </button>
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
+
           <div
-            className="collapse mob_nav_collapse navbar-collapse"
-            id="navbarSupportedContent"
+          className="collapse show mob_nav_collapse navbar-collapse"
+          id="navbarSupportedContent"
           >
+          {open ? (
             <ul className="navbar-nav mob_nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/login">
-                  <button className="bg_lightgreen text-white c_btn">
-                    Login
-                  </button>
-                </Link>
-              </li>
-              <li className="nav-item mb-4">
-                <Link to="/signup">
-                  <button className="btn s_btn">Sign up</button>
-                </Link>
-              </li>
-              <li className="nav-item">
+              {!isActive ? (
+                <>
+                  <li
+                    onClick={() => {
+                      handleLogin();
+                    }}
+                    className="nav-item"
+                  >
+                    <Link to="/login">
+                      <button className="bg_lightgreen text-white c_btn">
+                        Login
+                      </button>
+                    </Link>
+                  </li>
+                  <li className="nav-item mb-4">
+                    <Link to="/signup">
+                      <button className="btn s_btn">Sign up</button>
+                    </Link>
+                  </li>
+                </>
+              ) : null}
+              {/* /user ki profile ani/ */}
+              <li onClick={handleClose} className="nav-item">
                 <Link className="nav-link" to="/post">
                   Report an issue
                 </Link>
@@ -162,7 +212,30 @@ const Navbar = () => {
               <li className="nav-item">
                 <LanguageDropdown />
               </li>
+              {isActive ? (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Profile
+                    </Link>
+                  </li>
+                  <li onClick={()=>{
+                    handleLogout();
+                    handleClose();
+                  }} className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Logout
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Account setting
+                    </Link>
+                  </li>
+                </>
+              ) : null}
             </ul>
+          ) : null}
           </div>
         </div>
       </nav>

@@ -166,6 +166,7 @@ body {
 
 .logco_modal_dialog .pp_tabs_main {
   width: 679px;
+  max-width: 100%;
   box-shadow: none;
 }
 

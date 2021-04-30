@@ -156,6 +156,8 @@
 }
 
 /* reinvented comp  */
+
+
 /* .reinvite_main_div{
     margin-top: 30px;
 } */
@@ -180,7 +182,7 @@
 }
 .reinventing_para{
     margin-top: 10px;
-    color: #bdc3d3;
+    color: #8792AF;
 }
 .Sign_up_today_btn{
     background-color: #1cc1a0;
@@ -241,7 +243,7 @@
 
 }
 .dp_para_head{
-    color: #bdc3d3;
+    color: #8792AF;
     margin-top: 10px;
 }
 
@@ -307,7 +309,7 @@
 }
 .step1_div>p,.step2_div>p,.step3_div>p,.step4_div>p,.step5_div>p{
     font-size: .9em;
-    color: #bdc3d3;
+    color: #8792AF;
 }
 .voice_step_div{
     text-align: center;
@@ -355,7 +357,7 @@
 
 .view_all_div>p{
  margin: 20px auto;
- color: #8994b0;
+ color: #8792AF;
  width: fit-content;
 }
 .view_all_div>p:hover{
@@ -386,7 +388,7 @@
 }
 .get_detail_para{
     margin-top: 20px;
-    color: #8994b0;
+    color: #8792AF;
 }
 .head_blb_div{
     display: flex;
@@ -890,7 +892,8 @@
         display: none;
     }
 }
-@media screen and (max-width:420px){
+
+@media screen and (max-width:430px){
     .girl_img{
         width: 250px;
     }
@@ -919,10 +922,13 @@
     }
    .voice_heard_btn_div .voice_heard_btn_white{
        margin-left: 0px;
-       width: 250px;
+       width: 220px;
+      font-size: .9rem;
+
    }
   .voice_heard_btn_div .voice_heard_btn_grn{
-      width: 250px;
+      width: 220px;
+      font-size: .9rem;
   }
   .square_img,.eye_img2{
       width: 250px;
@@ -939,6 +945,28 @@
   .partner_scroll_div>img{
       margin: 10px;
   }
+  .dp_para_head,.reinventing_para,.Sign_up_today_btn{
+      font-size: .8rem;
+  }
+  .reinvite_detail_div h2{
+      font-size: 1.2rem;
+  }
+  .what_we_do_sub_div h3{
+      font-size: 1.1rem;
+  }
+  .myCcard>div h5{
+      font-size: 1rem;
+  }
+  .get_detail_para p{
+      font-size: .8rem;
+  }
+  .getInsp_btn{
+      font-size: .9rem;
+  }
+  .view_all_div>p{
+      font-size: .8rem;
+  }
+  
 }
 
 @media screen and (max-width:400px){

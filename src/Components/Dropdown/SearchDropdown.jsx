@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import search2 from "../../Assets/Icon feather-search.png";
 
@@ -6,7 +6,14 @@ import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
 const SearchDropdown = () => {
-  const [val, setVal] = useState("1");
+  const [open, setOpen] = useState(false);
+  const handleClick = ()=>{
+    setOpen(false)
+  }
+  useEffect(()=>{
+    window.addEventListener("click",handleClick);
+    return()=>window.removeEventListener("click",handleClick);
+  },[])
   return (
     <React.Fragment>
       <div className="dropdown search-dropdown">
@@ -14,8 +21,10 @@ const SearchDropdown = () => {
           className="nav-link dropdown-toggle"
           to="#"
           id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+          onClick={(e)=>{
+            e.stopPropagation()
+            setOpen(!open)
+          }}
         >
           Search
         </Link>
@@ -28,9 +37,8 @@ const SearchDropdown = () => {
         >
           Search
         </button> */}
-        <ul
-          className="dropdown-menu search_menu"
-          aria-labelledby="dropdownMenuButton1"
+        {open && <div onClick={(e)=> e.stopPropagation()}
+          className="dropdown-menu search_menu show"
         >
           <div className="search_main">
             <div className="sinput1 border_solid bluegreen_border">
@@ -125,7 +133,7 @@ const SearchDropdown = () => {
               </div>
             </li>
           </div>
-        </ul>
+        </div>}
       </div>
 
       {/*     

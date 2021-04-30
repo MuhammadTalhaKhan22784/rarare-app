@@ -260,9 +260,12 @@
 .health_analysis_ul > li {
   margin-top: 8px;
 }
+.health_analysis_ul>li>p{
+  color: #2C2C2C;
+}
 .health_analysis_ul > li > div > span {
   margin-left: 10px;
-  color: #979cab;
+  color: #5F677C;
 }
 .health_analysis_ul {
   max-height: 40vh;

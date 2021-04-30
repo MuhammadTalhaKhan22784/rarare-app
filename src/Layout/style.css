@@ -4,14 +4,30 @@
 }
 
 .nav_rarare_logo {
-  width: 70%;
+  width: 100px;
+  object-fit: contain;
 }
+
+.navbar-nav {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+/* 
+.c_container {
+  max-width: 95%;
+  margin: 0 auto !important;
+} */
 
 .c_navbar .navbar-nav .nav-item .nav-link {
   color: black !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
 }
 
 .en_option {
@@ -31,8 +47,8 @@
 }
 
 .c_btn {
-  width: 100px !important;
-  height: 100%;
+  width: 109px;
+  height: 35px;
   border: none;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -74,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-  z-index:99999;
+  z-index: 99999;
 }
 
 .submenu .submenu-item .nav-item {
@@ -86,6 +102,7 @@
 
 .lang_btn {
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 .lang_btn:hover .down_arrow_1 {
@@ -131,12 +148,12 @@
 
 .notif_btn {
   width: 50px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   /* height: 50px; */
 }
 
 .notif_btn img {
-  width: 100%;
+  width: 29px;
   object-fit: contain;
 }
 
@@ -247,7 +264,7 @@
 .search_menu {
   width: 100%;
   height: 92px;
-  z-index: 234;
+  left: 0;
 }
 
 .search_main {
@@ -336,7 +353,6 @@
   top: 88px;
   left: 0;
   display: none;
-  z-index: 999;
   background: #f3f4f7;
   border-top: none;
   border-radius: 4px;
@@ -385,6 +401,93 @@
 .af_smi_2 span {
   margin-top: 8px;
   font-size: 1rem;
+}
+
+/*  */
+
+.userinfo_dropdown {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.userinfo_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.userinfo_text h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.userinfo_text span {
+  font-size: 0.8rem;
+}
+
+.userdrpdwn_btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.usericon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.downicon {
+  margin-left: 11px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.path_line {
+  width: 2px;
+  height: 35px;
+}
+
+/*  */
+
+.userdrpdwn_menu {
+  width: 100%;
+  height: max-content;
+  padding: 1rem 0;
+  border: none;
+  box-shadow: 0px 0px 10px gainsboro;
+}
+
+.userdrpdwn_content {
+  width: 95%;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.c_navbar hr {
+  width: 100%;
+}
+
+.userdrpdwn_content .userinfo_text {
+  align-items: center;
+  padding-top: 10px;
+}
+
+.userdrpdwn_content button {
+  height: 33px;
+  width: 180px;
+  border-radius: 5px;
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* 
@@ -534,6 +637,12 @@
 }
 
 @media (max-width: 991px) {
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .s_btn {
+    font-size: 1rem;
+  }
   .navbar-brand {
     margin-left: 2rem;
   }
@@ -559,7 +668,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 300px;
     height: max-content;
     background: white;
     padding: 2rem 0;
@@ -568,6 +677,11 @@
   }
   .mob_nav .c_btn {
     height: 33px;
+  }
+  .lang_btn {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto 14px auto;
   }
 }
 

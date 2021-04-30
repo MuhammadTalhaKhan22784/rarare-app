@@ -10,6 +10,7 @@ import backTop from "../Assets/backtop.png";
 
 import "./style.css";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 const Footer = () => {
   let history = useHistory();
   return (
@@ -146,7 +147,10 @@ const Footer = () => {
             </div>
             <div>
               <span className="backtop text_darkblue fw-bold">
-                Back to top <img src={backTop} alt="" />
+                Back to top{" "}
+                <a href="#top">
+                  <img src={backTop} alt="" />
+                </a>
               </span>
             </div>
           </div>

@@ -12,7 +12,7 @@ import edit from "../../Assets/Group 3655.png";
 import delt from "../../Assets/Group 3654.png";
 import DeleteProbModal from "../Modal/DeleteProbModal";
 
-const ProSurveyCard = ({ list, className, left, data, togleImg ,Cuser}) => {
+const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
   let [togle, setTogle] = useState("");
   let [bool, setBool] = useState(false);
   // let [list, Setlist] = useState(true)
@@ -60,13 +60,15 @@ const ProSurveyCard = ({ list, className, left, data, togleImg ,Cuser}) => {
                   </div>
                   <p className="survey_hr" />
                   <div className="user_card_detail_div proposal_card_user pro_survey_user">
-                    <div>
-                      {val.proImg?
-                      <img src={val.proImg?val.img:null} alt="" />
-                      :null
+                    {val.proImg ?
+                      <div>
+                        <>
+                          <img src={val.proImg ? val.img : null} alt="" />
+                          <p>{val.name}</p>
+                        </>
+                      </div>
+                      : null
                     }
-                      <p>{val.name}</p>
-                    </div>
                     <div>
                       <p className='issue_dat_p'>{val.date}</p>
                     </div>

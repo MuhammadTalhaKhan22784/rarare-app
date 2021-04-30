@@ -19,7 +19,7 @@ const WhatwedoCard = () => {
         <React.Fragment>
             {cardData.map((val, i) => (
 
-                <div className='do_card_container'>
+                <div className='do_card_container' key={i}>
                     <div className="card myCcard" style={{ width: '18rem' }}>
                         <img style={{ width: "100px" }} src={val.img} class="card-img-top" alt="..." />
                         <div>

@@ -1,142 +1,153 @@
-.ProposalComponent_card_content{
-    display:flex;
-    justify-content: space-around;
-    padding:4px
-    ; 
-    padding-top: 20px;
+.ProposalComponent_card_content {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+  padding-top: 20px;
 }
-.ProposalComponent_card{
-    background-color:lightgray;
-    padding-top: 8px;
-    /* padding:10px; */
-    box-shadow: 1px -1px 10px -3px #ccc;
-    /* background-color:#F5F5F9; */
-    padding-left: 2px;
-  
-  
+.ProposalComponent_card {
+  background-color: lightgray;
+  padding-top: 8px;
+  /* padding:10px; */
+  box-shadow: 1px -1px 10px -3px #ccc;
+  /* background-color:#F5F5F9; */
+  padding-left: 2px;
 }
-.Proposal_component_card{
-    
-   
+.Proposal_component_card {
 }
 
-.comments{
-    border:2px solid lightgray;
-    display:flex;
-    align-items: center;
-    justify-content:flex-start;
+.comments {
+  border: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-
-.input_comment{
-    padding: 21px;width:85%;border:none
+.input_comment {
+  padding: 21px;
+  width: 85%;
+  border: none;
 }
 
-.input_comment:hover{
-    border:none
+.input_comment:hover {
+  border: none;
 }
-.card_review_component{
-   display:flex;
-   justify-content: space-between;
-   font-size: 0.8rem;
-}
-
-.card_content_component{
-    padding-top: 22px;
-    padding: 13px;
-    justify-content: center;
-    font-size:14px;
+.card_review_component {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
 
-.card_review_component_text{
-   margin-top: -12px;
+.card_content_component {
+  padding-top: 22px;
+  padding: 13px;
+  justify-content: center;
+  font-size: 14px;
 }
 
-.btn1:focus{
-background-color: #45C1A1!important;color:white !important;
-}
-.btn_same2:focus{background-color: #45C1A1!important;color:white !important;}
-.btn_same:focus{
-    background-color: #45C1A1!important;color:white !important;
+.card_review_component_text {
+  margin-top: -12px;
 }
 
-.btn_same,.btn1{
-    width:130px
+.btn1:focus {
+  background-color: #45c1a1 !important;
+  color: white !important;
+}
+.btn_same2:focus {
+  background-color: #45c1a1 !important;
+  color: white !important;
+}
+.btn_same:focus {
+  background-color: #45c1a1 !important;
+  color: white !important;
 }
 
-
-
+.btn_same,
+.btn1 {
+  width: 130px;
+}
 
 @media only screen and (max-width: 600px) {
-    .Proposal_component_card{
-    width:100%;
-    font-size: 14px;height:370px;
+  .Proposal_component_card {
+    width: 100%;
+    font-size: 14px;
+    height: 370px;
     padding-bottom: 10px;
-    }
-  .btn1{
-          width:20px!important;font-size: 11px!important;margin-left: 12px;
-   }
-   .btn_same{ width:80px!important;font-size: 9px!important}
+  }
+  .btn1 {
+    width: 20px !important;
+    font-size: 11px !important;
+    margin-left: 12px;
+  }
+  .btn_same {
+    width: 80px !important;
+    font-size: 9px !important;
+  }
 
-.btn_same2{ width:97px!important;font-size: 11px!important;}
-   .icon_responsive{
-       font-size: 17px!important;
-       width:16px!important
-   }
+  .btn_same2 {
+    width: 97px !important;
+    font-size: 11px !important;
+  }
+  .icon_responsive {
+    font-size: 17px !important;
+    width: 16px !important;
+  }
 
+  .input_comment {
+    padding: 20px !important;
+    width: 78%;
+  }
 
-   .input_comment{padding:20px!important;width:78%}
-
-   /* .responsive_send_icon{
+  /* .responsive_send_icon{
        font-size: 12px!important;
    } */
 
-   .card_content_component{
+  .card_content_component {
     overflow-y: scroll;
-   }
-   .ProposalComponent_card_content{
-       display: flex;justify-content: space-evenly;
-   }
-
-
-   
   }
-
-
+  .ProposalComponent_card_content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 
 @media only screen and (max-width: 390px) {
-    .card_review_component_text{
-        font-size: 0.7rem!important;
-    }
-    .Proposal_component_card{
-    width:100%;
-    font-size: 12px;height:370px;
+  .card_review_component_text {
+    font-size: 0.7rem !important;
+  }
+  .Proposal_component_card {
+    width: 100%;
+    font-size: 12px;
+    height: 370px;
     padding-bottom: 10px;
-    }
-   .btn_same{
-          width:74px!important;
-          font-size: 9px!important;
-   }
+  }
+  .btn_same {
+    width: 74px !important;
+    font-size: 9px !important;
+  }
 
-   .btn1{
-       widows: 10px !important;font-size: 9px!important;padding: 0!important;}
-.btn_same2{ width:10px!important;font-size: 8px!important;}
-   .icon_responsive{
-       font-size: 12px!important;
-       width:10px!important
-   }
+  .btn1 {
+    widows: 10px !important;
+    font-size: 9px !important;
+    padding: 0 !important;
+  }
+  .btn_same2 {
+    width: 10px !important;
+    font-size: 8px !important;
+  }
+  .icon_responsive {
+    font-size: 12px !important;
+    width: 10px !important;
+  }
 
-   .responsive_send_icon{
-       font-size: 14px!important;
-   }
+  .responsive_send_icon {
+    font-size: 14px !important;
+  }
 
-   .responsive_smie_icon{
-       font-size: 14px!important;
-   }
+  .responsive_smie_icon {
+    font-size: 14px !important;
+  }
 
-   .input_comment{
-       font-size: 13px!important;
-   }
-
-
+  .input_comment {
+    font-size: 13px !important;
+  }
 }

@@ -88,7 +88,7 @@
 .bussiness_info_div_inp > input {
   width: 100%;
   padding: 6px 10px;
-  border: 1px solid #34b299;
+  border: 1px solid #19C2A0;
   margin-top: 10px;
   border-radius: 3px;
   color: #8c9cb5 !important;
@@ -218,6 +218,15 @@
     margin-left: 0;
     width: 191px !important;
     font-size: 0.8rem;
+  }
+  .bussines_head{
+    font-size: 1rem;
+  }
+  .two_box_div>div h6{
+    font-size: .9rem;
+  }
+  .bussines_para,._box_detail p,.busines_login_para,.busi_login_link{
+    font-size: .8rem;
   }
 }
 @media screen and (max-width: 430px) {

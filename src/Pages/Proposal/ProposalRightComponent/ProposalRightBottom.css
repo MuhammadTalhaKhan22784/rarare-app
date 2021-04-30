@@ -1,36 +1,95 @@
-.proposalRightBottom{
-    margin-top: 20px;
-
+.proposalRightBottom {
+  margin-top: 20px;
 }
 
-.card{
-    padding:10px;
-    width:500px;
-    padding-bottom:18px;
+.card {
+  padding: 10px;
+  width: 500px;
+  padding-bottom: 18px;
 }
 
-.div_card{
-    box-shadow: 2px -2px 6px -3px #ccc;
+.div_card {
+  box-shadow: 2px -2px 6px -3px #ccc;
 }
-.card_options{
-   padding:14px;
-   padding-left: 17px;
-   box-shadow: 1px -1px 10px -3px #ccc;
-   margin-top: 18px;
+.card_options {
+  padding: 14px;
+  padding-left: 17px;
+  box-shadow: 1px -1px 10px -3px #ccc;
+  margin-top: 18px;
 }
-
-
-
-
-
 
 @media only screen and (max-width: 680px) {
-    .card{width:310px}
-    
-    }
+  .Proposal_content_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proposalRightComponent {
+    width: 500px;
+    justify-content: center;
+    display: flex;
+  }
+  .proposalRightBottom .card {
+      display: none;
+  }
+  /* .proposalRightComponent .card {
+    width: 100%;
+  } */
+}
+
+@media only screen and (max-width: 600px) {
+  /* .proposalRightComponent {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  } */
+  .Proposal_content_right {
+    padding: 30px;
+    flex: unset;
+    margin-top: 4rem;
+  }
+  .proposalRightComponent {
+    width: 100%;
+  }
+  .proposalRightComponent .card {
+    width: 100%;
+  }
+  .proposalRightBottom {
+    width: 100%;
+  }
+  .proposalRightBottom .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 503px) {
+  .Proposal_content_right {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  .Proposal_content_right {
+    margin-top: 11rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .Proposal_content_right {
+    margin-top: 3rem;
+  }
+}
 
 
-@media only screen and (max-width: 360px) {
-    .card{width:310px;}
-    
+@media only screen and (max-width: 359px) {
+    .Proposal_content_right {
+      margin-top: 6rem;
     }
+  }
+
+/* @media only screen and (max-width: 360px) {
+  .card {
+    width: 310px;
+  }
+} */

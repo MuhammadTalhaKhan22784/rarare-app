@@ -6,6 +6,14 @@
   width: 100%;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("../../Assets/Group 3604.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../Assets/Group 3603.png");
+}
+
 .Rant_content_left {
   /* border:2px solid red; */
   flex: 0.4;

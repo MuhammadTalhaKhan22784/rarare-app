@@ -111,6 +111,19 @@
     .terms_para_div>p{
         padding: 10px;
     }
+    .terms_sub_head_div h5{
+        font-size: 1.1rem;
+    }
+    .terms_two_box_para_div,.term_copyright_div1,.terms_para_div{
+        font-size: .8rem;
+    }
+    .term_note_para p{
+        margin-bottom: 5px;
+    }
+    .term_note_para{
+        font-size: .8rem;
+
+    }
 }
 
 @media screen and (max-width:340px){

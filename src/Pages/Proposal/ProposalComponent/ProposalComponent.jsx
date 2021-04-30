@@ -9,7 +9,7 @@ import shareIcon from "../../../Assets/Icon awesome-share.png";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import FavoriteOutlinedIcon from "@material-ui/icons/FavoriteOutlined";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import {FaShare} from "react-icons/fa";
+import { FaShare } from "react-icons/fa";
 function proposal_component() {
   function defaultColor1() {
     document.getElementById("Rbtn-change-color1").style.color = "#D3D3D3";
@@ -108,7 +108,7 @@ function proposal_component() {
                       <img src={userImage}></img>
                     </span>
                     <span
-                      className="Rcard_review_component_text"
+                      className="Rcard_review_component_text text_lightpurple"
                       style={{ padding: "3px" }}
                     >
                       &nbsp;Username
@@ -121,8 +121,10 @@ function proposal_component() {
                     05:00 PM / May , 1 , 2021
                   </p>
                 </div>
-                <div className="Rcard_review_component_text">
-                  we need this beautiful desigwe need this beautiful design
+                <div className="Rcard_review_component_text text_lightgray">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et{" "}
                 </div>
                 <br></br>
               </>
