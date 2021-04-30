@@ -188,7 +188,7 @@ body {
   position: absolute;
   top: 16px;
   font-size: 0.8rem;
-  left: 18px;
+  left: 16px;
 }
 
 .logco_modal_dialog .cs_tab_box {
@@ -221,7 +221,7 @@ body {
 }
 
 .logco_modal_dialog .cs_tab_box img {
-  width: 60%;
+  width: 80%;
   left: 0px;
   top: 10px;
 }
@@ -252,4 +252,17 @@ body {
   text-align: center;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.mob_pptabs {
+  overflow-y: hidden !important;
+}
+.mob_payment_form .s_form_fields {
+  width: 56% !important;
+}
+
+@media screen and (max-width: 700px) {
+  .mob_pptabs {
+    height: max-content !important;
+  }
 }

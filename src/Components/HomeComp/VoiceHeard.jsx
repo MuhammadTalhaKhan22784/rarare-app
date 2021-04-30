@@ -7,8 +7,11 @@ import smile from '../../Assets/smile.png'
 import group from '../../Assets/groupicon.png'
 import result from '../../Assets/result.png'
 import mobStep from '../../Assets/Group 5608.png'
+import {useHistory} from 'react-router-dom'
 
 const VoiceHeard = () => {
+    const history = useHistory()
+
     return (
         <div className='voice_heard_container'>
             <div className='voice_heard_main_div'>
@@ -26,7 +29,7 @@ const VoiceHeard = () => {
                     </div>
                     <div className='voice_heard_btn_div'>
 
-                        <Button className='voice_heard_btn_grn' value='View current proposals' />
+                        <Button onClick={()=>history.push('/product')} className='voice_heard_btn_grn' value='View current proposals' />
                         <Button className='voice_heard_btn_white' value='Propose a deliberation' />
                     </div>
                 </div>

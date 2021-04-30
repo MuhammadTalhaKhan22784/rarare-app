@@ -11,6 +11,7 @@ const SecuritySettingCard = () => {
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true,
+        checkedC: true,
     });
 
     const handleChange = (event) => {
@@ -45,10 +46,10 @@ const SecuritySettingCard = () => {
                                 <div className="head_select_div">
                                     <h6>Rants</h6>
                                     <Switch
-                                        checked={state.checkedB}
+                                        checked={state.checkedA}
                                         onChange={handleChange}
                                         color="primary"
-                                        name="checkedB"
+                                        name="checkedA"
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
@@ -71,10 +72,10 @@ const SecuritySettingCard = () => {
                                 <div className="head_select_div">
                                     <h6>Surveys</h6>
                                     <Switch
-                                        checked={state.checkedB}
+                                        checked={state.checkedC}
                                         onChange={handleChange}
                                         color="primary"
-                                        name="checkedB"
+                                        name="checkedC"
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>

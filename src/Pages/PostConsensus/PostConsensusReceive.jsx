@@ -56,16 +56,16 @@ const PostConsensusReceive = () => {
           <div className="pcontinue_btn ">
             <button
               className="cus_width100 text-white bg_lightgreen border_none"
-              data-bs-target="#modal2"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
+              onClick={() => {
+                history.push("/consensus");
+              }}
             >
               Post another proposal!
             </button>
             <button
               className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
               onClick={() => {
-                history.push("/consensus");
+                history.push("/consensus-time");
               }}
             >
               Back

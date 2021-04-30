@@ -17,11 +17,12 @@ function Modal() {
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-        style={{ marginTop: "20px", padding: "50px" }}
+
+        style={{ marginTop: "20px" }}
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-body ">
+            <div class="modal-body "style={{boxShadow: "0px 0px 5px gainsboro" }}>
               <div className="text-end">
                 <button
                   type="button"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 // import enFlag from "../../Assets/PNG/Landing Page/flag_en.png"
 import cartIcon from "../../Assets/carticon.png";
@@ -8,7 +8,9 @@ import downicon from "../../Assets/downicon.png";
 import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
+
 const UserDropdown = ({logout}) => {
+  const history = useHistory();
   const [val, setVal] = useState("1");
   return (
     <React.Fragment>
@@ -39,16 +41,24 @@ const UserDropdown = ({logout}) => {
               <span className="text_darkgray">salmanaltaf@gmail.com</span>
             </div>
             <hr />
-            <button className="text_bluegreen bg_white border_solid bluegreen_border">
+            <button 
+            onClick={()=>history.push("/post")}
+            className="text_bluegreen bg_white border_solid bluegreen_border">
               Report an issue
             </button>
-            <button className="text_bluegreen bg_white border_solid bluegreen_border">
+            <button 
+            onClick={()=>history.push("/post-survey-tamplate")}
+            className="text_bluegreen bg_white border_solid bluegreen_border">
               Post a survey
             </button>
-            <button className="text_bluegreen bg_white border_solid bluegreen_border">
+            <button 
+            onClick={()=>history.push("/profile")}
+            className="text_bluegreen bg_white border_solid bluegreen_border">
               Profile
             </button>
-            <button className="text_bluegreen bg_white border_solid bluegreen_border">
+            <button 
+            onClick={()=>history.push("/account-setting")}
+            className="text_bluegreen bg_white border_solid bluegreen_border">
               Account Settings
             </button>
             <button onClick={logout} className="text_bluegreen bg_white border_solid bluegreen_border">

@@ -4,6 +4,7 @@ import slider1 from '../../Assets/Rectangle 95@3x.png'
 import user from '../../Assets/user.png'
 import next from '../../Assets/Group 3603.png'
 import prev from '../../Assets/Group 3604.png'
+import {useHistory} from 'react-router-dom'
 import '../../Pages/Home/Home.css'
 
 
@@ -23,6 +24,8 @@ function SamplePrevArrow(props) {
 }
 
 const RecentIssueCard = () => {
+    const history = useHistory()
+
 
     const settings = {
         dots: false,
@@ -63,7 +66,8 @@ const RecentIssueCard = () => {
         <React.Fragment>
             {/* <div className='recent_issue_card_container'> */}
             <Slider {...settings} className='slick_slider' >
-                <div class="card home_issue" style={{ width: '18rem' }}>
+
+                <div onClick={()=>history.push('/rant')} className="card home_issue" style={{ width: '18rem' }}>
                     <img src={slider1} class="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
@@ -87,7 +91,7 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" style={{ width: '18rem' }}>
+                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
                     <img src={slider1} class="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
@@ -111,7 +115,7 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" style={{ width: '18rem' }}>
+                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
                     <img src={slider1} class="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
@@ -135,7 +139,7 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" style={{ width: '18rem' }}>
+                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
                     <img src={slider1} class="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>

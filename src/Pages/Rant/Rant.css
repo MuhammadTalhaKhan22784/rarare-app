@@ -167,12 +167,19 @@
     color: red;
     width: 13px;
   }
-
+  .Rant_component_main {
+    margin-bottom: 6rem;
+  }
   .Ricon_size_responsiveuser {
     width: 20px;
   }
 }
 
+@media only screen and (max-width: 506px) {
+  .Rant_component_main {
+    margin-bottom: 10rem;
+  }
+}
 @media only screen and (max-width: 390px) {
   .Rant_card {
     font-size: 14px;
@@ -187,6 +194,9 @@
   }
   .Rtitle_responsive {
     font-size: 18px;
+  }
+  .Rant_component_main {
+    margin-bottom: 7rem;
   }
 
   .Ricon_size_responsive {
@@ -213,8 +223,10 @@
     }
 }
 
-@media only screen and (max-width: 350px) {
-
+@media only screen and (max-width: 345px) {
+  .Rant_component_main {
+    margin-bottom: 9rem;
+  }
   /* .Ricon_size_responsive {
     font-size: 12px !important;
     color: red;

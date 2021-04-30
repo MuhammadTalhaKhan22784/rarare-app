@@ -1,5 +1,6 @@
 .proposalRightBottom {
   margin-top: 20px;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -18,6 +19,7 @@
   margin-top: 18px;
 }
 
+
 @media only screen and (max-width: 680px) {
   .Proposal_content_right {
     width: 100%;
@@ -31,8 +33,8 @@
     display: flex;
   }
   .proposalRightBottom .card {
-      display: none;
-  }
+    display: none;
+}
   /* .proposalRightComponent .card {
     width: 100%;
   } */

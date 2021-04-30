@@ -6,11 +6,11 @@ import cartIcon from "../../Assets/carticon.png";
 import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
-const CartDropdown = () => {
+const CartDropdown = ({className}) => {
   const [val, setVal] = useState("1");
   return (
     <React.Fragment>
-      <div className="dropdown">
+      <div className={`dropdown ${className}`}>
         <button
           className="btn notif_btn dropdown-toggle d-flex"
           type="button"
@@ -30,7 +30,7 @@ const CartDropdown = () => {
             <span className="text_darkgray">LOCO POINTS</span>
             <hr />
             <button className="bg_lightgreen border_none text-white">Redeem Points</button>
-            <button className="border_solid bluegreen_border text_bluegreen">Buy Points</button>
+            <button className="border_solid bluegreen_border text_bluegreen bg_white">Buy Points</button>
           </div>
         </ul>
       </div>

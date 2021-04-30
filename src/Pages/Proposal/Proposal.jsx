@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./Proposal.css";
 import Card from "@material-ui/core/Card";
 // import FlagIcon from '@material-ui/icons/Flag';
@@ -22,7 +22,9 @@ import ProposalRighBottom from "./ProposalRightComponent/ProposalRightBottom";
 import { useHistory } from "react-router-dom";
 function Proposal() {
   let history = useHistory();
-
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="Proposal">
       <div className="Proposal_content_left">
@@ -39,14 +41,14 @@ function Proposal() {
         </nav>
         <div className="d-flex justify-content-end  ">
           <Button
-            className="buttonW bg_lightgreen "
+            className="buttonW bg_lightgreen text-white "
             variant="contained"
             style={{
               fontSize: "0.9rem",
               textTransform: "initial",
             }}
             onClick={() => {
-              history.push("/Participate");
+              history.push("/participate");
             }}
           >
             Participate
@@ -60,7 +62,7 @@ function Proposal() {
               {" "}
               <h4
                 className="title_responsive text_bluegreen"
-                style={{ fontSize: "1rem", margin:"0" }}
+                style={{ fontSize: "1rem", margin: "0" }}
               >
                 Title of the proposal
               </h4>

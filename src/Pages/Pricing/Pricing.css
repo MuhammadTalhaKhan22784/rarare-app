@@ -93,6 +93,10 @@
   margin: 0 auto;
 }
 
+.op_box > div > a {
+  text-decoration: none;
+}
+
 .op_box > div span {
   font-size: 1.2rem;
   margin-right: 3rem;
@@ -447,8 +451,6 @@
   object-fit: contain;
 }
 
-
-
 @media (max-width: 991px) {
   .price_wms {
     flex-direction: column;
@@ -680,5 +682,9 @@
   }
   .pbox_item_right h2 {
     font-size: 0.9rem;
+  }
+  .en_right {
+    width: 320px;
+    justify-content: flex-start;
   }
 }

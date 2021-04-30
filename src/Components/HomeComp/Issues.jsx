@@ -2,9 +2,12 @@ import React from 'react'
 import more from '../../Assets/Group 3537@2x.png'
 import Button from '../Btn/Btn'
 import RecentIssueCard from '../Cards/RecentIssueCard'
+import {useHistory} from 'react-router-dom'
 
 
 const Issues = () => {
+    const history = useHistory()
+
     return (
         <div className='recent_issues_container'>
             <div className='recent_issues_main_div'>
@@ -25,7 +28,7 @@ const Issues = () => {
                     </div>
                     <div className='voice_heard_btn_div'>
 
-                        <Button className='voice_heard_btn_grn' value='Report an Issue!' />
+                        <Button onClick={()=>history.push('/post')} className='voice_heard_btn_grn' value='Report an Issue!' />
                         {/* <Button className='voice_heard_btn_white' value='Propose a deliberation' /> */}
                     </div>
                 </div>

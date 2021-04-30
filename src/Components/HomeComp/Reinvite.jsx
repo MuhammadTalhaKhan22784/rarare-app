@@ -5,8 +5,12 @@ import polygon2 from '../../Assets/Polygon 2@2x.png'
 import cros1 from '../../Assets/Group 26@2x.png'
 import cros2 from '../../Assets/Group 25@3x.png'
 import Button from '../Btn/Btn'
+import {useHistory} from 'react-router-dom'
+
 
 const Reinvite = () => {
+    const history = useHistory()
+
     return (
         <div className='reinvite_container'>
             <div className="reinvite_main_div">
@@ -25,7 +29,7 @@ const Reinvite = () => {
                                 across Sub-Sahara Africa
 
                         </p>
-                            <Button value='Sign Up today' className='Sign_up_today_btn' />
+                            <Button value='Sign Up today' onClick={()=>history.push('/signup')} className='Sign_up_today_btn' />
                             <img className='polygon2_img' src={polygon2} alt="" />
                         </div>
                     </div>

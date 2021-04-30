@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useLayoutEffect} from "react";
 import "./Pricing.css";
 
 // Import Swiper React components
@@ -31,6 +31,11 @@ import pback0 from "../../Assets/pback0.png";
 SwiperCore.use([Pagination]);
 
 const Pricing = () => {
+  
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  })
+
   const settings = {
     dots: false,
     infinite: true,
@@ -254,7 +259,7 @@ const Pricing = () => {
         <div className="op_box">
           <div>
             <span className="text_bluegreen">Overview</span>
-            <span className="text_lightgray">Pricing</span>
+            <a href="#price"><span className="text_lightgray">Pricing</span></a>
           </div>
         </div>
         <div className="price_wms container">
@@ -353,7 +358,7 @@ const Pricing = () => {
             <img src={watchVideo} alt="" />
           </div>
         </div>
-        <div className="pricing_section">
+        <div className="pricing_section" id="price">
           <div className="price_container">
             <div className="price_text">
               <h2 className="text_darkblue fw-bold">PRICING</h2>

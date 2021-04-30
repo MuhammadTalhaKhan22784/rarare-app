@@ -236,11 +236,34 @@
   }
 }
 
+@media (max-width: 645px) {
+  .post_home > div {
+    width: 557px;
+  }
+}
+
+@media (max-width: 555px) {
+  .post_home > div {
+    width: 500px;
+  }
+
+  .post_home .cs_tab_box {
+    width: 55%;
+  }
+}
+
 @media (max-width: 520px) {
   .post_report > div {
     width: 90%;
   }
 }
+
+@media (max-width: 500px) {
+  .post_home > div {
+    width: 100%;
+  }
+}
+
 @media (max-width: 425px) {
   .post_home > div {
     width: 325px !important;

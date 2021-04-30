@@ -1,12 +1,12 @@
 import React from 'react'
 import Slider from "react-slick";
-// import Slider from "react-slick";
-// import slider1 from '../../Assets/Rectangle 95@3x.png'
+
 import user from '../../Assets/user.png'
 import location from '../../Assets/location.png'
 import timer from '../../Assets/Group 3624@2x.png'
 import next from '../../Assets/Group 3603.png'
 import prev from '../../Assets/Group 3604.png'
+import {useHistory} from 'react-router-dom'
 
 
 function SampleNextArrow(props) {
@@ -26,6 +26,7 @@ function SamplePrevArrow(props) {
 
 
 const SurveyCard = () => {
+    const history = useHistory()
 
     const settings = {
         dots: false,
@@ -67,7 +68,7 @@ const SurveyCard = () => {
             <Slider {...settings} className='slick_slider_survey'>
 
                 {/* <div className='recent_issue_card_container'> */}
-                <div class="card survey_card" style={{ width: '18rem' }}>
+                <div class="card survey_card" onClick={()=>history.push('/survey/4324')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>
@@ -113,7 +114,7 @@ const SurveyCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card survey_card" style={{ width: '18rem' }}>
+                <div class="card survey_card" onClick={()=>history.push('/survey/0033')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>
@@ -159,7 +160,7 @@ const SurveyCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card survey_card" style={{ width: '18rem' }}>
+                <div class="card survey_card" onClick={()=>history.push('/survey/0043543')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>

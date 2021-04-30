@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="fc_2">
-            <img src={rarareLogo} alt="" />
+            <Link to="/"><img src={rarareLogo} alt="" /></Link>
             <h2 className="text_black fw-bold">
               Reinventing Citizen Engagement
             </h2>

@@ -72,6 +72,7 @@ const Forget = () => {
           <img className="lgic_2" src={xMedumIcon} alt="" />
           <img className="lgic_3" src={polygon1} alt="" />
           <img className="lgic_4" src={polygon2} alt="" />
+       
           <div className="d-flex justify-content-end">
             {/* <img className="s_bgimg" src={lgbgright} alt="loginBg" /> */}
             <Swiper
@@ -96,6 +97,7 @@ const Forget = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+       
         </div>
       </div>
     </React.Fragment>

@@ -12,6 +12,8 @@ const NotificationSettingCard = () => {
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true,
+        checkedC: true,
+        checkedD: true,
     });
 
     const handleChange = (event) => {
@@ -53,10 +55,10 @@ const NotificationSettingCard = () => {
                                 <div className="head_select_div">
                                     <h6>Raves</h6>
                                     <Switch
-                                        checked={state.checkedB}
+                                        checked={state.checkedA}
                                         onChange={handleChange}
                                         color="primary"
-                                        name="checkedB"
+                                        name="checkedA"
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
@@ -68,10 +70,10 @@ const NotificationSettingCard = () => {
                                 <div className="head_select_div">
                                     <h6>Surveys</h6>
                                     <Switch
-                                        checked={state.checkedB}
+                                        checked={state.checkedC}
                                         onChange={handleChange}
                                         color="primary"
-                                        name="checkedB"
+                                        name="checkedC"
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
@@ -83,10 +85,10 @@ const NotificationSettingCard = () => {
                                 <div className="head_select_div">
                                     <h6>Proposals</h6>
                                     <Switch
-                                        checked={state.checkedB}
+                                        checked={state.checkedD}
                                         onChange={handleChange}
                                         color="primary"
-                                        name="checkedB"
+                                        name="checkedD"
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>

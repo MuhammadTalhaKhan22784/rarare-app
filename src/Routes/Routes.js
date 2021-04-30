@@ -52,6 +52,7 @@ import SurveyListPage from "../Pages/Survey/SurveyListPage";
 import PostUploadImg from "../Pages/Post/PostUploadImg";
 import ParticipatoryTime from "../Pages/ParticipatoryBudget/ParticipatoryTime";
 import PartBudgetBenefits from "../Pages/ParticipatoryBudget/PartBudgetBenefits";
+import Participate from "../Pages/Participate/Participate";
 const Routes = () => {
   return (
     <React.Fragment>
@@ -151,6 +152,7 @@ const Routes = () => {
           <Route path="/survey-location" component={PostSurveyLocation} />
           <Route path="/survey-reward" component={PostSurveyReward} />
           <Route path="/survey-submit" component={PostSurveyReceive} />
+          <Route path="/participate" component={Participate} />
           {/*  */}
         </Switch>
         <Footer />

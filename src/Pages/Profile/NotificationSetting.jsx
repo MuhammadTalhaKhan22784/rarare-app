@@ -6,7 +6,7 @@ import NotificationSettingCard from '../../Components/ProfileComp/NotificationnC
 const NotificationSetting = () => {
     return (
         <div>
-                        <div className='acount_container'>
+            <div className='acount_container'>
                 <div className="acount_main_div">
                     <ProfileCard />
                     <NotificationSettingCard />

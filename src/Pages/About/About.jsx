@@ -1,9 +1,14 @@
-import React from "react";
+import React,{useLayoutEffect} from "react";
 import aboutRec1 from "../../Assets/about_rec1.png";
 import aboutRec2 from "../../Assets/about_rec2.png";
 import JoinCommunity from "../../Components/HomeComp/JoinCommunity";
 import "./About.css";
 const About = () => {
+
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  })
+
   return (
     <React.Fragment>
       <div className="about_container">

@@ -4,12 +4,10 @@ import delt from "../../Assets/Group 3654.png";
 import ModalImage from "../../Assets/delmodalimg.png";
 import "../../App.css";
 function DeleteProbModal(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <div>
       <img
-      // onClick={()=>props.func}
-
         className="dlt_img"
         data-bs-toggle="modal"
         data-bs-target="#exampleModaldel"
@@ -17,7 +15,6 @@ function DeleteProbModal(props) {
       ></img>
 
       <div
-
         class="modal fade"
         id="exampleModaldel"
         tabindex="-1"
@@ -64,7 +61,6 @@ function DeleteProbModal(props) {
                   }}
                 >
                   {props.para}
-
                 </p>
               </div>
 
@@ -81,6 +77,8 @@ function DeleteProbModal(props) {
                   type="button"
                   className="btn btn-danger bg_red"
                   style={{ width: "120px", fontSize: "0.9rem" }}
+                  onClick={props.func}
+                  data-bs-dismiss="modal"
                 >
                   Yes Delete
                 </button>
@@ -89,8 +87,9 @@ function DeleteProbModal(props) {
                   className="btn fw-bold bg_white"
                   data-bs-dismiss="modal"
                   style={{ fontSize: "0.8rem" }}
+                  onClick={props.func}
                 >
-                 No, don't delete
+                  No, don't delete
                 </button>
               </div>
             </div>

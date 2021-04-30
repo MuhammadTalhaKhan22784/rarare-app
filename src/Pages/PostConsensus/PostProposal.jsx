@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
+
 import { useHistory } from "react-router";
 // import "../Post.css"
 
@@ -10,6 +11,10 @@ import undrawAgreement from "../../Assets/undraw_Agreement_re_.png";
 import greenDot from "../../Assets/greendot.png";
 
 const PostProposal = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const history = useHistory();
   const [show, setShow] = useState("2");
   return (
@@ -123,8 +128,8 @@ const PostProposal = () => {
                       ? "/consensus"
                       : show === "2"
                       ? "/consensus-report"
-                      : show === "3" 
-                      ? "/participatory" 
+                      : show === "3"
+                      ? "/participatory"
                       : "/consensus"
                   );
                 }}

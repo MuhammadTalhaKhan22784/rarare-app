@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useLayoutEffect} from "react";
 import search from '../../Assets/Icon feather-search@2x.png'
 import './Blog.css'
 import BlogCard from '../../Components/Cards/BlogCard'
@@ -7,6 +7,10 @@ import SocialFeed from '../../Components/BlogComp/SocialFeed'
 import { BlogSlider } from '../../Components/BlogComp/BlogSlider'
 
 const Blog = () => {
+    
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  })
     return (
         <div className='blog_container'>
             <div className="blog_main_div">

@@ -122,9 +122,9 @@ const Extra = () => {
                     <div className="pcontinue_btn ">
                       <button
                         className="cus_width100 text-white bg_lightgreen border_none"
-                        onClick={()=>{
-                          handleClose()
-                          handleClickOpen2()
+                        onClick={() => {
+                          handleClose();
+                          handleClickOpen2();
                         }}
                       >
                         Continue to payment
@@ -171,61 +171,57 @@ const Extra = () => {
                       </h2>
                     </div>
                     <div className="category_select">
-                      <div className="cs_tabs_main pp_tabs_main">
+                      <div className="cs_tabs_main pp_tabs_main mob_pptabs">
                         <div className="cs_tab">
-                          <div className="cs_tab">
-                            <div
-                              onClick={() => {
-                                setShow("1");
+                          <div
+                            onClick={() => {
+                              setShow("1");
+                            }}
+                            className={
+                              show === "1"
+                                ? "cs_tab_box border_solid green_border"
+                                : "cs_tab_box"
+                            }
+                          >
+                            <img
+                              className="c_dot"
+                              style={{
+                                display: show === "1" ? "block" : "none",
                               }}
-                              className={
-                                show === "1"
-                                  ? "cs_tab_box border_solid green_border"
-                                  : "cs_tab_box"
-                              }
-                            >
-                              <img
-                                className="c_dot"
-                                style={{
-                                  display: show === "1" ? "block" : "none",
-                                }}
-                                src={greenDot}
-                                alt=""
-                              />
-                              <img
-                                className="paypal_icon"
-                                src={paypalIcon}
-                                alt=""
-                              />
-                            </div>
+                              src={greenDot}
+                              alt=""
+                            />
+                            <img
+                              className="paypal_icon"
+                              src={paypalIcon}
+                              alt=""
+                            />
                           </div>
                         </div>
                         <div className="cs_tab">
-                          <div className="cs_tab">
-                            <div
-                              onClick={() => {
-                                setShow("2");
+                          <div
+                            onClick={() => {
+                              setShow("2");
+                            }}
+                            className={
+                              show === "2"
+                                ? "cs_tab_box border_solid green_border"
+                                : "cs_tab_box"
+                            }
+                          >
+                            <img
+                              className="c_dot"
+                              style={{
+                                display: show === "2" ? "block" : "none",
                               }}
-                              className={
-                                show === "2"
-                                  ? "cs_tab_box border_solid green_border"
-                                  : "cs_tab_box"
-                              }
-                            >
-                              <img
-                                className="c_dot"
-                                style={{
-                                  display: show === "2" ? "block" : "none",
-                                }}
-                                src={greenDot}
-                                alt=""
-                              />
-                              <img src={stripeIcon} alt="" />
-                            </div>
+                              src={greenDot}
+                              alt=""
+                            />
+                            <img src={stripeIcon} alt="" />
                           </div>
                         </div>
                       </div>
-                      <div className="payment_form">
+                      <div className="payment_form mob_payment_form">
                         <span className="text_black">
                           Login to Paypal to confirm payment!
                         </span>

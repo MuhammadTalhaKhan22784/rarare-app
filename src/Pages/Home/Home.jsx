@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useLayoutEffect} from "react";
 import Reinvite from '../../Components/HomeComp/Reinvite'
 import WhatWeDo from '../../Components/HomeComp/WhatWeDo'
 import VoiceHeard from '../../Components/HomeComp/VoiceHeard'
@@ -14,6 +14,9 @@ import HelpCartoon from '../../Components/HomeComp/HelpCartoon'
 import './Home.css'
 
 const Home = () => {
+    useLayoutEffect(()=>{
+        window.scrollTo(0,0)
+      })
     return (
         <div>
             <HelpCartoon />

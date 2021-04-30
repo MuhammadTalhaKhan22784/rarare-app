@@ -8,9 +8,11 @@ import refresh from '../../Assets/Icon feather-refresh-ccw.png'
 import frc from '../../Assets/Group 4699.png'
 import eng from '../../Assets/Group 4698.png'
 import Button from '../Btn/Btn'
+import {useHistory} from 'react-router-dom'
 
 
 const HelpCartoon = () => {
+    const history = useHistory()
     return (
         <div className='carton_container'>
             <div className='carton_div'>
@@ -64,8 +66,8 @@ const HelpCartoon = () => {
                         </ul>
                         <p className='date'>12:45 PM</p>
                         <div className='buttonDiv'>
-                            <Button className='chat_btn' value='Login' />
-                            <Button className='chat_btn m_left'  value='Sign up' />
+                            <Button onClick={()=>history.push('/login')} className='chat_btn' value='Login' />
+                            <Button onClick={()=>history.push('/signup')} className='chat_btn m_left'  value='Sign up' />
                         </div>
                     </div>
                         <div className='help_input_div'>

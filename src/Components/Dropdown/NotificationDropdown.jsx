@@ -6,11 +6,11 @@ import notificationIcon from "../../Assets/notification-icon.png";
 import { Icon, InlineIcon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
-const NotificationDropdown = () => {
+const NotificationDropdown = ({className}) => {
   const [val, setVal] = useState("1");
   return (
     <React.Fragment>
-      <div className="dropdown">
+      <div className={`dropdown ${className}`}>
         <button
           className="btn notif_btn dropdown-toggle d-flex"
           type="button"

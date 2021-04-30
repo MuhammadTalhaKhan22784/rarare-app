@@ -2,8 +2,11 @@ import React from 'react'
 import Button from '../Btn/Btn'
 import Group from '../../Assets/Group 4728@2x.png'
 import ProposalCard from '../Cards/ProposalCard'
+import {useHistory} from 'react-router-dom'
 
 const Proposal = () => {
+    const history = useHistory()
+
     return (
         <div className='proposal_container'>
             <div className='proposal_main_div'>
@@ -21,8 +24,8 @@ const Proposal = () => {
                     </div>
                     <div className='voice_heard_btn_div'>
 
-                        <Button className='voice_heard_btn_grn' value='Post a proposal' />
-                        <Button className='voice_heard_btn_white' value='View all proposals' />
+                        <Button onClick={()=>history.push('/consensus')} className='voice_heard_btn_grn' value='Post a proposal' />
+                        <Button onClick={()=>history.push('/product')} className='voice_heard_btn_white' value='View all proposals' />
                     </div>
                 </div>
                 <div className='proposal_card_main_div'>

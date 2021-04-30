@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import "./PostSurvey.css";
 
 // assets
@@ -13,6 +13,9 @@ import { useHistory } from "react-router";
 const PostSurveyTemplate = () => {
   const history = useHistory();
   const [show, setShow] = useState("2");
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <React.Fragment>

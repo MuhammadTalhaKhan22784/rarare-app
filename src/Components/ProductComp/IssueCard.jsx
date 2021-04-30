@@ -13,6 +13,11 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
   // console.log(data)
   let [togle, setTogle] = useState(false);
   const history = useHistory();
+
+  const handleTogle = ()=>{
+    setTogle(!togle)
+  }
+
   return (
     <React.Fragment>
       {!list ? (
@@ -136,12 +141,13 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                     <img onClick={() => setTogle(!togle)} src={toggle} alt="" />
                     {togle ? (
                       <div className="edit_div">
-                        <img className="edit_img2" onClick={()=>setTogle(!togle)} src={edit} alt="" />
+                        <img className="edit_img2" onClick={handleTogle} src={edit} alt="" />
                         <hr className="togle_hr" />
                         <DeleteProbModal
                           name="Delete Problem?"
                           para="Are you sure you want to delete this probem?"
-                          // func ={()=>setTogle(!togle)}
+                          func ={handleTogle}
+
                         />
                       </div>
                     ) : null}

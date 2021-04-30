@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useLayoutEffect} from "react";
 import { Link } from "react-router-dom";
 import "./Contact.css";
 // assets
@@ -14,6 +14,11 @@ import polygon1 from "../../Assets/polygon_1.png";
 import polygon2 from "../../Assets/polygon_2.png";
 
 const Contact = () => {
+  
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  })
+
   return (
     <React.Fragment>
       <div className="main_form">

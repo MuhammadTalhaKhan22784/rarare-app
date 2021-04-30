@@ -104,6 +104,24 @@
   outline: none;
 }
 
+.p_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #20c0a0 !important;
+  height: 40px;
+  margin: 0.3rem 0;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+
+.p_input input {
+  border-right: none !important;
+  border-left: none !important;
+
+  width: 90% !important;
+}
+
 .s_form_fields input::placeholder {
   color: #8792af;
 }
@@ -290,6 +308,8 @@
   top: 20px;
   left: 120px;
 }
+
+
 
 /* media queries */
 

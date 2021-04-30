@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //
 import { Icon, InlineIcon } from "@iconify/react";
@@ -13,11 +13,27 @@ import UserDropdown from "../Components/Dropdown/UserDropdown";
 
 // assets
 import rarareLogo from "../Assets/logo_rarare.png";
+import userprofileimg from "../Assets/userprofileimg.png";
 import path from "../Assets/path.png";
 import togglebtn from "../Assets/togglebtn.png";
+import MobSearchDropdown from "../Components/Dropdown/MobSearchDropdown";
+
 const Navbar = () => {
   let [isActive, setIsActive] = useState(false);
   let [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    console.log("RUNNGING");
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    console.log("FMIOEJNSIOLKfindmio");
+    setOpen(false);
+  };
+  useEffect(() => {
+    window.addEventListener("click", handleClose);
+    return () => window.removeEventListener("click", handleClose);
+  }, []);
 
   const handleLogin = () => {
     setTimeout(() => {
@@ -28,35 +44,62 @@ const Navbar = () => {
     setIsActive(false);
   };
 
-  const handleOpen = () => {
-    setOpen(true);
-    console.log(open);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg c_navbar" id="top">
-        <div className="container c_container">
+        <div
+          className={
+            isActive ? "c_container container" : "container cn_container"
+          }
+        >
           <Link className="navbar-brand" to="/">
             <img className="nav_rarare_logo" src={rarareLogo} alt="logo" />
           </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            // data-bs-toggle="collapse"
-            // data-bs-target="#navbarSupportedContent"
-            // aria-controls="navbarSupportedContent"
-            // // aria-expanded="false"
-            // aria-label="Toggle navigation"
-            onClick={() => (open ? handleClose() : handleOpen())}
-          >
-            <img src={togglebtn} alt="" />
-            {/* <span className="navbar-toggler-icon" /> */}
-          </button>
-
+          {isActive ? (
+            <div className="d-flex align-items-center">
+              <NotificationDropdown
+                className={isActive ? "mobnotification" : null}
+              />
+              <CartDropdown className={isActive ? "mobnotification" : null} />
+              <MobSearchDropdown />
+              <button
+                className="navbar-toggler"
+                type="button"
+                // data-bs-toggle="collapse"
+                // data-bs-target="#navbarSupportedContent"
+                // aria-controls="navbarSupportedContent"
+                // // aria-expanded="false"
+                // aria-label="Toggle navigation"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpen(!open);
+                }}
+              >
+                <img src={togglebtn} alt="" />
+                {/* <span className="navbar-toggler-icon" /> */}
+              </button>
+            </div>
+          ) : (
+            <div className="d-flex align-items-center">
+              <MobSearchDropdown />
+              <button
+                className="navbar-toggler"
+                type="button"
+                // data-bs-toggle="collapse"
+                // data-bs-target="#navbarSupportedContent"
+                // aria-controls="navbarSupportedContent"
+                // // aria-expanded="false"
+                // aria-label="Toggle navigation"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpen(!open);
+                }}
+              >
+                <img src={togglebtn} alt="" />
+                {/* <span className="navbar-toggler-icon" /> */}
+              </button>
+            </div>
+          )}
           <div
             className="collapse desk_nav_collapse navbar-collapse"
             // id="navbarSupportedContent"
@@ -154,7 +197,10 @@ const Navbar = () => {
             id="navbarSupportedContent"
           >
             {open ? (
-              <ul className="navbar-nav mob_nav mb-2 mb-lg-0">
+              <ul
+                onClick={(e) => e.stopPropagation()}
+                className="navbar-nav mob_nav mb-2 mb-lg-0"
+              >
                 {!isActive ? (
                   <>
                     <li
@@ -176,8 +222,20 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </>
-                ) : null}
+                ) : (
+                  <div className="d-flex flex-column align-items-center">
+                    <img className="usericon" src={userprofileimg} alt="" />
+                    <div className="userinfo_text align-items-center mt-2">
+                      <h2>Salman Altaf</h2>
+                      <span className="text_darkgray">
+                        salmanaltaf@gmail.com
+                      </span>
+                    </div>
+                    <hr />
+                  </div>
+                )}
                 {/* /user ki profile ani/ */}
+
                 <li onClick={handleClose} className="nav-item">
                   <Link className="nav-link" to="/post">
                     Report an issue
@@ -194,7 +252,10 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                <li onClick={handleClose} className="nav-item position_relative">
+                <li
+                  onClick={handleClose}
+                  className="nav-item position_relative"
+                >
                   <Link to="#" className="nav-link">
                     <span className="menu-title">Business</span>
                   </Link>
@@ -205,12 +266,10 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
-                <li onClick={handleClose} className="nav-item">
-                  <Link className="nav-link" to="#">
-                    Search
-                  </Link>
-                </li>
-                <li className="nav-item">
+                {/* <li onClick={handleClose} className="nav-item">
+                  <MobSearchDropdown />
+                </li> */}
+                <li className="nav-item mt-5">
                   <LanguageDropdown />
                 </li>
                 {isActive ? (
@@ -218,6 +277,11 @@ const Navbar = () => {
                     <li onClick={handleClose} className="nav-item">
                       <Link className="nav-link" to="/profile">
                         Profile
+                      </Link>
+                    </li>
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="/account-setting">
+                        Account setting
                       </Link>
                     </li>
                     <li
@@ -229,11 +293,6 @@ const Navbar = () => {
                     >
                       <Link onClick={handleClose} className="nav-link" to="#">
                         Logout
-                      </Link>
-                    </li>
-                    <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/account-setting">
-                        Account setting
                       </Link>
                     </li>
                   </>

@@ -2,8 +2,12 @@ import React from 'react'
 import pen from '../../Assets/Group 4726@2x.png'
 import Button from '../Btn/Btn'
 import SurveyCard from '../Cards/SurveyCard'
+import {useHistory} from 'react-router-dom'
+
 
 const Survey = () => {
+    const history = useHistory()
+
     return (
         <div className='survey_container'>
             <div className='recent_issues_main_div'>
@@ -23,7 +27,7 @@ const Survey = () => {
                     </div>
                     <div className='voice_heard_btn_div'>
 
-                        <Button className='voice_heard_btn_grn' value='Post a survey!' />
+                        <Button onClick={()=>history.push('/post-survey-tamplate')} className='voice_heard_btn_grn' value='Post a survey!' />
                         {/* <Button className='voice_heard_btn_white' value='Propose a deliberation' /> */}
                     </div>
                 </div>
