@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
 import "./style.css";
@@ -21,13 +21,9 @@ import MobSearchDropdown from "../Components/Dropdown/MobSearchDropdown";
 const Navbar = () => {
   let [isActive, setIsActive] = useState(false);
   let [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    console.log("RUNNGING");
-    setOpen(true);
-  };
+ 
 
   const handleClose = () => {
-    console.log("FMIOEJNSIOLKfindmio");
     setOpen(false);
   };
   useEffect(() => {
@@ -75,7 +71,7 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
               >
-                <img src={togglebtn} alt="" />
+                <img src={togglebtn} alt="img" />
                 {/* <span className="navbar-toggler-icon" /> */}
               </button>
             </div>
@@ -95,7 +91,7 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
               >
-                <img src={togglebtn} alt="" />
+                <img src={togglebtn} alt="img" />
                 {/* <span className="navbar-toggler-icon" /> */}
               </button>
             </div>
@@ -159,16 +155,16 @@ const Navbar = () => {
               </li>
               {isActive ? (
                 <>
-                  <img className="path_line" src={path} alt="" />
+                  <img className="path_line" src={path} alt="img" />
 
                   <li className="nav-item">
                     <NotificationDropdown />
                   </li>
-                  <img className="path_line" src={path} alt="" />
+                  <img className="path_line" src={path} alt="img" />
                   <li className="nav-item">
                     <CartDropdown />
                   </li>
-                  <img className="path_line" src={path} alt="" />
+                  <img className="path_line" src={path} alt="img" />
                   <li className="nav-item">
                     <UserDropdown logout={handleLogout} />
                   </li>
@@ -224,7 +220,7 @@ const Navbar = () => {
                   </>
                 ) : (
                   <div className="d-flex flex-column align-items-center">
-                    <img className="usericon" src={userprofileimg} alt="" />
+                    <img className="usericon" src={userprofileimg} alt="img" />
                     <div className="userinfo_text align-items-center mt-2">
                       <h2>Salman Altaf</h2>
                       <span className="text_darkgray">

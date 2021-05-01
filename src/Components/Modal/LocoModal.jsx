@@ -70,7 +70,7 @@ const LocoModal = () => {
                     <div className="cs_tabs_main pp_tabs_main">
                       <div className="cs_tab">
                         <div className="cs_tab_box">
-                          <img className="mdl_icon" src={dbicon1} alt="" />
+                          <img className="mdl_icon" src={dbicon1} alt="img" />
                           <h2 className="text_bluegreen fw-bold">2,000</h2>
                           <p className="text_darkgray">LOCO POINTS</p>
                           <span className="text_bluegreen fw-bold">
@@ -84,11 +84,11 @@ const LocoModal = () => {
                             <img
                               className="featureimg"
                               src={featurebg}
-                              alt=""
+                              alt="img"
                             />
                             <h2 className="text-white">Featured</h2>
                           </div>
-                          <img className="mdl_icon" src={dbicon2} alt="" />
+                          <img className="mdl_icon" src={dbicon2} alt="img" />
                           <h2 className="text_bluegreen fw-bold">2,000</h2>
                           <p className="text_darkgray">LOCO POINTS</p>
                           <span className="text_bluegreen fw-bold">
@@ -98,7 +98,7 @@ const LocoModal = () => {
                       </div>
                       <div className="cs_tab">
                         <div className="cs_tab_box">
-                          <img className="mdl_icon" src={dbicon3} alt="" />
+                          <img className="mdl_icon" src={dbicon3} alt="img" />
                           <h2 className="text_bluegreen fw-bold">2,000</h2>
                           <p className="text_darkgray">LOCO POINTS</p>
                           <span className="text_bluegreen fw-bold">
@@ -108,7 +108,7 @@ const LocoModal = () => {
                       </div>
                       <div className="cs_tab">
                         <div className="cs_tab_box">
-                          <img className="mdl_icon" src={dbicon4} alt="" />
+                          <img className="mdl_icon" src={dbicon4} alt="img" />
                           <h2 className="text_bluegreen fw-bold">2,000</h2>
                           <p className="text_darkgray">LOCO POINTS</p>
                           <span className="text_bluegreen fw-bold">
@@ -188,12 +188,12 @@ const LocoModal = () => {
                                 display: show === "1" ? "block" : "none",
                               }}
                               src={greenDot}
-                              alt=""
+                              alt="img"
                             />
                             <img
                               className="paypal_icon"
                               src={paypalIcon}
-                              alt=""
+                              alt="img"
                             />
                           </div>
                         </div>
@@ -214,9 +214,9 @@ const LocoModal = () => {
                                 display: show === "2" ? "block" : "none",
                               }}
                               src={greenDot}
-                              alt=""
+                              alt="img"
                             />
-                            <img src={stripeIcon} alt="" />
+                            <img src={stripeIcon} alt="img" />
                           </div>
                         </div>
                       </div>

@@ -23,7 +23,7 @@ const ProfileSettingCard = () => {
                     <div onClick={() => history.push('/account-setting')}>
                         {/* <Link to='/account-setting'> */}
                         {/* <p>{'<-'}</p> */}
-                        <img src={back} alt=""/>
+                        <img src={back} alt="img"/>
                         <h6>Profile Settings</h6>
                         {/* </Link> */}
                     </div>
@@ -58,7 +58,7 @@ const ProfileSettingCard = () => {
                     <div className='profile_setting_inp_img'>
                         <h6>Profile Image</h6>
                         <label htmlFor="profile">
-                            <img src={!img? upload : img} alt="" />
+                            <img src={!img? upload : img} alt="img" />
                         </label>
                         <input type="file" name="profile" onChange={(e)=>handelUlr(e)} id="profile" />
                         <Button className='upcoming_btn upload_profile' value='Upload Image' />

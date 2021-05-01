@@ -80,12 +80,12 @@ const Profile = () => {
                 <img
                   onClick={() => handleGrid(false)}
                   src={!list ? grid : gridG}
-                  alt=""
+                  alt="img"
                 />
                 <img
                   onClick={() => handleGrid(true)}
                   src={list ? listG : liW}
-                  alt=""
+                  alt="img"
                 />
               </div>
               <div className="your_issues_card_div">
@@ -113,12 +113,12 @@ const Profile = () => {
                 <img
                   onClick={() => handleGrid(false)}
                   src={!list ? grid : gridG}
-                  alt=""
+                  alt="img"
                 />
                 <img
                   onClick={() => handleGrid(true)}
                   src={list ? listG : liW}
-                  alt=""
+                  alt="img"
                 />
               </div>
               <div className="your_issues_card_div">
@@ -152,12 +152,12 @@ const Profile = () => {
                 <img
                   onClick={() => handleGrid(false)}
                   src={!list ? grid : gridG}
-                  alt=""
+                  alt="img"
                 />
                 <img
                   onClick={() => handleGrid(true)}
                   src={list ? listG : liW}
-                  alt=""
+                  alt="img"
                 />
               </div>
               <div className="your_issues_card_div desktop_proposal">

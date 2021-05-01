@@ -1,4 +1,3 @@
-import slider1 from '../../Assets/Rectangle 95@3x.png'
 import blog1 from '../../Assets/blog_img.png'
 import blog2 from '../../Assets/blog_img2.png'
 import blog3 from '../../Assets/blog_img3.png'

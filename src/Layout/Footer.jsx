@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="fc_2">
-            <Link to="/"><img src={rarareLogo} alt="" /></Link>
+            <Link to="/"><img src={rarareLogo} alt="img" /></Link>
             <h2 className="text_black fw-bold">
               Reinventing Citizen Engagement
             </h2>
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="fc_3">
           <div className="copy_right_text">
             <span className="text_darkblue">
-              Copyright <img src={copyright} alt="" /> 2021. Rarare Inc. All
+              Copyright <img src={copyright} alt="img" /> 2021. Rarare Inc. All
               rights reserved.{" "}
             </span>
           </div>
@@ -149,7 +149,7 @@ const Footer = () => {
               <span className="backtop text_darkblue fw-bold">
                 Back to top{" "}
                 <a href="#top">
-                  <img src={backTop} alt="" />
+                  <img src={backTop} alt="img" />
                 </a>
               </span>
             </div>

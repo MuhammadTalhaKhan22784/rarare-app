@@ -16,7 +16,7 @@ const BlogCard = () => {
                             <p>{val.date}</p>
                         </div>
                         <div className='blog_user_card_detail_div'>
-                            <img src={val.bloger_img} alt="" />
+                            <img src={val.bloger_img} alt="img" />
                             <div>
                                 <p className='bloger_name'>{val.name}</p>
                                 <p className='bloger_email'>{val.email}</p>

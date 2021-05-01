@@ -7,19 +7,19 @@ function Participate() {
     <div id="Participate">
       <div className="Proposal_content_left ">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb Proposal_title">
-            <li class="breadcrumb-item  text_lightgray" id="participate_title">
+          <ol className="breadcrumb Proposal_title">
+            <li className="breadcrumb-item  text_lightgray" id="participate_title">
               Search Result{" "}
             </li>
             <li
-              class="breadcrumb-item active text_bluegreen"
+              className="breadcrumb-item active text_bluegreen"
               aria-current="page"
               id="participate_title"
             >
               Proposal
             </li>
             <li
-              class="breadcrumb-item active text_bluegreen"
+              className="breadcrumb-item active text_bluegreen"
               aria-current="page"
               id="participate_title"
             >

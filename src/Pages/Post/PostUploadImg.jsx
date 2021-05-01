@@ -42,7 +42,7 @@ const PostUploadImg = () => {
             <img
               className="upload_img"
               src="https://i.stack.imgur.com/x3KMH.jpg"
-              alt=""
+              alt="img"
             />
           </label>
           <input
@@ -59,7 +59,7 @@ const PostUploadImg = () => {
                 <p className="upload_delete" onClick={() => dltImg(val)}>
                   &times;
                 </p>
-                <img className="upload_img_result" src={val} alt="" />
+                <img className="upload_img_result" src={val} alt="img" />
               </div>
             ))}
         </div>

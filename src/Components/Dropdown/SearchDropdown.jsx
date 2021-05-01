@@ -39,7 +39,7 @@ const SearchDropdown = () => {
           >
             <div className="search_main">
               <div className="sinput1 border_solid bluegreen_border">
-                <img src={search2} alt="" />
+                <img src={search2} alt="img" />
                 <input
                   className="search_finput text_lightgray"
                   type="text"
@@ -47,7 +47,7 @@ const SearchDropdown = () => {
                 />
               </div>
               <div className="sinput2 border_solid bluegreen_border">
-                <img src={iconmap} alt="" />
+                <img src={iconmap} alt="img" />
                 <input
                   className="search_sinput text_lightgray"
                   type="text"

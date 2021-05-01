@@ -11,14 +11,14 @@ import '../../Pages/Home/Home.css'
 function SampleNextArrow(props) {
     const { className,  onClick } = props;
     return (
-        <img src={next} onClick={onClick} className={`${className} custon_arr`} />
+        <img src={next} onClick={onClick} className={`${className} custon_arr`} alt="..." />
     );
 }
 
 function SamplePrevArrow(props) {
     const { className,  onClick } = props;
     return (
-        <img src={prev} onClick={onClick} className={`${className} custon_arr`} />
+        <img src={prev} onClick={onClick} className={`${className} custon_arr`} alt="..."/>
 
     );
 }
@@ -68,7 +68,7 @@ const RecentIssueCard = () => {
             <Slider {...settings} className='slick_slider' >
 
                 <div onClick={()=>history.push('/rant')} className="card home_issue" style={{ width: '18rem' }}>
-                    <img src={slider1} class="card-img-top" alt="..." />
+                    <img src={slider1} className="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
                     </div>
@@ -83,7 +83,7 @@ const RecentIssueCard = () => {
                     </div>
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>
@@ -91,8 +91,8 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
-                    <img src={slider1} class="card-img-top" alt="..." />
+                <div className="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
+                    <img src={slider1} className="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
                     </div>
@@ -107,7 +107,7 @@ const RecentIssueCard = () => {
                     </div>
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>
@@ -115,8 +115,8 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
-                    <img src={slider1} class="card-img-top" alt="..." />
+                <div className="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
+                    <img src={slider1} className="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
                     </div>
@@ -131,7 +131,7 @@ const RecentIssueCard = () => {
                     </div>
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>
@@ -139,8 +139,8 @@ const RecentIssueCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
-                    <img src={slider1} class="card-img-top" alt="..." />
+                <div className="card home_issue" onClick={()=>history.push('/rant')} style={{ width: '18rem' }}>
+                    <img src={slider1} className="card-img-top" alt="..." />
                     <div className='card_title_div'>
                         <h5><strong> Title of issues </strong></h5>
                     </div>
@@ -155,7 +155,7 @@ const RecentIssueCard = () => {
                     </div>
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>

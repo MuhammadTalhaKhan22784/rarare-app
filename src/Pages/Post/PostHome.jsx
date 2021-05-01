@@ -48,9 +48,9 @@ const PostHome = () => {
                     className="c_dot"
                     style={{ display: show === "1" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={undrawFeeling} alt="" />
+                  <img src={undrawFeeling} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_bluegreen">Rant</h2>
@@ -75,9 +75,9 @@ const PostHome = () => {
                     className="c_dot"
                     style={{ display: show === "2" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={undrawHappy} alt="" />
+                  <img src={undrawHappy} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_bluegreen">Rave</h2>

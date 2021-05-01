@@ -7,7 +7,7 @@ const UpcomingEvent = () => {
     return (
         <div className='upcomin_event_container'>
             <div className="upcoming_event_div">
-                <img className='upcomint_img' src={event1} alt="" />
+                <img className='upcomint_img' src={event1} alt="img" />
                 <div className='upcomin_head_div'>
                     <div>
                         <h5 className='upcoming_head'> Upcoming Event</h5>
@@ -17,7 +17,7 @@ const UpcomingEvent = () => {
                 </div>
             </div>
             <div className="upcoming_event_div second_event">
-                <img className='upcomint_img' src={event2} alt="" />
+                <img className='upcomint_img' src={event2} alt="img" />
                 <div className='upcomin_head_div'>
                     <div>
                         <h5 className='upcoming_head'> Upcoming Event</h5>

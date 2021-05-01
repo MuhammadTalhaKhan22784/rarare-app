@@ -28,12 +28,12 @@ const About = () => {
             </p>
           </div>
           <div className="about_right_content1">
-            <img src={aboutRec1} alt="" />
+            <img src={aboutRec1} alt="img" />
           </div>
         </div>
         <div className="about_content mt-5">
           <div className="about_right_content2">
-            <img src={aboutRec2} alt="" />
+            <img src={aboutRec2} alt="img" />
           </div>
           <div className="about_left_content2">
             <h2 className="text_darkblue fw-bold">Title here!</h2>

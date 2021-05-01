@@ -8,7 +8,6 @@ import pMap from "../../Assets/pmap.png";
 
 const PostReport = (props) => {
   const history = useHistory();
-  console.log(history.location.state);
 
   return (
     <React.Fragment>

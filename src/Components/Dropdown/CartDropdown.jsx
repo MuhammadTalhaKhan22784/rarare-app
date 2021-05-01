@@ -1,13 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
-// import enFlag from "../../Assets/PNG/Landing Page/flag_en.png"
+import React from "react";
 import cartIcon from "../../Assets/carticon.png";
-import { Icon, InlineIcon } from "@iconify/react";
-import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
 const CartDropdown = ({className}) => {
-  const [val, setVal] = useState("1");
   return (
     <React.Fragment>
       <div className={`dropdown ${className}`}>
@@ -18,7 +12,7 @@ const CartDropdown = ({className}) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <img src={cartIcon} alt="" />
+          <img src={cartIcon} alt="img" />
         </button>
         <ul
           className="dropdown-menu cart_menu"

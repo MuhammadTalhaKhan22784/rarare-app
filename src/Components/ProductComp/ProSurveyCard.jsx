@@ -1,28 +1,18 @@
 import React, { useState } from "react";
-import Button from "../Btn/Btn";
-import dot from "../../Assets/dot.png";
-import user from "../../Assets/user.png";
-import location from "../../Assets/location.png";
-import timer from "../../Assets/timer.png";
-import users from "../../Assets/Group 3626.png";
-import gift from "../../Assets/Icon awesome-gift.png";
 import { Link } from "react-router-dom";
 import toggle from "../../Assets/Group 3659.png";
 import edit from "../../Assets/Group 3655.png";
-import delt from "../../Assets/Group 3654.png";
 import DeleteProbModal from "../Modal/DeleteProbModal";
 
-const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
+const ProSurveyCard = ({ list, className, data, togleImg }) => {
   let [togle, setTogle] = useState("");
   let [bool, setBool] = useState(false);
-  // let [list, Setlist] = useState(true)
   const hanldeTogle = (e) => {
     setTogle(e);
     setBool(!bool);
   };
   const closeTogle = (e) => {
     setTogle(e);
-    console.log(e);
   };
   return (
     <div>
@@ -40,21 +30,21 @@ const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
                   <p className="card-text">{val.body}</p>
                   <div className="location_div proposal_loc">
                     <div>
-                      <img src={val.locImg} alt="" />
+                      <img src={val.locImg} alt="img" />
                       <span>{val.location}</span>
                     </div>
                   </div>
                   <div className="perticipant_div">
                     <div>
-                      <img src={val.timer} alt="" />
+                      <img src={val.timer} alt="img" />
                       <span>{val.time}</span>
                     </div>
                     <div>
-                      <img src={val.users} alt="" />
+                      <img src={val.users} alt="img" />
                       <span>{val.numUser}</span>
                     </div>
                     <div>
-                      <img src={val.gift} alt="" />
+                      <img src={val.gift} alt="img" />
                       <span>{val.numGift}</span>
                     </div>
                   </div>
@@ -63,7 +53,7 @@ const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
                     {val.proImg ?
                       <div>
                         <>
-                          <img src={val.proImg ? val.img : null} alt="" />
+                          <img src={val.proImg ? val.img : null} alt="img" />
                           <p>{val.name}</p>
                         </>
                       </div>
@@ -93,11 +83,11 @@ const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
                       <img
                         onClick={() => hanldeTogle(val.id)}
                         src={toggle}
-                        alt=""
+                        alt="img"
                       />
                       {togle === val.id && bool ? (
                         <div className="edit_div">
-                          <img className="edit_img" src={edit} alt="" />
+                          <img className="edit_img" src={edit} alt="img" />
                           <hr className="togle_hr" />
                           <DeleteProbModal
                             name="Delete Survey?"
@@ -109,7 +99,7 @@ const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
                   ) : (
                     <div className="user_card_detail_div proposal_card_user pro_survey_user list_user">
                       <div>
-                        <img src={val.proImg} alt="" />
+                        <img src={val.proImg} alt="img" />
                         <p>{val.name}</p>
                       </div>
                     </div>
@@ -120,22 +110,22 @@ const ProSurveyCard = ({ list, className, left, data, togleImg, Cuser }) => {
                 </div>
                 <div className="proposal_list">
                   <div>
-                    <img src={val.locImg} alt="" />
+                    <img src={val.locImg} alt="img" />
                     <span>{val.location}</span>
                   </div>
                 </div>
                 <div className="pro_list_loc">
                   <div className="perticipant_div list_perticipant">
                     <div>
-                      <img src={val.timer} alt="" />
+                      <img src={val.timer} alt="img" />
                       <span>{val.time}</span>
                     </div>
                     <div>
-                      <img src={val.users} alt="" />
+                      <img src={val.users} alt="img" />
                       <span>{val.numUser}</span>
                     </div>
                     <div>
-                      <img src={val.gift} alt="" />
+                      <img src={val.gift} alt="img" />
                       <span>{val.numGift}</span>
                     </div>
                   </div>

@@ -10,7 +10,6 @@ import pMap from "../../Assets/pmap.png";
 
 const PostSurveyLocation = (props) => {
     const history = useHistory();
-    console.log(history.location.state)
 
     return (
         <React.Fragment>

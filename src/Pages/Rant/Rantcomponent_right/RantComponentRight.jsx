@@ -12,11 +12,11 @@ function ProposalComponentRight() {
         <div className="slider_div">
           <div
             id="carouselExampleIndicators"
-            class="carousel slide"
+            className="carousel slide"
             data-bs-ride="carousel"
             data-bs-interval="false"
           >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
               <button
                 type="button"
                 className="active rounded-circle"
@@ -55,52 +55,60 @@ function ProposalComponentRight() {
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={image} class="d-block img-fluid" alt="..." />
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={image} className="d-block img-fluid" alt="..." />
               </div>
-              <div class="carousel-item">
-                <img src={image} class="d-block w-100 img-fluid" alt="..." />
+              <div className="carousel-item">
+                <img
+                  src={image}
+                  className="d-block w-100 img-fluid"
+                  alt="..."
+                />
               </div>
-              <div class="carousel-item">
-                <img src={image} class="d-block w-100 img-fluid" alt="..." />
+              <div className="carousel-item">
+                <img
+                  src={image}
+                  className="d-block w-100 img-fluid"
+                  alt="..."
+                />
               </div>
             </div>
             <button
-              class="carousel-control-prev"
+              className="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                className="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span className="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next"
+              className="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                className="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
 
         <div className="slider_down_images">
           <div className="slider_down_border" style={{ display: "flex" }}>
-            <img className="slider_down_image1" src={image1}></img>
-            <img className="slider_down_image1" src={image2}></img>
-            <img className="slider_down_image1" src={image3}></img>
-            <img className="slider_down_image1" src={image1}></img>
-            <img className="slider_down_image1" src={image2}></img>
-            <img className="slider_down_image1" src={image2}></img>
+            <img className="slider_down_image1" src={image1} alt="..."></img>
+            <img className="slider_down_image1" src={image2} alt="..."></img>
+            <img className="slider_down_image1" src={image3} alt="..."></img>
+            <img className="slider_down_image1" src={image1} alt="..."></img>
+            <img className="slider_down_image1" src={image2} alt="..."></img>
+            <img className="slider_down_image1" src={image2} alt="..."></img>
           </div>
         </div>
       </div>

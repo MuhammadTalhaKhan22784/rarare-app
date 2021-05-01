@@ -45,7 +45,7 @@ const ParticipatoryTime = () => {
                     className="c_dot"
                     style={{ display: show === "1" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
                   10
                 </div>
@@ -63,7 +63,7 @@ const ParticipatoryTime = () => {
                     className="c_dot"
                     style={{ display: show === "2" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
                   10
                 </div>
@@ -81,7 +81,7 @@ const ParticipatoryTime = () => {
                     className="c_dot"
                     style={{ display: show === "3" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
                   10
                 </div>
@@ -99,7 +99,7 @@ const ParticipatoryTime = () => {
                     className="c_dot"
                     style={{ display: show === "4" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
                   10
                 </div>
@@ -118,7 +118,7 @@ const ParticipatoryTime = () => {
                   className="c_dot"
                   style={{ display: show === "5" ? "block" : "none" }}
                   src={greenDot}
-                  alt=""
+                  alt="img"
                 />
                 1,000
               </div>
@@ -131,11 +131,11 @@ const ParticipatoryTime = () => {
               <div className="dt_box_input">
                 <div className="input_img">
                   <input type="text" placeholder="Start Date" />
-                  <img src={IconCalendar} alt="" />
+                  <img src={IconCalendar} alt="img" />
                 </div>
                 <div className="input_img">
                   <input type="text" placeholder="End Date" />
-                  <img src={IconCalendar} alt="" />
+                  <img src={IconCalendar} alt="img" />
                 </div>
               </div>
               <div className="dt_box_input dt_box_input1 mt-3">

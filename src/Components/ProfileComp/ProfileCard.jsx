@@ -12,11 +12,11 @@ const ProfileCard = () => {
             <div className="profile_card_main_div">
                 <div className="user_name_div">
                     <div className="userInfo">
-                        <img src={user} alt="" />
+                        <img src={user} alt="img" />
                         <h5><strong>Salman Altaf</strong></h5>
                         <p>salmanaltaf@gamil.com</p>
                     </div>
-                    <img className='edit_img' onClick={()=>history.push('/account-setting')} src={edit} alt="" />
+                    <img className='edit_img' onClick={()=>history.push('/account-setting')} src={edit} alt="img" />
                 </div>
                 <hr className='profile_hr' />
                 <BalanceCard />

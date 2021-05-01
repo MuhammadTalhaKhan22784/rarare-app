@@ -111,7 +111,7 @@
   margin: 0px;
   text-align: start;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .issue_loc > p {
   margin-bottom: 0px !important;

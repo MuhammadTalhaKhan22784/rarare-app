@@ -22,7 +22,7 @@ const SearchResultHead = () => {
             <div className='search_result_div'>
                 
                 <div className="blog_search_inp_div_mob">
-                    <img src={search2} alt="" />
+                    <img src={search2} alt="img" />
                     <input type="text" placeholder='Search the community' />
                 </div>
                 <div className="search_filter_mob">
@@ -37,8 +37,8 @@ const SearchResultHead = () => {
                 <div className='search_result_head_div'>
                     <div className='search_reslut'>Showing result for <span> "Potholes" </span> , near <span> " Togo nigeria " </span></div>
                     <div className="list_card_veiw">
-                        <img onClick={() => setList(false)} src={!list ? grid : gridG} alt="" />
-                        <img onClick={() => setList(true)} src={list ? listG : liW} alt="" />
+                        <img onClick={() => setList(false)} src={!list ? grid : gridG} alt="img" />
+                        <img onClick={() => setList(true)} src={list ? listG : liW} alt="img" />
                     </div>
                 </div>
                 <TopicHead result='2 Result' head='Issues' />

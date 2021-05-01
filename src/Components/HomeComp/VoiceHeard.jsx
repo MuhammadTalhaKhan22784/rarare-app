@@ -43,7 +43,7 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='proposal2_img' src={proposal2} alt="" />
+                            <img className='proposal2_img' src={proposal2} alt="img" />
                         </div>
                         <div className="step2_div">
                             <h6><strong>Your voice</strong></h6>
@@ -53,7 +53,7 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='step_voice_img' src={voice} alt="" />
+                            <img className='step_voice_img' src={voice} alt="img" />
                         </div>
                         <div className="step3_div">
                             <h6><strong>Implementation</strong></h6>
@@ -63,13 +63,13 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='step_smile' src={smile} alt="" />
+                            <img className='step_smile' src={smile} alt="img" />
                         </div>
                     </div>
-                    <img src={step} alt="" />
+                    <img src={step} alt="img" />
                     <div className='main_steps_div'>
                         <div className="step4_div">
-                            <img className='step_group' src={group} alt="" />
+                            <img className='step_group' src={group} alt="img" />
                             <h6><strong>Participants Verification</strong></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,
@@ -79,7 +79,7 @@ const VoiceHeard = () => {
                             </p>
                         </div>
                         <div className="step5_div">
-                            <img className='step_result' src={result} alt="" />
+                            <img className='step_result' src={result} alt="img" />
                             <h6><strong>Result Analysis</strong></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,
@@ -92,7 +92,7 @@ const VoiceHeard = () => {
                 </div>
                 <div className="mob_view_step_div">
                     <div className="mob_step_div2">
-                        <img className='mob_step_img' src={mobStep} alt="" />
+                        <img className='mob_step_img' src={mobStep} alt="img" />
                         <div className="mob_step1">
                             <h5>Proposal Generation</h5>
                             <p>

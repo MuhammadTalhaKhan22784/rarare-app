@@ -4,13 +4,11 @@ import user from "../../Assets/user.png";
 import location from "../../Assets/location.png";
 import toggle from "../../Assets/Group 3659.png";
 import edit from "../../Assets/Group 3655.png";
-import delt from "../../Assets/Group 3654.png";
 import DeleteProbModal from "../Modal/DeleteProbModal";
 import { useHistory } from "react-router";
 import numImg from '../../Assets/Group 3593.png'
 
 const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
-  // console.log(data)
   let [togle, setTogle] = useState(false);
   const history = useHistory();
 
@@ -24,8 +22,8 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
         <div className="issue_card_container">
           <div className={`card issue_card ${className}`} onClick={() => { history.push("/rant") }}>
             <div className="issue_card_img">
-              <img src={slider1} class="card-img-top" alt="..." />
-              <img className={`card_num `} src={numImg} alt="" />
+              <img src={slider1} className="card-img-top" alt="..." />
+              <img className={`card_num `} src={numImg} alt="img" />
             </div>
             <div className="issue_card_body">
               <div className="card_title_div issue_Card_title">
@@ -38,14 +36,14 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
               </p>
               <div className="location_div issue_loc">
-                <img src={location} alt="" />
+                <img src={location} alt="img" />
                 <p>Lorem ipsum dolor sit</p>
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
               {Cuser ?
                 <div>
-                  <img src={user} alt="" />
+                  <img src={user} alt="img" />
                   <p>username</p>
                 </div>
                 : null
@@ -57,8 +55,8 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
           </div>
           <div className={`card issue_card ${className}`} onClick={() => { history.push("/rant") }}>
             <div className="issue_card_img">
-              <img src={slider1} class="card-img-top" alt="..." />
-              <img className="card_num" src={numImg} alt="" />
+              <img src={slider1} className="card-img-top" alt="..." />
+              <img className="card_num" src={numImg} alt="img" />
             </div>
             <div className="issue_card_body">
               <div className="card_title_div issue_Card_title">
@@ -71,14 +69,14 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
               </p>
               <div className="location_div issue_loc">
-                <img src={location} alt="" />
+                <img src={location} alt="img" />
                 <p>Lorem ipsum dolor sit</p>
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
               {Cuser ?
                 <div>
-                  <img src={user} alt="" />
+                  <img src={user} alt="img" />
                   <p>username</p>
                 </div>
                 : null
@@ -90,8 +88,8 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
           </div>
           <div className={`card issue_card ${className} `} onClick={() => { history.push("/rant") }}>
             <div className="issue_card_img">
-              <img src={slider1} class="card-img-top" alt="..." />
-              <img className="card_num" src={numImg} alt="" />
+              <img src={slider1} className="card-img-top" alt="..." />
+              <img className="card_num" src={numImg} alt="img" />
             </div>
             <div className="issue_card_body">
               <div className="card_title_div issue_Card_title">
@@ -104,14 +102,14 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
               </p>
               <div className="location_div issue_loc">
-                <img src={location} alt="" />
+                <img src={location} alt="img" />
                 <p>Lorem ipsum dolor sit</p>
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
               {Cuser ?
                 <div>
-                  <img src={user} alt="" />
+                  <img src={user} alt="img" />
                   <p>username</p>
                 </div>
                 : null
@@ -128,7 +126,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
 
             <div className="list_style_img">
               <img src={slider1} className="card-img-top" alt="..." />
-              <img className="list_card_num" src={numImg} alt="" />
+              <img className="list_card_num" src={numImg} alt="img" />
             </div>
 
             <div className="list_issue_body">
@@ -138,10 +136,10 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                 </h5>
                 {togleImg ? (
                   <div className="toggle_div">
-                    <img onClick={() => setTogle(!togle)} src={toggle} alt="" />
+                    <img onClick={() => setTogle(!togle)} src={toggle} alt="img" />
                     {togle ? (
                       <div className="edit_div">
-                        <img className="edit_img2" onClick={handleTogle} src={edit} alt="" />
+                        <img className="edit_img2" onClick={handleTogle} src={edit} alt="img" />
                         <hr className="togle_hr" />
                         <DeleteProbModal
                           name="Delete Problem?"
@@ -156,7 +154,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                   <div className="user_card_detail_div proposal_card_user pro_survey_user list_user">
                     <div>
                       <p className="list_issue_user">username</p>
-                      <img src={user} alt="" />
+                      <img src={user} alt="img" />
                     </div>
                   </div>
                 )}
@@ -170,7 +168,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
               <div className="pro_list_loc">
                 <div className="proposal_list issue_list_loc">
                   <div>
-                    <img src={location} alt="" />
+                    <img src={location} alt="img" />
                     <p>Lorem ipsum dolor sit</p>
                   </div>
                 </div>
@@ -183,7 +181,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
           <div className="pro_list_loc_mob">
             <div className="proposal_list issue_list_loc">
               <div>
-                <img src={location} alt="" />
+                <img src={location} alt="img" />
                 <p>Lorem ipsum dolor sit</p>
               </div>
             </div>

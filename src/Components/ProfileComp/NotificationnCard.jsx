@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Button from '../Btn/Btn'
 import { useHistory } from 'react-router-dom'
 import Switch from '@material-ui/core/Switch'
@@ -25,7 +25,7 @@ const NotificationSettingCard = () => {
             <div className="profile_seting_card_div">
                 <div className="proSetting_head_div noti_card_head_div">
                     <div onClick={() => history.push('/account-setting')}>
-                        <img src={back} alt=""/>
+                        <img src={back} alt="img"/>
                         {/* <p>{'<-'}</p> */}
                         <h6>Notification Settings</h6>
                     </div>

@@ -10,7 +10,7 @@ import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import { FaShare } from "react-icons/fa";
 // assets
 import userImage from "../../../Assets/Ellipse 226.png";
-function proposal_component() {
+const proposal_component = () => {
   return (
     <div className="Rant_component_card">
       <Card
@@ -66,13 +66,16 @@ function proposal_component() {
           </Button>
         </div>
         <div className="Rcard_content_component">
-          {[1, 2, 3].map((val) => {
+          {[1, 2, 3].map((val, i) => {
             return (
-              <>
-                <div className="Rcard_review_component align-items-center ">
+              <div  key={i}>
+                <div
+                
+                  className="Rcard_review_component align-items-center "
+                >
                   <p style={{ display: "flex", alignItems: "center" }}>
                     <span>
-                      <img src={userImage}></img>
+                      <img src={userImage} alt="..."></img>
                     </span>
                     <span
                       className="Rcard_review_component_text text_lightpurple"
@@ -94,7 +97,7 @@ function proposal_component() {
                   aliquyam erat, sed diam voluptua. At vero eos et{" "}
                 </div>
                 <br></br>
-              </>
+              </div>
             );
           })}
         </div>
@@ -122,6 +125,6 @@ function proposal_component() {
       </div>
     </div>
   );
-}
+};
 
 export default proposal_component;

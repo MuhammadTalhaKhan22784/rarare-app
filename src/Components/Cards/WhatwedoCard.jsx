@@ -21,11 +21,11 @@ const WhatwedoCard = () => {
 
                 <div className='do_card_container' key={i}>
                     <div className="card myCcard" style={{ width: '18rem' }}>
-                        <img style={{ width: "100px" }} src={val.img} class="card-img-top" alt="..." />
+                        <img style={{ width: "100px" }} src={val.img} className="card-img-top" alt="..." />
                         <div>
                             <h5><strong> {val.head}</strong></h5>
                         </div>
-                        <div class="card-body">
+                        <div className="card-body">
                             <p className="card-text do_card_para">
                                 Lorem ipsum dolor sit amet,
                                 consetetur sadipscing elitr, sed diam

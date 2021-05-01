@@ -48,9 +48,9 @@ const PostProposal = () => {
                     className="c_dot"
                     style={{ display: show === "1" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={undrawInvesting} alt="" />
+                  <img src={undrawInvesting} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_darkblue fw-bold">Polls</h2>
@@ -75,9 +75,9 @@ const PostProposal = () => {
                     className="c_dot"
                     style={{ display: show === "2" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={undrawConference} alt="" />
+                  <img src={undrawConference} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_darkblue fw-bold">Consensus Forming</h2>
@@ -102,9 +102,9 @@ const PostProposal = () => {
                     className="c_dot"
                     style={{ display: show === "3" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={undrawAgreement} alt="" />
+                  <img src={undrawAgreement} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_darkblue fw-bold">

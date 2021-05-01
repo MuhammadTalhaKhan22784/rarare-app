@@ -16,7 +16,7 @@ const Community = () => {
             <div className='community_main_div'>
 
                 <div className='what_we_do_sub_div'>
-            <img className='eye_img2' src={eye} alt=""/>
+            <img className='eye_img2' src={eye} alt="img"/>
   
                     <div>
                         <h3 className='what_we_do_head'><strong> We are on a mission to end <strong style={{ color: '#1cc1a0 ' }}> blindness </strong> </strong></h3>
@@ -24,7 +24,7 @@ const Community = () => {
                     </div>
                     <div className='dp_para_div'>
                         <p className='dp_para_head'>
-                           <img className='community_cors1' src={cros2} alt=""/>
+                           <img className='community_cors1' src={cros2} alt="img"/>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d
                        </p>
@@ -37,16 +37,16 @@ const Community = () => {
                 </div>
                 <div className='eye_main_div'>
                       <div className='eye_img_div'>
-                             <img className='eye_img' src={eye} alt=""/>
-                             <img className='community_cros2' src={cros1} alt=""/>
-                            <img className='polygon_community' src={polygon2} alt=""/>
+                             <img className='eye_img' src={eye} alt="img"/>
+                             <img className='community_cros2' src={cros1} alt="img"/>
+                            <img className='polygon_community' src={polygon2} alt="img"/>
                       </div>
                       <div className='dot_square_div'>
                       <div className='square_div'>
-                        <img className='square_img' src={square} alt=""/>
+                        <img className='square_img' src={square} alt="img"/>
                       </div>
                       <div className='dot_img_circle_div'>
-                          <img className='dotImgCIrcle' src={maskGroup} alt=""/>
+                          <img className='dotImgCIrcle' src={maskGroup} alt="img"/>
                       </div>
                       </div>
                 </div>

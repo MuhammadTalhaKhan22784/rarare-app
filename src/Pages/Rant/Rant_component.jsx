@@ -59,13 +59,13 @@ function proposal_component() {
           </Button>
         </div>
         <div className="Rcard_content_component">
-          {[1, 2, 3].map((val) => {
+          {[1, 2, 3].map((val, i) => {
             return (
-              <>
+              <div key={i}>
                 <div className="Rcard_review_component align-items-center ">
                   <p style={{ display: "flex", alignItems: "center" }}>
                     <span>
-                      <img src={userImage}></img>
+                      <img src={userImage} alt="..."></img>
                     </span>
                     <span
                       className="Rcard_review_component_text text_lightpurple"
@@ -90,7 +90,7 @@ function proposal_component() {
                   aliquyam
                 </div>
                 <br></br>
-              </>
+              </div>
             );
           })}
         </div>

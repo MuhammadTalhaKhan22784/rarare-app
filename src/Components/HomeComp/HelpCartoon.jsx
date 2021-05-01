@@ -16,12 +16,12 @@ const HelpCartoon = () => {
     return (
         <div className='carton_container'>
             <div className='carton_div'>
-                <img className='cartoonImg' src={cartoon} alt="" />
+                <img className='cartoonImg' src={cartoon} alt="img" />
                 <div className='helpChat_div'>
                     <div className='help_chat_head_div'>
                         <ul className='webName_ul'>
                             <li>
-                                <img className='smCartoonImg' src={smCarton} alt="" />
+                                <img className='smCartoonImg' src={smCarton} alt="img" />
                             </li>
                             <li>
                                 <p className='webName'>RaRaRe</p>
@@ -29,19 +29,19 @@ const HelpCartoon = () => {
                         </ul>
                         <ul className='mute_ul'>
                             <li>
-                                <img className='smCartoonImg' src={mute} alt="" />
+                                <img className='smCartoonImg' src={mute} alt="img" />
                             </li>
                             <li>
-                                <img className='smCartoonImg' src={refresh} alt="" />
+                                <img className='smCartoonImg' src={refresh} alt="img" />
                             </li>
                             <li className='slct_lang_li'>
-                                <img className='smCartoonImg_lang' src={lang} alt="" />
+                                <img className='smCartoonImg_lang' src={lang} alt="img" />
                                 <div className="lang_relt_div">
                                     <div>
-                                        <img src={eng} alt=""/> <span>English</span>
+                                        <img src={eng} alt="img"/> <span>English</span>
                                     </div>
                                     <div>
-                                        <img src={frc} alt=""/> <span>French</span>
+                                        <img src={frc} alt="img"/> <span>French</span>
                                     </div>
                                 </div>
                             </li>
@@ -51,16 +51,16 @@ const HelpCartoon = () => {
                     <div className='help_msgs_div'>
                         <ul className='help_msg_ul'>
                             <li>
-                                <img className='msg_smCartoonImg' src={smCarton} alt="" />
+                                <img className='msg_smCartoonImg' src={smCarton} alt="img" />
                                 <p className='help_msg_para'>Hello there! Good morning!
                                 <br/> It`s now 05:00 PM in Islamabad, Pakistan!</p>
                             </li>
                             <li>
-                                <img className='msg_smCartoonImg' src={smCarton} alt="" />
+                                <img className='msg_smCartoonImg' src={smCarton} alt="img" />
                                 <p className='help_msg_para'>Hello there! Good morning! it`s now 05:00 PM in Islamabad, Pakistan!</p>
                             </li>
                             <li>
-                                <img className='msg_smCartoonImg' src={smCarton} alt="" />
+                                <img className='msg_smCartoonImg' src={smCarton} alt="img" />
                                 <p className='help_msg_para'>Hello there! Good morning! it`s now 05:00 PM in Islamabad, Pakistan!</p>
                             </li>
                         </ul>
@@ -71,7 +71,7 @@ const HelpCartoon = () => {
                         </div>
                     </div>
                         <div className='help_input_div'>
-                            <img className='mic_img' src={mic} alt=""/>
+                            <img className='mic_img' src={mic} alt="img"/>
                             <input className='help_input' type="text" placeholder='How can I help you?'/>
                         </div>
                 </div>

@@ -16,7 +16,7 @@ const Reinvite = () => {
             <div className="reinvite_main_div">
                 <div className='reinvite_head_div'>
                     <div className='img_detail_div'>
-                        <img className='polygon1_img' src={polygon1} alt="" />
+                        <img className='polygon1_img' src={polygon1} alt="img" />
                         <div className='reinvite_detail_div'>
                             <h2 className='reinventing_head'>Reinventing
                              <strong style={{ color: "#19c2a0", marginLeft: '5px' }}>
@@ -30,17 +30,17 @@ const Reinvite = () => {
 
                         </p>
                             <Button value='Sign Up today' onClick={()=>history.push('/signup')} className='Sign_up_today_btn' />
-                            <img className='polygon2_img' src={polygon2} alt="" />
+                            <img className='polygon2_img' src={polygon2} alt="img" />
                         </div>
                     </div>
                 </div>
                 <div className='reinvite_img_div'>
                     <div className='cros_img_div'>
-                        <img className='cros1_home' src={cros1} alt="" />
-                        <img className='cros2_home' src={cros2} alt="" />
+                        <img className='cros1_home' src={cros1} alt="img" />
+                        <img className='cros2_home' src={cros2} alt="img" />
                     </div>
-                    <img className='girl_img' src={girl} alt="" />
-                    <img className='polygon2_img2' src={polygon2} alt="" />
+                    <img className='girl_img' src={girl} alt="img" />
+                    <img className='polygon2_img2' src={polygon2} alt="img" />
 
                 </div>
             </div>

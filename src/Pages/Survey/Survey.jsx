@@ -41,26 +41,26 @@ const Survey = () => {
                         </div>
                         <div className='user_card_detail_div  survey_user'>
                             <div className='locatio_main_div'>
-                                <img src={location} alt="" />
+                                <img src={location} alt="img" />
                                 <span>Lorem ipsum dolor sit</span>
                             </div>
                             <div className='survey_list_user_info_div'>
-                                <img src={user} alt="" />
+                                <img src={user} alt="img" />
                                 <p>username</p>
                             </div>
                         </div>
                         <p className='survey_hr' />
                         <div className="perticipant_div">
                             <div>
-                                <img src={timer} alt="" />
+                                <img src={timer} alt="img" />
                                 <span>2 Minutes</span>
                             </div>
                             <div>
-                                <img className='users_survey' src={users} alt="" />
+                                <img className='users_survey' src={users} alt="img" />
                                 <span>1500+</span>
                             </div>
                             <div>
-                                <img src={gift} alt="" />
+                                <img src={gift} alt="img" />
                                 <span>50 Loco points</span>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Survey = () => {
 
                         <div className='user_card_detail_div  survey_user survey_mob_user'>
                             <div className='survey_list_user_info_div_mob'>
-                                <img src={user} alt="" />
+                                <img src={user} alt="img" />
                                 <p>username</p>
                             </div>
                                 <div>

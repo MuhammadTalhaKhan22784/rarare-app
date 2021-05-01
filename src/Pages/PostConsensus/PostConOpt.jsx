@@ -56,7 +56,7 @@ const PostConOpt = () => {
                         <div className="pcontinue_btn pcon_btn mt-3">
                             <button className="text-white bg_lightgreen border_none"
 
-                            ><img className="me-2" src={addIcon} alt="" /> <span>Add another option</span></button>
+                            ><img className="me-2" src={addIcon} alt="img" /> <span>Add another option</span></button>
                         </div>
                         <div className="pcontinue_btn mt-5">
                             <button className="me-3 cus_width100 text_bluegreen bg_white border_solid bluegreen_border"

@@ -13,7 +13,6 @@ import mobHover from '../../Assets/Group 5381.png'
 
 const PostSurveyReward = (props) => {
     const history = useHistory();
-    console.log(history.location.state)
 
     return (
         <React.Fragment>
@@ -34,17 +33,17 @@ const PostSurveyReward = (props) => {
                     <div className="input_div_reward">
                         <input type="text" placeholder='Total Participants' />
                         <span>
-                            <img src={i} alt="" />
-                            <img src={hoverImg} className='hover_img' alt=""/>
-                            <img src={mobHover} className='mob_hover' alt=""/>
+                            <img src={i} alt="img" />
+                            <img src={hoverImg} className='hover_img' alt="img"/>
+                            <img src={mobHover} className='mob_hover' alt="img"/>
                         </span>
                     </div>
                     <div className="input_div_reward">
                         <input type="text" placeholder='Reward Points per participants' />
                         <span>
-                            <img src={i} alt="" />
-                            <img src={hoverImg} className='hover_img' alt=""/>
-                            <img src={mobHover} className='mob_hover' alt=""/>
+                            <img src={i} alt="img" />
+                            <img src={hoverImg} className='hover_img' alt="img"/>
+                            <img src={mobHover} className='mob_hover' alt="img"/>
 
                         </span>
                     </div>

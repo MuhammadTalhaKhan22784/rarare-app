@@ -58,7 +58,7 @@ const Signup = () => {
                   className="c_dot"
                   style={{ display: show === "1" ? "block" : "none" }}
                   src={dot}
-                  alt=""
+                  alt="img"
                 />
                 I'm a citizen
               </div>
@@ -76,7 +76,7 @@ const Signup = () => {
                   className="c_dot"
                   style={{ display: show === "2" ? "block" : "none" }}
                   src={dot}
-                  alt=""
+                  alt="img"
                 />
                 I'm an authority/business
               </div>
@@ -92,7 +92,7 @@ const Signup = () => {
               </button>
             </div>
             <div className="or_line">
-              <img src={orLine} alt="" />
+              <img src={orLine} alt="img" />
             </div>
             <form className="s_form_fields">
               {show === "1" ? (
@@ -131,9 +131,9 @@ const Signup = () => {
                   type={!pass ? "password" : "text"}
                 />
                 {!pass ? (
-                  <img onClick={showPassword} src={pwdclose} alt="" />
+                  <img onClick={showPassword} src={pwdclose} alt="img" />
                 ) : (
-                  <img onClick={showPassword} src={pwdopen} alt="" />
+                  <img onClick={showPassword} src={pwdopen} alt="img" />
                 )}
               </div>
               <div className="p_input">
@@ -143,9 +143,9 @@ const Signup = () => {
                   type={!pass ? "password" : "text"}
                 />
                 {!pass ? (
-                  <img onClick={showPassword} src={pwdclose} alt="" />
+                  <img onClick={showPassword} src={pwdclose} alt="img" />
                 ) : (
-                  <img onClick={showPassword} src={pwdopen} alt="" />
+                  <img onClick={showPassword} src={pwdopen} alt="img" />
                 )}
               </div>
               <div className="form_btn">
@@ -163,17 +163,15 @@ const Signup = () => {
           </div>
         </div>
         <div className="signup_img_content">
-          <img className="sic_1" src={xSmallIcon} alt="" />
-          <img className="sic_2" src={xMedumIcon} alt="" />
-          <img className="sic_3" src={polygon1} alt="" />
-          <img className="sic_4" src={polygon2} alt="" />
+          <img className="sic_1" src={xSmallIcon} alt="img" />
+          <img className="sic_2" src={xMedumIcon} alt="img" />
+          <img className="sic_3" src={polygon1} alt="img" />
+          <img className="sic_4" src={polygon2} alt="img" />
           <div>
             <Swiper
               pagination
               spaceBetween={50}
               slidesPerView={1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide>
                 <img className="s_bgimg" src={signupBg} alt="signupBg" />

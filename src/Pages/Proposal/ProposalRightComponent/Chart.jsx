@@ -24,24 +24,24 @@ const data = {
   ],
 };
 
-const options = {
-  indexAxis: 'x',
-  elements: {
-    bar: {
-      borderWidth: 2,
-    },
-  },
-  responsive: true,
-  plugins: {
-    legend: {
-      position: 'right',
-    },
-    title: {
-      display: false,
-      text: 'Chart.js Horizontal Bar Chart',
-    },
-  },
-};
+// const options = {
+//   indexAxis: 'x',
+//   elements: {
+//     bar: {
+//       borderWidth: 2,
+//     },
+//   },
+//   responsive: true,
+//   plugins: {
+//     legend: {
+//       position: 'right',
+//     },
+//     title: {
+//       display: false,
+//       text: 'Chart.js Horizontal Bar Chart',
+//     },
+//   },
+// };
 
 const HorizontalBarChart = () => (
   <>

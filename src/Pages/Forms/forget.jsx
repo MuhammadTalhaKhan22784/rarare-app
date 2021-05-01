@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper'
+import SwiperCore, { Pagination } from 'swiper'
 
 import "./Forms.css";
 // assets
@@ -68,10 +68,10 @@ const Forget = () => {
           </div>
         </div>
         <div className="login_img_content">
-          <img className="lgic_1" src={xSmallIcon} alt="" />
-          <img className="lgic_2" src={xMedumIcon} alt="" />
-          <img className="lgic_3" src={polygon1} alt="" />
-          <img className="lgic_4" src={polygon2} alt="" />
+          <img className="lgic_1" src={xSmallIcon} alt="img" />
+          <img className="lgic_2" src={xMedumIcon} alt="img" />
+          <img className="lgic_3" src={polygon1} alt="img" />
+          <img className="lgic_4" src={polygon2} alt="img" />
        
           <div className="d-flex justify-content-end">
             {/* <img className="s_bgimg" src={lgbgright} alt="loginBg" /> */}
@@ -80,20 +80,18 @@ const Forget = () => {
               // navigation
               spaceBetween={50}
               slidesPerView={1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide>
-                <img className="s_bgimg1" src={lgbgright} alt="" />
+                <img className="s_bgimg1" src={lgbgright} alt="img" />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="s_bgimg1" src={lgbgright} alt="" />
+                <img className="s_bgimg1" src={lgbgright} alt="img" />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="s_bgimg1" src={lgbgright} alt="" />
+                <img className="s_bgimg1" src={lgbgright} alt="img" />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="s_bgimg1" src={lgbgright} alt="" />
+                <img className="s_bgimg1" src={lgbgright} alt="img" />
               </SwiperSlide>
             </Swiper>
           </div>

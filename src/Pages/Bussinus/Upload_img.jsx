@@ -13,12 +13,9 @@ const BusinessUploadImg = () => {
     let [img, setImg] = useState([])
 
     const handleUrl = (e) => {
-        // let arr = []
         let url = URL.createObjectURL(e.target.files[0])
-        // arr.push(url)
         setImg([url, ...img])
     }
-    // console.log(img)
 
     const dltImg =(e)=>{
        let filter = img.filter((val)=>val!==e)
@@ -40,7 +37,7 @@ const BusinessUploadImg = () => {
                 </div>
                 <div className="upload_div">
                     <label htmlFor="upload_logo">
-                        <img className='upload_img' src="https://i.stack.imgur.com/x3KMH.jpg" alt="" />
+                        <img className='upload_img' src="https://i.stack.imgur.com/x3KMH.jpg" alt="img" />
                     </label>
                     <input type="file" onChange={(e) => handleUrl(e)} name="upload_logo" id="upload_logo" />
                 </div>
@@ -48,7 +45,7 @@ const BusinessUploadImg = () => {
                     {img && img.map((val,i) => (
                         <div className="upload_result" key={i}>
                             <p className='upload_delete' onClick={()=>dltImg(val)} >&times;</p>
-                            <img className='upload_img_result' src={val} alt="" />
+                            <img className='upload_img_result' src={val} alt="img" />
                         </div>
                     ))}
                 </div>

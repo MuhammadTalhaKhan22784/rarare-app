@@ -13,7 +13,7 @@ const Survey = () => {
             <div className='recent_issues_main_div'>
                 <div className='what_we_do_sub_div'>
                     <div className='do_more_img_div'>
-                        <img className='do_more_img' src={pen} alt="" />
+                        <img className='do_more_img' src={pen} alt="img" />
                     </div>
                     <div>
                         <h3 className='what_we_do_head'><strong> Top surveys in your community </strong></h3>

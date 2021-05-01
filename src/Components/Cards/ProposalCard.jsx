@@ -4,13 +4,11 @@ import Button from "../Btn/Btn";
 import dot from "../../Assets/dot.png";
 import location from "../../Assets/location.png";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import next from "../../Assets/Group 3603.png";
 import prev from "../../Assets/Group 3604.png";
-import user from "../../Assets/user.png";
 import path3 from "../../Assets/Rectangle 871.png";
 import farming from "../../Assets/Icon awesome-hand-paper.png";
 import { useHistory } from "react-router-dom";
@@ -18,14 +16,24 @@ import { useHistory } from "react-router-dom";
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
-    <img src={next} onClick={onClick} className={`${className} custon_arr`} />
+    <img
+      src={next}
+      onClick={onClick}
+      className={`${className} custon_arr`}
+      alt="img"
+    />
   );
 }
 
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
   return (
-    <img src={prev} onClick={onClick} className={`${className} custon_arr`} />
+    <img
+      src={prev}
+      onClick={onClick}
+      className={`${className} custon_arr`}
+      alt="img"
+    />
   );
 }
 
@@ -54,17 +62,17 @@ LinearProgressWithLabel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-  },
-});
+// const useStyles = makeStyles({
+//   root: {
+//     width: "100%",
+//   },
+// });
 
 const ProposalCard = () => {
   const history = useHistory();
 
-  const classes = useStyles();
-  const [progress, setProgress] = React.useState(10);
+  // const classes = useStyles();
+  // const [progress, setProgress] = React.useState(10);
 
   const settings = {
     dots: false,
@@ -114,15 +122,15 @@ const ProposalCard = () => {
             </h5>
             <div className="ongoing_btn_div">
               <button className="voice_heard_btn_white ongoin">
-                <img src={dot} alt="" /> Ongoing
+                <img src={dot} alt="img" /> Ongoing
               </button>
             </div>
           </div>
           <div className="user_card_detail_div proposal_card_user">
             <div>
               <div className="search_uimg_div">
-                <img className="path2_img" src={path3} alt="" />
-                <img className="search_ul_imgs" src={farming} alt="" />
+                <img className="path2_img" src={path3} alt="img" />
+                <img className="search_ul_imgs" src={farming} alt="img" />
               </div>
               <p className="farming_card_p">Consensus Farming</p>
             </div>
@@ -134,7 +142,7 @@ const ProposalCard = () => {
           </p>
           <div className="home_proposal_card_loc">
             <div>
-              <img src={location} alt="" />
+              <img src={location} alt="img" />
               <span>Lorem ipsum dolor sit</span>
             </div>
             <div>
@@ -159,15 +167,15 @@ const ProposalCard = () => {
             </h5>
             <div className="ongoing_btn_div">
               <button className="voice_heard_btn_white ongoin">
-                <img src={dot} alt="" /> Ongoing
+                <img src={dot} alt="img" /> Ongoing
               </button>
             </div>
           </div>
           <div className="user_card_detail_div proposal_card_user">
             <div>
               <div className="search_uimg_div">
-                <img className="path2_img" src={path3} alt="" />
-                <img className="search_ul_imgs" src={farming} alt="" />
+                <img className="path2_img" src={path3} alt="img" />
+                <img className="search_ul_imgs" src={farming} alt="img" />
               </div>
               <p className="farming_card_p">Consensus Farming</p>
             </div>
@@ -179,7 +187,7 @@ const ProposalCard = () => {
           </p>
           <div className="home_proposal_card_loc">
             <div>
-              <img src={location} alt="" />
+              <img src={location} alt="img" />
               <span>Lorem ipsum dolor sit</span>
             </div>
             <div>
@@ -204,15 +212,15 @@ const ProposalCard = () => {
             </h5>
             <div className="ongoing_btn_div">
               <button className="voice_heard_btn_white ongoin">
-                <img src={dot} alt="" /> Ongoing
+                <img src={dot} alt="img" /> Ongoing
               </button>
             </div>
           </div>
           <div className="user_card_detail_div proposal_card_user">
             <div>
               <div className="search_uimg_div">
-                <img className="path2_img" src={path3} alt="" />
-                <img className="search_ul_imgs" src={farming} alt="" />
+                <img className="path2_img" src={path3} alt="img" />
+                <img className="search_ul_imgs" src={farming} alt="img" />
               </div>
               <p className="farming_card_p">Consensus Farming</p>
             </div>
@@ -224,7 +232,7 @@ const ProposalCard = () => {
           </p>
           <div className="home_proposal_card_loc">
             <div>
-              <img src={location} alt="" />
+              <img src={location} alt="img" />
               <span>Lorem ipsum dolor sit</span>
             </div>
             <div>
@@ -249,15 +257,15 @@ const ProposalCard = () => {
             </h5>
             <div className="ongoing_btn_div">
               <button className="voice_heard_btn_white ongoin">
-                <img src={dot} alt="" /> Ongoing
+                <img src={dot} alt="img" /> Ongoing
               </button>
             </div>
           </div>
           <div className="user_card_detail_div proposal_card_user">
             <div>
               <div className="search_uimg_div">
-                <img className="path2_img" src={path3} alt="" />
-                <img className="search_ul_imgs" src={farming} alt="" />
+                <img className="path2_img" src={path3} alt="img" />
+                <img className="search_ul_imgs" src={farming} alt="img" />
               </div>
               <p className="farming_card_p">Consensus Farming</p>
             </div>
@@ -269,7 +277,7 @@ const ProposalCard = () => {
           </p>
           <div className="home_proposal_card_loc">
             <div>
-              <img src={location} alt="" />
+              <img src={location} alt="img" />
               <span>Lorem ipsum dolor sit</span>
             </div>
             <div>

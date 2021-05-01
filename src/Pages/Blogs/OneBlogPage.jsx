@@ -1,5 +1,4 @@
 import React from 'react'
-import search from '../../Assets/Icon feather-search@2x.png'
 import SocialFeed from '../../Components/BlogComp/SocialFeed'
 import { useParams } from 'react-router-dom'
 import { blog_card_data } from './cardData'
@@ -23,14 +22,14 @@ const SelectBlog = () => {
                     <div className="blog_head_search_div">
                         <h3><strong style={{ color: '#1cc1a0' }}> Rarare Blog!</strong></h3>
                         {/* <div className="blog_search_inp_div">
-                            <img src={search} alt="" />
+                            <img src={search} alt="img" />
                             <input type="text" placeholder='Search Blog' />
                         </div> */}
                     </div>
                     <div className='get_blog_one_link'>
                         Blogs {' > '} <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</span>
                     </div>
-                    <img className='id_blog_img' src={blogSliderImg} alt="" />
+                    <img className='id_blog_img' src={blogSliderImg} alt="img" />
                     <div className="select_blog_para_data">
                         <h5><strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</strong></h5>
                         <div className="blog_data_div">
@@ -42,28 +41,28 @@ const SelectBlog = () => {
                             <div className='select_blog_more_main_div' key={i}>
                                 <div className="select_blog_user_info" >
                                     <div className='blog_user_card_detail_div'>
-                                        <img src={val.bloger_img} alt="" />
+                                        <img src={val.bloger_img} alt="img" />
                                         <div>
                                             <p className='bloger_name'>{val.name}</p>
                                             <p className='bloger_email'>{val.email}</p>
                                         </div>
                                     </div>
-                                    {/* <img src={val.bloger_img} alt="" /> */}
+                                    {/* <img src={val.bloger_img} alt="img" /> */}
                                     <ul className='blog_social_icons_ul'>
                                         <li>
-                                            <img src={sIcon1} alt="" />
+                                            <img src={sIcon1} alt="img" />
                                         </li>
                                         <li>
-                                            <img src={sIcon2} alt="" />
+                                            <img src={sIcon2} alt="img" />
                                         </li>
                                         <li>
-                                            <img src={sIcon3} alt="" />
+                                            <img src={sIcon3} alt="img" />
                                         </li>
                                         <li>
-                                            <img src={sIcon4} alt="" />
+                                            <img src={sIcon4} alt="img" />
                                         </li>
                                         <li>
-                                            <img src={sIcon5} alt="" />
+                                            <img src={sIcon5} alt="img" />
                                         </li>
                                     </ul>
                                 </div>

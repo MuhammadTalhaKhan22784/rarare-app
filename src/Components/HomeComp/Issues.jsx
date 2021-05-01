@@ -14,7 +14,7 @@ const Issues = () => {
                 
                 <div className='what_we_do_sub_div'>
                     <div className='do_more_img_div'>
-                        <img className='do_more_img' src={more} alt="" />
+                        <img className='do_more_img' src={more} alt="img" />
                     </div>
                     <div>
                         <h3 className='what_we_do_head'><strong> Recent Issues </strong></h3>

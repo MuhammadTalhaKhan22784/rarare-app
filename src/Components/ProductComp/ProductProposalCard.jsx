@@ -1,6 +1,5 @@
 import React from 'react'
 import dot from '../../Assets/dot.png'
-import user from '../../Assets/user.png'
 import location from '../../Assets/location.png'
 import path3 from '../../Assets/Rectangle 871.png'
 import farming from '../../Assets/Icon awesome-hand-paper.png'
@@ -18,14 +17,14 @@ const ProductProposalCard = ({ list, left, className }) => {
                         <div className='card_title_div proposal_Card_title'>
                             <h5><strong> Title of issues </strong></h5>
                             <div className='ongoing_btn_div2'>
-                                <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
+                                <button className='voice_heard_btn_white ongoin'><img src={dot} alt="img" /> Ongoing</button>
                             </div>
                         </div>
                         <div className='user_card_detail_div proposal_card_user'>
                             <div>
                                 <div className='search_uimg_div'>
-                                    <img className='path2_img' src={path3} alt="" />
-                                    <img className='search_ul_imgs' src={farming} alt="" />
+                                    <img className='path2_img' src={path3} alt="img" />
+                                    <img className='search_ul_imgs' src={farming} alt="img" />
                                 </div>
                                 <p className='farming_card_p'>Consensus Farming</p>
                             </div>
@@ -39,7 +38,7 @@ const ProductProposalCard = ({ list, left, className }) => {
                         </p>
                         <div className='location_div proposal_loc'>
                             <div>
-                                <img src={location} alt="" />
+                                <img src={location} alt="img" />
                                 <span>Lorem ipsum dolor sit</span>
                             </div>
                             <div>
@@ -51,14 +50,14 @@ const ProductProposalCard = ({ list, left, className }) => {
                         <div className='card_title_div proposal_Card_title'>
                             <h5><strong> Title of issues </strong></h5>
                             <div className='ongoing_btn_div2'>
-                                <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
+                                <button className='voice_heard_btn_white ongoin'><img src={dot} alt="img" /> Ongoing</button>
                             </div>
                         </div>
                         <div className='user_card_detail_div proposal_card_user'>
                             <div>
                                 <div className='search_uimg_div'>
-                                    <img className='path2_img' src={path3} alt="" />
-                                    <img className='search_ul_imgs' src={farming} alt="" />
+                                    <img className='path2_img' src={path3} alt="img" />
+                                    <img className='search_ul_imgs' src={farming} alt="img" />
                                 </div>
                                 <p className='farming_card_p'>Consensus Farming</p>
                             </div>
@@ -72,7 +71,7 @@ const ProductProposalCard = ({ list, left, className }) => {
                         </p>
                         <div className='location_div proposal_loc'>
                             <div>
-                                <img src={location} alt="" />
+                                <img src={location} alt="img" />
                                 <span>Lorem ipsum dolor sit</span>
                             </div>
                             <div>
@@ -91,8 +90,8 @@ const ProductProposalCard = ({ list, left, className }) => {
                     <div className='proposal_list_farming'>
                         <div>
                             <div className='search_uimg_div'>
-                                <img className='path2_img' src={path3} alt="" />
-                                <img className='search_ul_imgs' src={farming} alt="" />
+                                <img className='path2_img' src={path3} alt="img" />
+                                <img className='search_ul_imgs' src={farming} alt="img" />
                             </div>
                             <p className='farming_card_p'>Consensus Farming</p>
                         </div>
@@ -109,7 +108,7 @@ const ProductProposalCard = ({ list, left, className }) => {
                     <div className='pro_list_loc'>
                         <div className='proposal_list'>
                             <div>
-                                <img src={location} alt="" />
+                                <img src={location} alt="img" />
                                 <span>Lorem ipsum dolor sit</span>
                             </div>
                         </div>

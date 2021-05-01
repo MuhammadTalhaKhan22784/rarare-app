@@ -166,7 +166,7 @@
 @media only screen and (max-width: 480px) {
   .Proposal_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 

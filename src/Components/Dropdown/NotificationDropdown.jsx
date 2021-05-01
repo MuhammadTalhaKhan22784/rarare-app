@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
-// import enFlag from "../../Assets/PNG/Landing Page/flag_en.png"
 import notificationIcon from "../../Assets/notification-icon.png";
-import { Icon, InlineIcon } from "@iconify/react";
-import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
-const NotificationDropdown = ({className}) => {
-  const [val, setVal] = useState("1");
+const NotificationDropdown = ({ className }) => {
   return (
     <React.Fragment>
       <div className={`dropdown ${className}`}>
@@ -18,7 +13,7 @@ const NotificationDropdown = ({className}) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <img src={notificationIcon} alt="" />
+          <img src={notificationIcon} alt="img" />
         </button>
         <ul
           className="dropdown-menu notification_menu"
@@ -71,7 +66,7 @@ const NotificationDropdown = ({className}) => {
             </div>
           </li>
           <li>
-              <h6 className="va_text text-center text_bluegreen">view all</h6>
+            <h6 className="va_text text-center text_bluegreen">view all</h6>
           </li>
         </ul>
       </div>

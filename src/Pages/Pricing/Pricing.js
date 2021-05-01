@@ -287,7 +287,7 @@ const Pricing = () => {
         <div className="mdm_section">
           <div className="mdm_container">
             <div className="mdm_card">
-              <img src={mdmBox} alt="" />
+              <img src={mdmBox} alt="img" />
               <h2 className="text_darkblue fw-bold">MDM Feature</h2>
               <p className="text_lightgray">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -297,7 +297,7 @@ const Pricing = () => {
               </p>
             </div>
             <div className="mdm_card">
-              <img src={mdmBox} alt="" />
+              <img src={mdmBox} alt="img" />
               <h2 className="text_darkblue fw-bold">MDM Feature</h2>
               <p className="text_lightgray">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -307,7 +307,7 @@ const Pricing = () => {
               </p>
             </div>
             <div className="mdm_card">
-              <img src={mdmBox} alt="" />
+              <img src={mdmBox} alt="img" />
               <h2 className="text_darkblue fw-bold">MDM Feature</h2>
               <p className="text_lightgray">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -355,7 +355,7 @@ const Pricing = () => {
             </p>
           </div>
           <div className="wd_video">
-            <img src={watchVideo} alt="" />
+            <img src={watchVideo} alt="img" />
           </div>
         </div>
         <div className="pricing_section" id="price">

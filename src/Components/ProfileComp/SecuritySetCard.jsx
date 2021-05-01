@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Button from '../Btn/Btn'
 import { useHistory } from 'react-router-dom'
 import Switch from '@material-ui/core/Switch'
@@ -24,7 +24,7 @@ const SecuritySettingCard = () => {
                 <div className="proSetting_head_div security_seting_head_div">
                     <div onClick={() => history.push('/account-setting')}>
                         {/* <p>{'<-'}</p> */}
-                        <img src={back} alt="" />
+                        <img src={back} alt="img" />
                         <h6 className='seting_head_desktop'>Security & Notification Settings</h6>
                         <h6 className='seting_head_mob_view'>Security Settings</h6>
                     </div>

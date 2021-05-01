@@ -17,7 +17,7 @@ const Blog = () => {
                 <div className="blog_head_search_div">
                     <h3><strong style={{ color: '#1cc1a0' }}> Rarare Blog!</strong></h3>
                     <div className="blog_search_inp_div">
-                        <img src={search} alt="" />
+                        <img src={search} alt="img" />
                         <input type="text" placeholder='Search Blog' />
                     </div>
                 </div>

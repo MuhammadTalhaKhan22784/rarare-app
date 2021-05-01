@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import Button from '../Btn/Btn'
 import dot from '../../Assets/dot.png'
 import location from '../../Assets/location.png'
 import PropTypes from 'prop-types';
@@ -25,10 +24,6 @@ function LinearProgressWithLabel(props) {
 }
 
 LinearProgressWithLabel.propTypes = {
-    /**
-     * The value of the progress indicator for the determinate and buffer variants.
-     * Value between 0 and 100.
-     */
     value: PropTypes.number.isRequired,
 };
 
@@ -52,22 +47,22 @@ const ProfileProposalCard = ({ className, list }) => {
                         <div className='head_div_grid'>
                             <h5 className='proposal_card_head'><strong>Title of the Proposal</strong></h5>
                             <div className="tagle_div">
-                                <img src={toggle} onClick={()=>setTogle(!togle)} alt=""/>
+                                <img src={toggle} onClick={()=>setTogle(!togle)} alt="img"/>
                                 {togle?
                                 <div className="edit_div_2">
-                                    <img className='edit_img' src={edit} alt=""/>
+                                    <img className='edit_img' src={edit} alt="img"/>
                                     <hr className='togle_hr'/>
-                                    <img className='dlt_img' src={delt} alt=""/>
+                                    <img className='dlt_img' src={delt} alt="img"/>
                                 </div>
                                 :null
                                 }
                             </div>
                         </div>
                         <div className='ongoing_btn_div2'>
-                            <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
+                            <button className='voice_heard_btn_white ongoin'><img src={dot} alt="img" /> Ongoing</button>
                         </div>
                         <div className='location_div'>
-                            <img src={location} alt="" />
+                            <img src={location} alt="img" />
                             <p>Lorem ipsum dolor sit</p>
                         </div>
                         <div className='progres_main_div'>
@@ -99,12 +94,12 @@ const ProfileProposalCard = ({ className, list }) => {
                 <div className="card list_profile_proposal" >
                     <div className='head_profile_proposal'>
                         <h5 className='proposal_card_head'><strong>Title of the Proposal</strong></h5>
-                        <button className='voice_heard_btn_white ongoin'><img src={dot} alt="" /> Ongoing</button>
+                        <button className='voice_heard_btn_white ongoin'><img src={dot} alt="img" /> Ongoing</button>
                     </div>
                     <div className='ongoing_btn_div'>
                     </div>
                     <div className='location_div profile_proposal_loc_div'>
-                        <img src={location} alt="" />
+                        <img src={location} alt="img" />
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                     <div className='progres_main_div'>

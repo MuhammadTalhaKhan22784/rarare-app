@@ -12,14 +12,14 @@ import {useHistory} from 'react-router-dom'
 function SampleNextArrow(props) {
     const { className, onClick } = props;
     return (
-        <img src={next} onClick={onClick} className={`${className} custon_arr`} />
+        <img src={next} onClick={onClick} className={`${className} custon_arr`} alt="..." />
     );
 }
 
 function SamplePrevArrow(props) {
     const { className, onClick } = props;
     return (
-        <img src={prev} onClick={onClick} className={`${className} custon_arr`} />
+        <img src={prev} onClick={onClick} className={`${className} custon_arr`} alt="..." />
 
     );
 }
@@ -68,7 +68,7 @@ const SurveyCard = () => {
             <Slider {...settings} className='slick_slider_survey'>
 
                 {/* <div className='recent_issue_card_container'> */}
-                <div class="card survey_card" onClick={()=>history.push('/survey/4324')} style={{ width: '18rem' }}>
+                <div className="card survey_card" onClick={()=>history.push('/survey/4324')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>
@@ -82,23 +82,23 @@ const SurveyCard = () => {
                                 </p>
                     </div>
                     <div className='location_div survey_llocation'>
-                        <img src={location} alt="" />
+                        <img src={location} alt="img" />
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                     <hr />
                     <div className='survey_main_time_div'>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>SURVEY TIME</p>
                             <p className='survey_grn'>2 Minutes</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>PARTICIPANTS</p>
                             <p className='survey_grn'>1,500+</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>REWARD</p>
                             <p className='survey_grn'>50</p>
                         </div>
@@ -106,7 +106,7 @@ const SurveyCard = () => {
                     <hr />
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>
@@ -114,7 +114,7 @@ const SurveyCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card survey_card" onClick={()=>history.push('/survey/0033')} style={{ width: '18rem' }}>
+                <div className="card survey_card" onClick={()=>history.push('/survey/0033')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>
@@ -128,23 +128,23 @@ const SurveyCard = () => {
                                 </p>
                     </div>
                     <div className='location_div survey_llocation'>
-                        <img src={location} alt="" />
+                        <img src={location} alt="img" />
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                     <hr />
                     <div className='survey_main_time_div'>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>SURVEY TIME</p>
                             <p className='survey_grn'>2 Minutes</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>PARTICIPANTS</p>
                             <p className='survey_grn'>1,500+</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>REWARD</p>
                             <p className='survey_grn'>50</p>
                         </div>
@@ -152,7 +152,7 @@ const SurveyCard = () => {
                     <hr />
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>
@@ -160,7 +160,7 @@ const SurveyCard = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card survey_card" onClick={()=>history.push('/survey/0043543')} style={{ width: '18rem' }}>
+                <div className="card survey_card" onClick={()=>history.push('/survey/0043543')} style={{ width: '18rem' }}>
                     <div className='card_title_div'>
                         <h6><strong> Rising cataract issues in Nigeria! </strong></h6>
                     </div>
@@ -174,23 +174,23 @@ const SurveyCard = () => {
                                 </p>
                     </div>
                     <div className='location_div survey_llocation'>
-                        <img src={location} alt="" />
+                        <img src={location} alt="img" />
                         <p>Lorem ipsum dolor sit</p>
                     </div>
                     <hr />
                     <div className='survey_main_time_div'>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>SURVEY TIME</p>
                             <p className='survey_grn'>2 Minutes</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>PARTICIPANTS</p>
                             <p className='survey_grn'>1,500+</p>
                         </div>
                         <div>
-                            <img src={timer} alt="" />
+                            <img src={timer} alt="img" />
                             <p className='survey_time'>REWARD</p>
                             <p className='survey_grn'>50</p>
                         </div>
@@ -198,7 +198,7 @@ const SurveyCard = () => {
                     <hr />
                     <div className='user_card_detail_div'>
                         <div>
-                            <img src={user} alt="" />
+                            <img src={user} alt="img" />
                             <p>username</p>
                         </div>
                         <div>

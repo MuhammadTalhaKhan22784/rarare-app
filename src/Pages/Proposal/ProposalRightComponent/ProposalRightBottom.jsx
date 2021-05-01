@@ -14,12 +14,12 @@ function ProposalRightBottom() {
                 <p className="text_lightgray" style={{fontSize:"0.9rem",marginTop:"9px"}} >Hey , I want this design in my website but change the color theme</p>
                 
                 <div >
-                   {["A","B","C"].map(val=>{return(
-                       <>
+                   {["A","B","C"].map((val,i)=>{return(
+                       <div key={i}>
                          
                          <div className="div_card"><Card className="card_options">option {val}</Card></div>
 
-                       </>
+                       </div>
                    )})}
                    
                 </div>

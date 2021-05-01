@@ -24,7 +24,7 @@ const SurveyHealth = () => {
                     <div className="health_analysis_div">
                         <div className="analysis_head">
                             <p>
-                                <img onClick={() => history.push('/post-survey-tamplate')} src={back} alt="" />
+                                <img onClick={() => history.push('/post-survey-tamplate')} src={back} alt="img" />
                             </p>
                             {/* <p onClick={()=>history.push('/post-survey-tamplate')}>{'<-'}</p> */}
                             <h6>Health Analysis</h6>

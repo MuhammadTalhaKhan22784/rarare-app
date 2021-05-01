@@ -9,9 +9,9 @@ const Report = () => {
             <div className='getinspired_main_div'>
                 <div className='get_inspire_di report_main_div'>
                     <div className='get_inspire_img_div report_mob_img_div'>
-                        <img className='mob1' src={mob} alt="" />
-                        <img className='mob2' src={mob} alt="" />
-                        <img className='mob3' src={mob} alt="" />
+                        <img className='mob1' src={mob} alt="img" />
+                        <img className='mob2' src={mob} alt="img" />
+                        <img className='mob3' src={mob} alt="img" />
                     </div>
                     <div className='get_inspire_detail staye_connect report_issue_div'>
                         <div className='head_magnet_div'>
@@ -27,7 +27,7 @@ const Report = () => {
                         {/* <Button className='getInsp_btn' value='Lorem Ipsum' /> */}
                         <div className='app_store_div'>
 
-                            <img src={appstore} className='appstore_img' alt="" />
+                            <img src={appstore} className='appstore_img' alt="img" />
                         </div>
                     </div>
                 </div>

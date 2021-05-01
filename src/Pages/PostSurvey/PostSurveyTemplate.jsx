@@ -50,9 +50,9 @@ const PostSurveyTemplate = () => {
                     className="c_dot"
                     style={{ display: show === "1" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={bike} alt="" />
+                  <img src={bike} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_bluegreen">Health Analysis</h2>
@@ -77,9 +77,9 @@ const PostSurveyTemplate = () => {
                     className="c_dot"
                     style={{ display: show === "2" ? "block" : "none" }}
                     src={greenDot}
-                    alt=""
+                    alt="img"
                   />
-                  <img src={car} alt="" />
+                  <img src={car} alt="img" />
                 </div>
                 <div className="cs_tab_text">
                   <h2 className="text_bluegreen">Domestic Issues</h2>

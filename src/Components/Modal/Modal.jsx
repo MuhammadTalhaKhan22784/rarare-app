@@ -2,31 +2,34 @@ import React from "react";
 import FlagImage from "../../Assets/Component 27 – 1.png";
 import ModalImage from "../../Assets/modal.png";
 import "../../App.css";
-function Modal() {
+const Modal = () => {
   return (
-    <div>
+    <React.Fragment>
       <img
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         src={FlagImage}
+        alt="..."
       ></img>
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-
         style={{ marginTop: "20px" }}
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body "style={{boxShadow: "0px 0px 5px gainsboro" }}>
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div
+              className="modal-body "
+              style={{ boxShadow: "0px 0px 5px gainsboro" }}
+            >
               <div className="text-end">
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -42,7 +45,7 @@ function Modal() {
                     marginLeft: "30px",
                   }}
                 >
-                  <img src={ModalImage}></img>
+                  <img src={ModalImage} alt="..."></img>
                 </div>
                 <h4
                   className="text_darkblue fw-bold"
@@ -69,11 +72,10 @@ function Modal() {
                 style={{ display: "flex", justifyContent: "center" }}
               >
                 <select
-                  class="form-select text-center border_solid bluegreen_border"
+                  className="form-select text-center border_solid bluegreen_border"
                   aria-label="Default select example"
                   style={{ width: "70%", border: "2px solid green !important" }}
                 >
-                  <option selected>Select a reason</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -81,7 +83,7 @@ function Modal() {
               </div>
 
               <div
-                class=" text-center d-flex"
+                className=" text-center d-flex"
                 style={{
                   justifyContent: "center",
                   flexDirection: "column",
@@ -109,8 +111,8 @@ function Modal() {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
-}
+};
 
 export default Modal;

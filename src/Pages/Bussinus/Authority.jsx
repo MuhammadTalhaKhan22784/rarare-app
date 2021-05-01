@@ -32,7 +32,7 @@ const Authority = () => {
                     </div>
                     <div className="_box_detail">
                         <div className="blankBox_two">
-                            <img src={dot} alt="" />
+                            <img src={dot} alt="img" />
                         </div>
                         <h6 style={{ color: '#1cc1a0' }}>I represent a business</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores similique esse aut omnis,</p>

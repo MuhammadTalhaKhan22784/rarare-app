@@ -4,7 +4,6 @@ import delt from "../../Assets/Group 3654.png";
 import ModalImage from "../../Assets/delmodalimg.png";
 import "../../App.css";
 function DeleteProbModal(props) {
-  // console.log(props)
   return (
     <div>
       <img
@@ -12,23 +11,24 @@ function DeleteProbModal(props) {
         data-bs-toggle="modal"
         data-bs-target="#exampleModaldel"
         src={delt}
+        alt="..."
       ></img>
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModaldel"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
         style={{ marginTop: "20px", padding: "50px" }}
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body ">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-body ">
               <div className="text-end">
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -44,7 +44,7 @@ function DeleteProbModal(props) {
                     marginLeft: "30px",
                   }}
                 >
-                  <img src={ModalImage}></img>
+                  <img src={ModalImage} alt="..."></img>
                 </div>
                 <h4
                   className="text_darkblue fw-bold"
@@ -65,7 +65,7 @@ function DeleteProbModal(props) {
               </div>
 
               <div
-                class=" text-center d-flex"
+                className=" text-center d-flex"
                 style={{
                   justifyContent: "center",
                   flexDirection: "column",

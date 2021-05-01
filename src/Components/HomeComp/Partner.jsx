@@ -21,25 +21,25 @@ const Partner = () => {
                         </p>
                     </div>
                     <div className='partner_scroll_div'>
-                        <img src={one} alt=""/>
-                        <img src={two} alt=""/>
-                        <img src={three} alt=""/>
-                        <img src={four} alt=""/>
-                        <img src={one} alt=""/>
-                        <img src={two} alt=""/>
-                        <img src={three} alt=""/>
-                        <img src={four} alt=""/>
-                        <img src={one} alt=""/>
-                        <img src={two} alt=""/>
-                        <img src={three} alt=""/>
-                        <img src={four} alt=""/>
-                        <img src={one} alt=""/>
-                        <img src={two} alt=""/>
-                        <img src={three} alt=""/>
-                        <img src={four} alt=""/>
+                        <img src={one} alt="img"/>
+                        <img src={two} alt="img"/>
+                        <img src={three} alt="img"/>
+                        <img src={four} alt="img"/>
+                        <img src={one} alt="img"/>
+                        <img src={two} alt="img"/>
+                        <img src={three} alt="img"/>
+                        <img src={four} alt="img"/>
+                        <img src={one} alt="img"/>
+                        <img src={two} alt="img"/>
+                        <img src={three} alt="img"/>
+                        <img src={four} alt="img"/>
+                        <img src={one} alt="img"/>
+                        <img src={two} alt="img"/>
+                        <img src={three} alt="img"/>
+                        <img src={four} alt="img"/>
                     </div>
                     <div className='play_div'>
-                        <img src={play} alt=""/>
+                        <img src={play} alt="img"/>
                     </div> 
                 </div>
             </div>

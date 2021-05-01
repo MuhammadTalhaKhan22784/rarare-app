@@ -15,28 +15,28 @@ const SocialFeed = () => {
             <div className="social_feed_div">
                 <div className="feed_div">
                     <h4><strong>Facebook Feed</strong></h4>
-                    <img className='socail_feed_img' src={social1} alt="" />
-                    <img className='socail_feed_img' src={social2} alt="" />
-                    <img className='socail_feed_img' src={social3} alt="" />
-                    <img className='socail_feed_img' src={social4} alt="" />
-                    <img className='socail_feed_img' src={social5} alt="" />
-                    <img className='socail_feed_img' src={social6} alt="" />
+                    <img className='socail_feed_img' src={social1} alt="img" />
+                    <img className='socail_feed_img' src={social2} alt="img" />
+                    <img className='socail_feed_img' src={social3} alt="img" />
+                    <img className='socail_feed_img' src={social4} alt="img" />
+                    <img className='socail_feed_img' src={social5} alt="img" />
+                    <img className='socail_feed_img' src={social6} alt="img" />
                     <button className='socail_button'>
-                        <img src={fb} alt="" />
+                        <img src={fb} alt="img" />
                         <p>Follow on Facebook</p>
                     </button>
                 </div>
                 <div className="instagram_div">
                     <div className="feed_div">
                         <h4><strong>Instagram Feed</strong></h4>
-                        <img className='socail_feed_img' src={social1} alt="" />
-                        <img className='socail_feed_img' src={social2} alt="" />
-                        <img className='socail_feed_img' src={social3} alt="" />
-                        <img className='socail_feed_img' src={social4} alt="" />
-                        <img className='socail_feed_img' src={social5} alt="" />
-                        <img className='socail_feed_img' src={social6} alt="" />
+                        <img className='socail_feed_img' src={social1} alt="img" />
+                        <img className='socail_feed_img' src={social2} alt="img" />
+                        <img className='socail_feed_img' src={social3} alt="img" />
+                        <img className='socail_feed_img' src={social4} alt="img" />
+                        <img className='socail_feed_img' src={social5} alt="img" />
+                        <img className='socail_feed_img' src={social6} alt="img" />
                         <button className='socail_button insta'>
-                            <img src={insta} alt="" />
+                            <img src={insta} alt="img" />
                             <p>Follow on Instagram</p>
                         </button>
                     </div>

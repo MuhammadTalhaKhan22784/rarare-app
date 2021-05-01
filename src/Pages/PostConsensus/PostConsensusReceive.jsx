@@ -28,13 +28,13 @@ const PostConsensusReceive = () => {
                 Kent Park: Renovation work 
               </h2>
               <button className="border_solid bluegreen_border">
-                <img src={greenDot} alt="" />
+                <img src={greenDot} alt="img" />
                 <span className="text_bluegreen">Ongoing</span>
               </button>
             </div>
             <div className="kp_text">
               <div>
-                <img src={IconHandPaper} alt="" />
+                <img src={IconHandPaper} alt="img" />
               </div>
               <span className="text_black">Consensus Forming</span>
             </div>
@@ -47,7 +47,7 @@ const PostConsensusReceive = () => {
               </p>
             </div>
             <div className="kp_text">
-              <img className="c_loc" src={location} alt="" />
+              <img className="c_loc" src={location} alt="img" />
               <span className="text_black">Consensus Forming</span>
             </div>
           </div>

@@ -13,30 +13,30 @@ const AcountSetingCard = () => {
                 <h5><strong>Account Setting</strong></h5>
                 <div className="seting_cards_div">
                    <div className="acount_seting_card" onClick={()=>history.push('/profile-setting')}>
-                       <img src={userSet} alt=""/>
+                       <img src={userSet} alt="img"/>
                        <div className="seting_para">
                            <h6><strong>Account Setting</strong></h6>
                            <p>Manage Profile Settings Such As Profile Image, Name, Email, Address Etrc</p>
-                           <img className='arrow_icon_seting' src={more} alt=""/>
+                           <img className='arrow_icon_seting' src={more} alt="img"/>
                            {/* <p className='arrow_icon_seting'>{'->'}</p> */}
                        </div>
                    </div>
                    <div className="acount_seting_card" onClick={()=>history.push('/security-setting')}>
-                       <img src={security} alt=""/>
+                       <img src={security} alt="img"/>
                        <div className="seting_para">
                            <h6><strong>Security Setting</strong></h6>
                            <p>Manage Settings Such As password email change and notification setting.</p>
-                           <img className='arrow_icon_seting' src={more} alt=""/>
+                           <img className='arrow_icon_seting' src={more} alt="img"/>
                            {/* <p className='arrow_icon_seting'>{'->'}</p> */}
                        </div>
                    </div>
                    <div className="acount_seting_card" onClick={()=>history.push('/notification-setting')}>
-                       <img src={notification} alt=""/>
+                       <img src={notification} alt="img"/>
                        <div className="seting_para">
                            <h6><strong>Notification Setting</strong></h6>
                            <p>Manage Settings Such As password email change and notification setting.</p>
                            {/* <p className='arrow_icon_seting'>{'->'}</p> */}
-                           <img className='arrow_icon_seting' src={more} alt=""/>
+                           <img className='arrow_icon_seting' src={more} alt="img"/>
                        </div>
                    </div>
                 </div>
