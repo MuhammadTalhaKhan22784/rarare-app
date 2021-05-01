@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router";
-// import "../Post.css"
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
@@ -17,7 +16,10 @@ const ParticipatoryBudget = () => {
             <img src={undrawVoting} alt="posticon" />
             <h2 className="text_darkblue">
               Post a
-              <strong className="text_lightpurple"> Participatory Budget!</strong>
+              <strong className="text_lightpurple">
+                {" "}
+                Participatory Budget!
+              </strong>
             </h2>
             <p className="text_lightgray">
               Get insights form the community so you make the best decisions!

@@ -106,8 +106,6 @@
 
 .pcontinue_btn button {
   width: 140px;
-  /* width: 120px;
-  height: 35px; */
   padding: 8px 20px;
   font-size: 0.9rem;
   border-radius: 5px;
@@ -159,8 +157,6 @@
   height: 140px;
   margin: 0.2rem 0 2rem 0;
 }
-
-/*  */
 
 .post_receive {
   width: 100%;
@@ -214,7 +210,6 @@
 .postconsensus_home .pcontinue_btn button {
   margin-top: 2rem;
 }
-/*  */
 
 .post_consensus > div {
   width: 420px;
@@ -222,11 +217,11 @@
 
 .post_consensus .pcontinue_btn {
   width: 75% !important;
-  /* display: flex; */
   justify-content: space-around;
 }
 
 /* media queries */
+
 @media (max-width: 1326px) {
   .post_home {
     margin: 3rem 0;

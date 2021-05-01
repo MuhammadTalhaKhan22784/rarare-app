@@ -19,7 +19,6 @@
   margin-top: 18px;
 }
 
-
 @media only screen and (max-width: 680px) {
   .Proposal_content_right {
     width: 100%;
@@ -34,18 +33,10 @@
   }
   .proposalRightBottom .card {
     display: none;
-}
-  /* .proposalRightComponent .card {
-    width: 100%;
-  } */
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  /* .proposalRightComponent {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-  } */
   .Proposal_content_right {
     padding: 30px;
     flex: unset;
@@ -83,15 +74,8 @@
   }
 }
 
-
 @media only screen and (max-width: 359px) {
-    .Proposal_content_right {
-      margin-top: 6rem;
-    }
+  .Proposal_content_right {
+    margin-top: 6rem;
   }
-
-/* @media only screen and (max-width: 360px) {
-  .card {
-    width: 310px;
-  }
-} */
+}

@@ -1,12 +1,7 @@
-import React,{useLayoutEffect} from "react";
-import { Link } from "react-router-dom";
+import React, { useLayoutEffect } from "react";
 import "./Contact.css";
 // assets
-
 import lgLogo from "../../Assets/cn_logo.png";
-import fbIcon from "../../Assets/fb_icon.png";
-import gmailIcon from "../../Assets/gmail_icon.png";
-import orLine from "../../Assets/or_line.png";
 import contactBg from "../../Assets/cn_bgright.png";
 import xSmallIcon from "../../Assets/x_sm.png";
 import xMedumIcon from "../../Assets/x_md.png";
@@ -14,10 +9,9 @@ import polygon1 from "../../Assets/polygon_1.png";
 import polygon2 from "../../Assets/polygon_2.png";
 
 const Contact = () => {
-  
-  useLayoutEffect(()=>{
-    window.scrollTo(0,0)
-  })
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <React.Fragment>
@@ -74,7 +68,6 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-         
           </div>
         </div>
         <div className="login_img_content">

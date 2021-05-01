@@ -1,6 +1,5 @@
 import React from 'react'
-import Extra from '../../Extra'
-import Button from '../Btn/Btn'
+import LocoModal from '../Modal/LocoModal'
 
 const BalanceCard = () => {
     return (
@@ -9,7 +8,7 @@ const BalanceCard = () => {
                 <div className="blnce_head">
                     <h6>Your Balance</h6>
                     {/* <Button className='blnce_btn' value='Buy Loco Points' /> */}
-                    <Extra />
+                    <LocoModal />
                 </div>
                 <h3><strong style={{ color: '#34b299' }}>2,000</strong></h3>
                 <p>LOCO POINTS</p>

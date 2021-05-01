@@ -118,7 +118,6 @@
 .p_input input {
   border-right: none !important;
   border-left: none !important;
-
   width: 90% !important;
 }
 
@@ -308,8 +307,6 @@
   top: 20px;
   left: 120px;
 }
-
-
 
 /* media queries */
 

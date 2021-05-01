@@ -1,7 +1,6 @@
 import React from "react";
 import "./Participate.css";
 import Card from "@material-ui/core/Card";
-// import "../../../App.css"
 import Button from "@material-ui/core/Button";
 
 function Participate() {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Btn/Btn";
-// import dot from '../../Assets/dot.png'
 import postIcon from "../../Assets/post_icon.png";
 
 import "../Bussinus/Bussines.css";
@@ -10,12 +9,9 @@ const PostUploadImg = () => {
   let [img, setImg] = useState([]);
 
   const handleUrl = (e) => {
-    // let arr = []
     let url = URL.createObjectURL(e.target.files[0]);
-    // arr.push(url)
     setImg([url, ...img]);
   };
-  // console.log(img)
 
   const dltImg = (e) => {
     let filter = img.filter((val) => val !== e);
@@ -26,10 +22,7 @@ const PostUploadImg = () => {
     <div className="bussines_container">
       <div className="bussines_main_div">
         <div className="bussine_top_img_div">
-          <img
-            src={postIcon}
-            alt="lgLogo"
-          />
+          <img src={postIcon} alt="lgLogo" />
         </div>
         <h5 className="bussines_head">
           <strong>

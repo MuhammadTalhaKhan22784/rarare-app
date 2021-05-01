@@ -1,5 +1,4 @@
 .proposal_component_right {
-  /* border:2px solid green; */
   padding-top: 70px;
 }
 .Proposal {
@@ -8,7 +7,133 @@
   justify-content: center;
 }
 
+.Rant {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.Proposal_content_left {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Proposal_title {
+  text-align: start;
+}
+
+.Proposal_left_title {
+  color: rgb(144, 155, 209);
+  font-size: 18px;
+}
+
+.Proposal_card {
+  padding: 20px;
+  width: 500px;
+}
+
+.proposal_card_div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.Proposal_left_titleSpan {
+  font-size: 18px;
+  color: #45c1a1;
+}
+
+.Proposal_content_right {
+  flex: 0.5;
+}
+
+#hr {
+  border: 1px solid rgba(226, 218, 218, 0.698);
+  display: flex;
+}
+
+.card_contentLast_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.card_icon_space {
+  padding-left: 4px;
+}
+
+.proposal_component_card {
+  width: 500px;
+  padding: 20px;
+}
+
+.card_content_component {
+  display: flex;
+  flex-direction: column;
+}
+
+.proposal_component_main {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.buttonW {
+  display: none !important;
+}
+
 @media only screen and (max-width: 600px) {
+  .Participate_card {
+    margin-top: -8rem;
+  }
+  .Proposal_card {
+    width: 100%;
+    font-size: 14px;
+    height: max-content;
+    padding-bottom: 10px;
+  }
+  .Proposal_title {
+    margin-left: 0;
+  }
+  .proposal_component_main {
+    width: 100%;
+  }
+  .text_size_responsive {
+    font-size: 11px !important;
+  }
+  .title_responsive {
+    font-size: 16px;
+  }
+
+  .icon_size_responsive {
+    font-size: 10px;
+    color: red;
+    width: 13px;
+  }
+
+  .icon_size_responsiveuser {
+    width: 20px;
+  }
+
+  .buttonW {
+    display: block !important;
+    background-color: #45c1a1;
+  }
+
+  .Proposal_content_left {
+    width: 100%;
+  }
   .proposal_component_right {
     padding: 0;
     display: flex;
@@ -32,12 +157,59 @@
   }
 }
 
+@media only screen and (max-width: 505px) {
+  .Participate_card {
+    margin-top: -10rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .Proposal_title {
     display: flex;
     justify-content: start;
   }
 }
+
+@media only screen and (max-width: 428px) {
+  .Participate_card {
+    margin-top: -15rem;
+  }
+}
+
+
+@media only screen and (max-width: 388px) {
+  .title_responsive {
+    font-size: 0.8rem !important;
+  }
+  .Participate_card {
+    margin-top: -7rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Proposal_card {
+    height: 240px;
+  }
+  .Participate_card {
+    margin-top: -10rem !important;
+  }
+  .text_size_responsive {
+    font-size: 9px !important;
+  }
+  .title_responsive {
+    font-size: 0.7rem !important;
+  }
+  .icon_size_responsive {
+    font-size: 7px;
+    color: red;
+    width: 13px;
+  }
+
+  .icon_size_responsiveuser {
+    width: 17px;
+  }
+}
+
 
 @media only screen and (max-width: 357px) {
   .Proposal {
@@ -75,207 +247,8 @@
   }
 }
 
-.Rant {
-  display: flex;
-  justify-content: center;
-  /* border:2px solid blue; */
-  flex-wrap: wrap-reverse;
-}
-
-.Proposal_content_left {
-  /* border:2px solid red; */
-  flex: 0.5;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  /* align-items: center; */
-  padding: 30px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.Proposal_title {
-  text-align: start;
-  /* margin-left:120px!important; */
-}
-
-.Proposal_left_title {
-  color: rgb(144, 155, 209);
-  font-size: 18px;
-}
-
-.Proposal_card {
-  padding: 20px;
-  width: 500px;
-}
-
-.proposal_card_div {
-  /* text-align: end; */
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.Proposal_left_titleSpan {
-  font-size: 18px;
-  color: #45c1a1;
-}
-
-.Proposal_content_right {
-  /* border:2px solid red; */
-  flex: 0.5;
-}
-
-#hr {
-  border: 1px solid rgba(226, 218, 218, 0.698);
-  display: flex;
-}
-
-.card_contentLast_row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 10px;
-}
-
-.card_icon_space {
-  padding-left: 4px;
-}
-
-.proposal_component_card {
-  /* border:2px solid green; */
-  width: 500px;
-  padding: 20px;
-}
-
-.card_content_component {
-  display: flex;
-  flex-direction: column;
-}
-
-.proposal_component_main {
-  display: flex;
-  /* border:2px solid green; */
-  justify-content: flex-end;
-  margin-top: 15px;
-}
-
-.buttonW {
-  display: none !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .Proposal_card {
-    width: 100%;
-    font-size: 14px;
-    height: max-content;
-    padding-bottom: 10px;
-  }
-  .Proposal_title {
-    margin-left: 0;
-  }
-  .proposal_component_main {
-    width: 100%;
-  }
-  .text_size_responsive {
-    font-size: 11px !important;
-  }
-  .title_responsive {
-    font-size: 16px;
-  }
-  /* .btn-onGoing{
-        font-size:0.8rem;
-        width: 89px !important;
-    } */
-
-  .icon_size_responsive {
-    font-size: 10px;
-    color: red;
-    width: 13px;
-  }
-
-  .icon_size_responsiveuser {
-    width: 20px;
-  }
-
-  .buttonW {
-    display: block !important;
-    background-color: #45c1a1;
-  }
-
-  .Proposal_content_left {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .Participate_card {
-    margin-top: -8rem;
-  }
-}
-
-@media only screen and (max-width: 505px) {
-  .Participate_card {
-    margin-top: -10rem;
-  }
-}
-
-
-@media only screen and (max-width: 428px) {
-  .Participate_card {
-    margin-top: -15rem;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .Participate_card {
-    margin-top: -10rem !important;
-  }
-}
-
-@media only screen and (max-width: 388px) {
-  .title_responsive {
-    font-size: 0.8rem !important;
-  }
-  .Participate_card {
-    margin-top: -7rem;
-  }
-}
-
 @media only screen and (max-width: 340px) {
   .Proposal_card {
     padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .Proposal_card {
-    height: 240px;
-  }
-
-  .text_size_responsive {
-    font-size: 9px !important;
-  }
-  .title_responsive {
-    font-size: 0.7rem !important;
-  }
-  /* .btn-onGoing{
-        font-size:0.8rem;
-        width: 89px !important;
-    } */
-
-  .icon_size_responsive {
-    font-size: 7px;
-    color: red;
-    width: 13px;
-  }
-
-  .icon_size_responsiveuser {
-    width: 17px;
   }
 }

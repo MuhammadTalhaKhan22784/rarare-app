@@ -1,5 +1,6 @@
 import React from "react";
 import "./RantComponentRight.css";
+// assets
 import image from "../../../Assets/Rectangle 108.png";
 import image1 from "../../../Assets/Rectangle 111.png";
 import image2 from "../../../Assets/Rectangle 110.png";
@@ -101,18 +102,7 @@ function ProposalComponentRight() {
             <img className="slider_down_image1" src={image2}></img>
             <img className="slider_down_image1" src={image2}></img>
           </div>
-          {/* <div className="slider_down_border" style={{ display: "flex" }}>
-          
-          </div> */}
         </div>
-        {/* 
-        <div className="image_gallery d-flex">
-          <div className="slider_down_border">
-              <img className="slider_down_image1" src={image1}></img>
-              <img className="slider_down_image1" src={image1}></img>
-              <img className="slider_down_image1" src={image1}></img>
-          </div>
-        </div> */}
       </div>
     </>
   );

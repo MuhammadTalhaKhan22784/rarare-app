@@ -1,10 +1,7 @@
 import React from "react";
 import "./Rant.css";
 import Card from "@material-ui/core/Card";
-// import FlagIcon from '@material-ui/icons/Flag';
-// import Avatar from '@material-ui/core/Avatar';
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-// import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import FavoriteOutlinedIcon from "@material-ui/icons/FavoriteOutlined";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";

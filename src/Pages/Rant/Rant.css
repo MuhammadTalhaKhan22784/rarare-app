@@ -1,8 +1,6 @@
 .Rant {
   display: flex;
   justify-content: center;
-  /* border:2px solid blue; */
-  /* flex-wrap: wrap-reverse; */
   width: 100%;
 }
 
@@ -15,12 +13,10 @@
 }
 
 .Rant_content_left {
-  /* border:2px solid red; */
   flex: 0.4;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  /* align-items: center; */
   padding: 30px;
   flex-wrap: wrap;
   width: 100%;
@@ -28,7 +24,6 @@
 .Rant_title {
   align-items: flex-end !important;
   margin-left: 79px !important;
-  /* border:2px solid blue; */
   padding-top: 10px;
   padding-left: 10px;
   box-sizing: border-box;
@@ -69,7 +64,6 @@
 }
 
 .Rant_content_right {
-  /* border:2px solid red; */
   flex: 0.5;
 }
 
@@ -90,7 +84,6 @@
 }
 
 .Rant_component_card {
-  /* border:2px solid green; */
   width: 500px;
   padding: 20px 0;
 }
@@ -102,7 +95,6 @@
 
 .Rant_component_main {
   display: flex;
-  /* border:2px solid green; */
   justify-content: flex-end;
   margin-top: 15px;
   width: 100%;
@@ -138,7 +130,6 @@
     flex: unset !important;
 
     text-align: center !important;
-    /* margin-left: 12px; */
   }
 }
 
@@ -213,23 +204,18 @@
   }
 
   .card_icon_space svg {
-      height: 2em;
+    height: 2em;
   }
 }
 
 @media only screen and (max-width: 375px) {
-    .Rtext_size_responsive {
-        font-size: 0.7rem !important;
-    }
+  .Rtext_size_responsive {
+    font-size: 0.7rem !important;
+  }
 }
 
 @media only screen and (max-width: 345px) {
   .Rant_component_main {
     margin-bottom: 9rem;
   }
-  /* .Ricon_size_responsive {
-    font-size: 12px !important;
-    color: red;
-    width: 12px !important;
-  } */
 }

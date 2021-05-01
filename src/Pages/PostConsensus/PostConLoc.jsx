@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router";
-// import "../Post.css"
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";

@@ -41,10 +41,6 @@
   font-size: 14px;
 }
 
-.Rcard_review_component_text {
-  /* margin-top: -12px; */
-}
-
 .Rbtn1:focus {
   background-color: #45c1a1 !important;
   color: white !important;
@@ -94,10 +90,6 @@
     width: 78%;
   }
 
-  /* .responsive_send_icon{
-       font-size: 12px!important;
-   } */
-
   .Rcard_content_component {
     overflow-y: scroll;
   }
@@ -106,15 +98,15 @@
     justify-content: space-evenly;
   }
   .RantComponent_card_content button {
-      width: 30% !important;
-      padding: 6px 0px !important;
+    width: 30% !important;
+    padding: 6px 0px !important;
   }
 }
 
 @media only screen and (max-width: 390px) {
-    .Rcard_review_component_text {
-        font-size: 0.7rem !important;
-    }
+  .Rcard_review_component_text {
+    font-size: 0.7rem !important;
+  }
   .Rant_component_card {
     width: 100%;
     font-size: 12px;

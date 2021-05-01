@@ -1,9 +1,8 @@
-import React , {useLayoutEffect} from "react";
+import React, { useLayoutEffect } from "react";
 import "./Pricing.css";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Pagination } from "swiper";
 
 // import 'swiper/swiper.scss';
 import "swiper/swiper-bundle.css";
@@ -31,10 +30,9 @@ import pback0 from "../../Assets/pback0.png";
 SwiperCore.use([Pagination]);
 
 const Pricing = () => {
-  
-  useLayoutEffect(()=>{
-    window.scrollTo(0,0)
-  })
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const settings = {
     dots: false,
@@ -259,7 +257,9 @@ const Pricing = () => {
         <div className="op_box">
           <div>
             <span className="text_bluegreen">Overview</span>
-            <a href="#price"><span className="text_lightgray">Pricing</span></a>
+            <a href="#price">
+              <span className="text_lightgray">Pricing</span>
+            </a>
           </div>
         </div>
         <div className="price_wms container">
@@ -370,7 +370,7 @@ const Pricing = () => {
             </div>
 
             <div className="mobprice_view price_card_section">
-              <Slider {...settings} className='pricing_slick' >
+              <Slider {...settings} className="pricing_slick">
                 <div className="price_card">
                   <h2 className="text_bluegreen fw-bold">Basic</h2>
                   <img className="prbox" src={enBox1} alt="enbox2" />

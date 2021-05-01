@@ -1,37 +1,16 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
-import userImage from "../../../Assets/Ellipse 226.png";
-// import Avatar from '@material-ui/core/Avatar'
 import "./ProposalComponent.css";
 import SendIcon from "@material-ui/icons/Send";
-import shareIcon from "../../../Assets/Icon awesome-share.png";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import FavoriteOutlinedIcon from "@material-ui/icons/FavoriteOutlined";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
+// icons
 import { FaShare } from "react-icons/fa";
+// assets
+import userImage from "../../../Assets/Ellipse 226.png";
 function proposal_component() {
-  function defaultColor1() {
-    document.getElementById("Rbtn-change-color1").style.color = "#D3D3D3";
-  }
-  function changeColor1() {
-    document.getElementById("Rbtn-change-color1").style.color = "white";
-  }
-
-  function defaultColor2() {
-    document.getElementById("Rbtn-change-color2").style.color = "#D3D3D3";
-  }
-  function changeColor2() {
-    document.getElementById("Rbtn-change-color2").style.color = "white";
-  }
-
-  function defaultColor() {
-    document.getElementById("Rbtn-change-color3").style.color = "#D3D3D3";
-  }
-  function changeColor() {
-    document.getElementById("Rbtn-change-color3").style.color = "white";
-  }
-
   return (
     <div className="Rant_component_card">
       <Card
@@ -43,12 +22,6 @@ function proposal_component() {
       >
         <div className="RantComponent_card_content">
           <Button
-            onMouseOut={() => {
-              defaultColor2();
-            }}
-            onFocus={() => {
-              changeColor2();
-            }}
             variant="contained"
             style={{ backgroundColor: "white" }}
             className="Rbtn1"
@@ -61,12 +34,12 @@ function proposal_component() {
             &nbsp;Like
           </Button>
           <Button
-            onMouseOut={() => {
-              defaultColor1();
-            }}
-            onFocus={() => {
-              changeColor1();
-            }}
+            // onMouseOut={() => {
+            //   defaultColor1();
+            // }}
+            // onFocus={() => {
+            //   changeColor1();
+            // }}
             variant="contained"
             style={{ backgroundColor: "white" }}
             className="Rbtn_same2"
@@ -80,12 +53,6 @@ function proposal_component() {
           </Button>
 
           <Button
-            onMouseOut={() => {
-              defaultColor();
-            }}
-            onFocus={() => {
-              changeColor();
-            }}
             variant="contained"
             style={{ backgroundColor: "white" }}
             className="Rbtn_same"

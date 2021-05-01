@@ -1,20 +1,19 @@
 import React, { useState } from "react";
+import "./modal.css"
 import { useHistory } from "react-router";
-import undrawEmptyCart from "./Assets/undraw_empty_cart.png";
-import paypalIcon from "./Assets/paypal_icon.png";
-import stripeIcon from "./Assets/stripe_icon.png";
-import dbicon1 from "./Assets/dbicon1.png";
-import dbicon2 from "./Assets/dbicon2.svg";
-import dbicon3 from "./Assets/dbicon3.svg";
-import dbicon4 from "./Assets/dbicon4.svg";
-import featurebg from "./Assets/featurebg.png";
-import undrawInvesting from "./Assets/undraw_Investing_re.png";
-import greenDot from "./Assets/greendot.png";
-import Button from "./Components/Btn/Btn";
-
-import "./App.css";
+import undrawEmptyCart from "../../Assets/undraw_empty_cart.png";
+import paypalIcon from "../../Assets/paypal_icon.png";
+import stripeIcon from "../../Assets/stripe_icon.png";
+import dbicon1 from "../../Assets/dbicon1.png";
+import dbicon2 from "../../Assets/dbicon2.svg";
+import dbicon3 from "../../Assets/dbicon3.svg";
+import dbicon4 from "../../Assets/dbicon4.svg";
+import featurebg from "../../Assets/featurebg.png";
+import greenDot from "../../Assets/greendot.png";
 import { Dialog } from "@material-ui/core";
-const Extra = () => {
+
+
+const LocoModal = () => {
   const history = useHistory();
   const [show, setShow] = useState(false);
   const [open, setOpen] = React.useState(false);
@@ -254,20 +253,9 @@ const Extra = () => {
             </div>
           </div>
         </Dialog>
-
-        {/* <div
-          className="modal fade"
-          id="modal2"
-          aria-hidden="true"
-          aria-labelledby="..."
-          tabIndex={-1}
-        >
-      
-      
-        </div> */}
       </div>
     </React.Fragment>
   );
 };
 
-export default Extra;
+export default LocoModal;

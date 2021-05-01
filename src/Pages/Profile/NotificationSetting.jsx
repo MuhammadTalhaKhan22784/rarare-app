@@ -2,7 +2,6 @@ import React from 'react'
 import ProfileCard from '../../Components/ProfileComp/ProfileCard'
 import NotificationSettingCard from '../../Components/ProfileComp/NotificationnCard'
 
-
 const NotificationSetting = () => {
     return (
         <div>

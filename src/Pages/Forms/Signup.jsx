@@ -14,11 +14,10 @@ import polygon2 from "../../Assets/polygon_2.png";
 import dot from "../../Assets/dot.png";
 import pwdclose from "../../Assets/pwdclose.png";
 import pwdopen from "../../Assets/pwdopen.png";
+// swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-
+import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Pagination]);
@@ -95,8 +94,8 @@ const Signup = () => {
             <div className="or_line">
               <img src={orLine} alt="" />
             </div>
-            {show === "1" ? (
-              <form className="s_form_fields">
+            <form className="s_form_fields">
+              {show === "1" ? (
                 <div className="inline_input">
                   <input
                     className="half_input"
@@ -109,26 +108,35 @@ const Signup = () => {
                     type="text"
                   />
                 </div>
+              ) : (
                 <div>
                   <input
                     className="full_input"
-                    placeholder="Email address"
-                    type="email"
+                    placeholder="Business Name"
+                    type="text"
                   />
                 </div>
-                <div className="p_input">
-                  <input
-                    className=""
-                    placeholder="Password"
-                    type={!pass ? "password" : "text"}
-                  />
-                  {!pass ? (
-                    <img onClick={showPassword} src={pwdclose} alt="" />
-                  ) : (
-                    <img onClick={showPassword} src={pwdopen} alt="" />
-                  )}
-                </div>
-                <div className="p_input">
+              )}
+              <div>
+                <input
+                  className="full_input"
+                  placeholder="Email address"
+                  type="email"
+                />
+              </div>
+              <div className="p_input">
+                <input
+                  className=""
+                  placeholder="Password"
+                  type={!pass ? "password" : "text"}
+                />
+                {!pass ? (
+                  <img onClick={showPassword} src={pwdclose} alt="" />
+                ) : (
+                  <img onClick={showPassword} src={pwdopen} alt="" />
+                )}
+              </div>
+              <div className="p_input">
                 <input
                   className=""
                   placeholder="Confirm Password"
@@ -140,65 +148,18 @@ const Signup = () => {
                   <img onClick={showPassword} src={pwdopen} alt="" />
                 )}
               </div>
-                <div className="form_btn">
-                  <button type="button" className="bg_lightgreen">
-                    sign up
-                  </button>
-                </div>
-                <span className="s_label text_lightgray">
-                  Already a member?{" "}
-                  <Link to="/login" className="text_lightpurple">
-                    &nbsp;Login
-                  </Link>
-                </span>
-              </form>
-            ) : (
-              <form className="s_form_fields">
-                {/* <div className="inline_input">
-                                        <input className="half_input" placeholder="First Name" type="text" />
-                                        <input className="half_input" placeholder="Last Name" type="text" />
-                                    </div> */}
-                <div>
-                  <input
-                    className="full_input"
-                    placeholder="Business Name"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="full_input"
-                    placeholder="Email address"
-                    type="email"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="full_input"
-                    placeholder="Password"
-                    type="password"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="full_input"
-                    placeholder="Confirm Password"
-                    type="password"
-                  />
-                </div>
-                <div className="form_btn">
-                  <button type="button" className="bg_lightgreen">
-                    sign up
-                  </button>
-                </div>
-                <span className="s_label text_lightgray">
-                  Already a member?{" "}
-                  <Link to="/login" className="text_lightpurple">
-                    &nbsp;Login
-                  </Link>
-                </span>
-              </form>
-            )}
+              <div className="form_btn">
+                <button type="button" className="bg_lightgreen">
+                  sign up
+                </button>
+              </div>
+              <span className="s_label text_lightgray">
+                Already a member?{" "}
+                <Link to="/login" className="text_lightpurple">
+                  &nbsp;Login
+                </Link>
+              </span>
+            </form>
           </div>
         </div>
         <div className="signup_img_content">
@@ -227,7 +188,6 @@ const Signup = () => {
                 <img className="s_bgimg" src={signupBg} alt="signupBg" />
               </SwiperSlide>
             </Swiper>
-            {/* <img className="s_bgimg" src={signupBg} alt="signupBg" /> */}
           </div>
         </div>
       </div>

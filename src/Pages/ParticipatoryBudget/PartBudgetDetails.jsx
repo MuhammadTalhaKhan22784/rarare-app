@@ -4,7 +4,6 @@ import "./ParticipatoryBudget.css";
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
-import pMap from "../../Assets/pmap.png";
 import InputAdornments from "../../Components/TextFeilds/NumberInput";
 
 const PartBudgetDetails = () => {

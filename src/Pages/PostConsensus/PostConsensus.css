@@ -40,18 +40,15 @@
   justify-content: center;
 }
 
-/*  */
 .postconsensus_home .cs_tab_box {
   width: 65%;
 }
-/*  */
 
 .d_audience {
   width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .d_audience > div {
@@ -82,8 +79,6 @@
   align-items: center;
   color: #8792af;
   border-radius: 5px;
-  /* margin-right: 20px; */
-  /* border: 1px solid #9ba3cc; */
 }
 
 .d_audience > .d_aud_box > .dnum_box1 {
@@ -96,8 +91,6 @@
   align-items: center;
   color: #8792af;
   border-radius: 5px;
-  /* margin-right: 20px; */
-  /* border: 1px solid #9ba3cc; */
 }
 
 .d_aud_box .c_dot {
@@ -176,8 +169,6 @@
   top: 14px;
 }
 
-/*  */
-
 .dt_box_input .co_option_box .form-select {
   height: 40px;
   width: 310px;
@@ -185,7 +176,6 @@
   border-radius: 3px;
 }
 
-/*  */
 .other_setting {
   width: 650px;
   display: flex;
@@ -220,7 +210,6 @@
 .pct_btn {
   margin-top: 1rem;
 }
-/*  */
 
 .post_consensus_receive {
   width: 800px !important;
@@ -356,13 +345,10 @@
   .pp_tabs_main::-webkit-scrollbar {
     width: 5px;
   }
-  /* Track */
   .pp_tabs_main::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(199, 199, 199);
-    /* border-radius: 10px; */
   }
 
-  /* Handle */
   .pp_tabs_main::-webkit-scrollbar-thumb {
     background: #1cc1a0;
     border-radius: 10px;
@@ -445,7 +431,7 @@
     display: flex;
     width: 48%;
     justify-content: space-between;
-}
+  }
 }
 
 @media (max-width: 530px) {

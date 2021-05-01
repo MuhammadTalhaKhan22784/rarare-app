@@ -7,12 +7,8 @@
 .ProposalComponent_card {
   background-color: lightgray;
   padding-top: 8px;
-  /* padding:10px; */
   box-shadow: 1px -1px 10px -3px #ccc;
-  /* background-color:#F5F5F9; */
   padding-left: 2px;
-}
-.Proposal_component_card {
 }
 
 .comments {
@@ -96,10 +92,6 @@
     padding: 20px !important;
     width: 78%;
   }
-
-  /* .responsive_send_icon{
-       font-size: 12px!important;
-   } */
 
   .card_content_component {
     overflow-y: scroll;

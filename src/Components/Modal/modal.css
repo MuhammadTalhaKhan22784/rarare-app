@@ -1,0 +1,139 @@
+
+/* loco modal */
+
+.logco_modal_dialog {
+    box-shadow: 0px 1px 10px -3px #00000038;
+  }
+  
+  .logco_modal_dialog .postconsensus_home {
+    margin: 0rem 0 2rem 0;
+  }
+  
+  .modal-header {
+    border-bottom: 0;
+  }
+  
+  .modal-content {
+    border: none !important;
+  }
+  
+  .modal-backdrop {
+    background: none;
+  }
+  
+  .logco_modal_dialog .cs_tab_box {
+    width: 76% !important;
+    height: 146px;
+  }
+  
+  .logco_modal_dialog .cs_tab_box .c_dot {
+    right: -22px !important;
+  }
+  
+  .logco_modal_dialog .cs_tab {
+    width: 25%;
+  }
+  
+  .logco_modal_dialog .pp_tabs_main {
+    width: 679px;
+    max-width: 100%;
+    box-shadow: none;
+  }
+  
+  .logco_modal_dialog .cs_tab_box .mdl_icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  .logco_modal_dialog .cs_tab_box > div {
+    top: 0;
+    left: -22px;
+    position: absolute;
+  }
+  
+  .logco_modal_dialog .cs_tab_box > div h2 {
+    transform: rotate(-45deg);
+    margin: 0;
+    position: absolute;
+    top: 16px;
+    font-size: 0.8rem;
+    left: 16px;
+  }
+  
+  .logco_modal_dialog .cs_tab_box {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    position: relative;
+  }
+  
+  .logco_modal_dialog .cs_tab_box h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin: 10px 0 0 0;
+  }
+  
+  .logco_modal_dialog .cs_tab_box p {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  
+  .logco_modal_dialog .pcontinue_btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logco_modal_dialog .pcontinue_btn button {
+    height: 42px;
+    width: 205px;
+    margin-top: 1rem !important;
+  }
+  
+  .logco_modal_dialog .cs_tab_box img {
+    width: 80%;
+    left: 0px;
+    top: 10px;
+  }
+  
+  /* second modal */
+  
+  .lmd2_dialog .cs_tab {
+    width: 99%;
+  }
+  .lmd2_dialog .pp_tabs_main {
+    width: 390px;
+  }
+  .paypal_icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .payment_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .payment_form span {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .mob_pptabs {
+    overflow-y: hidden !important;
+  }
+  .mob_payment_form .s_form_fields {
+    width: 56% !important;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .mob_pptabs {
+      height: max-content !important;
+    }
+  }
+  

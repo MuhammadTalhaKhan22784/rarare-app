@@ -20,15 +20,12 @@ const data = {
         'rgba(153, 102, 255, 1)',
         'rgba(255, 159, 64, 1)',
       ],
-      // border:2,
     },
   ],
 };
 
 const options = {
   indexAxis: 'x',
-  // Elements options apply to all of the options unless overridden in a dataset
-  // In this case, we are setting the border of each horizontal bar to be 2px wide
   elements: {
     bar: {
       borderWidth: 2,

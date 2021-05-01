@@ -161,7 +161,6 @@ const Profile = () => {
                 />
               </div>
               <div className="your_issues_card_div desktop_proposal">
-                {/* <ProfileProposalCard /> */}
                 <ProfileProposalCard list={list} className="width_proposal" />
               </div>
               <div className="mobProposalCard">
@@ -227,7 +226,6 @@ const Profile = () => {
               </div>
               <div className="your_issues_card_div desktop_proposal">
                 <ProfileProposalCard className="width_proposal" />
-                {/* <ProfileProposalCard /> */}
               </div>
               <div className="mobProposalCard ">
                 <ProductProposalCard list={list} />

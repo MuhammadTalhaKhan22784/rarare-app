@@ -67,7 +67,7 @@
 }
 .submenu {
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: -200px;
   display: none;
   z-index: 999;
@@ -90,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-  z-index: 99999;
+  z-index: 19999;
 }
 
 .submenu .submenu-item .nav-item {
@@ -350,7 +350,7 @@
   width: 100%;
   height: 150px;
   position: absolute;
-  top: 88px;
+  top: 84px;
   left: 0;
   display: none;
   background: #f3f4f7;
