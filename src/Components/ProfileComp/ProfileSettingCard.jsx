@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Button from '../Btn/Btn'
-import upload from '../../Assets/Group 3675.png'
 import { useHistory } from 'react-router-dom'
+// assets 
+import upload from '../../Assets/Group 3675.png'
 import back from '../../Assets/Icon-arrow-right.png'
 
 
@@ -9,11 +10,11 @@ import back from '../../Assets/Icon-arrow-right.png'
 const ProfileSettingCard = () => {
 
     const history = useHistory()
-    let [img,setImg] = useState('')
+    let [img, setImg] = useState('')
 
-    const handelUlr = (e)=>{
-      let url = URL.createObjectURL(e.target.files[0])
-      setImg(url)
+    const handelUlr = (e) => {
+        let url = URL.createObjectURL(e.target.files[0])
+        setImg(url)
     }
 
     return (
@@ -21,11 +22,8 @@ const ProfileSettingCard = () => {
             <div className="profile_seting_card_div">
                 <div className="proSetting_head_div">
                     <div onClick={() => history.push('/account-setting')}>
-                        {/* <Link to='/account-setting'> */}
-                        {/* <p>{'<-'}</p> */}
-                        <img src={back} alt="img"/>
+                        <img src={back} alt="img" />
                         <h6>Profile Settings</h6>
-                        {/* </Link> */}
                     </div>
                     <Button className='upcoming_btn' value='Save Changes' />
                 </div>
@@ -52,15 +50,15 @@ const ProfileSettingCard = () => {
                         <select name="Country" id="Country">
                             <option value="Country">Country</option>
                         </select>
-                    <Button className='upcoming_btn ' value='Save Changes' />
+                        <Button className='upcoming_btn ' value='Save Changes' />
 
                     </div>
                     <div className='profile_setting_inp_img'>
                         <h6>Profile Image</h6>
                         <label htmlFor="profile">
-                            <img src={!img? upload : img} alt="img" />
+                            <img src={!img ? upload : img} alt="img" />
                         </label>
-                        <input type="file" name="profile" onChange={(e)=>handelUlr(e)} id="profile" />
+                        <input type="file" name="profile" onChange={(e) => handelUlr(e)} id="profile" />
                         <Button className='upcoming_btn upload_profile' value='Upload Image' />
                     </div>
                 </div>

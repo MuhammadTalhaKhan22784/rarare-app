@@ -1,4 +1,7 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+import Button from '../Btn/Btn'
+// assets 
 import cartoon from '../../Assets/cartoon.png'
 import smCarton from '../../Assets/Group 4694@2x.png'
 import lang from '../../Assets/Component 3 – 2.png'
@@ -7,8 +10,6 @@ import mic from '../../Assets/Icon awesome-microphone@2x.png'
 import refresh from '../../Assets/Icon feather-refresh-ccw.png'
 import frc from '../../Assets/Group 4699.png'
 import eng from '../../Assets/Group 4698.png'
-import Button from '../Btn/Btn'
-import {useHistory} from 'react-router-dom'
 
 
 const HelpCartoon = () => {
@@ -38,10 +39,10 @@ const HelpCartoon = () => {
                                 <img className='smCartoonImg_lang' src={lang} alt="img" />
                                 <div className="lang_relt_div">
                                     <div>
-                                        <img src={eng} alt="img"/> <span>English</span>
+                                        <img src={eng} alt="img" /> <span>English</span>
                                     </div>
                                     <div>
-                                        <img src={frc} alt="img"/> <span>French</span>
+                                        <img src={frc} alt="img" /> <span>French</span>
                                     </div>
                                 </div>
                             </li>
@@ -53,7 +54,7 @@ const HelpCartoon = () => {
                             <li>
                                 <img className='msg_smCartoonImg' src={smCarton} alt="img" />
                                 <p className='help_msg_para'>Hello there! Good morning!
-                                <br/> It`s now 05:00 PM in Islamabad, Pakistan!</p>
+                                <br /> It`s now 05:00 PM in Islamabad, Pakistan!</p>
                             </li>
                             <li>
                                 <img className='msg_smCartoonImg' src={smCarton} alt="img" />
@@ -66,14 +67,14 @@ const HelpCartoon = () => {
                         </ul>
                         <p className='date'>12:45 PM</p>
                         <div className='buttonDiv'>
-                            <Button onClick={()=>history.push('/login')} className='chat_btn' value='Login' />
-                            <Button onClick={()=>history.push('/signup')} className='chat_btn m_left'  value='Sign up' />
+                            <Button onClick={() => history.push('/login')} className='chat_btn' value='Login' />
+                            <Button onClick={() => history.push('/signup')} className='chat_btn m_left' value='Sign up' />
                         </div>
                     </div>
-                        <div className='help_input_div'>
-                            <img className='mic_img' src={mic} alt="img"/>
-                            <input className='help_input' type="text" placeholder='How can I help you?'/>
-                        </div>
+                    <div className='help_input_div'>
+                        <img className='mic_img' src={mic} alt="img" />
+                        <input className='help_input' type="text" placeholder='How can I help you?' />
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { useHistory } from "react-router";
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
 import pMap from "../../Assets/pmap.png";
+import { Link } from "react-router-dom";
 
 const PostConLoc = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const history = useHistory();
 
   return (
@@ -49,22 +53,16 @@ const PostConLoc = () => {
           />
           <img src={pMap} className="pmap" alt="map" />
           <div className="pcontinue_btn ">
-            <button
-              className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
-              onClick={() => {
-                history.push("/consensus");
-              }}
-            >
-              Back
-            </button>
-            <button
-              className="cus_width100 text-white bg_lightgreen border_none"
-              onClick={() => {
-                history.push("/consensus-options");
-              }}
-            >
-              Continue
-            </button>
+            <Link className="text-decoration-none" to="/consensus">
+              <button className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border">
+                Back
+              </button>
+            </Link>
+            <Link className="text-decoration-none" to="/consensus-options">
+              <button className="cus_width100 text-white bg_lightgreen border_none">
+                Continue
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import "./Terms.css";
 const TermAndCond = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   return (
     <div className="terms_and_cond_container">
       <div className="terms_and_cond_main_div">

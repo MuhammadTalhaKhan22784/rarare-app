@@ -1,14 +1,17 @@
-import React from 'react'
+import React,{useLayoutEffect} from 'react'
 import { Link } from 'react-router-dom'
-import businesslogo from '../../Assets/businesslogo.png'
-
 import Button from '../../Components/Btn/Btn'
-// import dot from '../../Assets/dot.png'
+// assets 
+import businesslogo from '../../Assets/businesslogo.png'
 
 import './Bussines.css'
 
 
 const BusinessInfo = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
+
     return (
         <div className='bussines_container'>
             <div className='bussines_main_div'>
@@ -19,7 +22,6 @@ const BusinessInfo = () => {
                 <div className="bussines_para">
                     <p>Please provide the following to complete registration!</p>
                 </div>
-
                 <div className="two_box_div">
                     <div className='bussiness_info_div_inp'>
                         <input type="text" placeholder='Business Name' />

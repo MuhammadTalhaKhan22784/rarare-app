@@ -9,7 +9,7 @@
 .participate_btn {
   margin-top: 30px !important;
   background-color: #1cc1a0;
-  color: white;
+  color: var(--bg-white);
   font-size: 0.9em;
   margin-top: 8px;
   padding: 5px 15px !important;
@@ -22,7 +22,7 @@
 }
 .survey_single_card_body {
   width: 420px !important;
-  background-color: white;
+  background-color: var(--bg-white);
   height: fit-content;
 }
 .survey_page_main_div .get_blog_one_link{
@@ -103,7 +103,7 @@
 }
 
 .white_btn {
-  background-color: white;
+  background-color: var(--bg-white);
   border: 1px solid #1cc1a0;
   color: #1cc1a0;
   padding: 5px 30px;
@@ -111,7 +111,7 @@
 }
 .grn_btn {
   background-color: #1cc1a0;
-  color: white;
+  color: var(--bg-white);
   border-radius: 3px;
   padding: 6px 30px;
   margin-left: 15px;

@@ -1,15 +1,20 @@
-import React from 'react'
+import React,{useLayoutEffect} from 'react'
 import Button from '../../Components/Btn/Btn'
+import { Link, useParams } from 'react-router-dom'
+import { surveyResultList } from '../../Data/SurveyResultLIstData'
+// assets 
 import user from '../../Assets/user.png'
 import location from '../../Assets/location.png'
 import timer from '../../Assets/timer.png'
 import users from '../../Assets/Group 3626.png'
 import gift from '../../Assets/Icon awesome-gift.png'
-import { surveyResultList } from '../../Data/SurveyResultLIstData'
 import './Survey.css'
-import { Link, useParams } from 'react-router-dom'
 
 const Survey = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
 
     const { id } = useParams()
 
@@ -79,8 +84,8 @@ const Survey = () => {
                     <div className='survey_list_div'>
                         <ul className="health_analysis_ul survey_caard_ul">
                             {surveyResultList.list.map((val, i) => (
-                                <Link className='card_link' to={`/survey/${id}/${val.id}`}>
-                                    <li key={i} >
+                                <Link key={i} className='card_link' to={`/survey/${id}/${val.id}`}>
+                                    <li  >
                                         <p>{val.p}</p>
                                         <div className='health_checkbox'>
                                             <input type="checkbox" name="" id="" />

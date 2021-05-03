@@ -1,11 +1,13 @@
 import React,{useState} from 'react'
-import dot from '../../Assets/dot.png'
-import location from '../../Assets/location.png'
+// material ui 
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+// assets 
+import dot from '../../Assets/dot.png'
+import location from '../../Assets/location.png'
 import toggle from '../../Assets/Group 3659.png'
 import edit from '../../Assets/Group 3655.png'
 import delt from '../../Assets/Group 3654.png'

@@ -38,7 +38,7 @@
 }
 .lang_relt_div>div{
     padding: 0px;
-    background-color: white;
+    background-color: var(--bg-white);
     padding: 8px;
 }
 .lang_relt_div>div:hover{
@@ -100,7 +100,7 @@
 .help_msg_para{
     margin-left: 5px;
     padding: 8px;
-    background-color: white;
+    background-color: var(--bg-white);
     border-radius: 8px;
     box-shadow: 0px 0px 5px gainsboro;
     margin-bottom: 0px;
@@ -178,21 +178,26 @@
 .reinventing_head{
     font-size: 2em;
     font-weight: bold;
-    color: #001758;
+    color: var(--text-darkblue);
 }
 .reinventing_para{
     margin-top: 10px;
-    color: #8792AF;
+    color: var(--text-lightgray);
 }
-.Sign_up_today_btn{
+.Sign_up_today_link{
     background-color: #1cc1a0;
     color: white;
     margin-top: 20px;
     border-radius: 3px;
     box-shadow: 0px 0px 3px #1cc1a0;
-    padding-top: 8px;
+    padding: 8px 12px;
+    text-decoration: none;
     padding-bottom: 8px;
 }
+.Sign_up_today_link:hover{
+    color: white;
+}
+
 
 
 .polygon2_img{
@@ -243,7 +248,7 @@
 
 }
 .dp_para_head{
-    color: #8792AF;
+    color: var(--text-lightgray);
     margin-top: 10px;
 }
 
@@ -276,7 +281,7 @@
 }
 .voice_heard_btn_grn{
     background-color: #1cc1a0;
-    color: white;
+    color: var(--bg-white);
     border-radius: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -309,7 +314,8 @@
 }
 .step1_div>p,.step2_div>p,.step3_div>p,.step4_div>p,.step5_div>p{
     font-size: .9em;
-    color: #8792AF;
+    color: var(--text-lightgray);
+    /* color: #8792AF; */
 }
 .voice_step_div{
     text-align: center;
@@ -357,7 +363,8 @@
 
 .view_all_div>p{
  margin: 20px auto;
- color: #8792AF;
+    color: var(--text-lightgray);
+    /* color: #8792AF; */
  width: fit-content;
 }
 .view_all_div>p:hover{
@@ -388,7 +395,8 @@
 }
 .get_detail_para{
     margin-top: 20px;
-    color: #8792AF;
+    color: var(--text-lightgray);
+    /* color: #8792AF; */
 }
 .head_blb_div{
     display: flex;
@@ -601,11 +609,12 @@
     margin-bottom: 200px;
 }
 .mob_step_div2 h5{
-    color: #001758;
+    color: var(--text-darkblue);
     font-weight: 600;
 }
 .mob_step_div2 p{
-    color: #8792AF;
+    /* color: #8792AF; */
+    color: var(--text-lightgray);
     font-size: .9rem;
     margin-top: 10px;
 }
@@ -648,11 +657,12 @@
     font-size: .9rem;
 }
 .home_proposal_card_loc>div>span{
-    color: #5F677C;
+    color: var(--text-darkgray);
     margin-left: 5px;
 }
 .home_proposal_card_loc>div>p{
-    color: #8792AF;
+    color: var(--text-lightgray);
+    /* color: #8792AF; */
 }
 .ongoing_btn_div{
     /* width: 200px; */

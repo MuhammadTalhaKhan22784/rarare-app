@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./Participate.css";
 import Card from "@material-ui/core/Card";
-import Button from "@material-ui/core/Button";
+import greenDot from "../../Assets/greendot.png";
 
 function Participate() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="ParticipateRightBottom">
-      <Card className="Participate_card">
-        <h3 className="text_participate"> Your Participation</h3>
+    <div className="proposalRightBottom">
+      <Card className="card">
+        <h3> Your Participation</h3>
         <hr style={{ width: "100%" }}></hr>
 
         <p
@@ -18,34 +22,51 @@ function Participate() {
         </p>
 
         <div>
-          {["A", "B", "C"].map((val) => {
+          {["A", "B", "C"].map((val, i) => {
             return (
-              <>
-                <div className="div_card">
+              <div key={i}>
+                <input
+                  style={{ display: "none" }}
+                  type="radio"
+                  id={`box${i + 1}`}
+                  name="box"
+                />
+                <label
+                  htmlFor={`box${i + 1}`}
+                  className="div_card position-relative"
+                  style={{
+                    width: "98%",
+                    margin: "10px auto 0 auto",
+                  }}
+                >
                   <Card className="card_options">option {val}</Card>
-                </div>
-              </>
+                  <img
+                    className="c_dot"
+                    style={{ display: "none", top: "20px", right: "20px" }}
+                    src={greenDot}
+                    alt="img"
+                  />
+                </label>
+              </div>
             );
           })}
         </div>
 
         <br></br>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button
-            variant="contained"
-            style={{ backgroundColor: "white" }}
-            className="btn1"
+          <button
+            style={{ height: "35px", width: "110px", borderRadius: "5px" }}
+            className="bg_white text_bluegreen border_solid bluegreen_border"
           >
             Back
-          </Button>
+          </button>
           &nbsp;&nbsp;
-          <Button
-            variant="contained"
-            style={{ backgroundColor: "white" }}
-            className="btn1"
+          <button
+            style={{ height: "35px", width: "110px", borderRadius: "5px" }}
+            className="bg_lightgreen border_none text-white"
           >
             Submit
-          </Button>
+          </button>
         </div>
       </Card>
     </div>

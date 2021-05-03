@@ -88,7 +88,7 @@
 .bussiness_info_div_inp > input {
   width: 100%;
   padding: 6px 10px;
-  border: 1px solid #19C2A0;
+  border: 1px solid var(--text-bluegreen);
   margin-top: 10px;
   border-radius: 3px;
   color: #8c9cb5 !important;
@@ -103,7 +103,7 @@
   padding: 7px 15px;
 
   border-radius: 3px;
-  border: 1px solid #34b299;
+  border: 1px solid var(--text-bluegreen);
   outline: none;
   margin: 10px 0px;
   margin-bottom: 0px;
@@ -150,7 +150,7 @@
   font-size: 1.3em;
   background-color: #9ba3cc;
   padding: 0px 8.5px;
-  color: white;
+  color: var(--bg-white);
 
   border-radius: 20px;
   height: fit-content;
@@ -181,7 +181,7 @@
   width: 300px;
   margin: 15px auto;
   background-color: #d1f3ec;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 4px;
 }
 .confrim_email_div > p {

@@ -11,7 +11,7 @@ import polygon2 from "../../Assets/polygon_2.png";
 const Contact = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <React.Fragment>

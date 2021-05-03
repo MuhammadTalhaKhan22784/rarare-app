@@ -1,4 +1,5 @@
 import React from 'react'
+// assets 
 import one from '../../Assets/Group 3317@2x.png'
 import two from '../../Assets/Group 3318@2x.png'
 import three from '../../Assets/Group 3319@2x.png'
@@ -17,7 +18,6 @@ const Partner = () => {
                         <p className='dp_para_head'>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d
-
                         </p>
                     </div>
                     <div className='partner_scroll_div'>

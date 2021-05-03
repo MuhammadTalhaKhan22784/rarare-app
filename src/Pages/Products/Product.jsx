@@ -6,7 +6,7 @@ import "./Product.css";
 const Product = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <div>

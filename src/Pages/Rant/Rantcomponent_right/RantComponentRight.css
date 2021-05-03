@@ -34,9 +34,6 @@
   .carouse {
     width: fit-content;
   }
-  .slider_down_images {
-    margin-bottom: 50px !important;
-  }
   .slider_down_border {
     width: 100%;
   }
@@ -86,7 +83,7 @@
       right: 17px;
   }
   }
-
+/* 
 @media only screen and (max-width: 340px) {
   .slider_down_images {
     margin-left: 50px;
@@ -112,4 +109,4 @@
 }
 
 
-
+ */

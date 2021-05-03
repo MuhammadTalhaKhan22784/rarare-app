@@ -1,8 +1,9 @@
 import React from 'react'
-import pen from '../../Assets/Group 4726@2x.png'
 import Button from '../Btn/Btn'
-import SurveyCard from '../Cards/SurveyCard'
-import {useHistory} from 'react-router-dom'
+import SurveyCard from '../HomeBlogCards/SurveyCard'
+import { useHistory } from 'react-router-dom'
+// assets 
+import pen from '../../Assets/Group 4726@2x.png'
 
 
 const Survey = () => {
@@ -22,13 +23,14 @@ const Survey = () => {
                         <p className='dp_para_head'>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d
-
                         </p>
                     </div>
                     <div className='voice_heard_btn_div'>
-
-                        <Button onClick={()=>history.push('/post-survey-tamplate')} className='voice_heard_btn_grn' value='Post a survey!' />
-                        {/* <Button className='voice_heard_btn_white' value='Propose a deliberation' /> */}
+                        <Button
+                            onClick={() => history.push('/post-survey-tamplate')}
+                            className='voice_heard_btn_grn'
+                            value='Post a survey!'
+                        />
                     </div>
                 </div>
                 <div className='survey_card_div'>

@@ -1,4 +1,5 @@
 import React from 'react'
+// assets 
 import mob from '../../Assets/Group 3564@2x.png'
 import appstore from '../../Assets/app-store (2).png'
 
@@ -24,9 +25,7 @@ const Report = () => {
                                 eos et accusam et justo d
                            </p>
                         </div>
-                        {/* <Button className='getInsp_btn' value='Lorem Ipsum' /> */}
                         <div className='app_store_div'>
-
                             <img src={appstore} className='appstore_img' alt="img" />
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Forms.css";
 // assets
@@ -16,13 +16,13 @@ import pwdclose from "../../Assets/pwdclose.png";
 import pwdopen from "../../Assets/pwdopen.png";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
-import "swiper/swiper-bundle.css";
-import "swiper/swiper-bundle.css";
 
-SwiperCore.use([Pagination]);
 const Signup = () => {
-  const [show, setShow] = useState("1");
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
 
   const showPassword = () => {
@@ -46,17 +46,17 @@ const Signup = () => {
             <div className="s_select_box">
               <div
                 onClick={() => {
-                  setShow("1");
+                  setShow(true);
                 }}
                 className={
-                  show === "1"
+                  show === true
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
                     : "s_box fw-bold gray_border text_lightgray"
                 }
               >
                 <img
                   className="c_dot"
-                  style={{ display: show === "1" ? "block" : "none" }}
+                  style={{ display: show === true ? "block" : "none" }}
                   src={dot}
                   alt="img"
                 />
@@ -64,17 +64,17 @@ const Signup = () => {
               </div>
               <div
                 onClick={() => {
-                  setShow("2");
+                  setShow(false);
                 }}
                 className={
-                  show === "2"
+                  show === false
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
                     : "s_box fw-bold gray_border text_lightgray"
                 }
               >
                 <img
                   className="c_dot"
-                  style={{ display: show === "2" ? "block" : "none" }}
+                  style={{ display: show === false ? "block" : "none" }}
                   src={dot}
                   alt="img"
                 />
@@ -95,7 +95,7 @@ const Signup = () => {
               <img src={orLine} alt="img" />
             </div>
             <form className="s_form_fields">
-              {show === "1" ? (
+              {show === true ? (
                 <div className="inline_input">
                   <input
                     className="half_input"
@@ -168,11 +168,7 @@ const Signup = () => {
           <img className="sic_3" src={polygon1} alt="img" />
           <img className="sic_4" src={polygon2} alt="img" />
           <div>
-            <Swiper
-              pagination
-              spaceBetween={50}
-              slidesPerView={1}
-            >
+            <Swiper pagination spaceBetween={50} slidesPerView={1}>
               <SwiperSlide>
                 <img className="s_bgimg" src={signupBg} alt="signupBg" />
               </SwiperSlide>

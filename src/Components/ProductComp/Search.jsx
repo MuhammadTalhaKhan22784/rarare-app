@@ -1,4 +1,5 @@
 import React from 'react'
+// assets 
 import search from '../../Assets/Icon awesome-search.png'
 import search2 from '../../Assets/Icon feather-search.png'
 import path from '../../Assets/Path 6563.png'
@@ -22,7 +23,6 @@ const Search = () => {
                 <div className='search_div'>
                     <h5 className='search_head' ><strong>Search Results</strong></h5>
                     <img className='path_img' src={path} alt="img" />
-                    {/* <hr className='search_hr' /> */}
                     <h6 className='search_head'><strong>Filter Results</strong></h6>
                     <ul className='search_main_ul'>
                         <li>

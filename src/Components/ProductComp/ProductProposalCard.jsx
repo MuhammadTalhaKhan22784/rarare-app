@@ -1,9 +1,9 @@
 import React from 'react'
+// assets 
 import dot from '../../Assets/dot.png'
 import location from '../../Assets/location.png'
 import path3 from '../../Assets/Rectangle 871.png'
 import farming from '../../Assets/Icon awesome-hand-paper.png'
-
 import { useHistory } from 'react-router'
 
 const ProductProposalCard = ({ list, left, className }) => {
@@ -11,6 +11,9 @@ const ProductProposalCard = ({ list, left, className }) => {
 
     return (
         <div>
+
+            {/* list props pass if card use in any component  */}
+
             {!list ?
                 <div className='pro_proposal_card_container'>
                     <div className={`proposal_card_body ${className}`} onClick={() => { history.push("/proposal") }}>
@@ -80,8 +83,8 @@ const ProductProposalCard = ({ list, left, className }) => {
                         </div>
                     </div>
                 </div>
-                // {/*proposal list style  */}
                 :
+                // {/*proposal list style  */}
                 <div className={`proposal_list_body`}>
                     <div className='card_title_di proposal_Card_title_list'>
                         <h5><strong> Title of issues </strong></h5>

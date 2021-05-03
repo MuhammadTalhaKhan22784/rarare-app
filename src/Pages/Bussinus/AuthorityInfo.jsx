@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Btn/Btn'
+// assets 
 import businesslogo from '../../Assets/businesslogo.png'
-
-// import dot from '../../Assets/dot.png'
-
 import './Bussines.css'
 
-
 const AuthorityInfo = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='bussines_container'>
             <div className='bussines_main_div'>
@@ -24,7 +25,7 @@ const AuthorityInfo = () => {
                 </div>
                 <div className="two_box_div ">
                     <div className='bussiness_info_div_inp authority_info_div'>
-                        <input type="text" placeholder='Authority Name'   />
+                        <input type="text" placeholder='Authority Name' />
                         <input type="text" placeholder='Authority Address' />
                         <div className="business_select_div">
                             <select className='region_slct' name="" id="">
@@ -40,16 +41,16 @@ const AuthorityInfo = () => {
                 <div className="two_box_div">
                     <div className='bussiness_info_div_inp'>
                         <h6><strong>Key Contact Information</strong></h6>
-                        <input type="text" placeholder='Contact Name & Sur name'   />
+                        <input type="text" placeholder='Contact Name & Sur name' />
                         <input type="text" placeholder='Contact Email Address' />
                     </div>
                 </div>
                 <div className="business_btn_div authoryInfoBtn">
                     <Link to='/business-authority'>
-                    <Button className='bussines_white_btn upload_back' value='Back' />
+                        <Button className='bussines_white_btn upload_back' value='Back' />
                     </Link>
                     <Link to='/business-confirm'>
-                    <Button className='bussines_grn_btn' value='Submit' />
+                        <Button className='bussines_grn_btn' value='Submit' />
                     </Link>
                 </div>
                 <div className="busines_login_div">

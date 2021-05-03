@@ -7,7 +7,7 @@ import aboutRec2 from "../../Assets/about_rec2.png";
 const About = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <React.Fragment>

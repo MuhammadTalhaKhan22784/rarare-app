@@ -1,24 +1,34 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
+import DeleteProbModal from "../Modal/DeleteProbModal";
+// assets 
 import slider1 from "../../Assets/Rectangle 95@3x.png";
 import user from "../../Assets/user.png";
 import location from "../../Assets/location.png";
 import toggle from "../../Assets/Group 3659.png";
 import edit from "../../Assets/Group 3655.png";
-import DeleteProbModal from "../Modal/DeleteProbModal";
-import { useHistory } from "react-router";
 import numImg from '../../Assets/Group 3593.png'
 
 const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
+
+  // edit delete toggle state and function 
+
   let [togle, setTogle] = useState(false);
   const history = useHistory();
 
-  const handleTogle = ()=>{
+  const handleTogle = () => {
     setTogle(!togle)
   }
 
   return (
     <React.Fragment>
+
+      {/* list props pass if card use in any component  */}
+
       {!list ? (
+
+        // cards style of issues 
+
         <div className="issue_card_container">
           <div className={`card issue_card ${className}`} onClick={() => { history.push("/rant") }}>
             <div className="issue_card_img">
@@ -41,6 +51,9 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
+
+              {/* username dont show when issues create current user  */}
+
               {Cuser ?
                 <div>
                   <img src={user} alt="img" />
@@ -74,6 +87,8 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
+              {/* username dont show when issues create current user  */}
+
               {Cuser ?
                 <div>
                   <img src={user} alt="img" />
@@ -107,6 +122,8 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
               </div>
             </div>
             <div className="user_card_detail_div issue_card_user">
+              {/* username dont show when issues create current user  */}
+
               {Cuser ?
                 <div>
                   <img src={user} alt="img" />
@@ -121,6 +138,9 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
           </div>
         </div>
       ) : (
+
+        // list style of issues 
+
         <div className="proposal_list_body issue_list_style">
           <div className="mob_list_issue_style">
 
@@ -134,6 +154,9 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                 <h5>
                   <strong> Title of issues </strong>
                 </h5>
+
+                {/* toggle show only in current users issues  */}
+
                 {togleImg ? (
                   <div className="toggle_div">
                     <img onClick={() => setTogle(!togle)} src={toggle} alt="img" />
@@ -144,8 +167,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
                         <DeleteProbModal
                           name="Delete Problem?"
                           para="Are you sure you want to delete this probem?"
-                          func ={handleTogle}
-
+                          func={handleTogle}
                         />
                       </div>
                     ) : null}

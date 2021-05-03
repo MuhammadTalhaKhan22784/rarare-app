@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useLayoutEffect} from "react";
 import { useHistory } from "react-router";
 import "./ParticipatoryBudget.css";
 
@@ -6,6 +6,10 @@ import "./ParticipatoryBudget.css";
 import undrawVoting from "../../Assets/undraw_voting.png";
 
 const PartBudgetBenefits = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
   const history = useHistory();
 
   return (

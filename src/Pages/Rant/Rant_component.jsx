@@ -10,6 +10,9 @@ import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 
 import { FaShare } from "react-icons/fa";
 function proposal_component() {
+
+
+
   return (
     <div className="Rant_component_card">
       <Card

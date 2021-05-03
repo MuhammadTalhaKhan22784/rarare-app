@@ -25,7 +25,7 @@ h6 {
   color: #001758 !important;
 }
 .your_post_btn {
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 7px 30px;
   color: #34b299;
   font-weight: 600;
@@ -44,7 +44,7 @@ h6 {
 .reportProblm_btn {
   background-color: #34b299;
   padding: 7px 30px;
-  color: white;
+  color: var(--bg-white);
   font-weight: 600;
   box-shadow: 0px 2px 5px gainsboro;
   margin-left: 10px;
@@ -64,7 +64,7 @@ h6 {
 .grn_bg {
   background-color: #34b299;
   padding: 7px 30px;
-  color: white;
+  color: var(--bg-white);
   font-weight: 600;
   box-shadow: 0px 3px 10px gainsboro;
   border-radius: 3px;
@@ -103,7 +103,7 @@ h6 {
   flex-direction: column;
   position: absolute;
   padding: 15px;
-  background-color: white;
+  background-color: var(--bg-white);
   box-shadow: 0px 0px 5px gainsboro;
   border-radius: 9px;
   right: -120px;
@@ -140,7 +140,7 @@ h6 {
 .profile_proposal_loc_div > p {
   margin-bottom: 10px;
   font-size: 0.9em;
-  color: #9ba3cc;
+  color: var(--text-lightpurple);
   font-weight: 600;
 }
 .profile_proposal_loc_div > img {
@@ -148,7 +148,7 @@ h6 {
 }
 /* profile card css  */
 .textGrey {
-  color: #8792af !important;
+  color: var(--text-lightgray) !important;
 }
 
 .profile_card_main_div {
@@ -193,7 +193,7 @@ h6 {
   width: 350px;
 }
 .r_points_div > div > h5 {
-  color: #19c2a0 !important;
+  color: var(--text-bluegreen) !important;
   margin-top: 4px !important;
 }
 .redeem_head > h5 {
@@ -213,7 +213,7 @@ h6 {
 /* balance card css  */
 
 .blnce_card_div {
-  background-color: white;
+  background-color: var(--bg-white);
   box-shadow: 0px 0px 10px gainsboro;
   border-radius: 3px;
   padding: 15px;
@@ -232,7 +232,7 @@ h6 {
 .blnce_btn {
   padding: 5px 15px;
   background-color: #34b299;
-  color: white;
+  color: var(--bg-white);
   border-radius: 3px;
   font-size: 0.9em;
   height: 35px;
@@ -253,7 +253,7 @@ h6 {
 /* redeem pints card css  */
 
 .redeem_card_maindiv {
-  background-color: white;
+  background-color: var(--bg-white);
   box-shadow: 0px 0px 15px rgb(214, 214, 214);
   border-radius: 3px;
   padding: 15px;
@@ -405,14 +405,14 @@ h6 {
   width: 170px;
   border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 7px 10px;
   border-radius: 3px;
 }
 .profile_setting_inps > input {
   border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 7px 10px;
   margin-top: 10px;
   border-radius: 3px;
@@ -420,7 +420,7 @@ h6 {
 .profile_setting_inps > select {
   border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 7px 10px;
   margin-top: 10px;
   border-radius: 3px;
@@ -428,7 +428,7 @@ h6 {
 .profile_setting_inps > textarea {
   border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 7px 10px;
   margin-top: 10px;
   border-radius: 3px;

@@ -1,6 +1,7 @@
 import React from 'react'
+import WhatwedoCard from '../HomeBlogCards/WhatwedoCard'
+// assets 
 import more from '../../Assets/Group 3537@2x.png'
-import WhatwedoCard from '../Cards/WhatwedoCard'
 import maskGroup from '../../Assets/Mask Group 2@2x.png'
 import polygon2 from '../../Assets/Polygon 2@2x.png'
 
@@ -10,7 +11,6 @@ const WhatWeDo = () => {
         <div className='what_we_do_container'>
             <div className='what_we_do_main_div'>
                 <div className='what_we_do_sub_div'>
-
                     <div className='do_more_img_div'>
                         <img className='do_more_img' src={more} alt="img" />
                     </div>
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
                 </div>
                 <div className='card_and_dot_img_div'>
                     <div>
-                    <img className='do_polygon1_img' src={polygon2} alt="img" />
+                        <img className='do_polygon1_img' src={polygon2} alt="img" />
                     </div>
                     <div className='whatwedo_cards_div'>
                         <WhatwedoCard />
@@ -37,8 +37,7 @@ const WhatWeDo = () => {
                     </div>
                 </div>
                 <div className='do_polygon2_img_div'>
-                <img className='do_polygon2_img' src={polygon2} alt="img" />
-
+                    <img className='do_polygon2_img' src={polygon2} alt="img" />
                 </div>
             </div>
         </div>

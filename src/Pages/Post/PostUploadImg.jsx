@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useLayoutEffect} from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Btn/Btn";
 import postIcon from "../../Assets/post_icon.png";
@@ -6,6 +6,10 @@ import postIcon from "../../Assets/post_icon.png";
 import "../Bussinus/Bussines.css";
 
 const PostUploadImg = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
   let [img, setImg] = useState([]);
 
   const handleUrl = (e) => {

@@ -16,6 +16,23 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+:root{
+  --bg-lightgreen:#20c0a0;
+  --bg-blue:#014c9d;
+  --bg-red:#dc4b3b;
+  --bg-white:#ffff;
+  --light-purple:#f5f6fa;
+  --text-darkblue:#001758;
+  --text-bluegreen:#19c2a0;
+  --text-lightblack:#353535;
+  --text-green:#0ac718;
+  --text-darkgray:#5f677c;
+  --text-lightgray:#8792af;
+  --text-lightpurple:#9ba3cc;
+  --text-black:#000000;
+  --gray-border:#80808066;
+}
+
 .btn:focus {
   outline: none !important;
   box-shadow: none;
@@ -29,57 +46,57 @@ body {
 /* background colors */
 
 .bg_lightgreen {
-  background-color: #20c0a0 !important;
+  background-color: var(--bg-lightgreen) !important;
 }
 
 .bg_blue {
-  background-color: #014c9d;
+  background-color: var(--bg-blue) !important;
 }
 
 .bg_red {
-  background-color: #dc4b3b;
+  background-color: var(--bg-red);
 }
 
 .bg_white {
-  background-color: white;
+  background-color: var(--bg-white) !important;
 }
 
 .light_purple {
-  background-color: #f5f6fa !important;
+  background-color: var(--light-purple);
 }
 
 /* text colors */
 
 .text_darkblue {
-  color: #001758 !important;
+  color: var(--text-darkblue);
 }
 
 .text_bluegreen {
-  color: #19c2a0 !important;
+  color: var(--text-bluegreen) !important;
 }
 
 .text_lightblack {
-  color: #353535;
+  color: var(--text-lightblack);
 }
 
 .text_green {
-  color: #0ac718;
+  color: var(--text-green);
 }
 
 .text_darkgray {
-  color: #5f677c;
+  color: var(--text-darkgray);
 }
 
 .text_lightgray {
-  color: #8792af !important;
+  color: var(--text-lightgray);
 }
 
 .text_lightpurple {
-  color: #9ba3cc !important;
-}
+  color: var(--text-lightpurple) !important;
+} 
 
 .text_black {
-  color: black;
+  color: var(--text-black) !important;
 }
 
 /* border color */
@@ -89,19 +106,19 @@ body {
 }
 
 .bluegreen_border {
-  border-color: #20c0a0 !important;
+  border-color: var(--bg-lightgreen) !important;
 }
 
 .green_border {
-  border-color: #0ac718 !important;
+  border-color: var(--text-green) !important;
 }
 
 .gray_border {
-  border-color: #80808066 !important;
+  border-color:var(--gray-border) !important;
 }
 
 .light_purple_border {
-  color: #9ba3cc;
+  color: var(--text-lightpurple) !important;
 }
 
 .border_none {
@@ -111,7 +128,7 @@ body {
 /*  */
 
 .cus_num_field p {
-  color: #20c0a0 !important;
+  color: var(--bg-lightgreen) !important;
 }
 
 .cus_num_field {

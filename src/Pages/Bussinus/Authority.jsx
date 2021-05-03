@@ -1,6 +1,7 @@
-import React,{useLayoutEffect} from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Btn/Btn'
+// assets 
 import dot from '../../Assets/dot.png'
 import businesslogo from '../../Assets/businesslogo.png'
 
@@ -8,10 +9,10 @@ import './Bussines.css'
 
 
 const Authority = () => {
-    
-  useLayoutEffect(()=>{
-    window.scrollTo(0,0)
-  })
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    },[])
     return (
         <div className='bussines_container'>
             <div className='bussines_main_div'>
@@ -25,7 +26,6 @@ const Authority = () => {
                 <div className="two_box_div">
                     <div className="_box_detail">
                         <div className="balnk_box">
-
                         </div>
                         <h6 style={{ color: '#1cc1a0' }}>I represent an authority</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores similique esse aut omnis,</p>
@@ -37,7 +37,6 @@ const Authority = () => {
                         <h6 style={{ color: '#1cc1a0' }}>I represent a business</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores similique esse aut omnis,</p>
                     </div>
-
                 </div>
                 <div className="business_btn_div">
                     <Button className='bussines_white_btn' value='Back' />

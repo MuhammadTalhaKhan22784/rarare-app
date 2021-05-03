@@ -1,10 +1,11 @@
 import React from 'react'
+import Button from '../Btn/Btn'
+// assets 
 import bulb from '../../Assets/bulb.png'
 import group1 from '../../Assets/red-group (2).png'
 import group2 from '../../Assets/w-group (2).png'
 import magnet from '../../Assets/magnet.png'
 import appstore from '../../Assets/app-store (2).png'
-import Button from '../Btn/Btn'
 
 const GetInspired = () => {
     return (
@@ -30,9 +31,9 @@ const GetInspired = () => {
                     </div>
                 </div>
                 <div className='get_inspire_div getInspire_div2'>
-                        <div className='get_inspire_img_div'>
-                            <img src={group2} alt="img" />
-                        </div>
+                    <div className='get_inspire_img_div'>
+                        <img src={group2} alt="img" />
+                    </div>
                     <div className='get_inspire_detail staye_connect'>
                         <div className='head_magnet_div2'>
                             <h5><strong>Stay connected</strong></h5>
@@ -48,7 +49,7 @@ const GetInspired = () => {
                         {/* <Button className='getInsp_btn' value='Lorem Ipsum' /> */}
                         <div className='app_store_div'>
 
-                        <img src={appstore} className='appstore_img' alt="img"/>
+                            <img src={appstore} className='appstore_img' alt="img" />
                         </div>
                     </div>
                 </div>

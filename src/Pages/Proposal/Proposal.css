@@ -34,6 +34,7 @@
 .Proposal_card {
   padding: 20px;
   width: 500px;
+  box-shadow: 0px 0px 5px gainsboro !important;
 }
 
 .proposal_card_div {
@@ -54,7 +55,8 @@
 }
 
 .Proposal_content_right {
-  flex: 0.5;
+  /* flex: 0.5 1; */
+  padding-top: 70px;
 }
 
 #hr {
@@ -107,7 +109,7 @@
     margin-left: 0;
   }
   .proposal_component_main {
-    width: 100%;
+    width: 95%;
   }
   .text_size_responsive {
     font-size: 11px !important;
@@ -145,7 +147,7 @@
   }
   .proposal_card_div {
     justify-content: center !important;
-    width: 100%;
+    width: 95%;
   }
 
   .Proposal_title {
@@ -175,7 +177,6 @@
     margin-top: -15rem;
   }
 }
-
 
 @media only screen and (max-width: 388px) {
   .title_responsive {
@@ -210,7 +211,6 @@
   }
 }
 
-
 @media only screen and (max-width: 357px) {
   .Proposal {
     width: 100%;
@@ -238,7 +238,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 100%;
   }
 
   .proposal_component_main {

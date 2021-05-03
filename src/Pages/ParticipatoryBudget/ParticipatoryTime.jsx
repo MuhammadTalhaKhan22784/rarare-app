@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useLayoutEffect } from "react";
 import { useHistory } from "react-router";
 
 // assets
@@ -7,6 +7,10 @@ import IconCalendar from "../../Assets/Icon awesome-calendar.png";
 import greenDot from "../../Assets/dot.png";
 
 const ParticipatoryTime = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
   const [show, setShow] = useState("1");
   const history = useHistory();
   return (

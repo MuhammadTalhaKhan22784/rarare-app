@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from '../Btn/Btn'
 import { useHistory } from 'react-router-dom'
+// material ui 
 import Switch from '@material-ui/core/Switch'
+// assets 
 import back from '../../Assets/Icon-arrow-right.png'
 
 
@@ -25,8 +27,7 @@ const NotificationSettingCard = () => {
             <div className="profile_seting_card_div">
                 <div className="proSetting_head_div noti_card_head_div">
                     <div onClick={() => history.push('/account-setting')}>
-                        <img src={back} alt="img"/>
-                        {/* <p>{'<-'}</p> */}
+                        <img src={back} alt="img" />
                         <h6>Notification Settings</h6>
                     </div>
                     <Button className='upcoming_btn' value='Save Changes' />
@@ -46,7 +47,7 @@ const NotificationSettingCard = () => {
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
 
                                 </p>
@@ -62,7 +63,7 @@ const NotificationSettingCard = () => {
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 </p>
                             </li>
@@ -77,7 +78,7 @@ const NotificationSettingCard = () => {
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 </p>
                             </li>
@@ -92,12 +93,12 @@ const NotificationSettingCard = () => {
                                         inputProps={{ 'aria-label': 'primary checkbox' }}
                                     />
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fuga
                                 </p>
                             </li>
                         </ul>
-                    <Button className='upcoming_btn' value='Save Changes' />
+                        <Button className='upcoming_btn' value='Save Changes' />
 
                     </div>
                 </div>

@@ -1,14 +1,15 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
-import businesslogo from '../../Assets/businesslogo.png'
-
-// import Button from '../../components/btn/btn'
-// import dot from '../../Assets/dot.png'
-
+import React,{useLayoutEffect} from 'react'
 import './Bussines.css'
+// assets 
+import businesslogo from '../../Assets/businesslogo.png'
+import edit from '../../Assets/Icon awesome-edit.png'
 
 
 const ConfirmRegistration = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
+
     return (
         <div className='bussines_container'>
             <div className='bussines_main_div confirm_registration_div'>
@@ -21,7 +22,8 @@ const ConfirmRegistration = () => {
                 </div>
                 <div className="confrim_email_div">
                     <p>salman.altaf@gamil.com</p>
-                    <p className='edit_icon'>edit</p>
+                    <img src={edit} alt="edit"/>
+                    {/* <p className='edit_icon'>edit</p> */}
                 </div>
             </div>
         </div>

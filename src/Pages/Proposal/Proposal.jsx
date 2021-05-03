@@ -19,7 +19,7 @@ const Proposal = () => {
   let history = useHistory();
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   return (
     <React.Fragment>
       <div className="Proposal">
@@ -37,7 +37,7 @@ const Proposal = () => {
               </li>
             </ol>
           </nav>
-          <div className="d-flex justify-content-end  ">
+          <div className="d-flex justify-content-end mb-4 ">
             <Button
               className="buttonW bg_lightgreen text-white "
               variant="contained"
@@ -52,8 +52,6 @@ const Proposal = () => {
               Participate
             </Button>
           </div>
-          <br></br>
-
           <div className="proposal_card_div">
             <Card className="Proposal_card">
               <div className="card_content">
@@ -66,7 +64,8 @@ const Proposal = () => {
                 </h4>
                 <div>
                   <div className="kp_h pp_h">
-                    <button
+                    <button 
+                    className="border_solid bluegreen_border"
                       style={{
                         border: "1px solid grey",
                         fontSize: ".8rem",
@@ -75,7 +74,9 @@ const Proposal = () => {
                       }}
                     >
                       <img src={greenDot} alt="img" />
-                      <span className="text_bluegreen">Ongoing</span>
+                      <span className="text_bluegreen">
+                        Ongoing
+                      </span>
                     </button>
                   </div>
                 </div>

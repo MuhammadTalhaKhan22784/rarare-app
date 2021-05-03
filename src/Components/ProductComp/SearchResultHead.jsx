@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import TopicHead from './TopicHead'
 import IssueCard from './IssueCard'
+import Search from './Search'
 import ProductProposalCard from './ProductProposalCard'
 import ProSurveyCard from './ProSurveyCard'
 import { SurveyCard } from '../../Pages/Profile/CardData'
+// assets 
 import grid from '../../Assets/Group 3602.png'
 import listG from '../../Assets/list.png'
 import gridG from '../../Assets/grid.png'
 import liW from '../../Assets/liW.png'
 import search2 from '../../Assets/Icon feather-search.png'
-import Search from './Search'
 
 
 
@@ -47,7 +48,6 @@ const SearchResultHead = () => {
                 <ProductProposalCard left='btn_lef' list={list} />
                 <TopicHead result='1033 Result' head='Surveys' />
                 <ProSurveyCard data={SurveyCard.all_user} left='btn_lef' list={list} />
-
             </div>
         </div>
     )

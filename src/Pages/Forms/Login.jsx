@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Forms.css";
 // assets
@@ -15,21 +15,15 @@ import polygon2 from "../../Assets/polygon_2.png";
 import dot from "../../Assets/dot.png";
 import pwdclose from "../../Assets/pwdclose.png";
 import pwdopen from "../../Assets/pwdopen.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper'
-
-
-
-import 'swiper/swiper-bundle.css'
-// import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper-bundle.css';
-
-SwiperCore.use([Pagination])
-
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Login = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let history = useHistory();
-  const [show, setShow] = useState("1");
+  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
 
   const showPassword = () => {
@@ -59,16 +53,16 @@ const Login = () => {
             <div className="s_select_box">
               <div
                 onClick={() => {
-                  setShow("1");
+                  setShow(true);
                 }}
                 className={
-                  show === "1"
+                  show === true
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
                     : "s_box fw-bold gray_border text_lightgray"
                 }
               >
                 <img
-                  style={{ display: show === "1" ? "block" : "none" }}
+                  style={{ display: show === true ? "block" : "none" }}
                   src={dot}
                   alt="img"
                 />
@@ -76,16 +70,16 @@ const Login = () => {
               </div>
               <div
                 onClick={() => {
-                  setShow("2");
+                  setShow(false);
                 }}
                 className={
-                  show === "2"
+                  show === false
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
                     : "s_box fw-bold gray_border text_lightgray"
                 }
               >
                 <img
-                  style={{ display: show === "2" ? "block" : "none" }}
+                  style={{ display: show === false ? "block" : "none" }}
                   src={dot}
                   alt="img"
                 />
@@ -163,13 +157,9 @@ const Login = () => {
           {/* <div className="d-flex justify-content-end">
             <img className="s_bgimg1" src={loginBg} alt="loginBg" />
           </div> */}
-          
+
           <div className="d-flex justify-content-end">
-            <Swiper
-              pagination
-              spaceBetween={50}
-              slidesPerView={1}
-            >
+            <Swiper pagination spaceBetween={50} slidesPerView={1}>
               <SwiperSlide>
                 <img className="s_bgimg1" src={loginBg} alt="img" />
               </SwiperSlide>
@@ -184,7 +174,6 @@ const Login = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-       
         </div>
       </div>
     </React.Fragment>

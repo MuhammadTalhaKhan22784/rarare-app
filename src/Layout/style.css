@@ -719,7 +719,7 @@
     background: white;
     padding: 2rem 0;
     line-height: 2rem;
-    z-index: 1;
+    z-index: 2;
   }
   .mob_nav .c_btn {
     height: 33px;

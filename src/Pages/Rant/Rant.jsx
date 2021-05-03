@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useLayoutEffect} from "react";
 import "./Rant.css";
 import Card from "@material-ui/core/Card";
 import FavoriteOutlinedIcon from "@material-ui/icons/FavoriteOutlined";
@@ -10,6 +10,11 @@ import userImage from "../../Assets/Ellipse 226.png";
 import shareIcon from "../../Assets/Icon awesome-share.png";
 import Modal from "../../Components/Modal/Modal";
 function Proposal() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
   return (
     <React.Fragment>
       <div className="Rant_title d-flex  justify-content-start  ">

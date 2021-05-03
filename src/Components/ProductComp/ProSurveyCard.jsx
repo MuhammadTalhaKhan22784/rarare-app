@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import DeleteProbModal from "../Modal/DeleteProbModal";
+// assstes 
 import toggle from "../../Assets/Group 3659.png";
 import edit from "../../Assets/Group 3655.png";
-import DeleteProbModal from "../Modal/DeleteProbModal";
 
 const ProSurveyCard = ({ list, className, data, togleImg }) => {
+  // edit delete toggle state and function 
+
   let [togle, setTogle] = useState("");
   let [bool, setBool] = useState(false);
   const hanldeTogle = (e) => {
     setTogle(e);
     setBool(!bool);
   };
-  const closeTogle = (e) => {
-    setTogle(e);
-  };
+  
+
   return (
     <div>
+      {/* list props pass if card use in any component  */}
       {!list ? (
         <div className="pro_proposal_card_container">
           {data &&
@@ -72,7 +75,6 @@ const ProSurveyCard = ({ list, className, data, togleImg }) => {
         <>
           {data &&
             data.map((val, i) => (
-              // <Link className='card_link' to={`/survey/${val.id}`} key={i}>
               <div className="proposal_list_body survey_list_style">
                 <div className="card_title_div proposal_Card_title">
                   <h5>
@@ -131,7 +133,6 @@ const ProSurveyCard = ({ list, className, data, togleImg }) => {
                   </div>
                 </div>
               </div>
-              // </Link>
             ))}
         </>
       )}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Btn/Btn'
+// assets 
 import social1 from '../../Assets/Rarare Social-06.png'
 import social2 from '../../Assets/social2.png'
 import social3 from '../../Assets/social3.png'

@@ -2,6 +2,24 @@
   width: 645px !important;
 }
 
+#box1:checked + label,
+#box2:checked + label,
+#box3:checked + label {
+  border: 1px solid #20c0a0;
+}
+
+#box1:checked + label .c_dot {
+  display: block !important;
+}
+
+#box2:checked + label .c_dot {
+  display: block !important;
+}
+
+#box3:checked + label .c_dot {
+  display: block !important;
+}
+
 .co_box {
   width: 100%;
 }
@@ -373,6 +391,10 @@
     padding-top: 0;
     padding-bottom: 0.4em;
     padding-right: 0.4em;
+  }
+
+  .co_option_box > .full_input:focus {
+    outline: none;
   }
   .d_audience {
     width: 100%;

@@ -6,10 +6,6 @@ import FormControl from "@material-ui/core/FormControl";
 export default function InputAdornments() {
   const [values, setValues] = React.useState({
     amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
-    showPassword: false,
   });
 
   const handleChange = (prop) => (event) => {

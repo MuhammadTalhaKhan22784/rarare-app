@@ -1,8 +1,9 @@
 import React from 'react'
-import more from '../../Assets/Group 3537@2x.png'
 import Button from '../Btn/Btn'
-import RecentIssueCard from '../Cards/RecentIssueCard'
-import {useHistory} from 'react-router-dom'
+import RecentIssueCard from '../HomeBlogCards/RecentIssueCard'
+import { useHistory } from 'react-router-dom'
+// assets 
+import more from '../../Assets/Group 3537@2x.png'
 
 
 const Issues = () => {
@@ -11,7 +12,7 @@ const Issues = () => {
     return (
         <div className='recent_issues_container'>
             <div className='recent_issues_main_div'>
-                
+
                 <div className='what_we_do_sub_div'>
                     <div className='do_more_img_div'>
                         <img className='do_more_img' src={more} alt="img" />
@@ -23,13 +24,14 @@ const Issues = () => {
                         <p className='dp_para_head'>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d
-
                         </p>
                     </div>
                     <div className='voice_heard_btn_div'>
-
-                        <Button onClick={()=>history.push('/post')} className='voice_heard_btn_grn' value='Report an Issue!' />
-                        {/* <Button className='voice_heard_btn_white' value='Propose a deliberation' /> */}
+                        <Button
+                            onClick={() => history.push('/post')}
+                            className='voice_heard_btn_grn'
+                            value='Report an Issue!'
+                        />
                     </div>
                 </div>
                 <div className='recent_issue_card_div'>

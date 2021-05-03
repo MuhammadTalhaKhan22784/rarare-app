@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState,useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Btn/Btn'
+// assets 
 import businesslogo from '../../Assets/businesslogo.png'
-
-// import dot from '../../Assets/dot.png'
-
 import './Bussines.css'
 
 
 const BusinessUploadImg = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
+
+
+    // upload img state and function 
 
     let [img, setImg] = useState([])
 

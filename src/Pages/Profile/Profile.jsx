@@ -7,6 +7,7 @@ import ProSurveyCard from "../../Components/ProductComp/ProSurveyCard";
 import ProfileProposalCard from "../../Components/ProfileComp/ProfileProposalCard";
 import ProductProposalCard from "../../Components/ProductComp/ProductProposalCard";
 import { SurveyCard } from "./CardData";
+// assets 
 import grid from "../../Assets/Group 3602.png";
 import listG from "../../Assets/list.png";
 import gridG from "../../Assets/grid.png";
@@ -16,7 +17,7 @@ import "./Profile.css";
 const Profile = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   let [post, setPost] = useState("");
   let [list, setList] = useState(false);

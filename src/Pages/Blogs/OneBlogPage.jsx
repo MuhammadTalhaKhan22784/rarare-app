@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useEffect,useState,useLayoutEffect} from 'react'
 import SocialFeed from '../../Components/BlogComp/SocialFeed'
 import { useParams } from 'react-router-dom'
 import { blog_card_data } from './cardData'
+// assets 
 import blogSliderImg from '../../Assets/Group 3711.png'
 import sIcon1 from '../../Assets/Icon awesome-facebook-square.png'
 import sIcon2 from '../../Assets/Icon awesome-instagram-1.png'
@@ -12,8 +13,16 @@ import sIcon5 from '../../Assets/Icon awesome-behance-square.png'
 
 const SelectBlog = () => {
 
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      },[]);
+
     const { id } = useParams()
-    const filter = blog_card_data.filter((val) => id === val.id)
+    let [blogData,setBlogData] = useState([])
+    useEffect(()=>{
+        const filter = blog_card_data.filter((val) => id === val.id)
+        setBlogData(filter)
+    },[])
 
     return (
         <div>
@@ -21,10 +30,6 @@ const SelectBlog = () => {
                 <div className="blog_main_div">
                     <div className="blog_head_search_div">
                         <h3><strong style={{ color: '#1cc1a0' }}> Rarare Blog!</strong></h3>
-                        {/* <div className="blog_search_inp_div">
-                            <img src={search} alt="img" />
-                            <input type="text" placeholder='Search Blog' />
-                        </div> */}
                     </div>
                     <div className='get_blog_one_link'>
                         Blogs {' > '} <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</span>
@@ -37,7 +42,7 @@ const SelectBlog = () => {
                         </div>
                     </div>
                     <div className='blog_card_socail_feed_div'>
-                        {filter.map((val, i) => (
+                        {blogData.map((val, i) => (
                             <div className='select_blog_more_main_div' key={i}>
                                 <div className="select_blog_user_info" >
                                     <div className='blog_user_card_detail_div'>
@@ -47,7 +52,6 @@ const SelectBlog = () => {
                                             <p className='bloger_email'>{val.email}</p>
                                         </div>
                                     </div>
-                                    {/* <img src={val.bloger_img} alt="img" /> */}
                                     <ul className='blog_social_icons_ul'>
                                         <li>
                                             <img src={sIcon1} alt="img" />

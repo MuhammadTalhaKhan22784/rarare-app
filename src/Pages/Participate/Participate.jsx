@@ -1,11 +1,15 @@
-import React from "react";
+import React,{useLayoutEffect} from "react";
 import "./Participate";
 import ParticipateComponent from "./ParticipateComponent";
 
 function Participate() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
   return (
     <div id="Participate">
-      <div className="Proposal_content_left ">
+      <div className="Proposal_content_left">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb Proposal_title">
             <li className="breadcrumb-item  text_lightgray" id="participate_title">
@@ -29,7 +33,7 @@ function Participate() {
         </nav>
       </div>
       <br></br>
-      <div className="Proposal_content_right d-flex justify-content-center">
+      <div className="Proposal_content_right mob2prb d-flex justify-content-center">
         <div>
           <ParticipateComponent />
         </div>

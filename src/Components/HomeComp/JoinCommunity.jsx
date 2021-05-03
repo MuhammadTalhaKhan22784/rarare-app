@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Btn/Btn'
 import "../../Pages/Home/Home.css"
+
 const JoinCommunity = () => {
     return (
         <div>
@@ -13,14 +14,13 @@ const JoinCommunity = () => {
                         <p className='dp_para_head join_community_para'>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo d
-
                         </p>
                     </div>
                     <div className='input_div'>
-                         <div className='join_input_div'>
-                             <input type="text" placeholder='Enter email address'/>
-                             <Button className='join_btn' value='Join'/>
-                         </div>
+                        <div className='join_input_div'>
+                            <input type="text" placeholder='Enter email address' />
+                            <Button className='join_btn' value='Join' />
+                        </div>
                     </div>
                 </div>
             </div>

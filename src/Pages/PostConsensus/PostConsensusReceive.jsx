@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { useHistory } from "react-router";
 import "./PostConsensus.css";
 
@@ -7,8 +7,12 @@ import receiveTick from "../../Assets/receive_tick.png";
 import greenDot from "../../Assets/dot.png";
 import IconHandPaper from "../../Assets/Icon awesome-hand-paper.png";
 import location from "../../Assets/location.png";
+import { Link } from "react-router-dom";
 
 const PostConsensusReceive = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const history = useHistory();
 
   return (
@@ -25,7 +29,7 @@ const PostConsensusReceive = () => {
           <div className="kp_box">
             <div className="kp_h">
               <h2 className="text_darkblue lh-base">
-                Kent Park: Renovation work 
+                Kent Park: Renovation work
               </h2>
               <button className="border_solid bluegreen_border">
                 <img src={greenDot} alt="img" />
@@ -53,22 +57,16 @@ const PostConsensusReceive = () => {
           </div>
 
           <div className="pcontinue_btn ">
-            <button
-              className="cus_width100 text-white bg_lightgreen border_none"
-              onClick={() => {
-                history.push("/consensus");
-              }}
-            >
-              Post another proposal!
-            </button>
-            <button
-              className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
-              onClick={() => {
-                history.push("/consensus-time");
-              }}
-            >
-              Back
-            </button>
+            <Link className="text-decoration-none" to="/consensus">
+              <button className="cus_width100 text-white bg_lightgreen border_none">
+                Post another proposal!
+              </button>
+            </Link>
+            <Link className="text-decoration-none" to="/consensus-time">
+              <button className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border">
+                Back
+              </button>
+            </Link>
           </div>
         </div>
       </div>

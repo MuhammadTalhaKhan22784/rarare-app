@@ -32,7 +32,7 @@ SwiperCore.use([Pagination]);
 const Pricing = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   const settings = {
     dots: false,

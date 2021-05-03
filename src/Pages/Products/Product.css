@@ -65,10 +65,10 @@
   justify-content: space-between;
 }
 .search_reslut {
-  color: #9ba3cc;
+  color: var(--text-lightpurple);
 }
 .search_reslut > span {
-  color: #19c2a0;
+  color: var(--text-bluegreen);
 }
 
 .topic_head_div {
@@ -80,7 +80,7 @@
   color: #000000;
 }
 .topic_head_div > p {
-  color: #8792af;
+  color: var(--text-lightgray);
   font-size: 0.9em;
   margin-bottom: 0px;
 }
@@ -335,7 +335,7 @@
 }
 
 .card-text {
-  color: #9ba3cc;
+  color: var(--text-lightpurple);
 }
 
 .icon_filrt {
@@ -345,7 +345,7 @@
   margin-left: 7px;
   font-size: 1.2em;
   font-weight: 600;
-  color: #9ba3cc;
+  color: var(--text-lightpurple);
 }
 .search_filter_mob > div {
   display: flex;
@@ -446,7 +446,7 @@
   }
   .search_filter_mob span {
     text-align: end;
-    color: #9ba3cc;
+    color: var(--text-lightpurple);
   }
   .search_filter_mob > div:hover .mob_search_card_comp {
     display: block;

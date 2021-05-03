@@ -1,8 +1,9 @@
 import React from 'react'
+import {useHistory} from 'react-router-dom'
+// assets 
 import userSet from '../../Assets/undraw_profile_pic_ic5t.png'
 import security from '../../Assets/Group 4911.png'
 import notification from '../../Assets/Group 4941.png'
-import {useHistory} from 'react-router-dom'
 import more from '../../Assets/Icon feather-arrow-right.png'
 
 const AcountSetingCard = () => {
@@ -18,7 +19,6 @@ const AcountSetingCard = () => {
                            <h6><strong>Account Setting</strong></h6>
                            <p>Manage Profile Settings Such As Profile Image, Name, Email, Address Etrc</p>
                            <img className='arrow_icon_seting' src={more} alt="img"/>
-                           {/* <p className='arrow_icon_seting'>{'->'}</p> */}
                        </div>
                    </div>
                    <div className="acount_seting_card" onClick={()=>history.push('/security-setting')}>
@@ -27,7 +27,6 @@ const AcountSetingCard = () => {
                            <h6><strong>Security Setting</strong></h6>
                            <p>Manage Settings Such As password email change and notification setting.</p>
                            <img className='arrow_icon_seting' src={more} alt="img"/>
-                           {/* <p className='arrow_icon_seting'>{'->'}</p> */}
                        </div>
                    </div>
                    <div className="acount_seting_card" onClick={()=>history.push('/notification-setting')}>
@@ -35,7 +34,6 @@ const AcountSetingCard = () => {
                        <div className="seting_para">
                            <h6><strong>Notification Setting</strong></h6>
                            <p>Manage Settings Such As password email change and notification setting.</p>
-                           {/* <p className='arrow_icon_seting'>{'->'}</p> */}
                            <img className='arrow_icon_seting' src={more} alt="img"/>
                        </div>
                    </div>

@@ -1,9 +1,10 @@
 import React from 'react'
-import edit from '../../Assets/Component 29 – 1.png'
-import user from '../../Assets/Repeat Grid 11.png'
 import BalanceCard from './BalanceCard'
 import RedeemCard from './RedeemCard'
 import {useHistory} from 'react-router-dom'
+// assets 
+import edit from '../../Assets/Component 29 – 1.png'
+import user from '../../Assets/Repeat Grid 11.png'
 
 const ProfileCard = () => {
     const history = useHistory()

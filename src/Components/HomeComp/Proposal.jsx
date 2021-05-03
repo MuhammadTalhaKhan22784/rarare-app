@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../Btn/Btn";
-import Group from "../../Assets/Group 4728@2x.png";
-import ProposalCard from "../Cards/ProposalCard";
+import ProposalCard from "../HomeBlogCards/ProposalCard";
 import { useHistory } from "react-router-dom";
+// assets 
+import Group from "../../Assets/Group 4728@2x.png";
 
 const Proposal = () => {
   const history = useHistory();

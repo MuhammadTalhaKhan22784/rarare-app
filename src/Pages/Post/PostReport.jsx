@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { useHistory } from "react-router";
 import "./Post.css";
 
 // assets
 import postIcon from "../../Assets/post_icon.png";
 import pMap from "../../Assets/pmap.png";
+import { Link } from "react-router-dom";
 
-const PostReport = (props) => {
+const PostReport = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const history = useHistory();
 
   return (
@@ -49,14 +54,11 @@ const PostReport = (props) => {
           />
           <img src={pMap} className="pmap" alt="map" />
           <div className="pcontinue_btn">
-            <button
-              className="text-white bg_lightgreen border_none"
-              onClick={() => {
-                history.push("/post-upload");
-              }}
-            >
-              Continue
-            </button>
+            <Link className="text-decoration-none" to="/post-upload">
+              <button className="text-white bg_lightgreen border_none">
+                Continue
+              </button>
+            </Link>
           </div>
         </div>
       </div>

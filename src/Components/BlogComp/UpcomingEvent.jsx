@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Btn/Btn'
+// assets 
 import event1 from '../../Assets/nnaemeka-ugochukwu-XHAC9622m5w-unsplash.png'
 import event2 from '../../Assets/tope-a-asokere-jBpnifE9JUw-unsplash.png'
 
