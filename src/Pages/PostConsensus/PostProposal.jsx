@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
@@ -14,7 +13,6 @@ const PostProposal = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const history = useHistory();
   const [show, setShow] = useState("2");
   return (
     <React.Fragment>

@@ -183,10 +183,11 @@
   display: flex;
   flex-direction: column;
   background-color: #e8f9f5;
-  padding: 10px 5px;
+  padding: 10px 8px;
 }
 
 .nt_head {
+  margin-bottom: 0.4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -214,7 +215,7 @@
 .cart_menu {
   width: 200px;
   height: max-content;
-  padding: 1rem 0;
+  padding: 0.7rem 0 0.5rem 0 !important;
   border: none;
   box-shadow: 0px 0px 10px gainsboro;
 }
@@ -230,18 +231,21 @@
 
 .cart_content h6 {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .cart_content h2 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 
 .cart_content span {
   text-align: center;
   font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 .cart_content hr {
@@ -249,7 +253,7 @@
 }
 
 .cart_content button {
-  width: 78%;
+  width: 91%;
   height: 35px;
   margin: 0.2rem 0;
   font-size: 0.8rem;

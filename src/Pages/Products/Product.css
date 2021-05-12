@@ -92,6 +92,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.display_flex_issue{
+  display: flex !important;
+  justify-content: flex-start !important;
+  /* justify-content:space-evenly !important; */
+}
 .issue_Card_title {
   padding-top: 0px;
   text-align: start;
@@ -383,7 +388,7 @@
   color: #5f677c !important;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1225px) {
   .product_container {
     margin: 50px 20px;
     justify-content: center;
@@ -652,6 +657,9 @@
   }
   .issue_card_container {
     justify-content: center;
+  }
+  .display_flex_issue{
+    justify-content: center !important;
   }
   .issue_card .card_num {
     top: 90px !important;

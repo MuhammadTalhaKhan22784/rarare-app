@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./Post.css";
 
 // assets
@@ -10,7 +9,6 @@ const PostReceive = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const history = useHistory();
 
   return (
     <React.Fragment>
@@ -34,6 +32,9 @@ const PostReceive = () => {
                 Post another report
               </button>
             </Link>
+          </div>
+          <div>
+            <button className='post_share_btn'>Share on social</button>
           </div>
         </div>
       </div>

@@ -5,19 +5,19 @@ import postIcon from "../../Assets/cn_logo.png";
 import greenDot from "../../Assets/greendot.png";
 import bike from "../../Assets/undraw_indoor_bike_pwa4.png";
 import car from "../../Assets/undraw_navigator_a479.png";
-import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 
 const PostSurveyTemplate = () => {
-  const history = useHistory();
   const [show, setShow] = useState(false);
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <React.Fragment>
-      <div className="post_home post_survey">
+      {show===false}
+      <div className="post_home post_survey survey_template">
         <div>
           <div className="post_header">
             <img src={postIcon} alt="posticon" />
@@ -28,10 +28,10 @@ const PostSurveyTemplate = () => {
               Get insights form the community so you make the best decisions!
             </p>
           </div>
+          <div className="cs_text">
+            <h2 className="text_darkblue">Select a template to continue!</h2>
+          </div>
           <div className="category_select">
-            <div className="cs_text">
-              <h2 className="text_darkblue">Select a template to continue!</h2>
-            </div>
             <div className="cs_tabs_main slect_survey_post">
               <div
                 className="cs_tab"
@@ -46,7 +46,7 @@ const PostSurveyTemplate = () => {
                   name="box"
                 />
 
-                <label htmlFor="box1" className="cs_tab_box">
+                <label htmlFor="box1" className="cs_tab_box survey_box">
                   <img
                     className="c_dot"
                     style={{ display: "none" }}
@@ -75,7 +75,7 @@ const PostSurveyTemplate = () => {
                   id="box2"
                   name="box"
                 />
-                <label htmlFor="box2" className="cs_tab_box">
+                <label htmlFor="box2" className="cs_tab_box survey_box">
                   <img
                     className="c_dot"
                     style={{ display: "none" }}
@@ -93,13 +93,13 @@ const PostSurveyTemplate = () => {
                 </div>
               </div>
             </div>
-            <div className="pcontinue_btn">
-              <Link className="text-decoration-none" to="/survey-health">
-                <button className="text-white bg_lightgreen border_none">
-                  Continue
-                </button>
-              </Link>
-            </div>
+          </div>
+          <div className="pcontinue_btn">
+            <Link className="text-decoration-none" to="/survey-health">
+              <button className="text-white bg_lightgreen border_none">
+                Continue
+              </button>
+            </Link>
           </div>
         </div>
       </div>

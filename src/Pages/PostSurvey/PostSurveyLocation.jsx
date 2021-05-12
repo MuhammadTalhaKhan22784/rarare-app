@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./PostSurvey.css";
 // assets
 import postIcon from "../../Assets/cn_logo.png";
@@ -10,11 +9,10 @@ const PostSurveyLocation = (props) => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const history = useHistory();
 
   return (
     <React.Fragment>
-      <div className="post_home post_report post_surveyh">
+      <div className="post_home post_report post_surveyh ">
         <div>
           <div className="post_header">
             <img src={postIcon} alt="posticon" />

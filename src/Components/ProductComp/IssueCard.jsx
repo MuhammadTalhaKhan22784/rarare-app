@@ -9,7 +9,7 @@ import toggle from "../../Assets/Group 3659.png";
 import edit from "../../Assets/Group 3655.png";
 import numImg from '../../Assets/Group 3593.png'
 
-const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
+const IssueCard = ({ list, className, togleImg, numIm, Cuser,display }) => {
 
   // edit delete toggle state and function 
 
@@ -29,7 +29,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser }) => {
 
         // cards style of issues 
 
-        <div className="issue_card_container">
+        <div className={`issue_card_container  ${display} `}>
           <div className={`card issue_card ${className}`} onClick={() => { history.push("/rant") }}>
             <div className="issue_card_img">
               <img src={slider1} className="card-img-top" alt="..." />

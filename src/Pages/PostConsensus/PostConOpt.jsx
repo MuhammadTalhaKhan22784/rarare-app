@@ -5,6 +5,7 @@ import "./PostConsensus.css";
 // assets
 import postIcon from "../../Assets/post_icon.png";
 import addIcon from "../../Assets/add_icon.png";
+import validationIcon from "../../Assets/validationIcon.png";
 import { Link } from "react-router-dom";
 
 const PostConOpt = () => {
@@ -87,7 +88,11 @@ const PostConOpt = () => {
                 <span>Add another option</span>
               </button>
             </div>
-            <div className="pcontinue_btn mt-5">
+            <div className="consensus_validation">
+              <img className="me-2" src={validationIcon} alt="..." />
+              <span className="fs-6">Select atleast one option</span>
+            </div>
+            <div className="pcontinue_btn">
               <Link className="text-decoration-none" to="/consensus-options">
                 <button
                   className="me-3 cus_width100 text_bluegreen bg_white border_solid bluegreen_border"

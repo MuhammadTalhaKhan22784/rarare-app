@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 const ProfileProposalCard = ({ className, list }) => {
 
     const classes = useStyles();
-    const [progress, setProgress] = React.useState(10);
+    const [progress] = React.useState(10);
     let [togle,setTogle] = useState(false)
 
     return (

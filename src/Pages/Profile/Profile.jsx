@@ -90,7 +90,7 @@ const Profile = () => {
                 />
               </div>
               <div className="your_issues_card_div">
-                <IssueCard list={list} togleImg={true} className="width" />
+                <IssueCard display='display_flex_issue' list={list} togleImg={true} className="width" />
               </div>
             </>
           ) : post === "survey" ? (
@@ -186,7 +186,7 @@ const Profile = () => {
                 </p>
               </div>
               <div className="your_issues_card_div">
-                <IssueCard className="width" />
+                <IssueCard className="width" display='display_flex_issue' />
               </div>
               <div className="head_div">
                 <TopicHead

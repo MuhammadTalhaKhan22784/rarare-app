@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./PostSurvey.css";
 // assets
 import receiveTick from "../../Assets/receive_tick.png";
@@ -9,7 +8,6 @@ const PostSurveyReceive = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const history = useHistory();
 
   return (
     <React.Fragment>
@@ -30,6 +28,10 @@ const PostSurveyReceive = () => {
                 Post another Survey
               </button>
             </Link>
+            {/* <br /> */}
+          </div>
+          <div>
+            <button className='post_share_btn'>Share on social</button>
           </div>
         </div>
       </div>

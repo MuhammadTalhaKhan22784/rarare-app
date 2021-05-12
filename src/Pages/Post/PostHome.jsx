@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./Post.css";
 
 // assets
@@ -11,7 +10,6 @@ import { Link } from "react-router-dom";
 
 const PostHome = () => {
   const [show, setShow] = useState(true);
-  const history = useHistory();
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

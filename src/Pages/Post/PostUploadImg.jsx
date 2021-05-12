@@ -2,6 +2,7 @@ import React, { useState ,useLayoutEffect} from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Btn/Btn";
 import postIcon from "../../Assets/post_icon.png";
+import uploadImg from "../../Assets/upload-img.png";
 
 import "../Bussinus/Bussines.css";
 
@@ -45,7 +46,7 @@ const PostUploadImg = () => {
           <label htmlFor="upload_logo">
             <img
               className="upload_img"
-              src="https://i.stack.imgur.com/x3KMH.jpg"
+              src={uploadImg}
               alt="img"
             />
           </label>

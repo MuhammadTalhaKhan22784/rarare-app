@@ -20,7 +20,7 @@ const CartDropdown = ({className}) => {
         >
           <div className="cart_content">
             <h6 className="text_darkblue">Your Balance</h6>
-            <h2 className="text_bluegreen">2000</h2>
+            <h2 className="text_bluegreen">2,000</h2>
             <span className="text_darkgray">LOCO POINTS</span>
             <hr />
             <button className="bg_lightgreen border_none text-white">Redeem Points</button>

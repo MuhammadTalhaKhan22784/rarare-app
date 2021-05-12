@@ -22,7 +22,7 @@ const SelectBlog = () => {
     useEffect(()=>{
         const filter = blog_card_data.filter((val) => id === val.id)
         setBlogData(filter)
-    },[])
+    },[id])
 
     return (
         <div>

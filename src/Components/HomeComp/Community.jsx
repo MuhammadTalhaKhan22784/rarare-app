@@ -19,7 +19,7 @@ const Community = () => {
                     <img className='eye_img2' src={eye} alt="img" />
                     <div>
                         <h3 className='what_we_do_head'><strong> We are on a mission to end <strong style={{ color: '#1cc1a0 ' }}> blindness </strong> </strong></h3>
-                        <h3 style={{ marginTop: '-15px' }} className='what_we_do_head'><strong>our community!</strong></h3>
+                        <h3 style={{ marginTop: '0px' }} className='what_we_do_head'><strong>our community!</strong></h3>
                     </div>
                     <div className='dp_para_div'>
                         <p className='dp_para_head'>

@@ -137,6 +137,15 @@
 .upload_delete:hover {
   cursor: pointer;
 }
+.busi_login_link{
+  text-decoration: none;
+   color: #9ba3cc;
+   margin-left: 5px ;
+}
+.busi_login_link:hover{
+  color: #9ba3cc;
+
+}
 .upload_result {
   text-align: start !important;
   position: relative;

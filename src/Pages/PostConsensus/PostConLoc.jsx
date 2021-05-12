@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
@@ -10,7 +9,6 @@ const PostConLoc = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const history = useHistory();
 
   return (
     <React.Fragment>

@@ -23,7 +23,7 @@ const ProSurveyCard = ({ list, className, data, togleImg }) => {
         <div className="pro_proposal_card_container">
           {data &&
             data.map((val, i) => (
-              <Link className="card_link" to={`survey/${val.id}`}>
+              <Link key={i} className="card_link" to={`survey/${val.id}`}>
                 <div className={`proposal_card_body ${className}`}>
                   <div className="card_title_div proposal_Card_title">
                     <h5>
@@ -75,7 +75,7 @@ const ProSurveyCard = ({ list, className, data, togleImg }) => {
         <>
           {data &&
             data.map((val, i) => (
-              <div className="proposal_list_body survey_list_style">
+              <div key={i} className="proposal_list_body survey_list_style">
                 <div className="card_title_div proposal_Card_title">
                   <h5>
                     <strong> {val.title} </strong>

@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./PostSurvey.css";
 // assets
 import postIcon from "../../Assets/cn_logo.png";
@@ -13,7 +12,6 @@ const PostSurveyReward = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const history = useHistory();
 
   return (
     <React.Fragment>

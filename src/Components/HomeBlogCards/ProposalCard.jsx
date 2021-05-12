@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 import Button from "../Btn/Btn";
-// material ui 
+// material ui
 import PropTypes from "prop-types";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-// assets 
+// assets
 import location from "../../Assets/location.png";
 import dot from "../../Assets/dot.png";
 import next from "../../Assets/Group 3603.png";

@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from "react";
-import { useHistory } from "react-router";
 import "./PostConsensus.css";
 
 // assets
@@ -13,7 +12,6 @@ const PostConsensusTime = () => {
     window.scrollTo(0, 0);
   }, []);
   const [show, setShow] = useState("1");
-  const history = useHistory();
   return (
     <React.Fragment>
       <div className="post_home postconsensus_opt pc_time">
