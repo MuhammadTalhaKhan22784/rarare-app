@@ -10,8 +10,15 @@
 }
 .posts_ccard_div {
   margin-top: 50px;
-  width: 650px;
+  width: 700px;
   padding-left: 10px;
+  margin-left: 10px;
+}
+.ongoing_btn_div2{
+  margin-top: 10px;
+}
+.profile_proposal_conatiner .duration_grn,.list_profile_proposal .duration_grn{
+  color: #001758 !important;
 }
 .width {
   width: 13rem;
@@ -23,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #001758 !important;
+  color: #001758;
 }
 .your_post_btn {
   background-color: var(--bg-white);
@@ -59,7 +66,7 @@ h6 {
   text-align: right;
 }
 .width_proposal {
-  width: 310px;
+  width: 330px;
 }
 
 .grn_bg {
@@ -141,7 +148,7 @@ h6 {
 .profile_proposal_loc_div > p {
   margin-bottom: 10px;
   font-size: 0.9em;
-  color: var(--text-lightpurple);
+  color: #5F677C;
   font-weight: 600;
 }
 .profile_proposal_loc_div > img {
@@ -308,13 +315,14 @@ h6 {
 }
 .acount_seting_card {
   display: flex;
-  padding: 15px 20px;
+  padding: 10px 20px;
   padding-right: 15px;
   padding-bottom: 10px;
   background-color: #f4f5f9;
   box-shadow: 0px 0px 10px gainsboro;
   border-radius: 9px;
   margin-top: 20px;
+  height: 110px;
 }
 
 .acount_seting_card > img {
@@ -340,6 +348,7 @@ h6 {
 .arrow_icon_seting {
   position: absolute;
   right: 0px;
+  bottom: 0px;
 }
 
 .acount_seting_card:hover {
@@ -422,10 +431,16 @@ h6 {
   border: none;
   outline: none;
   background-color: var(--bg-white);
-  padding: 7px 10px;
+  padding: 7px 10px !important;
   margin-top: 10px;
   border-radius: 3px;
+  /* -webkit-appearance: none; */
+  /* content: '>' !important; */
 }
+/* .profile_setting_inps > select::after{
+  content: '\f078' !important;
+
+} */
 .profile_setting_inps > textarea {
   border: none;
   outline: none;
@@ -512,22 +527,26 @@ h6 {
   display: none;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1215px) {
   .main_profile_com,
   .acount_main_div {
     margin: 20px 30px;
   }
-  .posts_ccard_div,
-  .account_seting_card_div {
+  .posts_ccard_div
+   {
+    width: 700px;
+    /* border: 2px solid red; */
+  }
+  .account_seting_card_div{
     width: 550px;
   }
   .width {
     width: 15rem;
   }
-  .width_proposal,
+  /* .width_proposal,
   .profile_proposal_card {
     width: 260px;
-  }
+  } */
   .profile_proposal_card > .head_div_grid > .proposal_card_head {
     font-size: 1em;
   }
@@ -548,7 +567,7 @@ h6 {
   .main_profile_com {
     margin: 20px 30px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .acount_main_div {
     flex-wrap: wrap;
@@ -629,6 +648,7 @@ h6 {
 @media screen and (max-width: 520px) {
   .posts_ccard_div {
     padding: 0px;
+    margin-left: 0px;
   }
   .your_post_btn,
   .reportProblm_btn,

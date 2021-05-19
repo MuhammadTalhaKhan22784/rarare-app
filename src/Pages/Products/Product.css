@@ -243,6 +243,7 @@
 .proposal_list > div > span {
   margin-left: 8px;
   font-size: 0.9em;
+  color: #5F677C;
 }
 .list_perticipant > div > span {
   display: inline-block;
@@ -292,6 +293,7 @@
   margin: 0px;
   font-size: 0.9em;
   margin-left: 10px;
+  color: #5F677C;
 }
 .list_issue_body {
   margin-left: 8px;

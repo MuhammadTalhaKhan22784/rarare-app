@@ -51,7 +51,7 @@ const Signup = () => {
                 className={
                   show === true
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
-                    : "s_box fw-bold gray_border text_lightgray"
+                    : "s_box gray_border text_lightgray"
                 }
               >
                 <img
@@ -69,7 +69,7 @@ const Signup = () => {
                 className={
                   show === false
                     ? "s_box fw-bold bluegreen_border text_bluegreen"
-                    : "s_box fw-bold gray_border text_lightgray"
+                    : "s_box gray_border text_lightgray"
                 }
               >
                 <img

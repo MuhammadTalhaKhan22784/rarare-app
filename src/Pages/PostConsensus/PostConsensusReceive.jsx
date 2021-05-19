@@ -60,11 +60,18 @@ const PostConsensusReceive = () => {
                 Post another proposal!
               </button>
             </Link>
+            <div className="pcr_btn">
             <Link className="text-decoration-none" to="/consensus-time">
               <button className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border">
-                Back
+                View Proposal
               </button>
             </Link>
+            <Link className="text-decoration-none" to="/consensus-time">
+              <button className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border">
+                Share on Social
+              </button>
+            </Link>
+            </div>
           </div>
         </div>
       </div>

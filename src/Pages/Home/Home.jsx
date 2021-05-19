@@ -11,6 +11,7 @@ import Report from '../../Components/HomeComp/Report'
 import Partner from '../../Components/HomeComp/Partner'
 import JoinCommunity from '../../Components/HomeComp/JoinCommunity'
 import HelpCartoon from '../../Components/HomeComp/HelpCartoon'
+import Cokkie from '../../Components/Cokkie'
 import './Home.css'
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       },[])
     return (
         <div>
+            <Cokkie />
             <HelpCartoon />
             <Reinvite />
             <WhatWeDo />

@@ -1,7 +1,6 @@
 /* font */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,11 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+input::placeholder {
+  color: #8792af;
+  font-size: 0.9rem;
+}
+
 :root{
   --bg-lightgreen:#20c0a0;
   --bg-blue:#014c9d;
@@ -23,7 +27,7 @@ body {
   --bg-white:#ffff;
   --light-purple:#f5f6fa;
   --text-darkblue:#001758;
-  --text-bluegreen:#19C2A0;
+  --text-bluegreen:#19c2a0;
   --text-lightblack:#353535;
   --text-green:#0ac718;
   --text-darkgray:#5f677c;

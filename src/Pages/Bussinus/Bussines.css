@@ -7,6 +7,11 @@
 
 .bussines_head {
   margin-top: 15px;
+  font-size: 1.6rem;
+}
+
+.bussines_head strong {
+  font-weight: bold !important;
 }
 
 .bussines_para > p,
@@ -19,7 +24,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  padding: 0px 20px;
+  padding: 0px 0px;
 }
 ._box_one_detail {
   /* border: 2px solid red; */
@@ -44,7 +49,8 @@
 .blankBox_two > img {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 7px;
+  width: 12px;
 }
 .business_btn_div {
   display: flex;
@@ -141,6 +147,7 @@
   text-decoration: none;
    color: #9ba3cc;
    margin-left: 5px ;
+   font-weight: 500;
 }
 .busi_login_link:hover{
   color: #9ba3cc;
@@ -193,6 +200,11 @@
   padding: 8px 15px;
   border-radius: 4px;
 }
+
+.confrim_email_div img {
+  object-fit: contain;
+}
+
 .confrim_email_div > p {
   margin-bottom: 0px;
   font-weight: 600;

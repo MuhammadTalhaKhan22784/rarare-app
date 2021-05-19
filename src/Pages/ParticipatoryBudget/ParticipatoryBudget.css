@@ -52,3 +52,24 @@
 .MuiInput-underline::after {
   border-bottom: none !important;
 }
+
+.cv_label1 {
+  display: none;
+}
+
+.cv_label2 {
+  top: 156px;
+  right: 0;
+  position: absolute;
+}
+
+
+@media screen and (max-width:1170px) {
+  .cv_label2 {
+    display: none;
+  }
+  .cv_label1 {
+    display: flex;
+    margin: 1rem 0 1rem 0;
+  }
+}

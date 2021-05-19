@@ -1,3 +1,79 @@
+/* cokkiew css  */
+
+.cokkie_main_div{
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    z-index: 99999;
+    box-shadow: 0px -2px 5px gainsboro;
+    width: 100%;
+    padding: 10px;
+    /* padding-bottom: 0px; */
+}
+.cokkie_div{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+.cokkie_para{
+    width: 700px;
+    margin-left: 20px;
+    font-size: .9rem;
+    margin-top: 20px;
+}
+.cokkie_para>p{
+    margin-bottom: 0px;
+}
+.cokkie_btn_div>button{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+}
+.cokkie_white{
+    border: 2px solid var(--text-bluegreen) !important ;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--text-bluegreen);
+    padding: 5px 10px !important;
+}
+.cokkie_grn{
+    background-color: var(--text-bluegreen);
+    border-radius: 3px;
+    color: white;
+}
+@media screen and (max-width:1045px){
+    .cokkie_para{
+        width: 450px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:800px){
+    .cokkie_para{
+        width: 360px;
+        font-size: .8rem;
+    }
+    .cokkie_img{
+        width: 100px;
+    }
+    .cokkie_main_div{
+        padding: 5px ;
+    }
+}
+@media screen and (max-width:670px){
+    .cokkie_white{
+        margin-top: 10px;
+    }
+    .cokkie_para{
+        margin-left: 10px;
+        font-size: .7rem;
+    }
+    .cokkie_img{
+        width: 70px;
+    }
+}
+/* help cartoon css  */
 
 .carton_div{
     position: fixed;

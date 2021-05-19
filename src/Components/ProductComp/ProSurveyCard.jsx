@@ -53,15 +53,18 @@ const ProSurveyCard = ({ list, className, data, togleImg }) => {
                   </div>
                   <p className="survey_hr" />
                   <div className="user_card_detail_div proposal_card_user pro_survey_user">
-                    {val.proImg ?
+                    {/* {val.proImg ? */}
                       <div>
                         <>
+                        {val.proImg?
                           <img src={val.proImg ? val.img : null} alt="img" />
+                          : null
+                        }
                           <p>{val.name}</p>
                         </>
                       </div>
-                      : null
-                    }
+                      {/* : null */}
+                    {/* } */}
                     <div>
                       <p className='issue_dat_p'>{val.date}</p>
                     </div>

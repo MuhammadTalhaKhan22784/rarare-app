@@ -34,11 +34,11 @@ const PostUploadImg = () => {
             Post a <strong style={{ color: "#19c2a0" }}> Report!</strong>
           </strong>
         </h5>
-        <div className="bussines_para">
+        <div className="bussines_para mb-4">
           <p>Please provide the following to complete registration!</p>
         </div>
         <div>
-          <h6>
+          <h6 className="mb-3">
             <strong>Upload Images</strong>
           </h6>
         </div>
@@ -68,7 +68,7 @@ const PostUploadImg = () => {
               </div>
             ))}
         </div>
-        <div className="business_btn_div">
+        <div className="business_btn_div post_btn_div mt-5" style={{width:"max-content", margin:"0 auto"}}>
           <Link to="/post-report">
             <Button className="bussines_white_btn upload_back" value="Back" />
           </Link>

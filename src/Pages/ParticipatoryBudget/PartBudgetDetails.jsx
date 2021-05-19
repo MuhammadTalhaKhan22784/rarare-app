@@ -1,21 +1,22 @@
-import React,{useLayoutEffect} from "react";
+import React, { useLayoutEffect } from "react";
 import { useHistory } from "react-router";
 import "./ParticipatoryBudget.css";
 
 // assets
 import undrawVoting from "../../Assets/undraw_voting.png";
+import validationIcon from "../../Assets/validationIcon.png";
 import InputAdornments from "../../Components/TextFeilds/NumberInput";
 
 const PartBudgetDetails = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
 
   const history = useHistory();
 
   return (
     <React.Fragment>
-      <div className="post_home post_consensus ">
+      <div className="post_home post_consensus position-relative">
         <div className="pp_budget">
           <div className="post_header">
             <img src={undrawVoting} alt="posticon" />
@@ -34,6 +35,10 @@ const PartBudgetDetails = () => {
           <div className="pbd_form">
             <h2 className="text_darkblue fw-bold">Budget Details</h2>
             <InputAdornments />
+            <div className="consensus_validation cv_label1">
+              <img className="me-2" src={validationIcon} alt="..." />
+              <span className="fs-6">Budget can only be a number</span>
+            </div>
             <div className="c_textarea">
               <textarea
                 id="w3review"
@@ -45,6 +50,10 @@ const PartBudgetDetails = () => {
               ></textarea>
             </div>
           </div>
+          <div className="consensus_validation">
+              <img className="me-2" src={validationIcon} alt="..." />
+              <span className="fs-6">Any front end error!</span>
+            </div>
           <div className="pcontinue_btn">
             <button
               className="cus_width100 text_bluegreen bg_white border_solid bluegreen_border"
@@ -63,6 +72,10 @@ const PartBudgetDetails = () => {
               Continue
             </button>
           </div>
+        </div>
+        <div className="consensus_validation cv_label2">
+          <img className="me-2" src={validationIcon} alt="..." />
+          <span className="fs-6">Budget can only be a number</span>
         </div>
       </div>
     </React.Fragment>

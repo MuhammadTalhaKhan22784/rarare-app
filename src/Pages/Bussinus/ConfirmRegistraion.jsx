@@ -21,7 +21,7 @@ const ConfirmRegistration = () => {
                     <p>We sent a link to the following email address . Please click on the link to confirm your registration</p>
                 </div>
                 <div className="confrim_email_div">
-                    <p>salman.altaf@gamil.com</p>
+                    <p className="text_darkblue">salman.altaf@gamil.com</p>
                     <img src={edit} alt="edit"/>
                     {/* <p className='edit_icon'>edit</p> */}
                 </div>

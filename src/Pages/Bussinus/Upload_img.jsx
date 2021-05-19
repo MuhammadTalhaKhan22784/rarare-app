@@ -38,11 +38,11 @@ const BusinessUploadImg = () => {
             <strong style={{ color: "#19C2A0" }}> Registration!</strong>
           </strong>
         </h5>
-        <div className="bussines_para">
+        <div className="bussines_para mt-3">
           <p>Please provide the following to complete registration!</p>
         </div>
         <div>
-          <h6>
+          <h6 className="mb-3">
             <strong>Upload Incorporation Certificate</strong>
           </h6>
         </div>
@@ -57,7 +57,7 @@ const BusinessUploadImg = () => {
             id="upload_logo"
           />
         </div>
-        <div className="main_upload_img_div">
+        <div className="main_upload_img_div mb-5">
           {img &&
             img.map((val, i) => (
               <div className="upload_result" key={i}>

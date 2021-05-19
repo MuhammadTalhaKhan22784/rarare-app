@@ -1,15 +1,19 @@
 .main_form {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .signup_form {
   width: 60%;
   display: flex;
   justify-content: center;
+}
+
+.forget_form {
+  width: 380px !important;
 }
 
 .s_form {
@@ -40,7 +44,7 @@
   align-items: center;
   border: 1px solid;
   border-radius: 3px;
-  font-weight: 500;
+  /* font-weight: 500 !important; */
   position: relative;
 }
 
@@ -77,6 +81,12 @@
   margin: 0.2rem 0;
 }
 
+.s_social_btn button span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
 .or_line {
   width: 100%;
 }
@@ -102,6 +112,7 @@
   margin: 0.3rem 0;
   padding-left: 1rem;
   outline: none;
+  font-size: 0.9rem;
 }
 
 .p_input {
@@ -115,10 +126,14 @@
   border-radius: 3px;
 }
 
+.p_input img {
+  width: 20px;
+}
+
 .p_input input {
   border-right: none !important;
   border-left: none !important;
-  width: 90% !important;
+  width: 94% !important;
 }
 
 .s_form_fields input::placeholder {
@@ -160,6 +175,7 @@
 
 .s_label a {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .s_label a:hover {
@@ -265,6 +281,7 @@
 .fp_text {
   margin: 0 !important;
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .login_img_content {
@@ -364,12 +381,19 @@
   }
 }
 
+@media (max-width: 425px) {
+  .forget_form {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 370px) {
   .s_form {
     width: 278px;
   }
   .s_box {
-    width: 134px;
+    width: 48%;
     height: 30px;
   }
 }

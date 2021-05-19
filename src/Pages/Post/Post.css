@@ -70,6 +70,7 @@
   box-shadow: 0px 1px 10px -3px #00000038;
 }
 
+
 .cs_tab_box .c_dot {
   right: -26px !important;
 }
@@ -93,7 +94,7 @@
 }
 
 .cs_tab_text p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
 }
 
@@ -227,7 +228,7 @@
     margin: 3rem 0;
   }
   .post_report {
-    margin: 6rem 0;
+    /* margin: 6rem 0; */
     margin-top: 3rem;
   }
 }
@@ -235,6 +236,12 @@
 @media (max-width: 645px) {
   .post_home > div {
     width: 557px;
+  }
+  .cs_tab_box .c_dot {
+    right: -21px !important;
+  }
+  .pr_frorm {
+    width: 80% !important;
   }
 }
 
@@ -257,6 +264,9 @@
 @media (max-width: 500px) {
   .post_home > div {
     width: 100%;
+  }
+  .post_btn_div .bussines_white_btn {
+    width: 191px !important;
   }
 }
 
@@ -283,10 +293,16 @@
   .pr_frorm input {
     font-size: 0.8rem !important;
   }
+  .cs_tab_box .c_dot {
+    right: -16px !important;
+}
 }
 
 @media (max-width: 360px) {
   .post_home > div {
     width: 300px !important;
+  }
+  .cs_tab_text p {
+    font-size: 0.8rem;
   }
 }

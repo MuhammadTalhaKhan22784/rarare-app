@@ -5,7 +5,7 @@
 #box1:checked + label,
 #box2:checked + label,
 #box3:checked + label {
-  border: 1px solid #20c0a0;
+  border: 1px solid #0ac718;
 }
 
 #box1:checked + label .c_dot {
@@ -31,6 +31,7 @@
 
 .consensus_validation span {
   color: #DC1E25;
+  font-size: 0.9rem !important;
 }
 
 .co_box {
@@ -50,6 +51,12 @@
 .postconsensus_opt > div {
   width: 650px !important;
 }
+
+.pp_tabs_main 
+.cs_tab_box .c_dot {
+  right: -20px !important;
+}
+ 
 
 .co_option_box .form-select {
   width: 28%;
@@ -359,6 +366,18 @@
   width: max-content;
 }
 
+.pcr_btn {
+  width: 100%;
+}
+
+.pcr_btn a {
+  margin: 0 10px;
+}
+
+.pcr_btn a button {
+  font-weight: bold;
+}
+
 @media (max-width: 825px) {
   .post_consensus_receive {
     width: 95% !important;
@@ -477,7 +496,7 @@
     height: 115px;
   }
   .pp_tabs_main .cs_tab_box .c_dot {
-    right: -19px !important;
+    right: -14px !important;
   }
   .postconsensus_opt > div {
     width: 396px !important;
@@ -488,9 +507,6 @@
 }
 
 @media (max-width: 425px) {
-  .post_consensus {
-    margin: 8rem 0;
-  }
   .postconsensus_home > div {
     width: 360px !important;
   }

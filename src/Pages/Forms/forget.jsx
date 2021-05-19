@@ -20,11 +20,11 @@ const Forget = () => {
     <React.Fragment>
       <div className="main_form">
         <div className="signup_form">
-          <div className="s_form">
+          <div className="s_form forget_form">
             <div className="s_img">
               <img src={forgotlogo} alt="lgLogo" />
             </div>
-            <div className="s_text">
+            <div className="s_text mb-2">
               <h2 className="text_darkblue fw-bold mt-4">
                 Forgot <strong className="text_bluegreen">Password</strong>
               </h2>
@@ -45,10 +45,11 @@ const Forget = () => {
                 />
               </div>
               <div className="form_btn ">
-                <Button
-                  className="Sign_up_today_btn w-100 "
-                  value="Recover Password"
-                />
+                <button
+                style={{width:"max-content",padding:"0 15px"}}
+                  className="border_none bg_lightgreen"
+                  
+                >Recover Password</button>
               </div>
               <span className="s_label text_lightgray">
                 Got a hint?{" "}

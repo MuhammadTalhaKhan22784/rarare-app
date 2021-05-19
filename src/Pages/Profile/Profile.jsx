@@ -44,21 +44,21 @@ const Profile = () => {
               value="Your Issues"
             />
             <Button
-              onClick={() => handlePost("survey")}
-              className={
-                post === "survey" ? `grn_bg btn_left` : "your_post_btn btn_left"
-              }
-              value="Your Survey"
-            />
-            <Button
               onClick={() => handlePost("proposal")}
               className={
                 post === "proposal"
-                  ? `grn_bg btn_left`
-                  : "your_post_btn btn_left"
+                ? `grn_bg btn_left`
+                : "your_post_btn btn_left"
               }
               value="Your Proposals"
             />
+              <Button
+                onClick={() => handlePost("survey")}
+                className={
+                  post === "survey" ? `grn_bg btn_left` : "your_post_btn btn_left"
+                }
+                value="Your Survey"
+              />
           </div>
           {post === "issues" ? (
             <>
