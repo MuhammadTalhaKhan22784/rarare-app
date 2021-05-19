@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import cokkie from '../Assets/undraw_cookie_love_ulvn.png'
 
 const Cokkie = () => {
+    const [show, setShow] = useState(false)
     return (
-        <div className='cokkie_main_div'>
+        <div className='cokkie_main_div' style={{display:show === true ? "none" : "block"}}>
             <div className="cokkie_div">
                 <img className='cokkie_img' src={cokkie} alt="" />
                 <div className="cokkie_para">
@@ -13,8 +14,8 @@ const Cokkie = () => {
                          autem accusamus.</p>
                 </div>
                 <div className="cokkie_btn_div">
-                    <button className='cokkie_grn'>Accept</button>
-                    <button className='cokkie_white'>Decline</button>
+                    <button className='cokkie_grn' onClick={()=>{setShow(true)}}>Accept</button>
+                    <button className='cokkie_white' onClick={()=>{setShow(true)}}>Decline</button>
                 </div>
             </div>
         </div>
