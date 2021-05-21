@@ -27,7 +27,7 @@
   }
   
   .logco_modal_dialog .cs_tab_box .c_dot {
-    right: -22px !important;
+    left: 62px !important;
   }
   
   .logco_modal_dialog .cs_tab {
@@ -134,6 +134,10 @@
   @media screen and (max-width: 700px) {
     .mob_pptabs {
       height: max-content !important;
+    }
+    .lmd2_dialog .cs_tab {
+      width: 50%;
+      margin: 10px 0;
     }
   }
   

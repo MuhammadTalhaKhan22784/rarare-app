@@ -1,10 +1,10 @@
 import React from 'react'
 // assests 
-import mask from '../../Assets/Group 3550@2x.png'
-import pools from '../../Assets/pools.png'
-import surwey from '../../Assets/surwey.png'
-import provision from '../../Assets/provision.png'
-import proposal from '../../Assets/proposal.png'
+import mask from '../../Assets/Group 3550.png'
+import pools from '../../Assets/Group 3551.png'
+import surwey from '../../Assets/Group 3553.png'
+import provision from '../../Assets/Group 3552.png'
+import proposal from '../../Assets/Group 3554.png'
 import './card.css'
 
 const cardData = [

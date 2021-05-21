@@ -2,13 +2,8 @@ import React from 'react'
 import Button from '../Btn/Btn'
 import { useHistory } from 'react-router-dom'
 // assets 
-import step from '../../Assets/step.png'
-import proposal2 from '../../Assets/proposal2 (2).png'
-import voice from '../../Assets/voice_step.png'
-import smile from '../../Assets/smile.png'
-import group from '../../Assets/groupicon.png'
-import result from '../../Assets/result.png'
 import mobStep from '../../Assets/Group 5608.png'
+import stepDesk from '../../Assets/step-desk.jpeg'
 
 const VoiceHeard = () => {
     const history = useHistory()
@@ -48,7 +43,7 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='proposal2_img' src={proposal2} alt="img" />
+                            {/* <img className='proposal2_img' src={proposal2} alt="img" /> */}
                         </div>
                         <div className="step2_div">
                             <h6><strong>Your voice</strong></h6>
@@ -58,7 +53,7 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='step_voice_img' src={voice} alt="img" />
+                            {/* <img className='step_voice_img' src={voice} alt="img" /> */}
                         </div>
                         <div className="step3_div">
                             <h6><strong>Implementation</strong></h6>
@@ -68,13 +63,13 @@ const VoiceHeard = () => {
                                 diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna
                             </p>
-                            <img className='step_smile' src={smile} alt="img" />
+                            {/* <img className='step_smile' src={smile} alt="img" /> */}
                         </div>
                     </div>
-                    <img src={step} alt="img" />
+                    <img src={stepDesk} alt="img" />
                     <div className='main_steps_div'>
                         <div className="step4_div">
-                            <img className='step_group' src={group} alt="img" />
+                            {/* <img className='step_group' src={group} alt="img" /> */}
                             <h6><strong>Participants Verification</strong></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,
@@ -84,7 +79,7 @@ const VoiceHeard = () => {
                             </p>
                         </div>
                         <div className="step5_div">
-                            <img className='step_result' src={result} alt="img" />
+                            {/* <img className='step_result' src={result} alt="img" /> */}
                             <h6><strong>Result Analysis</strong></h6>
                             <p>
                                 Lorem ipsum dolor sit amet,

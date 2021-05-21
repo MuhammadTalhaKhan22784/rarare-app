@@ -113,14 +113,14 @@ const ProposalCard = () => {
       <Slider {...settings} className="slick_slider_proposal">
         <div
           onClick={() => history.push("/proposal")}
-          className="card proposal_card"
+          className="card proposal_card home_proposal"
           style={{ width: "18rem" }}
         >
           <div className="card_title_div proposal_Card_title">
             <h5>
               <strong> Title of issues </strong>
             </h5>
-            <div className="ongoing_btn_div">
+            <div className="ongoing_btn_di">
               <button className="voice_heard_btn_white ongoin">
                 <img src={dot} alt="img" /> Ongoing
               </button>

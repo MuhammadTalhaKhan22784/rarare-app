@@ -67,7 +67,7 @@ const LocoModal = () => {
                     </h2>
                   </div>
                   <div className="category_select">
-                    <div className="cs_tabs_main pp_tabs_main">
+                    <div className="cs_tabs_main pp_tabs_main lmd2_dialog">
                       <div className="cs_tab">
                         <div className="cs_tab_box">
                           <img className="mdl_icon" src={dbicon1} alt="img" />

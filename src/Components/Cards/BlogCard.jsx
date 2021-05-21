@@ -7,7 +7,7 @@ const BlogCard = () => {
         <div className='blog_card_container'>
             <div className="blog_card_div">
                 {blog_card_data.map((val) => (
-                    <div className="card" style={{ width: '18.8rem',marginTop:'10px' }} key={val.id}>
+                    <div className="card" style={{ width: '13rem',marginTop:'10px' }} key={val.id}>
                         <img src={val.img} className="card-img-top" alt="..." />
                         <div className='card_title_div'>
                             <h6><strong> {val.title} </strong></h6>

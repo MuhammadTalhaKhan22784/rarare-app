@@ -65,7 +65,7 @@ const RecentIssueCard = () => {
     return (
         <React.Fragment>
             {/* <div className='recent_issue_card_container'> */}
-            <Slider {...settings} className='slick_slider' >
+            <Slider {...settings} className='slick_slider_issue' >
 
                 <div onClick={()=>history.push('/rant')} className="card home_issue" style={{ width: '18rem' }}>
                     <img src={slider1} className="card-img-top" alt="..." />

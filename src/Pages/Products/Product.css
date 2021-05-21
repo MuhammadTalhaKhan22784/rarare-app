@@ -1,5 +1,6 @@
 .product_container {
   display: flex;
+  justify-content: center;
   margin: 50px 130px;
 }
 
@@ -17,6 +18,7 @@
 .search_head {
   margin-left: 5px;
   margin-bottom: 0px;
+  font-size: 1.1rem;
 }
 .search_main_ul > li,
 .search_sub_ul > li {
@@ -24,6 +26,7 @@
   padding: 7px 5px;
   border-radius: 3px;
   margin-top: 10px;
+  font-size: .9rem;
 }
 .search_main_ul > li:hover,
 .search_sub_ul > li:hover {
@@ -96,6 +99,9 @@
   display: flex !important;
   justify-content: flex-start !important;
   /* justify-content:space-evenly !important; */
+}
+.issue_list_para{
+  font-size: .9rem;
 }
 .issue_Card_title {
   padding-top: 0px;
@@ -218,6 +224,9 @@
   padding: 10px 15px;
   border-radius: 7px;
   margin-top: 20px;
+}
+.proposal_list_body .card-text{
+  font-size: .9rem;
 }
 .pro_list_loc {
   display: flex;

@@ -9,7 +9,6 @@ import polygon1 from "../../Assets/Polygon 3@2x.png";
 import polygon2 from "../../Assets/Polygon 2@2x.png";
 import lgbgright from "../../Assets/lg_bgright.png";
 import forgotlogo from "../../Assets/forgotlogo.png";
-import Button from "../../Components/Btn/Btn";
 
 const Forget = () => {
   useLayoutEffect(() => {

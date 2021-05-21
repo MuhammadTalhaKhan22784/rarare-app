@@ -23,7 +23,7 @@
 
 /* recent issue card css  */
 
-.slick_slider,.slick_slider_survey{
+.slick_slider_issue,.slick_slider_survey{
     width: 100% !important;
     margin: 0px auto;
     padding: 10px 30px;
@@ -91,17 +91,25 @@
     justify-content: space-around;
     
 }
+/* .slick_slider_proposal{
+    width: 0% !important;
+    border: 2px solid red !important;
+} */
 .proposal_card{
     /* border: 2px solid red; */
     padding: 10px 15px;
     padding-bottom: 20px;
-    margin: 15px 30px;
+    margin: 15px 30px ;
     border: none !important;
     box-shadow: 0px 0px 5px gainsboro;
     width: 400px !important;
     /* margin: 10px auto; */
     text-align: start;
 }
+/* .slick_slider_proposal {
+    border: 2px solid red !important;
+    width: 70% !important;
+} */
 .ongoin{
     padding-left: 10px;
     padding-right: 10px;
@@ -269,7 +277,7 @@ hr{
 }
 
 @media screen and (max-width:1125px){
-    .slick_slider,.slick_slider_proposal{
+    .slick_slider_issue,.slick_slider_proposal{
         width: 80% !important;
         margin: 0px auto;
         padding: 10px 10px;
@@ -437,7 +445,7 @@ hr{
         width: 220px !important;
         padding: 0px !important;
     }
-    .slick_slider,.slick_slider_survey{
+    .slick_slider_issue,.slick_slider_survey{
         width: 90% !important;
     }
     .slick_slider_survey{

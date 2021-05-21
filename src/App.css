@@ -20,6 +20,10 @@ input::placeholder {
   font-size: 0.9rem;
 }
 
+button {
+  border-radius: 5px !important;
+}
+
 :root{
   --bg-lightgreen:#20c0a0;
   --bg-blue:#014c9d;

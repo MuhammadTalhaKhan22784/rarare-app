@@ -2,8 +2,9 @@
 
 .main_profile_com {
   display: flex;
-  justify-content: space-between;
-  margin: 50px 150px;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin: 30px 150px;
 }
 .posts_btn_div {
   display: flex;
@@ -303,15 +304,17 @@ h6 {
 
 .acount_main_div {
   display: flex;
-  justify-content: space-between;
-  margin: 50px 120px;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin: 30px 150px;
 }
 
 /* account setting card css  */
 
 .account_seting_card_div {
-  width: 680px;
+  width: 640px;
   margin-top: 50px;
+  margin-left: 30px;
 }
 .acount_seting_card {
   display: flex;
@@ -367,7 +370,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-top: 45px;
-  width: 680px;
+  width: 640px;
 }
 .proSetting_head_div > div {
   display: flex;
@@ -470,11 +473,14 @@ h6 {
   text-align: center;
   margin: 5px 40px;
 }
+.profile_seting_card_div{
+  margin-left: 30px;
+}
 
 /* security page css  */
 
 .notifications_main_div {
-  width: 360px;
+  width: 330px;
 }
 .security_change_pass {
   width: 260px;
@@ -562,7 +568,17 @@ h6 {
     left: -85px;
   }
 }
-
+@media screen and (max-width: 1180px) {
+  .proSetting_head_div{
+    width: 600px;
+  }
+  .notifications_main_div{
+    width: 290px;
+  }
+  .notifications_card{
+    width: 520px;
+  }
+}
 @media screen and (max-width: 980px) {
   .main_profile_com {
     margin: 20px 30px;
@@ -573,9 +589,15 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .notifications_card{
+    width: 550px;
+  }
+.profile_seting_card_div{
+  margin-left: 0px;
+}
   .account_seting_card_div {
     width: 100%;
+    margin-left: 0px;
   }
   .posts_ccard_div {
     width: 100%;
