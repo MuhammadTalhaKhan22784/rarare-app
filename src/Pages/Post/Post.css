@@ -32,7 +32,8 @@
 
 .post_header p {
   margin-bottom: 2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .category_select {

@@ -257,6 +257,7 @@
     color: var(--text-darkblue);
 }
 .reinventing_para{
+    font-size: 0.9rem;
     margin-top: 10px;
     color: var(--text-lightgray);
 }
@@ -326,6 +327,7 @@
 .dp_para_head{
     color: var(--text-lightgray);
     margin-top: 10px;
+    font-size: 0.9rem;
 }
 
 .dot_img_div{
@@ -476,6 +478,9 @@
     margin-top: 20px;
     color: var(--text-lightgray);
     /* color: #8792AF; */
+}
+.get_detail_para p {
+    text-align: justify;
 }
 .head_blb_div{
     display: flex;
