@@ -71,6 +71,9 @@ const Reinvite = () => {
                 <li className="li1">Change how you see the world! </li>
                 <li className="li2">You are a citizen of Global Village! 😄</li>
                 <li className="li3">Change how you see the world! </li>
+                <li className="li3">Change how you see the world! </li>
+                <li className="li3">Change how you see the world! </li>
+                <li className="li3">Change how you see the world! </li>
               </ul>
           <Swiper
             // pagination

@@ -314,6 +314,11 @@
   position: absolute;
   left: -230px;
   top: 50px;
+  height: 143px;
+  overflow-y: scroll;
+}
+.see_world_ul::-webkit-scrollbar{
+  width: 5px;
 }
 .see_world_ul > li {
   margin-top: 6px;

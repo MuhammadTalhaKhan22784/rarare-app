@@ -527,6 +527,11 @@
   align-items: center;
 }
 
+.footer_main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .footer span {
   /* color: #9ba3cc; */
 }
