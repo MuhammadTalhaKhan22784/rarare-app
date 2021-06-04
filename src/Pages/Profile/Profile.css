@@ -224,7 +224,7 @@ h6 {
 .blnce_card_div {
   background-color: var(--bg-white);
   box-shadow: 0px 0px 10px gainsboro;
-  border-radius: 3px;
+  border-radius: 7px;
   padding: 15px;
   text-align: center;
   margin-top: 20px;
@@ -433,17 +433,19 @@ h6 {
 .profile_setting_inps > select {
   border: none;
   outline: none;
-  background-color: var(--bg-white);
+  background-color: var(--bg-white) ;
   padding: 7px 10px !important;
   margin-top: 10px;
   border-radius: 3px;
-  /* -webkit-appearance: none; */
-  /* content: '>' !important; */
-}
-/* .profile_setting_inps > select::after{
-  content: '\f078' !important;
 
-} */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='lightgreen'  height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
 .profile_setting_inps > textarea {
   border: none;
   outline: none;
@@ -846,6 +848,20 @@ h6 {
   .redem_cards_scroll {
     width: 310px;
   }
+  .blnce_card_div{
+    margin-top: 15px;
+  }
+  .profile_hr{
+    display: none !important;
+  }
+  .posts_ccard_div{
+    margin-top: 0px;
+  }
+  
+  .redeem_head > h5{
+    text-align: start;
+    font-size: 1rem;
+  }
   .blnce_card_div > h3 {
     font-size: 1.2em;
   }
@@ -959,7 +975,9 @@ h6 {
   }
   .your_post_btn,
   .grn_bg {
-    margin: 10px;
+    margin: 5px 0px;
+    margin-left: 5px;
+    font-size: .75rem;
   }
   .width {
     width: 15rem;

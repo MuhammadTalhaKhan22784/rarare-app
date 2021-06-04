@@ -4,6 +4,8 @@ import Button from "../Btn/Btn";
 // assets 
 
 import blogSliderImg from "../../Assets/tope-a-asokere-aWc0hP9OoVI-unsplash.png";
+import blogSliderImg2 from '../../Assets/Group 3711.png'
+
 import next from "../../Assets/Group 3603.png";
 import prev from "../../Assets/Group 3604.png";
 
@@ -33,7 +35,7 @@ function SamplePrevArrow(props) {
 
 export const BlogSlider = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -204,6 +204,7 @@
   height: 63vh;
   border-radius: 8px;
   opacity: 1;
+  background: linear-gradient(rgb(19, 18, 18));
 }
 
 .slider_absolute {
@@ -349,6 +350,13 @@
   .blog_card_div .card {
     width: 180px !important;
   }
+  .slick-dots{
+    bottom: 205px;
+  }
+  .slick-dots li.slick-active button:before{
+    color: white;
+    /* border: 1px solid white; */
+  }
   .slider_arr {
     width: 40px !important;
     height: 40px !important;
@@ -362,6 +370,9 @@
   }
   .select_blog_para_data h5{
     font-size: 1.1rem;
+  }
+  .blog_search_inp_div{
+    width: 92%;
   }
 }
 @media screen and (max-width: 400px) {

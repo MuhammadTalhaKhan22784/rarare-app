@@ -714,7 +714,7 @@
   }
   .mob_nav {
     box-shadow: 0px 0px 10px gainsboro;
-    margin-top: 5px;
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -871,6 +871,12 @@
     width: 287px;
     left: -90px !important;
   }
+  .mob_nav {
+    width: 245px;
+  }
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+}
 }
 
 @media screen and (max-width: 360px) {

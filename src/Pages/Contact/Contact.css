@@ -34,3 +34,9 @@
     font-size: 0.9rem;
 }
 
+@media screen and (max-width:500px) {
+    .c_form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

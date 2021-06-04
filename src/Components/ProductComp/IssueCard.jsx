@@ -184,7 +184,7 @@ const IssueCard = ({ list, className, togleImg, numIm, Cuser,display }) => {
               <div>
                 <p className="card-text issue_list_para">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  diam nonumy 
               </p>
               </div>
               <div className="pro_list_loc">
