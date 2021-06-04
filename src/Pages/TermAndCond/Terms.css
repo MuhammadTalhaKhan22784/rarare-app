@@ -1,11 +1,17 @@
+.terms_and_cond_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .terms_and_cond_main_div {
-  margin: 50px 170px;
+  margin: 50px 138px;
   display: flex;
   justify-content: space-between;
 }
 
 .terms_one_box_div {
   margin-top: 30px;
+  margin-right: 10px;
   box-shadow: 0px 0px 5px gainsboro;
   border-radius: 7px;
   padding: 10px 15px;

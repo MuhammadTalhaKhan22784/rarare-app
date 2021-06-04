@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg c_navbar" id="top">
+      <nav className="navbar navbar-expand-lg c_navbar sticky-top" id="top">
         <div
           className={
             isActive ? "c_container container" : "container cn_container"

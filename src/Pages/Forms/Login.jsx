@@ -7,16 +7,14 @@ import lgLogo from "../../Assets/lg_logo.png";
 import fbIcon from "../../Assets/fb_icon.png";
 import gmailIcon from "../../Assets/gmail_icon.png";
 import orLine from "../../Assets/or_line.png";
-import loginBg from "../../Assets/lg_bgright.png";
-import xSmallIcon from "../../Assets/x_sm.png";
-import xMedumIcon from "../../Assets/x_md.png";
-import polygon1 from "../../Assets/polygon_1.png";
-import polygon2 from "../../Assets/polygon_2.png";
 import dot from "../../Assets/dot.png";
 import pwdclose from "../../Assets/pwdclose.png";
 import pwdopen from "../../Assets/pwdopen.png";
+import girl from "../../Assets/Layer 2@2x.png";
+import polygon2 from "../../Assets/Polygon 2@2x.png";
+import cros1 from "../../Assets/Group 26@2x.png";
+import cros2 from "../../Assets/Group 25@3x.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 
 const Login = () => {
   useLayoutEffect(() => {
@@ -150,32 +148,68 @@ const Login = () => {
             </form>
           </div>
         </div>
+    
         <div className="login_img_content">
-          <img className="lgic_1" src={xSmallIcon} alt="img" />
-          <img className="lgic_2" src={xMedumIcon} alt="img" />
-          <img className="lgic_3" src={polygon1} alt="img" />
-          <img className="lgic_4" src={polygon2} alt="img" />
-          {/* <div className="d-flex justify-content-end">
-            <img className="s_bgimg1" src={loginBg} alt="loginBg" />
-          </div> */}
-
-          <div className="d-flex justify-content-end">
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
-              <SwiperSlide>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
+          <div className="reinvite_img_div">
+            <div className="cros_img_div">
+              <img className="cros1_home" src={cros1} alt="img" />
+              <img className="cros2_home" src={cros2} alt="img" />
+            </div>
+            <ul className="see_world_ul">
+              <li className="li1">Change how you see the world! </li>
+              <li className="li2">You are a citizen of Global Village! 😄</li>
+              <li className="li3">Change how you see the world! </li>
+            </ul>
+            <Swiper
+              // pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+              // style={{ width: "50%" }}
+              className="myGirls_slider"
+            >
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  // height: "475px",
+                  marginRight: "0px ",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <img className="girl_img" src={girl} alt="img" />
+                {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
+                <img className="polygon3_img" src={polygon2} alt="img" />
               </SwiperSlide>
-              <SwiperSlide>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  // height: "475px",
+                  marginRight: "0px ",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                {/* <div className="cros_img_div">
+                <img className="cros1_home" src={cros1} alt="img" />
+                <img className="cros2_home" src={cros2} alt="img" />
+              </div>
+              <ul className="see_world_ul">
+                <li className="li1">Change how you see the world! </li>
+                <li className="li2">You are a citizen of Global Village! 😄</li>
+                <li className="li3">Change how you see the world! </li>
+              </ul> */}
+                <img className="girl_img" src={girl} alt="img" />
+                <img className="polygon3_img" src={polygon2} alt="img" />
               </SwiperSlide>
-              <SwiperSlide>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
+              {/* <img className="girl_img" src={girl} alt="img" /> */}
+              {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
+              {/* <img className="polygon3_img" src={polygon2} alt="img" /> */}
             </Swiper>
+            {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
           </div>
         </div>
+    
       </div>
     </React.Fragment>
   );

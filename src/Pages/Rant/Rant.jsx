@@ -17,6 +17,7 @@ function Proposal() {
 
   return (
     <React.Fragment>
+      <div className="main_rant_container">
       <div className="Rant_title d-flex  justify-content-start  ">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb Proposal_title">
@@ -154,6 +155,7 @@ function Proposal() {
         <div className="Rant_content_right">
           <ProposalComponentRight />
         </div>
+      </div>
       </div>
     </React.Fragment>
   );

@@ -1,3 +1,8 @@
+.blog_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .blog_main_div {
   /* margin: 50px 150px; */
   width: 72%;
@@ -201,7 +206,7 @@
   /* width: 620px; */
   width: 95%;
   object-fit: fill;
-  height: 63vh;
+  height: 55vh;
   border-radius: 8px;
   opacity: 1;
   background: linear-gradient(rgb(19, 18, 18));

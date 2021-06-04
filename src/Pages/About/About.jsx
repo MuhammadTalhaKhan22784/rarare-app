@@ -13,7 +13,7 @@ const About = () => {
     <React.Fragment>
       <div className="about_container">
         <h2 className="text_bluegreen">About Us!</h2>
-        <div className="about_content">
+        <div className="about_content about_content1">
           <div className="about_left_content1">
             <h2 className="text_darkblue fw-bold">Title here!</h2>
             <p className="text_lightgray">

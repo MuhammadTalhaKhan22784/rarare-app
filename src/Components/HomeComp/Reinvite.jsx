@@ -61,6 +61,7 @@ const Reinvite = () => {
               </div>
             </Slider>
           </div> */}
+    
         <div className="reinvite_img_div">
         <div className="cros_img_div">
                 <img className="cros1_home" src={cros1} alt="img" />
@@ -122,6 +123,7 @@ const Reinvite = () => {
           </Swiper>
               {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
         </div>
+    
       </div>
     </div>
   );

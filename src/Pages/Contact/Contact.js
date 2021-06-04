@@ -5,13 +5,16 @@ import lgLogo from "../../Assets/cn_logo.png";
 import contactBg from "../../Assets/cn_bgright.png";
 import xSmallIcon from "../../Assets/x_sm.png";
 import xMedumIcon from "../../Assets/x_md.png";
-import polygon1 from "../../Assets/polygon_1.png";
-import polygon2 from "../../Assets/polygon_2.png";
+import girl from "../../Assets/Layer 2@2x.png";
+import polygon2 from "../../Assets/Polygon 2@2x.png";
+import cros1 from "../../Assets/Group 26@2x.png";
+import cros2 from "../../Assets/Group 25@3x.png";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Contact = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
 
   return (
     <React.Fragment>
@@ -70,13 +73,48 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
         <div className="login_img_content">
-          <img className="lgic_1" src={xSmallIcon} alt="img" />
-          <img className="lgic_2" src={xMedumIcon} alt="img" />
-          <img className="lgic_3" src={polygon1} alt="img" />
-          <img className="lgic_4" src={polygon2} alt="img" />
-          <div className="d-flex justify-content-end">
-            <img className="s_bgimg" src={contactBg} alt="contactBg" />
+          <div className="reinvite_img_div">
+            <div className="cros_img_div">
+              <img className="cros1_home" src={cros1} alt="img" />
+              <img className="cros2_home" src={cros2} alt="img" />
+            </div>
+            <ul className="see_world_ul">
+              <li className="li1">Change how you see the world! </li>
+              <li className="li2">You are a citizen of Global Village! 😄</li>
+              <li className="li3">Change how you see the world! </li>
+            </ul>
+            <Swiper
+              // pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+              className="myGirls_slider"
+            >
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  marginRight: "0px ",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <img className="girl_img" src={girl} alt="img" />
+                <img className="polygon3_img" src={polygon2} alt="img" />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  marginRight: "0px ",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <img className="girl_img" src={girl} alt="img" />
+                <img className="polygon3_img" src={polygon2} alt="img" />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

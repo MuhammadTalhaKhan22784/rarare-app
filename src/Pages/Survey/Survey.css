@@ -1,3 +1,8 @@
+.survey_page_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .survey_page_main_div {
   margin: 50px 150px;
 }

@@ -74,15 +74,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about_container h2,
+  .about_container > h2 {
+    text-align: left;
+  }
   .about_container p {
     text-align: center;
   }
   .about_content {
     flex-direction: column;
   }
+  .about_content1 {
+    flex-direction: column-reverse;
+  }
   .about_left_content1 {
     width: 100%;
+    margin-top: 4rem;
+    text-align: center !important;
   }
   .about_right_content1,
   .about_right_content2 {
@@ -96,6 +103,9 @@
   }
   .about_left_content2 {
     margin-top: 4rem !important;
+  }
+  .about_left_content2 h2 {
+    text-align: center;
   }
   .about_left_content2 {
     width: 100%;
