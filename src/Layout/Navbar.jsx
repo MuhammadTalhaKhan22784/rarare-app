@@ -21,7 +21,6 @@ import MobSearchDropdown from "../Components/Dropdown/MobSearchDropdown";
 const Navbar = () => {
   let [isActive, setIsActive] = useState(false);
   let [open, setOpen] = useState(false);
- 
 
   const handleClose = () => {
     setOpen(false);
@@ -61,18 +60,12 @@ const Navbar = () => {
               <button
                 className="navbar-toggler"
                 type="button"
-                // data-bs-toggle="collapse"
-                // data-bs-target="#navbarSupportedContent"
-                // aria-controls="navbarSupportedContent"
-                // // aria-expanded="false"
-                // aria-label="Toggle navigation"
                 onClick={(e) => {
                   e.stopPropagation();
                   setOpen(!open);
                 }}
               >
                 <img src={togglebtn} alt="img" />
-                {/* <span className="navbar-toggler-icon" /> */}
               </button>
             </div>
           ) : (
@@ -81,25 +74,16 @@ const Navbar = () => {
               <button
                 className="navbar-toggler"
                 type="button"
-                // data-bs-toggle="collapse"
-                // data-bs-target="#navbarSupportedContent"
-                // aria-controls="navbarSupportedContent"
-                // // aria-expanded="false"
-                // aria-label="Toggle navigation"
                 onClick={(e) => {
                   e.stopPropagation();
                   setOpen(!open);
                 }}
               >
                 <img src={togglebtn} alt="img" />
-                {/* <span className="navbar-toggler-icon" /> */}
               </button>
             </div>
           )}
-          <div
-            className="collapse desk_nav_collapse navbar-collapse"
-            // id="navbarSupportedContent"
-          >
+          <div className="collapse desk_nav_collapse navbar-collapse">
             <ul className="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/post">
@@ -230,8 +214,6 @@ const Navbar = () => {
                     <hr />
                   </div>
                 )}
-                {/* /user ki profile ani/ */}
-
                 <li onClick={handleClose} className="nav-item">
                   <Link className="nav-link" to="/post">
                     Report an issue
@@ -262,9 +244,6 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
-                {/* <li onClick={handleClose} className="nav-item">
-                  <MobSearchDropdown />
-                </li> */}
                 <li className="nav-item mt-5">
                   <LanguageDropdown />
                 </li>

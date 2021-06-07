@@ -2,9 +2,6 @@ import React, { useLayoutEffect } from "react";
 import "./Contact.css";
 // assets
 import lgLogo from "../../Assets/cn_logo.png";
-import contactBg from "../../Assets/cn_bgright.png";
-import xSmallIcon from "../../Assets/x_sm.png";
-import xMedumIcon from "../../Assets/x_md.png";
 import girl from "../../Assets/Layer 2@2x.png";
 import polygon2 from "../../Assets/Polygon 2@2x.png";
 import cros1 from "../../Assets/Group 26@2x.png";

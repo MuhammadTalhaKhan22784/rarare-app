@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slider from "react-slick";
 
 import "swiper/swiper.min.css";
 // assets
@@ -15,14 +14,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
-const settings = {
-  dots: false,
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  autoPlay: true,
-};
+
 
 const Reinvite = () => {
   return (
@@ -51,16 +43,6 @@ const Reinvite = () => {
             </div>
           </div>
         </div>
-        {/* <div>
-            <Slider {...settings} className="girl_slider">
-              <div>
-                <img className="girl_img" src={girl} alt="img" />
-              </div>
-              <div>
-                <img className="girl_img" src={girl} alt="img" />
-              </div>
-            </Slider>
-          </div> */}
     
         <div className="reinvite_img_div">
         <div className="cros_img_div">
