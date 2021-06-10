@@ -40,8 +40,8 @@ const Navbar = () => {
   };
 
   return (
-    <React.Fragment>
-      <nav className="navbar navbar-expand-lg c_navbar sticky-top" id="top">
+    <React.Fragment id="top">
+      <nav className="navbar navbar-expand-lg c_navbar sticky-top">
         <div
           className={
             isActive ? "c_container container" : "container cn_container"
@@ -112,14 +112,26 @@ const Navbar = () => {
 
                 <div className="submenu">
                   <ul className="submenu-item text_lightgray">
-                    <li className="nav-item">Mobile Device Management</li>
-                    <li className="nav-item">
-                      Connectivity Enabled Healthcare
-                    </li>
-                    <li className="nav-item">Citizen Engagment</li>
-                    <li className="nav-item">Online Consensus Forming</li>
-                    <li className="nav-item">Particularly Budgeting</li>
-                    <li className="nav-item">Democratic Technology</li>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">Mobile Device Management</li>
+                    </Link>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">
+                        Connectivity Enabled Healthcare
+                      </li>
+                    </Link>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">Citizen Engagment</li>
+                    </Link>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">Online Consensus Forming</li>
+                    </Link>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">Particularly Budgeting</li>
+                    </Link>
+                    <Link className="text-decoration-none" to="/overview">
+                      <li className="nav-item">Democratic Technology</li>
+                    </Link>
                   </ul>
                 </div>
               </li>

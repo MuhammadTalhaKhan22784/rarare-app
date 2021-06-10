@@ -49,7 +49,7 @@ const BusinessInfo = () => {
                     <p className="busines_login_para">
                         Already a member ?
                     </p>
-                    <Link className='busi_login_link' to='/login'>Login</Link>
+                    <Link className='busi_login_link text_bluegreen' to='/login'>Login</Link>
                 </div>
             </div>
         </div>

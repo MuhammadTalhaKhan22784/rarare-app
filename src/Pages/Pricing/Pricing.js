@@ -72,6 +72,101 @@ const Pricing = () => {
   return (
     <React.Fragment>
       <div className="pricing_page">
+      <div className="op_box">
+          <div>
+            <span className="text_bluegreen">Overview</span>
+            <a href="#price">
+              <span className="text_lightgray">Pricing</span>
+            </a>
+          </div>
+        </div>
+        
+        <div className="price_wms container">
+          <div className="pbox_item_1eft">
+            <img className="pbox" src={pBox} alt="pbox" />
+            <img className="pbox1" src={pBox1} alt="pbox" />
+          </div>
+
+          <div className="pbox_item_right">
+            <h2 className="text_darkblue fw-bold">
+              Workforce
+              <strong className="text_bluegreen"> Management Solutions!</strong>
+            </h2>
+            <p className="text_lightgray">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              eveniet, consequatur quae fugit, vitae, deleniti amet ab
+              consectetur obcaecati vel officiis beatae unde alias. Possimus
+              pariatur iusto cumque sequi voluptatibus.
+            </p>
+            <div className="app_store_icons">
+              <img src={appStoreIcon} alt="appstoreicon" />
+            </div>
+          </div>
+        </div>
+        
+        <div className="mdm_section">
+          <div className="mdm_container">
+            <div className="mdm_card">
+              <img src={mdmBox} alt="img" />
+              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
+              <p className="text_lightgray">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo d
+              </p>
+            </div>
+            <div className="mdm_card">
+              <img src={mdmBox} alt="img" />
+              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
+              <p className="text_lightgray">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo d
+              </p>
+            </div>
+            <div className="mdm_card">
+              <img src={mdmBox} alt="img" />
+              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
+              <p className="text_lightgray">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo d
+              </p>
+            </div>
+          </div>
+        </div>
+     
+        <div className="encovision_section">
+          <div className="en_container">
+            <div className="en_left">
+              <div>
+                <h2 className="text_bluegreen fw-bold">Encovision</h2>
+                <p className="text_lightgray">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo d
+                </p>
+                <div className="en_button">
+                  <button className="bg_lightgreen border_none text-white">
+                    Button here
+                  </button>
+                  <button className="bg_white bluegreen_border text_bluegreen fw-bold">
+                    Button here
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="en_right">
+              <img className="enbox1" src={enBox2} alt="enbox1" />
+              <img className="enbox2" src={enBox1} alt="enbox2" />
+            </div>
+          </div>
+        </div>
+        
         <div className="price_main_1">
           <div className="price_main_1_content container">
             <div className="row">
@@ -254,97 +349,8 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="op_box">
-          <div>
-            <span className="text_bluegreen">Overview</span>
-            <a href="#price">
-              <span className="text_lightgray">Pricing</span>
-            </a>
-          </div>
-        </div>
-        <div className="price_wms container">
-          <div className="pbox_item_1eft">
-            <img className="pbox" src={pBox} alt="pbox" />
-            <img className="pbox1" src={pBox1} alt="pbox" />
-          </div>
-
-          <div className="pbox_item_right">
-            <h2 className="text_darkblue fw-bold">
-              Workforce
-              <strong className="text_bluegreen">Management Solutions!</strong>
-            </h2>
-            <p className="text_lightgray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              eveniet, consequatur quae fugit, vitae, deleniti amet ab
-              consectetur obcaecati vel officiis beatae unde alias. Possimus
-              pariatur iusto cumque sequi voluptatibus.
-            </p>
-            <div className="app_store_icons">
-              <img src={appStoreIcon} alt="appstoreicon" />
-            </div>
-          </div>
-        </div>
-        <div className="mdm_section">
-          <div className="mdm_container">
-            <div className="mdm_card">
-              <img src={mdmBox} alt="img" />
-              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
-              <p className="text_lightgray">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo d
-              </p>
-            </div>
-            <div className="mdm_card">
-              <img src={mdmBox} alt="img" />
-              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
-              <p className="text_lightgray">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo d
-              </p>
-            </div>
-            <div className="mdm_card">
-              <img src={mdmBox} alt="img" />
-              <h2 className="text_darkblue fw-bold">MDM Feature</h2>
-              <p className="text_lightgray">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo d
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="encovision_section">
-          <div className="en_container">
-            <div className="en_left">
-              <div>
-                <h2 className="text_bluegreen fw-bold">Encovision</h2>
-                <p className="text_lightgray">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo d
-                </p>
-                <div className="en_button">
-                  <button className="bg_lightgreen border_none text-white">
-                    Button here
-                  </button>
-                  <button className="bg_white bluegreen_border text_bluegreen fw-bold">
-                    Button here
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="en_right">
-              <img className="enbox1" src={enBox2} alt="enbox1" />
-              <img className="enbox2" src={enBox1} alt="enbox2" />
-            </div>
-          </div>
-        </div>
+     
+     
         <div className="watch_demo">
           <div className="wd_text">
             <h2 className="text_darkblue fw-bold">Watch a DEMO</h2>
@@ -358,6 +364,8 @@ const Pricing = () => {
             <img src={watchVideo} alt="img" />
           </div>
         </div>
+     
+     
         <div className="pricing_section" id="price">
           <div className="price_container">
             <div className="price_text">

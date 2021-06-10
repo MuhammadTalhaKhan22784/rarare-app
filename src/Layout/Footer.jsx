@@ -87,13 +87,38 @@ const Footer = () => {
                 <span>Privacy Policy</span>
               </div>
               <div className="text_darkblue">
-                <span className="text_lightgray mb-2">Business Services</span>
-                <span>B2B Offerings</span>
-                <span>Democratic Technology</span>
-                <span>Mobile Device Management</span>
                 <span
                   onClick={() => {
-                    history.push("/_pricing");
+                    history.push("/overview");
+                  }}
+                  className="text_lightgray mb-2"
+                >
+                  Business Services
+                </span>
+                <span
+                  onClick={() => {
+                    history.push("/overview");
+                  }}
+                >
+                  B2B Offerings
+                </span>
+                <span
+                  onClick={() => {
+                    history.push("/overview");
+                  }}
+                >
+                  Democratic Technology
+                </span>
+                <span
+                  onClick={() => {
+                    history.push("/overview");
+                  }}
+                >
+                  Mobile Device Management
+                </span>
+                <span
+                  onClick={() => {
+                    history.push("/overview");
                   }}
                 >
                   Pricing

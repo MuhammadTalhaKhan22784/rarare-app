@@ -94,6 +94,10 @@
   z-index: 19999;
 }
 
+.submenu-item a {
+  color: unset;
+}
+
 .submenu .submenu-item .nav-item {
   margin: 0.5rem auto;
   font-size: 0.9rem;
@@ -725,11 +729,12 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: max-content;
+    height: 95vh;
+    overflow-y: scroll;
     background: white;
     padding: 2rem 0;
     line-height: 2rem;
-    z-index: 2;
+    z-index: 999999;
   }
   .mob_nav .c_btn {
     height: 33px;

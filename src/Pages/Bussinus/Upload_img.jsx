@@ -81,7 +81,7 @@ const BusinessUploadImg = () => {
         </div>
         <div className="busines_login_div">
           <p className="busines_login_para">Already a member ? </p>
-          <Link className="busi_login_link text-decoration-none" to="/login">
+          <Link className="busi_login_link text-decoration-none text_bluegreen" to="/login">
              Login
           </Link>
         </div>

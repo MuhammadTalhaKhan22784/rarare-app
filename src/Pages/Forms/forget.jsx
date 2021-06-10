@@ -51,7 +51,7 @@ const Forget = () => {
               </div>
               <span className="s_label text_lightgray">
                 Got a hint?{" "}
-                <Link to="/login" className="text_lightpurple">
+                <Link to="/login" className="text_bluegreen">
                   &nbsp;Try logging in again!
                 </Link>
               </span>

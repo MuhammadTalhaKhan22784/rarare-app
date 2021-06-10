@@ -5,7 +5,7 @@
 
 .blog_main_div {
   /* margin: 50px 150px; */
-  width: 72%;
+  width: 78%;
   margin: 50px auto;
 }
 .blog_head_search_div {
@@ -85,6 +85,7 @@
   /* border: 2px solid red; */
   width: 400px;
   text-align: center;
+  margin-left: 15px;
 }
 .socail_feed_img {
   width: 120px;
@@ -260,6 +261,7 @@
   .socail_feed_conatiner {
     margin-top: 30px;
     width: 95%;
+    margin-left: 0px;
   }
   .socail_feed_img {
     width: 150px;

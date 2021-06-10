@@ -284,6 +284,7 @@
   margin: 0 !important;
   font-size: 0.8rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .login_img_content {

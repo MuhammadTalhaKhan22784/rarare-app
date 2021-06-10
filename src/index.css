@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.swiper_vertical .swiper-slide-prev{
+  opacity: 0.3;
+}
+.swiper_vertical .swiper-slide-active{
+  opacity: 0.6;
+}
+
+.swiper_vertical{
+  height: 100%;
+}

@@ -126,7 +126,7 @@ const Login = () => {
                   <span>Remember me</span>
                 </label>
                 <span
-                  className="fp_text text_lightgray"
+                  className="fp_text text_bluegreen"
                   onClick={() => {
                     history.push("forget");
                   }}
@@ -141,7 +141,7 @@ const Login = () => {
               </div>
               <span className="s_label text_lightgray">
                 Not a member?{" "}
-                <Link to="/signup" className="text_lightpurple">
+                <Link to="/signup" className="text_bluegreen">
                   &nbsp;Sign Up!
                 </Link>
               </span>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,13 +10,15 @@ import polygon2 from "../../Assets/Polygon 2@2x.png";
 import cros1 from "../../Assets/Group 26@2x.png";
 import cros2 from "../../Assets/Group 25@3x.png";
 // import Swiper core and required modules
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
+import SwiperCore, { Autoplay, Pagination, Navigation,Mousewheel } from "swiper/core";
 
 // install Swiper modules
-SwiperCore.use([Autoplay, Pagination, Navigation]);
-
+SwiperCore.use([Autoplay, Pagination, Navigation,Mousewheel]);
 
 const Reinvite = () => {
+  // const ref1 = useRef(null)
+  //  var y = ref1.current
+
   return (
     <div className="reinvite_container">
       <div className="reinvite_main_div">
@@ -43,39 +45,73 @@ const Reinvite = () => {
             </div>
           </div>
         </div>
-    
+
         <div className="reinvite_img_div">
-        <div className="cros_img_div">
-                <img className="cros1_home" src={cros1} alt="img" />
-                <img className="cros2_home" src={cros2} alt="img" />
-              </div>
-              <ul className="see_world_ul">
-                <li className="li1">Change how you see the world! </li>
+          <div className="cros_img_div">
+            <img className="cros1_home" src={cros1} alt="img" />
+            <img className="cros2_home" src={cros2} alt="img" />
+          </div>
+          <ul className="see_world_ul" id="see_world_ul">
+            <Swiper
+              // pagination
+              spaceBetween={0}
+              slidesPerView={3}
+              centeredSlides
+              initialSlide={1}
+              direction={"vertical"}
+              mousewheel
+              className="myGirls_slider swiper_vertical"
+              style={{paddingLeft:5,paddingRight:5}}
+            >
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😃 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
                 <li className="li2">You are a citizen of Global Village! 😄</li>
-                <li className="li3">Change how you see the world! </li>
-                <li className="li3">Change how you see the world! </li>
-                <li className="li3">Change how you see the world! </li>
-                <li className="li3">Change how you see the world! </li>
-              </ul>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 🌎 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😄  </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 🌏 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😵 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😃 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 🌏 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😵 </li>
+              </SwiperSlide>
+              <SwiperSlide className='li_swiper_slides'>
+                <li className="li1">Change how you see the world! 😃 </li>
+              </SwiperSlide>
+            </Swiper>
+          </ul>
           <Swiper
             // pagination
             spaceBetween={50}
             slidesPerView={1}
             autoplay={{ disableOnInteraction: false, delay: 2500 }}
             // style={{ width: "50%" }}
-            className='myGirls_slider'
+            className="myGirls_slider"
           >
             <SwiperSlide
               style={{
                 width: "100%",
                 // height: "475px",
                 marginRight: "0px ",
-                display:'flex',
-                alignItems:'center'
-
+                display: "flex",
+                alignItems: "center",
               }}
             >
-
               <img className="girl_img" src={girl} alt="img" />
               {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
               <img className="polygon3_img" src={polygon2} alt="img" />
@@ -85,9 +121,8 @@ const Reinvite = () => {
                 width: "100%",
                 // height: "475px",
                 marginRight: "0px ",
-                display:'flex',
-                alignItems:'center'
-
+                display: "flex",
+                alignItems: "center",
               }}
             >
               {/* <div className="cros_img_div">
@@ -106,9 +141,8 @@ const Reinvite = () => {
             {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
             {/* <img className="polygon3_img" src={polygon2} alt="img" /> */}
           </Swiper>
-              {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
+          {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
         </div>
-    
       </div>
     </div>
   );

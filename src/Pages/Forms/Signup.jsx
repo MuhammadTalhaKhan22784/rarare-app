@@ -155,7 +155,7 @@ const Signup = () => {
               </div>
               <span className="s_label text_lightgray">
                 Already a member?{" "}
-                <Link to="/login" className="text_lightpurple">
+                <Link to="/login" className="text_bluegreen">
                   &nbsp;Login
                 </Link>
               </span>
