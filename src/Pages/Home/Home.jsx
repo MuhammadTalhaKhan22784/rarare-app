@@ -33,7 +33,6 @@ const Home = () => {
             <Report />
             <Partner />
             <JoinCommunity />
-          
         </div>
     )
 }

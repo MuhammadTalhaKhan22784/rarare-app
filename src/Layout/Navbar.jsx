@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <React.Fragment id="top">
+    <div id="top">
       <nav className="navbar navbar-expand-lg c_navbar sticky-top">
         <div
           className={
@@ -289,7 +289,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </React.Fragment>
+    </div>
   );
 };
 

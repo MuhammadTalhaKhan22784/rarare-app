@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -143,6 +143,7 @@ const Reinvite = () => {
           </Swiper>
           {/* <img className="polygon2_img2" src={polygon2} alt="img" /> */}
         </div>
+    
       </div>
     </div>
   );

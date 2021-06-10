@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Btn/Btn";
 // assets
@@ -11,8 +11,6 @@ const Authority = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const [show, setShow] = useState(true);
 
   return (
     <div className="bussines_container">
@@ -31,12 +29,7 @@ const Authority = () => {
         </div>
         <div className="two_box_div">
           <div className="cs_tabs_main">
-            <div
-              className="cs_tab"
-              onClick={() => {
-                setShow(true);
-              }}
-            >
+            <div className="cs_tab">
               <input
                 style={{ display: "none" }}
                 type="radio"
@@ -50,7 +43,6 @@ const Authority = () => {
                   src={dot}
                   alt="img"
                 />
-                {/* <img src={undrawFeeling} alt="img" /> */}
               </label>
               <div className="cs_tab_text">
                 <h2 className="text_bluegreen">I represent an authority</h2>
@@ -60,12 +52,7 @@ const Authority = () => {
                 </p>
               </div>
             </div>
-            <div
-              className="cs_tab"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
+            <div className="cs_tab">
               <input
                 style={{ display: "none" }}
                 type="radio"
@@ -79,7 +66,6 @@ const Authority = () => {
                   src={dot}
                   alt="img"
                 />
-                {/* <img src={undrawHappy} alt="img" /> */}
               </label>
               <div className="cs_tab_text">
                 <h2 className="text_bluegreen">I represent an authority</h2>

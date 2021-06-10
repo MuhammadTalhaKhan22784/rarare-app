@@ -118,13 +118,6 @@ const Footer = () => {
                 </span>
                 <span
                   onClick={() => {
-                    history.push("/overview");
-                  }}
-                >
-                  Pricing
-                </span>
-                <span
-                  onClick={() => {
                     history.push("/business-authority");
                   }}
                 >
