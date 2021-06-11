@@ -149,7 +149,7 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="login_img_content">
+        <div className="login_img_content login_img_content-1">
           <div className="reinvite_img_div">
             <div className="cros_img_div">
               <img className="cros1_home" src={cros1} alt="img" />

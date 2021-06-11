@@ -19,7 +19,41 @@
   color: #8c9cb5;
   font-size: 0.9em;
 }
-
+.bsns_main_tabs{
+  display: flex !important;
+  flex-direction: column !important;
+  
+}
+.bsns_main_tabs label{
+  width: 500px !important;
+  margin: 9px auto !important;
+}
+.bsns_main_tabs{
+  margin-bottom:20px !important;
+}
+.bsns_main_tabs img{
+  width:fit-content !important;
+}
+.bsns_main_tabs .c_dot{
+  right:10px !important;
+}
+.bsns_main_tabs h2{
+  margin:0px !important;
+}
+.bsns_main_tabs p{
+  margin-bottom:0px !important;
+}
+.busns_tab{
+  height:max-content !important;
+  padding-top:15px !important;  
+  padding-bottom:15px !important;  
+}
+.bsns_main_tabs .cs_tab_text{
+  display: flex !important;
+  justify-content: flex-start !important;
+  text-align: start !important;
+  align-items: flex-start !important;
+}
 .two_box_div {
   display: flex;
   justify-content: space-around;
@@ -79,6 +113,7 @@
   display: flex;
   justify-content: center;
   font-size: 0.9em;
+  margin-top: 20px;
 }
 .busines_login_div > p {
   color: #8c9cb5;
@@ -214,6 +249,10 @@
   .bussines_main_div {
     width: 95%;
   }
+  .bsns_main_tabs label{
+  width: 350px !important;
+  margin: 9px auto !important;
+}
 }
 @media screen and (max-width: 500px) {
   .bussines_grn_btn {
@@ -293,4 +332,8 @@
   .confrim_email_div > p {
     font-size: 0.9em;
   }
+  .bsns_main_tabs label{
+  width: 250px !important;
+  margin: 9px auto !important;
+}
 }

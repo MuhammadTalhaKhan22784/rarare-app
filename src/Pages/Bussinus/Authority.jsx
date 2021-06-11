@@ -28,7 +28,7 @@ const Authority = () => {
           <p>Please provide the following to complete registration!</p>
         </div>
         <div className="two_box_div">
-          <div className="cs_tabs_main">
+          <div className="cs_tabs_main bsns_main_tabs">
             <div className="cs_tab">
               <input
                 style={{ display: "none" }}
@@ -36,14 +36,13 @@ const Authority = () => {
                 id="box1"
                 name="box"
               />
-              <label htmlFor="box1" className="cs_tab_box">
+              <label htmlFor="box1" className="cs_tab_box busns_tab">
                 <img
                   className="c_dot"
                   style={{ display: "none" }}
                   src={dot}
                   alt="img"
                 />
-              </label>
               <div className="cs_tab_text">
                 <h2 className="text_bluegreen">I represent an authority</h2>
                 <p className="text_lightgray">
@@ -51,6 +50,7 @@ const Authority = () => {
                   diam nonu
                 </p>
               </div>
+              </label>
             </div>
             <div className="cs_tab">
               <input
@@ -59,21 +59,21 @@ const Authority = () => {
                 id="box2"
                 name="box"
               />
-              <label htmlFor="box2" className="cs_tab_box">
+              <label htmlFor="box2" className="cs_tab_box busns_tab">
                 <img
                   className="c_dot"
                   style={{ display: "none" }}
                   src={dot}
                   alt="img"
                 />
-              </label>
               <div className="cs_tab_text">
-                <h2 className="text_bluegreen">I represent an authority</h2>
+                <h2 className="text_bluegreen">I represent a business</h2>
                 <p className="text_lightgray">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonu
                 </p>
               </div>
+              </label>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Authority = () => {
         </div>
         <div className="busines_login_div">
           <p className="busines_login_para">Already a member ?</p>
-          <Link className="busi_login_link text_bluegreen">Login</Link>
+          <Link className="busi_login_link text_bluegreen" to='/login' >Login</Link>
         </div>
       </div>
     </div>

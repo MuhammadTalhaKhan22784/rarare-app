@@ -287,6 +287,10 @@
   cursor: pointer;
 }
 
+.login_img_content-1 {
+  margin-top: -110px;
+}
+
 .login_img_content {
   /* width: 40%; */
   width: 55%;
