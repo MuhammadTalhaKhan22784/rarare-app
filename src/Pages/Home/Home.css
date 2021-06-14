@@ -79,7 +79,7 @@
   position: fixed;
   bottom: 30px;
   right: 20px;
-  z-index: 1;
+  z-index: 99;
   font-size: 0.8em;
 }
 .helpChat_div {
@@ -252,7 +252,7 @@
 .reinvite_detail_div {
   margin-left: 150px;
   margin-top: 50px;
-  width: 460px;
+  width: 47%;
 }
 .reinventing_head {
   font-size: 2em;
@@ -309,6 +309,7 @@
 .reinvite_img_div {
   position: relative;
   width: 430px;
+  margin-top: 30px;
 }
 .see_world_ul {
   position: absolute;

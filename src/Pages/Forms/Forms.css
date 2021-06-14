@@ -8,14 +8,18 @@
 }
 
 .signup_form {
-  /* width: 60%; */
-  width: 45%;
+  width: 60%;
+  /* width: 45%; */
   display: flex;
   justify-content: center;
 }
 
 .forget_form {
   width: 380px !important;
+}
+
+.cus_img_content .swiper-pagination-bullets {
+  left: 109px !important;
 }
 
 .s_form {
@@ -292,10 +296,7 @@
 }
 
 .login_img_content {
-  /* width: 40%; */
-  width: 55%;
-  display: flex;
-  justify-content: flex-end;
+  width: 40%;
   position: relative;
 }
 
@@ -335,7 +336,6 @@
   top: 20px;
   left: 120px;
 }
-
 /* media queries */
 
 @media (max-width: 1180px) {

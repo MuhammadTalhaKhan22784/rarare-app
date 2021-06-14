@@ -10,11 +10,12 @@ import orLine from "../../Assets/or_line.png";
 import dot from "../../Assets/dot.png";
 import pwdclose from "../../Assets/pwdclose.png";
 import pwdopen from "../../Assets/pwdopen.png";
-import girl from "../../Assets/Layer 2@2x.png";
-import polygon2 from "../../Assets/Polygon 2@2x.png";
-import cros1 from "../../Assets/Group 26@2x.png";
-import cros2 from "../../Assets/Group 25@3x.png";
+import polygon1 from "../../Assets/polygon_1.png";
+import polygon2 from "../../Assets/polygon_2.png";
+import xSmallIcon from "../../Assets/x_sm.png";
+import xMedumIcon from "../../Assets/x_md.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import loginBg from "../../Assets/lg_bgright.png";
 
 const Login = () => {
   useLayoutEffect(() => {
@@ -148,85 +149,28 @@ const Login = () => {
             </form>
           </div>
         </div>
+        <div className="login_img_content cus_img_content">
+          <img className="lgic_1" src={xSmallIcon} alt="img" />
+          <img className="lgic_2" src={xMedumIcon} alt="img" />
+          <img className="lgic_3" src={polygon1} alt="img" />
+          <img className="lgic_4" src={polygon2} alt="img" />
+          {/* <div className="d-flex justify-content-end">
+            <img className="s_bgimg1" src={loginBg} alt="loginBg" />
+          </div> */}
 
-        <div className="login_img_content login_img_content-1">
-          <div className="reinvite_img_div">
-            <div className="cros_img_div">
-              <img className="cros1_home" src={cros1} alt="img" />
-              <img className="cros2_home" src={cros2} alt="img" />
-            </div>
-            <ul className="see_world_ul" id="see_world_ul">
-              <Swiper
-                spaceBetween={0}
-                slidesPerView={3}
-                centeredSlides
-                initialSlide={1}
-                direction={"vertical"}
-                mousewheel
-                className="myGirls_slider swiper_vertical"
-                style={{ paddingLeft: 5, paddingRight: 5 }}
-              >
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😃 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li2">
-                    You are a citizen of Global Village! 😄
-                  </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 🌎 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😄 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 🌏 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😵 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😃 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 🌏 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😵 </li>
-                </SwiperSlide>
-                <SwiperSlide className="li_swiper_slides">
-                  <li className="li1">Change how you see the world! 😃 </li>
-                </SwiperSlide>
-              </Swiper>
-            </ul>
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={1}
-              autoplay={{ disableOnInteraction: false, delay: 2500 }}
-              className="myGirls_slider"
-            >
-              <SwiperSlide
-                style={{
-                  width: "100%",
-                  marginRight: "0px ",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <img className="girl_img" src={girl} alt="img" />
-                <img className="polygon3_img" src={polygon2} alt="img" />
+          <div className="d-flex justify-content-end">
+            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+              <SwiperSlide style={{height:"550px"}}>
+                <img className="s_bgimg1" src={loginBg} alt="img" />
               </SwiperSlide>
-              <SwiperSlide
-                style={{
-                  width: "100%",
-                  marginRight: "0px ",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <img className="girl_img" src={girl} alt="img" />
-                <img className="polygon3_img" src={polygon2} alt="img" />
+              <SwiperSlide>
+                <img className="s_bgimg1" src={loginBg} alt="img" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className="s_bgimg1" src={loginBg} alt="img" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className="s_bgimg1" src={loginBg} alt="img" />
               </SwiperSlide>
             </Swiper>
           </div>
