@@ -159,8 +159,13 @@ const Login = () => {
           </div> */}
 
           <div className="d-flex justify-content-end">
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
-              <SwiperSlide style={{height:"550px"}}>
+            <Swiper
+              pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+            >
+              <SwiperSlide style={{ height: "550px" }}>
                 <img className="s_bgimg1" src={loginBg} alt="img" />
               </SwiperSlide>
               <SwiperSlide>

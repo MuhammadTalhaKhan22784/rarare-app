@@ -68,11 +68,11 @@ const Forget = () => {
           <div className="d-flex justify-content-end">
             <Swiper
               pagination
-              // navigation
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
               spaceBetween={50}
               slidesPerView={1}
             >
-              <SwiperSlide style={{height:"550px"}}>
+              <SwiperSlide style={{ height: "550px" }}>
                 <img className="s_bgimg1" src={lgbgright} alt="img" />
               </SwiperSlide>
               <SwiperSlide>
